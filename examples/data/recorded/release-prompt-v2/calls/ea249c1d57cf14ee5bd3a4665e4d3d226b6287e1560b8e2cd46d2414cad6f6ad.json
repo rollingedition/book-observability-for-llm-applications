@@ -1,0 +1,111 @@
+{
+ "chunk_ns": [
+  10270692533,
+  10270712444,
+  10404737646,
+  10537900437,
+  10670931602,
+  10800407470,
+  10930951776,
+  11090420857,
+  11244820061,
+  11378210309,
+  11521918420,
+  11667036897,
+  11797609225,
+  11939363817,
+  12084816971,
+  12215245125,
+  12337227380,
+  12461421240,
+  12593984643,
+  12719674993,
+  12843946139,
+  12997139090
+ ],
+ "completion_tokens": 20,
+ "finish_reason": "stop",
+ "gen_ns": 2711164000,
+ "kind": "model",
+ "message_id": "17052",
+ "offset_ns": 171735426404,
+ "prefill_ns": 9851195000,
+ "prompt_tokens": 835,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-messages-01] Finding a contact by name\nAsk for a contact by the name you know them by, such as a first name, a last name, or both. The assistant looks in your own contact book and returns up to three matches, each with its name and the address on file. If two people share a first name, give the last name as well so the match is clear. The search ignores capital letters and small differences in spelling, so \"Ilse\" and \"ilse\" find the same person. A contact you added yourself is found in the same way as one that came from an import. Nothing is sent when you search. The search only reads your contact book, and a match is never a suggestion to contact someone you did not name.\n\n[help-messages-10] When a contact is not found\nA search can return no match. The usual causes are a misspelled name, a name stored under a nickname, or a contact that was deleted. Try the full name, or a name the person is known by. If no contact is found, the assistant can add a new one: give the name and the address, and the assistant confirms before it saves them. The assistant never guesses an address. If the contact book itself cannot be reached, the assistant says so and does not send anything in its place. Try again later, or add the contact in your contact book directly.\n",
+    "role": "system"
+   },
+   {
+    "content": "search nandy",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "Find a contact by name. Up to three contacts, with their names and addresses.",
+     "name": "find_contact",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "description": "The contact's name, as the user says it.",
+        "title": "Name",
+        "type": "string"
+       }
+      },
+      "required": [
+       "name"
+      ],
+      "title": "FindContactArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Record a message to one of the user's contacts, named by the address find_contact gave. The message is recorded, not sent.",
+     "name": "send_message",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "contact_id": {
+        "description": "The contact's address, as find_contact gave it.",
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Contact Id",
+        "type": "string"
+       },
+       "text": {
+        "description": "The message, up to 500 characters.",
+        "title": "Text",
+        "type": "string"
+       }
+      },
+      "required": [
+       "contact_id",
+       "text"
+      ],
+      "title": "SendMessageArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 32,
+ "step": "answer",
+ "text": "<tool_call>\n{\"name\": \"find_contact\", \"arguments\": {\"name\": \"nandy\"}}\n</tool_call>",
+ "tokens_evaluated": 643,
+ "tool_calls": [],
+ "total_ns": 14096081766,
+ "ttfc_ns": 10270692533
+}

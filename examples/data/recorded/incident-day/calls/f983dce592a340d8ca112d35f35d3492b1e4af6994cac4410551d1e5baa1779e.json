@@ -1,0 +1,119 @@
+{
+ "chunk_ns": [
+  472104549,
+  472113569,
+  610375388,
+  738106888,
+  873929054,
+  1017517656,
+  1138158420,
+  1261731281,
+  1416834800,
+  1555013952,
+  1681076734,
+  1801356494,
+  1937033494,
+  2056781315,
+  2179066266,
+  2321783314,
+  2507574069,
+  2648277869,
+  2770265078,
+  2895311784,
+  3021819862
+ ],
+ "completion_tokens": 19,
+ "finish_reason": "stop",
+ "gen_ns": 2535591000,
+ "kind": "model",
+ "message_id": "16559",
+ "offset_ns": 674048951099,
+ "prefill_ns": 467917000,
+ "prompt_tokens": 955,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-09.\n\nKnowledge base articles:\n\n[help-messages-09] Scheduling a message for later\nGive a message a time to send. Times are read in your own time zone, and the assistant states the time it will send in full, with the date and the zone. A scheduled message can be changed or cancelled until the time it is due. Once it has been sent, it is recorded in the sent folder like any other. If the assistant cannot send at the time, because the service is unavailable, it tries again a few minutes later and tells you in its next reply. It does not send a scheduled message more than once.\n\n[help-messages-05] Replying to a message\nAsk the assistant to reply to the latest message from someone, or to a message you name by its subject. The reply is written in the same thread, so the person sees it with the earlier messages. Say what the reply should say, or ask the assistant to draft a short reply and read it to you first. A reply is sent only after you confirm it. If the thread has more than one earlier message from that person, the assistant asks which one you mean before it replies.\n\n[help-media-10] Choosing a game or a quiz\nThe assistant can start a game or a quiz from a short list it knows. Ask for a game by name, or ask for a quiz on a subject, such as geography or history. A quiz asks one question at a time and tells you whether the answer was right. Games that need two players wait for the second player to join before they start. To stop a game, say so, and the assistant reports the score. Some games need a device that supports them; the assistant says if the device cannot run the game.\n",
+    "role": "system"
+   },
+   {
+    "content": "send a reply to mike with the answer four hundred and thirty from his email he sent this morning",
+    "role": "user"
+   },
+   {
+    "content": "<tool_call>\n{\"name\": \"find_contact\", \"arguments\": {\"name\": \"mike\"}}\n</tool_call>",
+    "role": "assistant"
+   },
+   {
+    "content": "\"Error executing tool find_contact\"",
+    "name": "find_contact",
+    "role": "tool"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "Find a contact by name. Up to three contacts, with their names and addresses.",
+     "name": "find_contact",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "description": "The contact's name, as the user says it.",
+        "title": "Name",
+        "type": "string"
+       }
+      },
+      "required": [
+       "name"
+      ],
+      "title": "FindContactArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Record a message to one of the user's contacts, named by the address find_contact gave. The message is recorded, not sent.",
+     "name": "send_message",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "contact_id": {
+        "description": "The contact's address, as find_contact gave it.",
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Contact Id",
+        "type": "string"
+       },
+       "text": {
+        "description": "The message, up to 500 characters.",
+        "title": "Text",
+        "type": "string"
+       }
+      },
+      "required": [
+       "contact_id",
+       "text"
+      ],
+      "title": "SendMessageArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 99,
+ "step": "answer",
+ "text": "I cannot locate Mike to reply to his message. Please verify the name or provide more details.",
+ "tokens_evaluated": 20,
+ "tool_calls": [],
+ "total_ns": 4472234126,
+ "ttfc_ns": 472104549
+}

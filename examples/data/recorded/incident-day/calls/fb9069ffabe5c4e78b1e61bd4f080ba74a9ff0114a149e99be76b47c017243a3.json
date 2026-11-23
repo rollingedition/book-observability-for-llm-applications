@@ -1,0 +1,159 @@
+{
+ "chunk_ns": [
+  1037161939,
+  1037170999,
+  1168079335,
+  1293110218,
+  1427645320,
+  1555260968,
+  1674413361,
+  1795400877,
+  1930473657,
+  2079506711,
+  2218854506,
+  2518257726,
+  2664450297,
+  2804526945,
+  2940698322,
+  3069643459,
+  3194411299,
+  3336135003,
+  3471059860,
+  3603214955,
+  3737143303,
+  3866335377,
+  3995401350,
+  4116529918,
+  4247679370,
+  4383363089,
+  4525439260
+ ],
+ "completion_tokens": 25,
+ "finish_reason": "stop",
+ "gen_ns": 3467697000,
+ "kind": "model",
+ "message_id": "3080",
+ "offset_ns": 41614873862,
+ "prefill_ns": 325490000,
+ "prompt_tokens": 728,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-09.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "it's time for junk food",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List one of the user's lists: shopping, packing or to do. Up to ten items.",
+     "name": "list_items",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "list": {
+        "description": "The list to read.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list"
+      ],
+      "title": "ListItemsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an item to one of the user's lists: shopping, packing or to do.",
+     "name": "add_item",
+     "parameters": {
+      "additionalProperties": false,
+      "description": "The arguments of add_item and remove_item: a list and one item's text.",
+      "properties": {
+       "item": {
+        "description": "The item's text, up to 40 characters.",
+        "title": "Item",
+        "type": "string"
+       },
+       "list": {
+        "description": "The list to change.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list",
+       "item"
+      ],
+      "title": "ChangeItemArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove an item from one of the user's lists: shopping, packing or to do.",
+     "name": "remove_item",
+     "parameters": {
+      "additionalProperties": false,
+      "description": "The arguments of add_item and remove_item: a list and one item's text.",
+      "properties": {
+       "item": {
+        "description": "The item's text, up to 40 characters.",
+        "title": "Item",
+        "type": "string"
+       },
+       "list": {
+        "description": "The list to change.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list",
+       "item"
+      ],
+      "title": "ChangeItemArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 4,
+ "step": "answer",
+ "text": "I can help you with that. Would you like to add something to your shopping list or to-do list for junk food?",
+ "tokens_evaluated": 11,
+ "tool_calls": [],
+ "total_ns": 5984328531,
+ "ttfc_ns": 1037161939
+}

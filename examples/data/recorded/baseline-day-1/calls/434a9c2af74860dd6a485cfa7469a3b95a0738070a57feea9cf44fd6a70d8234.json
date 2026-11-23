@@ -1,0 +1,43 @@
+{
+ "chunk_ns": [
+  574532724,
+  574539747,
+  711475574,
+  829657653,
+  945163147,
+  1063405535,
+  1180401732,
+  1302040754
+ ],
+ "completion_tokens": 6,
+ "finish_reason": "stop",
+ "gen_ns": 723083000,
+ "kind": "model",
+ "message_id": "9732",
+ "offset_ns": 1246637872314,
+ "prefill_ns": 287355000,
+ "prompt_tokens": 144,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.",
+    "role": "system"
+   },
+   {
+    "content": "open davinci code audiobook",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 244,
+ "step": "route",
+ "text": "{\"route\": \"media\"}",
+ "tokens_evaluated": 11,
+ "tool_calls": [],
+ "total_ns": 1359055266,
+ "ttfc_ns": 574532724
+}

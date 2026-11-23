@@ -1,0 +1,136 @@
+{
+ "chunk_ns": [
+  2512754606,
+  2512763670,
+  2535781985,
+  2559230757,
+  2583386330,
+  2607655878,
+  2631247440,
+  2655473082,
+  2680610817,
+  2704352494,
+  2727915647,
+  2751645947,
+  2774802950,
+  2798496605,
+  2821538252,
+  2844129308,
+  2866956062,
+  2890359819,
+  2914988662
+ ],
+ "completion_tokens": 17,
+ "finish_reason": "stop",
+ "gen_ns": 392024000,
+ "kind": "model",
+ "message_id": "11860",
+ "offset_ns": 140342466009,
+ "prefill_ns": 2509938000,
+ "prompt_tokens": 673,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "tell me the local events",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List the user's events on one day (UTC). Up to five, by time.",
+     "name": "list_events",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date"
+      ],
+      "title": "ListEventsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an event to the user's calendar on one day (UTC).",
+     "name": "add_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       },
+       "time": {
+        "description": "The start time, HH:MM on a 24-hour clock.",
+        "title": "Time",
+        "type": "string"
+       },
+       "title": {
+        "description": "What the event is called, up to 60 characters.",
+        "title": "Title",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date",
+       "time",
+       "title"
+      ],
+      "title": "AddEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove one of the user's events, by its event_id.",
+     "name": "remove_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "event_id": {
+        "description": "The event_id that list_events gave.",
+        "maxLength": 20,
+        "minLength": 1,
+        "title": "Event Id",
+        "type": "string"
+       }
+      },
+      "required": [
+       "event_id"
+      ],
+      "title": "RemoveEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 131,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\nNone of the provided tools can be used to retrieve local events.",
+ "tokens_evaluated": 667,
+ "tool_calls": [],
+ "total_ns": 3652657703,
+ "ttfc_ns": 2512754606
+}

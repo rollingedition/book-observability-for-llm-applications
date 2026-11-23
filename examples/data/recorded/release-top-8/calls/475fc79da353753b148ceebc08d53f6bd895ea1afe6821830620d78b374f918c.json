@@ -1,0 +1,142 @@
+{
+ "chunk_ns": [
+  491563097,
+  491571755,
+  645415646,
+  795180440,
+  937010482,
+  1072346969,
+  1208172095,
+  1340435719,
+  1468217238,
+  1594127563,
+  1746319071,
+  1913220747,
+  2076527236,
+  2252905652,
+  2395928823,
+  2542732198,
+  2689321747,
+  2817844895,
+  2950215943,
+  3086231567,
+  3218218675,
+  3343381878,
+  3467466282,
+  3599344059,
+  3733747395,
+  3872317492,
+  4002407512,
+  4187059797,
+  4372391620,
+  4503957982,
+  4640684997,
+  4797255681,
+  4950166936,
+  5073259308,
+  5191477982,
+  5311603269,
+  5431028813,
+  5563587198,
+  5684304055,
+  5807532812,
+  5927420995,
+  6051245374,
+  6169701741,
+  6313329580
+ ],
+ "completion_tokens": 42,
+ "finish_reason": "stop",
+ "gen_ns": 5782447000,
+ "kind": "model",
+ "message_id": "17052",
+ "offset_ns": 216675738064,
+ "prefill_ns": 487579000,
+ "prompt_tokens": 873,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-messages-01] Finding a contact by name\nAsk for a contact by the name you know them by, such as a first name, a last name, or both. The assistant looks in your own contact book and returns up to three matches, each with its name and the address on file. If two people share a first name, give the last name as well so the match is clear. The search ignores capital letters and small differences in spelling, so \"Ilse\" and \"ilse\" find the same person. A contact you added yourself is found in the same way as one that came from an import. Nothing is sent when you search. The search only reads your contact book, and a match is never a suggestion to contact someone you did not name.\n\n[help-messages-10] When a contact is not found\nA search can return no match. The usual causes are a misspelled name, a name stored under a nickname, or a contact that was deleted. Try the full name, or a name the person is known by. If no contact is found, the assistant can add a new one: give the name and the address, and the assistant confirms before it saves them. The assistant never guesses an address. If the contact book itself cannot be reached, the assistant says so and does not send anything in its place. Try again later, or add the contact in your contact book directly.\n",
+    "role": "system"
+   },
+   {
+    "content": "search nandy",
+    "role": "user"
+   },
+   {
+    "content": "<tool_call>\n{\"name\": \"find_contact\", \"arguments\": {\"name\": \"nandy\"}}\n</tool_call>",
+    "role": "assistant"
+   },
+   {
+    "content": "{\"contacts\": []}",
+    "name": "find_contact",
+    "role": "tool"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "Find a contact by name. Up to three contacts, with their names and addresses.",
+     "name": "find_contact",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "description": "The contact's name, as the user says it.",
+        "title": "Name",
+        "type": "string"
+       }
+      },
+      "required": [
+       "name"
+      ],
+      "title": "FindContactArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Record a message to one of the user's contacts, named by the address find_contact gave. The message is recorded, not sent.",
+     "name": "send_message",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "contact_id": {
+        "description": "The contact's address, as find_contact gave it.",
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Contact Id",
+        "type": "string"
+       },
+       "text": {
+        "description": "The message, up to 500 characters.",
+        "title": "Text",
+        "type": "string"
+       }
+      },
+      "required": [
+       "contact_id",
+       "text"
+      ],
+      "title": "SendMessageArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 35,
+ "step": "answer",
+ "text": "No contact found for \"nandy\". Try the full name or check if the name is stored as a nickname. If needed, you can add the contact with their address. [help-messages-10]",
+ "tokens_evaluated": 18,
+ "tool_calls": [],
+ "total_ns": 7042751065,
+ "ttfc_ns": 491563097
+}

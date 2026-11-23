@@ -1,0 +1,156 @@
+{
+ "chunk_ns": [
+  1895626689,
+  1895633944,
+  2064836434,
+  2237008813,
+  2407430415,
+  2548871234,
+  2684787672,
+  2813827364,
+  2959119516,
+  3098036363,
+  3231204204,
+  3362183582,
+  3492092486,
+  3621562481,
+  3762731923,
+  3891839054,
+  4024094620,
+  4151778808,
+  4288758614,
+  4415391678,
+  4540357535,
+  4664269039,
+  4790931747,
+  4921988248,
+  5052728540,
+  5185285080,
+  5320499274,
+  5451081957,
+  5608432083,
+  5758340294
+ ],
+ "completion_tokens": 28,
+ "finish_reason": "stop",
+ "gen_ns": 3841605000,
+ "kind": "model",
+ "message_id": "8527",
+ "offset_ns": 206294340724,
+ "prefill_ns": 1891212000,
+ "prompt_tokens": 798,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-07.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "cancel meeting at three",
+    "role": "user"
+   },
+   {
+    "content": "<tool_call>\n{\"name\": \"list_events\", \"arguments\": {\"date\": \"2026-12-07\"}}\n</tool_call>",
+    "role": "assistant"
+   },
+   {
+    "content": "[{\"event_id\": \"E01256\", \"time\": \"07:33\", \"title\": \"Volunteer shift\"}, {\"event_id\": \"E01257\", \"time\": \"10:36\", \"title\": \"Car service\"}, {\"event_id\": \"E01258\", \"time\": \"16:42\", \"title\": \"Client call\"}]",
+    "name": "list_events",
+    "role": "tool"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List the user's events on one day (UTC). Up to five, by time.",
+     "name": "list_events",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date"
+      ],
+      "title": "ListEventsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an event to the user's calendar on one day (UTC).",
+     "name": "add_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       },
+       "time": {
+        "description": "The start time, HH:MM on a 24-hour clock.",
+        "title": "Time",
+        "type": "string"
+       },
+       "title": {
+        "description": "What the event is called, up to 60 characters.",
+        "title": "Title",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date",
+       "time",
+       "title"
+      ],
+      "title": "AddEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove one of the user's events, by its event_id.",
+     "name": "remove_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "event_id": {
+        "description": "The event_id that list_events gave.",
+        "maxLength": 20,
+        "minLength": 1,
+        "title": "Event Id",
+        "type": "string"
+       }
+      },
+      "required": [
+       "event_id"
+      ],
+      "title": "RemoveEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 35,
+ "step": "answer",
+ "text": "The meeting at 3:00 is not listed in the events. Please verify the time or check if you meant a different event.",
+ "tokens_evaluated": 103,
+ "tool_calls": [],
+ "total_ns": 6296049814,
+ "ttfc_ns": 1895626689
+}

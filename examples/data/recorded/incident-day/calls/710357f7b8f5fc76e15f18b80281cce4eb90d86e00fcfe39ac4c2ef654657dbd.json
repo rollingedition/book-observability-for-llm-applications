@@ -1,0 +1,110 @@
+{
+ "chunk_ns": [
+  12283714773,
+  12283722238,
+  12410141132,
+  12543810471,
+  12670547194,
+  12796137234,
+  12919019983,
+  13042878083,
+  13165387219,
+  13290354742,
+  13410920502,
+  13534612726,
+  13654709794,
+  13773967831,
+  13897950917,
+  14016779863,
+  14135291286,
+  14268073581,
+  14399614155,
+  14546485724,
+  14682996080
+ ],
+ "completion_tokens": 19,
+ "finish_reason": "stop",
+ "gen_ns": 2385362000,
+ "kind": "model",
+ "message_id": "17170",
+ "offset_ns": 608053341801,
+ "prefill_ns": 11172925000,
+ "prompt_tokens": 926,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-09.\n\nKnowledge base articles:\n\n[help-devices-10] Restarting a device that does not respond\nWhen a device stops responding, first check that it has power and that the network is working. Then ask the assistant to restart the device. The restart takes about a minute, and the assistant reports when the device is back online. Settings and names are kept through a restart. If the device still does not respond, the assistant suggests removing it and adding it again, from the start of the setup. Removing a device deletes its schedules, so the assistant asks you to confirm first.\n\n[help-devices-06] Brewing with the coffee machine\nA connected coffee machine can start a brew at a time you choose. Make sure the water tank is full and a cup is in place, because the machine cannot detect either. Ask the assistant to start a brew now, or to start one at a time, and say the strength if the machine offers more than one. The assistant reports when the brew starts and when it finishes. A machine with an empty tank or an open lid reports a fault, and the assistant reads the fault out. It does not cancel a brew in progress unless you ask.\n\n[help-messages-02] Choosing the right address for a contact\nA contact can have more than one address on file. When a name returns two addresses, the assistant lists both and asks you which one to use. Pick the one you use most with that person. If neither is right, add the address you want as a new entry on the contact, then ask again. The assistant never combines two addresses into one, and it never shows an address in a reply after you have chosen it. You can ask for a contact's address to be checked, and the assistant reports whether the address is on file and when it was last updated. It cannot verify that the address still works.\n",
+    "role": "system"
+   },
+   {
+    "content": "notify me when joshua emails me",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "Find a contact by name. Up to three contacts, with their names and addresses.",
+     "name": "find_contact",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "description": "The contact's name, as the user says it.",
+        "title": "Name",
+        "type": "string"
+       }
+      },
+      "required": [
+       "name"
+      ],
+      "title": "FindContactArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Record a message to one of the user's contacts, named by the address find_contact gave. The message is recorded, not sent.",
+     "name": "send_message",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "contact_id": {
+        "description": "The contact's address, as find_contact gave it.",
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Contact Id",
+        "type": "string"
+       },
+       "text": {
+        "description": "The message, up to 500 characters.",
+        "title": "Text",
+        "type": "string"
+       }
+      },
+      "required": [
+       "contact_id",
+       "text"
+      ],
+      "title": "SendMessageArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 91,
+ "step": "answer",
+ "text": "I cannot notify you when Joshua emails you as this feature is not available in the current system.",
+ "tokens_evaluated": 731,
+ "tool_calls": [],
+ "total_ns": 15752149740,
+ "ttfc_ns": 12283714773
+}

@@ -1,0 +1,128 @@
+{
+ "chunk_ns": [
+  483483515,
+  483491544,
+  627245064,
+  784110666,
+  921533873,
+  1062060626,
+  1193362701,
+  1320380865,
+  1446275444,
+  1584268786,
+  1713105906,
+  1844401389,
+  2035674266,
+  2235396487,
+  2368209079,
+  2494886775,
+  2632113984,
+  2766299186,
+  2900513511,
+  3032174098,
+  3163170601,
+  3323388535,
+  3510111817,
+  3648356386,
+  3785145477,
+  3919206816,
+  4044860735,
+  4240517084,
+  4379833367,
+  4513094043
+ ],
+ "completion_tokens": 28,
+ "finish_reason": "stop",
+ "gen_ns": 4006586000,
+ "kind": "model",
+ "message_id": "16297",
+ "offset_ns": 253439830829,
+ "prefill_ns": 478000000,
+ "prompt_tokens": 1525,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-messages-09] Scheduling a message for later\nGive a message a time to send. Times are read in your own time zone, and the assistant states the time it will send in full, with the date and the zone. A scheduled message can be changed or cancelled until the time it is due. Once it has been sent, it is recorded in the sent folder like any other. If the assistant cannot send at the time, because the service is unavailable, it tries again a few minutes later and tells you in its next reply. It does not send a scheduled message more than once.\n\n[help-devices-07] Checking whether a device is online\nAsk whether a device is online and the assistant reports its status: online, offline, or updating. A device is offline when it has lost its connection to the home network. Check that the device has power, that it is in range of the network, and that the network is working for other devices. An updating device may be unavailable for several minutes. The assistant reports the last time the device was seen, so you can tell whether it has been offline for a while or only for a moment.\n\n[help-messages-04] Sending a message to a group\nTo send one message to several people, name each person or name a group you have already saved. The assistant lists everyone who will receive the message and waits for your confirmation. A person who is on the list twice receives the message once. If one name cannot be found, the assistant sends to the others and tells you which name was left out. Groups are saved in your contact book, and changing a group changes it for later messages only, never for a message already sent.\n\n[help-messages-08] Direct messages and social posts\nA direct message goes to one person in a social service, and a post goes to everyone who follows you. Ask the assistant to send a direct message by naming the person as they appear on that service. To post, say what the post should say; the assistant shows you the text and the length before it posts. Posts longer than the service allows are shortened only if you agree. The assistant can read back the latest direct messages, but it cannot see messages sent in a private group you have left.\n\n[help-messages-10] When a contact is not found\nA search can return no match. The usual causes are a misspelled name, a name stored under a nickname, or a contact that was deleted. Try the full name, or a name the person is known by. If no contact is found, the assistant can add a new one: give the name and the address, and the assistant confirms before it saves them. The assistant never guesses an address. If the contact book itself cannot be reached, the assistant says so and does not send anything in its place. Try again later, or add the contact in your contact book directly.\n\n[help-messages-03] Writing a short message\nSay who the message is for and what it should say. Keep it to a few sentences. The assistant reads the names back before it sends anything, so you can correct a name you did not mean. Subject lines are optional; if you leave one out, the assistant writes a short one from the first sentence. The message is sent only after you confirm it. Once it is sent, it cannot be recalled by the assistant, so check the wording first. Long messages are split into parts only in the rare case where the service limits their length, and the assistant tells you when that happens.\n\n[help-media-06] Resuming an audiobook\nAn audiobook remembers where you stopped. Ask the assistant to resume a book by its title, and it starts a few seconds before the last point, so you hear the end of the sentence. To start a book from the beginning, say so. The assistant reports the chapter and the time left in the book. Books you have finished are listed separately, and a finished book can be started again from the beginning. Bookmarks can be added at a point you name.\n\n[help-media-05] Following a podcast\nFollow a podcast to be told when a new episode is released. Ask the assistant to follow a show by name. Episodes play in the order they were released, or the latest first, as you choose. The assistant can play the latest episode, or a named one. Episodes you have started are remembered, so you can resume them later. Unfollowing a show keeps its episodes you have already listened to, but removes it from future reports of new episodes.\n",
+    "role": "system"
+   },
+   {
+    "content": "send an email to jake to tell him thank you",
+    "role": "user"
+   },
+   {
+    "content": "<tool_call>\n{\"name\": \"find_contact\", \"arguments\": {\"name\": \"jake\"}}\n</tool_call>",
+    "role": "assistant"
+   },
+   {
+    "content": "{\"contacts\": []}",
+    "name": "find_contact",
+    "role": "tool"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "Find a contact by name. Up to three contacts, with their names and addresses.",
+     "name": "find_contact",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "description": "The contact's name, as the user says it.",
+        "title": "Name",
+        "type": "string"
+       }
+      },
+      "required": [
+       "name"
+      ],
+      "title": "FindContactArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Record a message to one of the user's contacts, named by the address find_contact gave. The message is recorded, not sent.",
+     "name": "send_message",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "contact_id": {
+        "description": "The contact's address, as find_contact gave it.",
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Contact Id",
+        "type": "string"
+       },
+       "text": {
+        "description": "The message, up to 500 characters.",
+        "title": "Text",
+        "type": "string"
+       }
+      },
+      "required": [
+       "contact_id",
+       "text"
+      ],
+      "title": "SendMessageArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 39,
+ "step": "answer",
+ "text": "I couldn't find Jake in your contact list. Please check the name or add him to your contacts. [help-messages-10]",
+ "tokens_evaluated": 18,
+ "tool_calls": [],
+ "total_ns": 5761747727,
+ "ttfc_ns": 483483515
+}

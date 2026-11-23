@@ -1,0 +1,63 @@
+# Chapter client-library-instrumentation's narration (re-check narration): descriptions of its examples, blocks and tables, as
+# [examples.ID], [[blocks]] and [[tables]], and its own readings. Only this chapter's writer edits this file, so
+# writers working in parallel never append to one shared lexicon. A reading every chapter needs goes into
+# narration/lexicon.toml, which wins over a chapter's.
+
+[examples.instrumented-chat-call]
+say = "The code sends one route request through the openai client. The client is real, and only its HTTP transport answers from a recording, so no model runs. The official instrumentation writes one span for the call, and the output lists that span's name, its kind, its scope's schema URL, its provider, its server address and port, its usage, and the metrics it makes, each by name, unit and count. It prints no metric value, because the duration metrics use real time. The output gives the trace's span count, {{out:instrumented-chat-call:spans in the trace}}, and the span's port, {{out:instrumented-chat-call:server.port on the span}}. Its scope's schema URL is {{out:instrumented-chat-call:instrumented span, scope schema URL}}."
+
+[examples.diff-hand-and-instrumented]
+say = "The code compares the names the official package emits with the names of the GenAI conventions version {{out:diff-hand-and-instrumented:registry version}}. It prints how many names it checked, {{out:diff-hand-and-instrumented:names the package emits, in the table}}, and how many match. Then it prints each name that does not, in name order, with what it became in the registry. The count of names that differ is {{out:diff-hand-and-instrumented:names that differ from v0.1.0}}."
+
+[examples.three-openai-packages]
+say = "The code lists the three instrumentation packages for the openai client. For each one it prints the project, the naming, the content switch and its default, and whether those lines come from the installed source or from a wheel reading. The output shows that {{out:three-openai-packages:packages importable in this environment}} package is importable here, its version is {{out:three-openai-packages:installed version}}, and each package's switch and default are as the table gives them."
+
+[examples.capture-switch-names]
+say = "The code prints the variable the official package reads for content capture, and the spec's name for the same switch, which the package ignores. It then prints the four modes the package parses, and the mode it falls back to when the variable is unset and when it holds a value that is not a mode. Last, it makes two calls, each on a fresh instrumentor. In the first, the spec's name is set to SPAN_ONLY, and the span holds {{out:capture-switch-names:content attributes on the span, spec variable set}} content attributes. In the second, the package's own name is set to SPAN_ONLY, as a control, and the span holds {{out:capture-switch-names:content attributes on the span, package variable set}}. The example prints only those counts, never the content."
+
+[examples.openinference-mapping]
+say = "The code reads OpenInference's constants for the model, the provider, the token counts, the span kind and the messages, and prints each one beside the GenAI name for the same fact. It also prints the span kind OpenInference uses for a model call, and the provider value it uses for an OpenAI client."
+
+[[tables]]
+section = "the-three-openai-packages"
+starts = "| Package, version and date | Project"
+say = "Three rows, one for each package. Each row gives the package's name, its version and date, its project, its naming and its content switch with the default. The first row is the installed package, and the other two are readings."
+
+[terms]
+"name-spans" = "chapter two's section"
+"openinference-mapping" = "the OpenInference mapping"
+"opentelemetry/instrumentation/genai/openai/utils.py" = "the package's OpenAI utils module"
+"opentelemetry/util/genai/utils.py" = "the package's utils module"
+"load_messages(...)[0]" = "the dev day's first message"
+"OpenInference" = "Open Inference"
+"OpenAI" = "open A I"
+"GenAI" = "gen A I"
+"qwen3-4b-instruct-2507" = "chwen three four B instruct twenty twenty five oh seven"
+"CLIENT" = "client"
+"{token}" = "token"
+"SHOULD" = "should"
+"PyPI" = "pie P I"
+"1.3b0" = "one point three B zero"
+"OpenLLMetry" = "Open L L Metry"
+"Traceloop" = "Trace loop"
+"openai" = "open A I"
+"httpx" = "H T T P X"
+"GGUF" = "G G U F"
+"NO_CONTENT" = "no content"
+"SPAN_ONLY" = "span only"
+"EVENT_ONLY" = "event only"
+"SPAN_AND_EVENT" = "span and event"
+"TRACELOOP_TRACE_CONTENT" = "Trace loop trace content"
+"OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT" = "O tel instrumentation gen A I capture message content"
+"OTEL_INSTRUMENTATION_GENAI_CAPTURE_CONTENT" = "O tel instrumentation gen A I capture content"
+"OTEL_INSTRUMENTATION_GENAI_COMPLETION_HOOK" = "O tel instrumentation gen A I completion hook"
+"opentelemetry-instrumentation-genai-openai" = "genai-open A I"
+"opentelemetry-instrumentation-openai-v2" = "open A I-version two"
+"opentelemetry-instrumentation-openai" = "open A I"
+"v0.1.0" = "version zero point one point zero"
+"https://opentelemetry.io/schemas/1.37.0" = "https colon slash slash opentelemetry dot I O slash schemas slash one point three seven point zero"
+"OTEL_INSTRUMENTATION_GENAI_UPLOAD_BASE_PATH" = "O tel instrumentation gen A I upload base path"
+
+[words]
+"Hand-made" = "handmade"
+"hand-made" = "handmade"

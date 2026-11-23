@@ -1,0 +1,43 @@
+{
+ "chunk_ns": [
+  277821454,
+  277829171,
+  404519348,
+  537435483,
+  656550194,
+  782961090,
+  914075147,
+  1129053023
+ ],
+ "completion_tokens": 6,
+ "finish_reason": "stop",
+ "gen_ns": 846396000,
+ "kind": "model",
+ "message_id": "14117",
+ "offset_ns": 118736605469,
+ "prefill_ns": 275597000,
+ "prompt_tokens": 229,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.\n\nExamples:\n- \"Switch off my seven o'clock wake-up.\" -> alarms\n- \"What do I have on my schedule after lunch?\" -> calendar\n- \"Lower the brightness of the hallway lamp.\" -> devices\n- \"Add oat milk and bananas to my shopping list.\" -> lists\n- \"Resume the audiobook from the last chapter.\" -> media\n- \"Tell Gorrin I am running late.\" -> messages",
+    "role": "system"
+   },
+   {
+    "content": "where are pyramids located",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 20,
+ "step": "route",
+ "text": "{\"route\": \"fallback\"}",
+ "tokens_evaluated": 10,
+ "tool_calls": [],
+ "total_ns": 1367008463,
+ "ttfc_ns": 277821454
+}

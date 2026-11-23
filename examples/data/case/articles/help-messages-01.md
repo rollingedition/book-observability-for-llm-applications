@@ -1,0 +1,3 @@
+# Finding a contact by name
+
+Ask for a contact by the name you know them by, such as a first name, a last name, or both. The assistant looks in your own contact book and returns up to three matches, each with its name and the address on file. If two people share a first name, give the last name as well so the match is clear. The search ignores capital letters and small differences in spelling, so "Ilse" and "ilse" find the same person. A contact you added yourself is found in the same way as one that came from an import. Nothing is sent when you search. The search only reads your contact book, and a match is never a suggestion to contact someone you did not name.

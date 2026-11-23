@@ -1,0 +1,73 @@
+{
+ "chunk_ns": [
+  5635071026,
+  5635090257,
+  5774629502,
+  5898713110,
+  6025109634,
+  6150436905,
+  6329110892,
+  6465895641,
+  6594380632,
+  6720253051,
+  6846078509,
+  6975486177,
+  7100971628,
+  7256490161,
+  7412897462,
+  7563533165,
+  7712698439,
+  7846593166,
+  7974089115,
+  8092148611,
+  8226601368,
+  8351425792,
+  8510620938,
+  8655863779,
+  8790131153,
+  8909893035,
+  9035247737,
+  9169410092,
+  9333543310,
+  9472660042,
+  9609522704,
+  9734757641,
+  9856575095,
+  9976136737,
+  10099182205,
+  10232586346,
+  10372137613
+ ],
+ "completion_tokens": 35,
+ "finish_reason": "stop",
+ "gen_ns": 4709461000,
+ "kind": "model",
+ "message_id": "1527",
+ "offset_ns": 327245031509,
+ "prefill_ns": 5235275000,
+ "prompt_tokens": 527,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-01] Playing a song from your library\nName the song and, if it helps, the artist. The assistant looks in your music library first and plays the first song that matches. If more than one song has the name, it lists the artists and asks which one you mean. A song that is not in your library cannot be played, and the assistant says so rather than choosing another. Songs play through the device you chose last, unless you name another. The assistant reports the title and the artist when a song starts.\n\n[help-media-09] Pausing, skipping and going back\nPause stops the current song and keeps its place. Resume starts it again from the same point. Skip moves to the next song in the list, and going back moves to the previous one. Going back once more than a few seconds into a song starts that song again from the beginning. Skip does not work on a radio station, because a station is a live stream. The assistant reports what is playing after each of these commands.\n\n[help-media-02] Playing a playlist\nA playlist is a list of songs you have saved. To play one, name it. The assistant starts the first song and continues through the list in order unless shuffle is on. Playlists can be created from the songs you name; the assistant lists the songs before it saves the playlist. A playlist cannot hold a song that is not in your library. Changing a playlist does not change what is already playing. To add a song to a playlist, name both.\n",
+    "role": "system"
+   },
+   {
+    "content": "remind me that i like that song",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 61,
+ "step": "answer",
+ "text": "I can't remind you about your song preferences. Please let me know if you'd like help playing a song or finding one you like. [help-media-01]",
+ "tokens_evaluated": 335,
+ "tool_calls": [],
+ "total_ns": 11065470156,
+ "ttfc_ns": 5635071026
+}

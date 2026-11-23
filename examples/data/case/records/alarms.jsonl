@@ -1,0 +1,517 @@
+{"user_id":"U0001","time":"01:46","label":"Weekend lie-in","enabled":true,"alarm_id":"A00001"}
+{"user_id":"U0001","time":"16:20","label":"Weekend lie-in","enabled":true,"alarm_id":"A00002"}
+{"user_id":"U0001","time":"22:18","label":"Gym","enabled":true,"alarm_id":"A00003"}
+{"user_id":"U0001","time":"23:50","label":"Study break","enabled":false,"alarm_id":"A00004"}
+{"user_id":"U0002","time":"07:31","label":"Bins out","enabled":true,"alarm_id":"A00005"}
+{"user_id":"U0002","time":"22:00","label":"Commute","enabled":true,"alarm_id":"A00006"}
+{"user_id":"U0002","time":"23:46","label":"Commute","enabled":true,"alarm_id":"A00007"}
+{"user_id":"U0003","time":"02:14","label":"Weekend lie-in","enabled":true,"alarm_id":"A00008"}
+{"user_id":"U0004","time":"15:33","label":"Wake up","enabled":true,"alarm_id":"A00009"}
+{"user_id":"U0005","time":"06:46","label":"Study break","enabled":true,"alarm_id":"A00010"}
+{"user_id":"U0005","time":"09:52","label":"Tea","enabled":true,"alarm_id":"A00011"}
+{"user_id":"U0005","time":"18:17","label":"Call home","enabled":true,"alarm_id":"A00012"}
+{"user_id":"U0005","time":"19:55","label":"Tea","enabled":true,"alarm_id":"A00013"}
+{"user_id":"U0006","time":"00:27","label":"Weekend lie-in","enabled":true,"alarm_id":"A00014"}
+{"user_id":"U0006","time":"09:33","label":"Oven","enabled":true,"alarm_id":"A00015"}
+{"user_id":"U0007","time":"10:15","label":"Call home","enabled":true,"alarm_id":"A00016"}
+{"user_id":"U0007","time":"17:51","label":"Call home","enabled":true,"alarm_id":"A00017"}
+{"user_id":"U0007","time":"20:35","label":"Commute","enabled":true,"alarm_id":"A00018"}
+{"user_id":"U0007","time":"23:45","label":"Bins out","enabled":true,"alarm_id":"A00019"}
+{"user_id":"U0008","time":"11:29","label":"Study break","enabled":true,"alarm_id":"A00020"}
+{"user_id":"U0009","time":"01:01","label":"Call home","enabled":true,"alarm_id":"A00021"}
+{"user_id":"U0009","time":"08:15","label":"Oven","enabled":true,"alarm_id":"A00022"}
+{"user_id":"U0009","time":"18:39","label":"Medication","enabled":true,"alarm_id":"A00023"}
+{"user_id":"U0010","time":"14:11","label":"Study break","enabled":true,"alarm_id":"A00024"}
+{"user_id":"U0010","time":"20:31","label":"Medication","enabled":true,"alarm_id":"A00025"}
+{"user_id":"U0011","time":"10:53","label":"Study break","enabled":true,"alarm_id":"A00026"}
+{"user_id":"U0013","time":"15:46","label":"Commute","enabled":false,"alarm_id":"A00027"}
+{"user_id":"U0013","time":"15:56","label":"Oven","enabled":true,"alarm_id":"A00028"}
+{"user_id":"U0013","time":"15:58","label":"Gym","enabled":true,"alarm_id":"A00029"}
+{"user_id":"U0013","time":"18:32","label":"Weekend lie-in","enabled":true,"alarm_id":"A00030"}
+{"user_id":"U0014","time":"09:10","label":"Bins out","enabled":true,"alarm_id":"A00031"}
+{"user_id":"U0015","time":"09:05","label":"Bins out","enabled":true,"alarm_id":"A00032"}
+{"user_id":"U0015","time":"19:33","label":"Call home","enabled":true,"alarm_id":"A00033"}
+{"user_id":"U0015","time":"19:41","label":"Study break","enabled":false,"alarm_id":"A00034"}
+{"user_id":"U0015","time":"20:09","label":"Commute","enabled":true,"alarm_id":"A00035"}
+{"user_id":"U0016","time":"03:45","label":"Wake up","enabled":true,"alarm_id":"A00036"}
+{"user_id":"U0016","time":"17:23","label":"Study break","enabled":true,"alarm_id":"A00037"}
+{"user_id":"U0018","time":"01:32","label":"Study break","enabled":true,"alarm_id":"A00038"}
+{"user_id":"U0018","time":"05:59","label":"Gym","enabled":true,"alarm_id":"A00039"}
+{"user_id":"U0018","time":"13:28","label":"Weekend lie-in","enabled":true,"alarm_id":"A00040"}
+{"user_id":"U0018","time":"14:16","label":"Bins out","enabled":true,"alarm_id":"A00041"}
+{"user_id":"U0018","time":"17:24","label":"Weekend lie-in","enabled":true,"alarm_id":"A00042"}
+{"user_id":"U0019","time":"11:53","label":"Wake up","enabled":true,"alarm_id":"A00043"}
+{"user_id":"U0019","time":"21:40","label":"Weekend lie-in","enabled":true,"alarm_id":"A00044"}
+{"user_id":"U0019","time":"22:00","label":"Gym","enabled":true,"alarm_id":"A00045"}
+{"user_id":"U0019","time":"23:28","label":"Gym","enabled":true,"alarm_id":"A00046"}
+{"user_id":"U0020","time":"05:28","label":"Oven","enabled":true,"alarm_id":"A00047"}
+{"user_id":"U0020","time":"20:51","label":"Study break","enabled":true,"alarm_id":"A00048"}
+{"user_id":"U0020","time":"23:00","label":"Medication","enabled":true,"alarm_id":"A00049"}
+{"user_id":"U0021","time":"00:01","label":"Medication","enabled":true,"alarm_id":"A00050"}
+{"user_id":"U0022","time":"03:47","label":"Commute","enabled":true,"alarm_id":"A00051"}
+{"user_id":"U0022","time":"07:33","label":"Call home","enabled":true,"alarm_id":"A00052"}
+{"user_id":"U0022","time":"09:39","label":"Medication","enabled":true,"alarm_id":"A00053"}
+{"user_id":"U0022","time":"20:45","label":"Call home","enabled":true,"alarm_id":"A00054"}
+{"user_id":"U0022","time":"22:22","label":"Call home","enabled":true,"alarm_id":"A00055"}
+{"user_id":"U0024","time":"00:47","label":"Tea","enabled":true,"alarm_id":"A00056"}
+{"user_id":"U0024","time":"04:37","label":"Study break","enabled":true,"alarm_id":"A00057"}
+{"user_id":"U0024","time":"07:03","label":"Commute","enabled":false,"alarm_id":"A00058"}
+{"user_id":"U0024","time":"20:01","label":"Tea","enabled":true,"alarm_id":"A00059"}
+{"user_id":"U0025","time":"11:29","label":"Wake up","enabled":false,"alarm_id":"A00060"}
+{"user_id":"U0026","time":"00:19","label":"Oven","enabled":true,"alarm_id":"A00061"}
+{"user_id":"U0026","time":"01:50","label":"Wake up","enabled":true,"alarm_id":"A00062"}
+{"user_id":"U0026","time":"03:14","label":"Tea","enabled":false,"alarm_id":"A00063"}
+{"user_id":"U0026","time":"10:23","label":"Wake up","enabled":true,"alarm_id":"A00064"}
+{"user_id":"U0026","time":"16:08","label":"Weekend lie-in","enabled":true,"alarm_id":"A00065"}
+{"user_id":"U0027","time":"01:11","label":"Oven","enabled":true,"alarm_id":"A00066"}
+{"user_id":"U0027","time":"01:38","label":"Gym","enabled":true,"alarm_id":"A00067"}
+{"user_id":"U0027","time":"01:54","label":"Study break","enabled":true,"alarm_id":"A00068"}
+{"user_id":"U0027","time":"10:15","label":"Wake up","enabled":true,"alarm_id":"A00069"}
+{"user_id":"U0027","time":"14:42","label":"Bins out","enabled":true,"alarm_id":"A00070"}
+{"user_id":"U0029","time":"01:59","label":"Medication","enabled":true,"alarm_id":"A00071"}
+{"user_id":"U0029","time":"04:31","label":"Weekend lie-in","enabled":true,"alarm_id":"A00072"}
+{"user_id":"U0029","time":"15:56","label":"Tea","enabled":true,"alarm_id":"A00073"}
+{"user_id":"U0029","time":"17:41","label":"Wake up","enabled":true,"alarm_id":"A00074"}
+{"user_id":"U0029","time":"23:39","label":"Commute","enabled":true,"alarm_id":"A00075"}
+{"user_id":"U0030","time":"02:19","label":"Weekend lie-in","enabled":true,"alarm_id":"A00076"}
+{"user_id":"U0030","time":"13:25","label":"Study break","enabled":true,"alarm_id":"A00077"}
+{"user_id":"U0030","time":"14:22","label":"Study break","enabled":false,"alarm_id":"A00078"}
+{"user_id":"U0030","time":"19:23","label":"Wake up","enabled":true,"alarm_id":"A00079"}
+{"user_id":"U0030","time":"20:17","label":"Medication","enabled":true,"alarm_id":"A00080"}
+{"user_id":"U0031","time":"02:18","label":"Weekend lie-in","enabled":false,"alarm_id":"A00081"}
+{"user_id":"U0031","time":"10:53","label":"Call home","enabled":true,"alarm_id":"A00082"}
+{"user_id":"U0031","time":"14:26","label":"Oven","enabled":false,"alarm_id":"A00083"}
+{"user_id":"U0032","time":"19:05","label":"Weekend lie-in","enabled":true,"alarm_id":"A00084"}
+{"user_id":"U0032","time":"21:11","label":"Tea","enabled":true,"alarm_id":"A00085"}
+{"user_id":"U0033","time":"01:47","label":"Study break","enabled":true,"alarm_id":"A00086"}
+{"user_id":"U0033","time":"15:56","label":"Study break","enabled":true,"alarm_id":"A00087"}
+{"user_id":"U0033","time":"19:58","label":"Weekend lie-in","enabled":true,"alarm_id":"A00088"}
+{"user_id":"U0033","time":"20:05","label":"Medication","enabled":false,"alarm_id":"A00089"}
+{"user_id":"U0034","time":"11:37","label":"Medication","enabled":true,"alarm_id":"A00090"}
+{"user_id":"U0034","time":"21:51","label":"Medication","enabled":true,"alarm_id":"A00091"}
+{"user_id":"U0034","time":"22:50","label":"Commute","enabled":true,"alarm_id":"A00092"}
+{"user_id":"U0034","time":"23:58","label":"Commute","enabled":false,"alarm_id":"A00093"}
+{"user_id":"U0035","time":"14:26","label":"Wake up","enabled":true,"alarm_id":"A00094"}
+{"user_id":"U0036","time":"00:22","label":"Commute","enabled":false,"alarm_id":"A00095"}
+{"user_id":"U0036","time":"04:01","label":"Wake up","enabled":true,"alarm_id":"A00096"}
+{"user_id":"U0036","time":"04:54","label":"Call home","enabled":true,"alarm_id":"A00097"}
+{"user_id":"U0036","time":"05:46","label":"Medication","enabled":true,"alarm_id":"A00098"}
+{"user_id":"U0036","time":"22:05","label":"Medication","enabled":true,"alarm_id":"A00099"}
+{"user_id":"U0037","time":"07:14","label":"Wake up","enabled":true,"alarm_id":"A00100"}
+{"user_id":"U0037","time":"21:03","label":"Tea","enabled":true,"alarm_id":"A00101"}
+{"user_id":"U0038","time":"03:01","label":"Commute","enabled":true,"alarm_id":"A00102"}
+{"user_id":"U0038","time":"12:55","label":"Weekend lie-in","enabled":true,"alarm_id":"A00103"}
+{"user_id":"U0038","time":"16:07","label":"Study break","enabled":true,"alarm_id":"A00104"}
+{"user_id":"U0039","time":"10:50","label":"Medication","enabled":true,"alarm_id":"A00105"}
+{"user_id":"U0040","time":"01:01","label":"Medication","enabled":true,"alarm_id":"A00106"}
+{"user_id":"U0040","time":"06:15","label":"Weekend lie-in","enabled":true,"alarm_id":"A00107"}
+{"user_id":"U0040","time":"10:33","label":"Medication","enabled":true,"alarm_id":"A00108"}
+{"user_id":"U0041","time":"01:40","label":"Tea","enabled":true,"alarm_id":"A00109"}
+{"user_id":"U0041","time":"10:08","label":"Tea","enabled":false,"alarm_id":"A00110"}
+{"user_id":"U0041","time":"16:06","label":"Gym","enabled":true,"alarm_id":"A00111"}
+{"user_id":"U0043","time":"10:42","label":"Tea","enabled":true,"alarm_id":"A00112"}
+{"user_id":"U0045","time":"15:33","label":"Medication","enabled":true,"alarm_id":"A00113"}
+{"user_id":"U0045","time":"16:23","label":"Bins out","enabled":true,"alarm_id":"A00114"}
+{"user_id":"U0045","time":"20:32","label":"Study break","enabled":true,"alarm_id":"A00115"}
+{"user_id":"U0046","time":"02:19","label":"Commute","enabled":true,"alarm_id":"A00116"}
+{"user_id":"U0046","time":"11:52","label":"Gym","enabled":true,"alarm_id":"A00117"}
+{"user_id":"U0048","time":"03:14","label":"Medication","enabled":true,"alarm_id":"A00118"}
+{"user_id":"U0048","time":"05:35","label":"Wake up","enabled":true,"alarm_id":"A00119"}
+{"user_id":"U0048","time":"12:05","label":"Bins out","enabled":true,"alarm_id":"A00120"}
+{"user_id":"U0048","time":"14:04","label":"Oven","enabled":false,"alarm_id":"A00121"}
+{"user_id":"U0048","time":"21:06","label":"Bins out","enabled":false,"alarm_id":"A00122"}
+{"user_id":"U0050","time":"11:51","label":"Bins out","enabled":true,"alarm_id":"A00123"}
+{"user_id":"U0051","time":"00:18","label":"Commute","enabled":true,"alarm_id":"A00124"}
+{"user_id":"U0051","time":"00:57","label":"Wake up","enabled":false,"alarm_id":"A00125"}
+{"user_id":"U0051","time":"04:47","label":"Study break","enabled":true,"alarm_id":"A00126"}
+{"user_id":"U0051","time":"05:25","label":"Study break","enabled":true,"alarm_id":"A00127"}
+{"user_id":"U0051","time":"06:36","label":"Call home","enabled":true,"alarm_id":"A00128"}
+{"user_id":"U0053","time":"00:22","label":"Tea","enabled":false,"alarm_id":"A00129"}
+{"user_id":"U0053","time":"03:02","label":"Wake up","enabled":true,"alarm_id":"A00130"}
+{"user_id":"U0053","time":"04:07","label":"Gym","enabled":true,"alarm_id":"A00131"}
+{"user_id":"U0053","time":"08:00","label":"Commute","enabled":false,"alarm_id":"A00132"}
+{"user_id":"U0054","time":"00:41","label":"Tea","enabled":true,"alarm_id":"A00133"}
+{"user_id":"U0054","time":"01:07","label":"Weekend lie-in","enabled":true,"alarm_id":"A00134"}
+{"user_id":"U0054","time":"09:51","label":"Wake up","enabled":true,"alarm_id":"A00135"}
+{"user_id":"U0054","time":"10:55","label":"Oven","enabled":true,"alarm_id":"A00136"}
+{"user_id":"U0054","time":"18:57","label":"Oven","enabled":false,"alarm_id":"A00137"}
+{"user_id":"U0055","time":"11:24","label":"Tea","enabled":true,"alarm_id":"A00138"}
+{"user_id":"U0055","time":"14:57","label":"Study break","enabled":true,"alarm_id":"A00139"}
+{"user_id":"U0056","time":"01:38","label":"Bins out","enabled":true,"alarm_id":"A00140"}
+{"user_id":"U0056","time":"13:43","label":"Medication","enabled":true,"alarm_id":"A00141"}
+{"user_id":"U0056","time":"17:58","label":"Study break","enabled":true,"alarm_id":"A00142"}
+{"user_id":"U0056","time":"20:18","label":"Call home","enabled":true,"alarm_id":"A00143"}
+{"user_id":"U0057","time":"00:57","label":"Weekend lie-in","enabled":true,"alarm_id":"A00144"}
+{"user_id":"U0057","time":"01:39","label":"Study break","enabled":true,"alarm_id":"A00145"}
+{"user_id":"U0057","time":"02:09","label":"Bins out","enabled":true,"alarm_id":"A00146"}
+{"user_id":"U0057","time":"11:38","label":"Bins out","enabled":false,"alarm_id":"A00147"}
+{"user_id":"U0057","time":"17:51","label":"Bins out","enabled":true,"alarm_id":"A00148"}
+{"user_id":"U0059","time":"12:18","label":"Wake up","enabled":false,"alarm_id":"A00149"}
+{"user_id":"U0059","time":"19:58","label":"Study break","enabled":true,"alarm_id":"A00150"}
+{"user_id":"U0059","time":"21:14","label":"Commute","enabled":true,"alarm_id":"A00151"}
+{"user_id":"U0059","time":"22:41","label":"Medication","enabled":true,"alarm_id":"A00152"}
+{"user_id":"U0060","time":"02:01","label":"Medication","enabled":true,"alarm_id":"A00153"}
+{"user_id":"U0060","time":"11:29","label":"Wake up","enabled":true,"alarm_id":"A00154"}
+{"user_id":"U0060","time":"20:42","label":"Oven","enabled":true,"alarm_id":"A00155"}
+{"user_id":"U0061","time":"08:28","label":"Tea","enabled":false,"alarm_id":"A00156"}
+{"user_id":"U0061","time":"12:57","label":"Commute","enabled":true,"alarm_id":"A00157"}
+{"user_id":"U0061","time":"18:17","label":"Call home","enabled":true,"alarm_id":"A00158"}
+{"user_id":"U0062","time":"11:12","label":"Study break","enabled":true,"alarm_id":"A00159"}
+{"user_id":"U0062","time":"12:05","label":"Tea","enabled":true,"alarm_id":"A00160"}
+{"user_id":"U0062","time":"23:31","label":"Commute","enabled":false,"alarm_id":"A00161"}
+{"user_id":"U0064","time":"04:03","label":"Medication","enabled":true,"alarm_id":"A00162"}
+{"user_id":"U0064","time":"15:21","label":"Weekend lie-in","enabled":true,"alarm_id":"A00163"}
+{"user_id":"U0064","time":"22:24","label":"Oven","enabled":true,"alarm_id":"A00164"}
+{"user_id":"U0065","time":"04:54","label":"Gym","enabled":true,"alarm_id":"A00165"}
+{"user_id":"U0065","time":"06:14","label":"Call home","enabled":true,"alarm_id":"A00166"}
+{"user_id":"U0065","time":"08:51","label":"Tea","enabled":true,"alarm_id":"A00167"}
+{"user_id":"U0065","time":"19:44","label":"Tea","enabled":true,"alarm_id":"A00168"}
+{"user_id":"U0066","time":"15:01","label":"Medication","enabled":true,"alarm_id":"A00169"}
+{"user_id":"U0067","time":"08:49","label":"Medication","enabled":false,"alarm_id":"A00170"}
+{"user_id":"U0067","time":"18:23","label":"Study break","enabled":true,"alarm_id":"A00171"}
+{"user_id":"U0067","time":"18:55","label":"Bins out","enabled":false,"alarm_id":"A00172"}
+{"user_id":"U0068","time":"02:27","label":"Call home","enabled":true,"alarm_id":"A00173"}
+{"user_id":"U0068","time":"08:22","label":"Wake up","enabled":false,"alarm_id":"A00174"}
+{"user_id":"U0068","time":"08:30","label":"Gym","enabled":true,"alarm_id":"A00175"}
+{"user_id":"U0068","time":"10:18","label":"Bins out","enabled":true,"alarm_id":"A00176"}
+{"user_id":"U0069","time":"07:38","label":"Gym","enabled":true,"alarm_id":"A00177"}
+{"user_id":"U0070","time":"21:58","label":"Call home","enabled":true,"alarm_id":"A00178"}
+{"user_id":"U0071","time":"13:07","label":"Study break","enabled":true,"alarm_id":"A00179"}
+{"user_id":"U0071","time":"15:21","label":"Tea","enabled":true,"alarm_id":"A00180"}
+{"user_id":"U0071","time":"16:02","label":"Call home","enabled":true,"alarm_id":"A00181"}
+{"user_id":"U0071","time":"21:49","label":"Study break","enabled":true,"alarm_id":"A00182"}
+{"user_id":"U0071","time":"22:31","label":"Study break","enabled":true,"alarm_id":"A00183"}
+{"user_id":"U0072","time":"05:46","label":"Gym","enabled":false,"alarm_id":"A00184"}
+{"user_id":"U0072","time":"06:24","label":"Bins out","enabled":true,"alarm_id":"A00185"}
+{"user_id":"U0072","time":"11:58","label":"Study break","enabled":false,"alarm_id":"A00186"}
+{"user_id":"U0072","time":"14:30","label":"Study break","enabled":true,"alarm_id":"A00187"}
+{"user_id":"U0072","time":"19:37","label":"Study break","enabled":true,"alarm_id":"A00188"}
+{"user_id":"U0073","time":"08:06","label":"Oven","enabled":true,"alarm_id":"A00189"}
+{"user_id":"U0073","time":"10:14","label":"Wake up","enabled":true,"alarm_id":"A00190"}
+{"user_id":"U0073","time":"13:48","label":"Weekend lie-in","enabled":true,"alarm_id":"A00191"}
+{"user_id":"U0073","time":"15:03","label":"Gym","enabled":true,"alarm_id":"A00192"}
+{"user_id":"U0073","time":"23:03","label":"Weekend lie-in","enabled":true,"alarm_id":"A00193"}
+{"user_id":"U0074","time":"03:44","label":"Wake up","enabled":false,"alarm_id":"A00194"}
+{"user_id":"U0074","time":"15:49","label":"Call home","enabled":true,"alarm_id":"A00195"}
+{"user_id":"U0074","time":"22:02","label":"Call home","enabled":true,"alarm_id":"A00196"}
+{"user_id":"U0077","time":"09:08","label":"Call home","enabled":true,"alarm_id":"A00197"}
+{"user_id":"U0077","time":"17:43","label":"Wake up","enabled":true,"alarm_id":"A00198"}
+{"user_id":"U0077","time":"21:22","label":"Oven","enabled":false,"alarm_id":"A00199"}
+{"user_id":"U0078","time":"14:32","label":"Weekend lie-in","enabled":true,"alarm_id":"A00200"}
+{"user_id":"U0078","time":"19:05","label":"Tea","enabled":true,"alarm_id":"A00201"}
+{"user_id":"U0078","time":"19:43","label":"Tea","enabled":true,"alarm_id":"A00202"}
+{"user_id":"U0078","time":"20:40","label":"Weekend lie-in","enabled":true,"alarm_id":"A00203"}
+{"user_id":"U0079","time":"02:00","label":"Call home","enabled":true,"alarm_id":"A00204"}
+{"user_id":"U0079","time":"03:33","label":"Medication","enabled":true,"alarm_id":"A00205"}
+{"user_id":"U0079","time":"16:07","label":"Commute","enabled":true,"alarm_id":"A00206"}
+{"user_id":"U0079","time":"18:28","label":"Commute","enabled":true,"alarm_id":"A00207"}
+{"user_id":"U0080","time":"06:34","label":"Wake up","enabled":true,"alarm_id":"A00208"}
+{"user_id":"U0080","time":"23:52","label":"Gym","enabled":false,"alarm_id":"A00209"}
+{"user_id":"U0081","time":"02:47","label":"Gym","enabled":true,"alarm_id":"A00210"}
+{"user_id":"U0081","time":"02:52","label":"Study break","enabled":true,"alarm_id":"A00211"}
+{"user_id":"U0081","time":"07:21","label":"Weekend lie-in","enabled":true,"alarm_id":"A00212"}
+{"user_id":"U0081","time":"23:43","label":"Medication","enabled":true,"alarm_id":"A00213"}
+{"user_id":"U0083","time":"02:16","label":"Weekend lie-in","enabled":false,"alarm_id":"A00214"}
+{"user_id":"U0083","time":"02:37","label":"Commute","enabled":true,"alarm_id":"A00215"}
+{"user_id":"U0083","time":"04:54","label":"Wake up","enabled":true,"alarm_id":"A00216"}
+{"user_id":"U0083","time":"17:46","label":"Commute","enabled":false,"alarm_id":"A00217"}
+{"user_id":"U0083","time":"22:32","label":"Call home","enabled":true,"alarm_id":"A00218"}
+{"user_id":"U0084","time":"19:32","label":"Bins out","enabled":true,"alarm_id":"A00219"}
+{"user_id":"U0085","time":"00:33","label":"Gym","enabled":true,"alarm_id":"A00220"}
+{"user_id":"U0086","time":"06:49","label":"Oven","enabled":true,"alarm_id":"A00221"}
+{"user_id":"U0086","time":"12:52","label":"Commute","enabled":true,"alarm_id":"A00222"}
+{"user_id":"U0086","time":"16:00","label":"Tea","enabled":true,"alarm_id":"A00223"}
+{"user_id":"U0086","time":"21:25","label":"Gym","enabled":true,"alarm_id":"A00224"}
+{"user_id":"U0087","time":"06:53","label":"Wake up","enabled":true,"alarm_id":"A00225"}
+{"user_id":"U0087","time":"09:40","label":"Commute","enabled":true,"alarm_id":"A00226"}
+{"user_id":"U0087","time":"19:44","label":"Medication","enabled":true,"alarm_id":"A00227"}
+{"user_id":"U0087","time":"21:45","label":"Medication","enabled":false,"alarm_id":"A00228"}
+{"user_id":"U0088","time":"07:29","label":"Bins out","enabled":true,"alarm_id":"A00229"}
+{"user_id":"U0088","time":"18:03","label":"Commute","enabled":true,"alarm_id":"A00230"}
+{"user_id":"U0088","time":"19:55","label":"Weekend lie-in","enabled":true,"alarm_id":"A00231"}
+{"user_id":"U0089","time":"10:32","label":"Medication","enabled":true,"alarm_id":"A00232"}
+{"user_id":"U0089","time":"12:38","label":"Weekend lie-in","enabled":true,"alarm_id":"A00233"}
+{"user_id":"U0089","time":"17:31","label":"Medication","enabled":false,"alarm_id":"A00234"}
+{"user_id":"U0089","time":"19:10","label":"Medication","enabled":true,"alarm_id":"A00235"}
+{"user_id":"U0089","time":"19:22","label":"Medication","enabled":true,"alarm_id":"A00236"}
+{"user_id":"U0090","time":"01:21","label":"Oven","enabled":true,"alarm_id":"A00237"}
+{"user_id":"U0090","time":"04:02","label":"Commute","enabled":false,"alarm_id":"A00238"}
+{"user_id":"U0090","time":"12:50","label":"Study break","enabled":true,"alarm_id":"A00239"}
+{"user_id":"U0090","time":"13:18","label":"Bins out","enabled":true,"alarm_id":"A00240"}
+{"user_id":"U0090","time":"15:36","label":"Oven","enabled":false,"alarm_id":"A00241"}
+{"user_id":"U0091","time":"09:40","label":"Tea","enabled":true,"alarm_id":"A00242"}
+{"user_id":"U0091","time":"14:41","label":"Commute","enabled":true,"alarm_id":"A00243"}
+{"user_id":"U0091","time":"20:42","label":"Study break","enabled":true,"alarm_id":"A00244"}
+{"user_id":"U0092","time":"08:22","label":"Gym","enabled":false,"alarm_id":"A00245"}
+{"user_id":"U0092","time":"10:33","label":"Oven","enabled":true,"alarm_id":"A00246"}
+{"user_id":"U0092","time":"20:34","label":"Call home","enabled":false,"alarm_id":"A00247"}
+{"user_id":"U0094","time":"16:08","label":"Weekend lie-in","enabled":true,"alarm_id":"A00248"}
+{"user_id":"U0095","time":"01:03","label":"Bins out","enabled":true,"alarm_id":"A00249"}
+{"user_id":"U0095","time":"04:30","label":"Gym","enabled":false,"alarm_id":"A00250"}
+{"user_id":"U0095","time":"06:25","label":"Gym","enabled":false,"alarm_id":"A00251"}
+{"user_id":"U0095","time":"17:13","label":"Medication","enabled":true,"alarm_id":"A00252"}
+{"user_id":"U0096","time":"05:45","label":"Study break","enabled":true,"alarm_id":"A00253"}
+{"user_id":"U0096","time":"07:26","label":"Commute","enabled":true,"alarm_id":"A00254"}
+{"user_id":"U0097","time":"00:21","label":"Gym","enabled":false,"alarm_id":"A00255"}
+{"user_id":"U0097","time":"06:30","label":"Wake up","enabled":true,"alarm_id":"A00256"}
+{"user_id":"U0098","time":"23:37","label":"Study break","enabled":true,"alarm_id":"A00257"}
+{"user_id":"U0099","time":"12:53","label":"Tea","enabled":true,"alarm_id":"A00258"}
+{"user_id":"U0099","time":"13:32","label":"Gym","enabled":false,"alarm_id":"A00259"}
+{"user_id":"U0099","time":"19:54","label":"Commute","enabled":true,"alarm_id":"A00260"}
+{"user_id":"U0099","time":"22:20","label":"Tea","enabled":true,"alarm_id":"A00261"}
+{"user_id":"U0099","time":"22:26","label":"Study break","enabled":true,"alarm_id":"A00262"}
+{"user_id":"U0100","time":"04:16","label":"Oven","enabled":true,"alarm_id":"A00263"}
+{"user_id":"U0100","time":"12:04","label":"Oven","enabled":false,"alarm_id":"A00264"}
+{"user_id":"U0101","time":"02:43","label":"Medication","enabled":true,"alarm_id":"A00265"}
+{"user_id":"U0101","time":"06:41","label":"Gym","enabled":true,"alarm_id":"A00266"}
+{"user_id":"U0101","time":"19:14","label":"Weekend lie-in","enabled":false,"alarm_id":"A00267"}
+{"user_id":"U0103","time":"11:49","label":"Gym","enabled":true,"alarm_id":"A00268"}
+{"user_id":"U0103","time":"22:16","label":"Commute","enabled":true,"alarm_id":"A00269"}
+{"user_id":"U0105","time":"00:49","label":"Study break","enabled":true,"alarm_id":"A00270"}
+{"user_id":"U0105","time":"05:25","label":"Study break","enabled":true,"alarm_id":"A00271"}
+{"user_id":"U0105","time":"16:07","label":"Wake up","enabled":true,"alarm_id":"A00272"}
+{"user_id":"U0106","time":"01:54","label":"Study break","enabled":true,"alarm_id":"A00273"}
+{"user_id":"U0106","time":"17:36","label":"Medication","enabled":false,"alarm_id":"A00274"}
+{"user_id":"U0106","time":"22:54","label":"Medication","enabled":true,"alarm_id":"A00275"}
+{"user_id":"U0107","time":"01:21","label":"Bins out","enabled":true,"alarm_id":"A00276"}
+{"user_id":"U0108","time":"00:56","label":"Bins out","enabled":false,"alarm_id":"A00277"}
+{"user_id":"U0108","time":"11:17","label":"Oven","enabled":false,"alarm_id":"A00278"}
+{"user_id":"U0108","time":"15:44","label":"Study break","enabled":true,"alarm_id":"A00279"}
+{"user_id":"U0108","time":"18:45","label":"Oven","enabled":true,"alarm_id":"A00280"}
+{"user_id":"U0108","time":"21:14","label":"Commute","enabled":true,"alarm_id":"A00281"}
+{"user_id":"U0109","time":"03:17","label":"Bins out","enabled":false,"alarm_id":"A00282"}
+{"user_id":"U0109","time":"04:33","label":"Medication","enabled":false,"alarm_id":"A00283"}
+{"user_id":"U0109","time":"05:24","label":"Medication","enabled":true,"alarm_id":"A00284"}
+{"user_id":"U0109","time":"10:09","label":"Oven","enabled":true,"alarm_id":"A00285"}
+{"user_id":"U0109","time":"12:29","label":"Bins out","enabled":true,"alarm_id":"A00286"}
+{"user_id":"U0110","time":"14:07","label":"Commute","enabled":true,"alarm_id":"A00287"}
+{"user_id":"U0110","time":"17:40","label":"Commute","enabled":false,"alarm_id":"A00288"}
+{"user_id":"U0110","time":"20:25","label":"Study break","enabled":true,"alarm_id":"A00289"}
+{"user_id":"U0110","time":"20:46","label":"Commute","enabled":true,"alarm_id":"A00290"}
+{"user_id":"U0111","time":"02:31","label":"Study break","enabled":true,"alarm_id":"A00291"}
+{"user_id":"U0111","time":"18:44","label":"Tea","enabled":true,"alarm_id":"A00292"}
+{"user_id":"U0111","time":"20:22","label":"Bins out","enabled":true,"alarm_id":"A00293"}
+{"user_id":"U0111","time":"22:04","label":"Wake up","enabled":true,"alarm_id":"A00294"}
+{"user_id":"U0113","time":"09:40","label":"Call home","enabled":true,"alarm_id":"A00295"}
+{"user_id":"U0114","time":"15:53","label":"Medication","enabled":true,"alarm_id":"A00296"}
+{"user_id":"U0114","time":"21:43","label":"Bins out","enabled":true,"alarm_id":"A00297"}
+{"user_id":"U0114","time":"23:10","label":"Weekend lie-in","enabled":true,"alarm_id":"A00298"}
+{"user_id":"U0115","time":"00:44","label":"Medication","enabled":true,"alarm_id":"A00299"}
+{"user_id":"U0115","time":"12:45","label":"Study break","enabled":false,"alarm_id":"A00300"}
+{"user_id":"U0116","time":"00:04","label":"Medication","enabled":true,"alarm_id":"A00301"}
+{"user_id":"U0116","time":"02:50","label":"Tea","enabled":true,"alarm_id":"A00302"}
+{"user_id":"U0116","time":"20:48","label":"Weekend lie-in","enabled":true,"alarm_id":"A00303"}
+{"user_id":"U0116","time":"21:25","label":"Gym","enabled":true,"alarm_id":"A00304"}
+{"user_id":"U0117","time":"00:44","label":"Gym","enabled":true,"alarm_id":"A00305"}
+{"user_id":"U0117","time":"13:25","label":"Gym","enabled":true,"alarm_id":"A00306"}
+{"user_id":"U0117","time":"22:50","label":"Commute","enabled":true,"alarm_id":"A00307"}
+{"user_id":"U0118","time":"05:33","label":"Commute","enabled":true,"alarm_id":"A00308"}
+{"user_id":"U0119","time":"02:08","label":"Weekend lie-in","enabled":true,"alarm_id":"A00309"}
+{"user_id":"U0119","time":"08:28","label":"Oven","enabled":false,"alarm_id":"A00310"}
+{"user_id":"U0119","time":"22:18","label":"Tea","enabled":true,"alarm_id":"A00311"}
+{"user_id":"U0120","time":"02:17","label":"Weekend lie-in","enabled":true,"alarm_id":"A00312"}
+{"user_id":"U0120","time":"11:36","label":"Oven","enabled":true,"alarm_id":"A00313"}
+{"user_id":"U0120","time":"11:49","label":"Medication","enabled":true,"alarm_id":"A00314"}
+{"user_id":"U0120","time":"13:40","label":"Commute","enabled":true,"alarm_id":"A00315"}
+{"user_id":"U0120","time":"17:50","label":"Commute","enabled":true,"alarm_id":"A00316"}
+{"user_id":"U0121","time":"16:26","label":"Tea","enabled":true,"alarm_id":"A00317"}
+{"user_id":"U0122","time":"16:13","label":"Medication","enabled":true,"alarm_id":"A00318"}
+{"user_id":"U0122","time":"18:44","label":"Gym","enabled":false,"alarm_id":"A00319"}
+{"user_id":"U0123","time":"15:58","label":"Medication","enabled":true,"alarm_id":"A00320"}
+{"user_id":"U0123","time":"23:15","label":"Bins out","enabled":true,"alarm_id":"A00321"}
+{"user_id":"U0124","time":"07:43","label":"Study break","enabled":false,"alarm_id":"A00322"}
+{"user_id":"U0125","time":"00:17","label":"Study break","enabled":false,"alarm_id":"A00323"}
+{"user_id":"U0125","time":"01:23","label":"Call home","enabled":true,"alarm_id":"A00324"}
+{"user_id":"U0125","time":"07:55","label":"Call home","enabled":true,"alarm_id":"A00325"}
+{"user_id":"U0125","time":"20:18","label":"Study break","enabled":true,"alarm_id":"A00326"}
+{"user_id":"U0125","time":"21:40","label":"Bins out","enabled":true,"alarm_id":"A00327"}
+{"user_id":"U0126","time":"02:19","label":"Gym","enabled":false,"alarm_id":"A00328"}
+{"user_id":"U0126","time":"05:35","label":"Commute","enabled":true,"alarm_id":"A00329"}
+{"user_id":"U0126","time":"08:08","label":"Tea","enabled":true,"alarm_id":"A00330"}
+{"user_id":"U0126","time":"08:21","label":"Wake up","enabled":false,"alarm_id":"A00331"}
+{"user_id":"U0126","time":"21:32","label":"Tea","enabled":true,"alarm_id":"A00332"}
+{"user_id":"U0127","time":"03:46","label":"Call home","enabled":false,"alarm_id":"A00333"}
+{"user_id":"U0127","time":"10:48","label":"Wake up","enabled":true,"alarm_id":"A00334"}
+{"user_id":"U0127","time":"11:18","label":"Study break","enabled":false,"alarm_id":"A00335"}
+{"user_id":"U0127","time":"15:34","label":"Bins out","enabled":true,"alarm_id":"A00336"}
+{"user_id":"U0127","time":"23:07","label":"Medication","enabled":false,"alarm_id":"A00337"}
+{"user_id":"U0128","time":"01:53","label":"Weekend lie-in","enabled":false,"alarm_id":"A00338"}
+{"user_id":"U0128","time":"07:42","label":"Call home","enabled":true,"alarm_id":"A00339"}
+{"user_id":"U0128","time":"08:23","label":"Commute","enabled":true,"alarm_id":"A00340"}
+{"user_id":"U0128","time":"16:43","label":"Gym","enabled":false,"alarm_id":"A00341"}
+{"user_id":"U0128","time":"19:35","label":"Gym","enabled":true,"alarm_id":"A00342"}
+{"user_id":"U0129","time":"07:22","label":"Commute","enabled":true,"alarm_id":"A00343"}
+{"user_id":"U0130","time":"00:36","label":"Bins out","enabled":true,"alarm_id":"A00344"}
+{"user_id":"U0130","time":"01:42","label":"Study break","enabled":false,"alarm_id":"A00345"}
+{"user_id":"U0130","time":"18:50","label":"Tea","enabled":true,"alarm_id":"A00346"}
+{"user_id":"U0130","time":"22:38","label":"Bins out","enabled":true,"alarm_id":"A00347"}
+{"user_id":"U0132","time":"10:32","label":"Medication","enabled":true,"alarm_id":"A00348"}
+{"user_id":"U0132","time":"13:44","label":"Medication","enabled":true,"alarm_id":"A00349"}
+{"user_id":"U0132","time":"14:50","label":"Bins out","enabled":true,"alarm_id":"A00350"}
+{"user_id":"U0132","time":"15:47","label":"Tea","enabled":false,"alarm_id":"A00351"}
+{"user_id":"U0132","time":"16:35","label":"Wake up","enabled":true,"alarm_id":"A00352"}
+{"user_id":"U0133","time":"00:48","label":"Commute","enabled":true,"alarm_id":"A00353"}
+{"user_id":"U0133","time":"05:00","label":"Bins out","enabled":true,"alarm_id":"A00354"}
+{"user_id":"U0133","time":"10:19","label":"Bins out","enabled":true,"alarm_id":"A00355"}
+{"user_id":"U0133","time":"14:26","label":"Study break","enabled":true,"alarm_id":"A00356"}
+{"user_id":"U0133","time":"17:40","label":"Study break","enabled":true,"alarm_id":"A00357"}
+{"user_id":"U0134","time":"11:40","label":"Call home","enabled":true,"alarm_id":"A00358"}
+{"user_id":"U0134","time":"15:36","label":"Commute","enabled":true,"alarm_id":"A00359"}
+{"user_id":"U0134","time":"18:52","label":"Wake up","enabled":true,"alarm_id":"A00360"}
+{"user_id":"U0134","time":"19:06","label":"Medication","enabled":true,"alarm_id":"A00361"}
+{"user_id":"U0135","time":"10:34","label":"Tea","enabled":true,"alarm_id":"A00362"}
+{"user_id":"U0135","time":"12:23","label":"Gym","enabled":true,"alarm_id":"A00363"}
+{"user_id":"U0135","time":"12:42","label":"Call home","enabled":true,"alarm_id":"A00364"}
+{"user_id":"U0135","time":"15:05","label":"Gym","enabled":false,"alarm_id":"A00365"}
+{"user_id":"U0137","time":"01:03","label":"Gym","enabled":false,"alarm_id":"A00366"}
+{"user_id":"U0137","time":"03:50","label":"Oven","enabled":true,"alarm_id":"A00367"}
+{"user_id":"U0137","time":"17:25","label":"Weekend lie-in","enabled":false,"alarm_id":"A00368"}
+{"user_id":"U0137","time":"22:07","label":"Weekend lie-in","enabled":true,"alarm_id":"A00369"}
+{"user_id":"U0139","time":"05:58","label":"Wake up","enabled":true,"alarm_id":"A00370"}
+{"user_id":"U0139","time":"09:12","label":"Study break","enabled":true,"alarm_id":"A00371"}
+{"user_id":"U0140","time":"03:20","label":"Medication","enabled":true,"alarm_id":"A00372"}
+{"user_id":"U0140","time":"17:27","label":"Weekend lie-in","enabled":true,"alarm_id":"A00373"}
+{"user_id":"U0140","time":"22:45","label":"Medication","enabled":true,"alarm_id":"A00374"}
+{"user_id":"U0141","time":"03:04","label":"Medication","enabled":true,"alarm_id":"A00375"}
+{"user_id":"U0141","time":"09:25","label":"Weekend lie-in","enabled":false,"alarm_id":"A00376"}
+{"user_id":"U0141","time":"10:45","label":"Weekend lie-in","enabled":true,"alarm_id":"A00377"}
+{"user_id":"U0141","time":"11:19","label":"Call home","enabled":true,"alarm_id":"A00378"}
+{"user_id":"U0142","time":"00:36","label":"Oven","enabled":true,"alarm_id":"A00379"}
+{"user_id":"U0142","time":"22:26","label":"Call home","enabled":true,"alarm_id":"A00380"}
+{"user_id":"U0142","time":"23:44","label":"Study break","enabled":false,"alarm_id":"A00381"}
+{"user_id":"U0143","time":"05:26","label":"Oven","enabled":true,"alarm_id":"A00382"}
+{"user_id":"U0143","time":"07:05","label":"Bins out","enabled":true,"alarm_id":"A00383"}
+{"user_id":"U0143","time":"07:49","label":"Tea","enabled":true,"alarm_id":"A00384"}
+{"user_id":"U0143","time":"14:12","label":"Oven","enabled":false,"alarm_id":"A00385"}
+{"user_id":"U0144","time":"07:31","label":"Call home","enabled":false,"alarm_id":"A00386"}
+{"user_id":"U0144","time":"12:35","label":"Weekend lie-in","enabled":true,"alarm_id":"A00387"}
+{"user_id":"U0144","time":"13:28","label":"Oven","enabled":false,"alarm_id":"A00388"}
+{"user_id":"U0144","time":"20:21","label":"Study break","enabled":true,"alarm_id":"A00389"}
+{"user_id":"U0145","time":"09:29","label":"Wake up","enabled":true,"alarm_id":"A00390"}
+{"user_id":"U0146","time":"07:22","label":"Oven","enabled":true,"alarm_id":"A00391"}
+{"user_id":"U0146","time":"10:49","label":"Study break","enabled":true,"alarm_id":"A00392"}
+{"user_id":"U0146","time":"11:42","label":"Weekend lie-in","enabled":true,"alarm_id":"A00393"}
+{"user_id":"U0147","time":"18:34","label":"Call home","enabled":true,"alarm_id":"A00394"}
+{"user_id":"U0147","time":"23:18","label":"Medication","enabled":true,"alarm_id":"A00395"}
+{"user_id":"U0148","time":"02:59","label":"Medication","enabled":true,"alarm_id":"A00396"}
+{"user_id":"U0148","time":"09:42","label":"Medication","enabled":true,"alarm_id":"A00397"}
+{"user_id":"U0148","time":"21:21","label":"Oven","enabled":true,"alarm_id":"A00398"}
+{"user_id":"U0148","time":"23:30","label":"Gym","enabled":false,"alarm_id":"A00399"}
+{"user_id":"U0149","time":"21:01","label":"Gym","enabled":true,"alarm_id":"A00400"}
+{"user_id":"U0150","time":"03:17","label":"Weekend lie-in","enabled":false,"alarm_id":"A00401"}
+{"user_id":"U0150","time":"06:49","label":"Oven","enabled":true,"alarm_id":"A00402"}
+{"user_id":"U0150","time":"08:03","label":"Gym","enabled":true,"alarm_id":"A00403"}
+{"user_id":"U0151","time":"01:39","label":"Medication","enabled":true,"alarm_id":"A00404"}
+{"user_id":"U0152","time":"08:58","label":"Tea","enabled":false,"alarm_id":"A00405"}
+{"user_id":"U0152","time":"12:52","label":"Oven","enabled":true,"alarm_id":"A00406"}
+{"user_id":"U0152","time":"13:52","label":"Tea","enabled":true,"alarm_id":"A00407"}
+{"user_id":"U0152","time":"16:41","label":"Study break","enabled":true,"alarm_id":"A00408"}
+{"user_id":"U0153","time":"04:50","label":"Weekend lie-in","enabled":true,"alarm_id":"A00409"}
+{"user_id":"U0153","time":"07:54","label":"Commute","enabled":true,"alarm_id":"A00410"}
+{"user_id":"U0153","time":"11:16","label":"Study break","enabled":true,"alarm_id":"A00411"}
+{"user_id":"U0153","time":"12:35","label":"Study break","enabled":true,"alarm_id":"A00412"}
+{"user_id":"U0155","time":"02:07","label":"Weekend lie-in","enabled":true,"alarm_id":"A00413"}
+{"user_id":"U0155","time":"07:53","label":"Medication","enabled":true,"alarm_id":"A00414"}
+{"user_id":"U0155","time":"16:38","label":"Weekend lie-in","enabled":true,"alarm_id":"A00415"}
+{"user_id":"U0155","time":"21:11","label":"Study break","enabled":true,"alarm_id":"A00416"}
+{"user_id":"U0156","time":"23:47","label":"Weekend lie-in","enabled":true,"alarm_id":"A00417"}
+{"user_id":"U0157","time":"01:10","label":"Call home","enabled":true,"alarm_id":"A00418"}
+{"user_id":"U0157","time":"10:08","label":"Wake up","enabled":true,"alarm_id":"A00419"}
+{"user_id":"U0158","time":"04:57","label":"Tea","enabled":true,"alarm_id":"A00420"}
+{"user_id":"U0158","time":"12:18","label":"Gym","enabled":true,"alarm_id":"A00421"}
+{"user_id":"U0158","time":"19:08","label":"Commute","enabled":true,"alarm_id":"A00422"}
+{"user_id":"U0158","time":"23:49","label":"Study break","enabled":true,"alarm_id":"A00423"}
+{"user_id":"U0161","time":"02:19","label":"Tea","enabled":true,"alarm_id":"A00424"}
+{"user_id":"U0161","time":"05:54","label":"Study break","enabled":true,"alarm_id":"A00425"}
+{"user_id":"U0161","time":"12:09","label":"Tea","enabled":false,"alarm_id":"A00426"}
+{"user_id":"U0161","time":"17:21","label":"Study break","enabled":true,"alarm_id":"A00427"}
+{"user_id":"U0161","time":"23:30","label":"Call home","enabled":false,"alarm_id":"A00428"}
+{"user_id":"U0163","time":"03:55","label":"Weekend lie-in","enabled":false,"alarm_id":"A00429"}
+{"user_id":"U0163","time":"07:37","label":"Bins out","enabled":true,"alarm_id":"A00430"}
+{"user_id":"U0163","time":"12:15","label":"Oven","enabled":true,"alarm_id":"A00431"}
+{"user_id":"U0163","time":"16:55","label":"Wake up","enabled":true,"alarm_id":"A00432"}
+{"user_id":"U0163","time":"23:23","label":"Commute","enabled":false,"alarm_id":"A00433"}
+{"user_id":"U0164","time":"01:52","label":"Bins out","enabled":true,"alarm_id":"A00434"}
+{"user_id":"U0164","time":"05:07","label":"Gym","enabled":true,"alarm_id":"A00435"}
+{"user_id":"U0164","time":"05:50","label":"Call home","enabled":true,"alarm_id":"A00436"}
+{"user_id":"U0164","time":"20:36","label":"Study break","enabled":true,"alarm_id":"A00437"}
+{"user_id":"U0164","time":"23:19","label":"Weekend lie-in","enabled":true,"alarm_id":"A00438"}
+{"user_id":"U0165","time":"02:40","label":"Call home","enabled":true,"alarm_id":"A00439"}
+{"user_id":"U0165","time":"11:12","label":"Gym","enabled":true,"alarm_id":"A00440"}
+{"user_id":"U0165","time":"12:29","label":"Medication","enabled":true,"alarm_id":"A00441"}
+{"user_id":"U0166","time":"01:48","label":"Oven","enabled":true,"alarm_id":"A00442"}
+{"user_id":"U0166","time":"08:54","label":"Medication","enabled":true,"alarm_id":"A00443"}
+{"user_id":"U0166","time":"09:54","label":"Medication","enabled":true,"alarm_id":"A00444"}
+{"user_id":"U0166","time":"16:41","label":"Medication","enabled":true,"alarm_id":"A00445"}
+{"user_id":"U0167","time":"19:36","label":"Bins out","enabled":true,"alarm_id":"A00446"}
+{"user_id":"U0167","time":"21:15","label":"Bins out","enabled":true,"alarm_id":"A00447"}
+{"user_id":"U0167","time":"22:24","label":"Medication","enabled":true,"alarm_id":"A00448"}
+{"user_id":"U0168","time":"11:23","label":"Wake up","enabled":true,"alarm_id":"A00449"}
+{"user_id":"U0168","time":"16:02","label":"Oven","enabled":true,"alarm_id":"A00450"}
+{"user_id":"U0168","time":"22:12","label":"Study break","enabled":false,"alarm_id":"A00451"}
+{"user_id":"U0169","time":"02:34","label":"Call home","enabled":true,"alarm_id":"A00452"}
+{"user_id":"U0169","time":"12:46","label":"Tea","enabled":true,"alarm_id":"A00453"}
+{"user_id":"U0171","time":"00:13","label":"Tea","enabled":true,"alarm_id":"A00454"}
+{"user_id":"U0171","time":"04:14","label":"Call home","enabled":true,"alarm_id":"A00455"}
+{"user_id":"U0171","time":"08:44","label":"Commute","enabled":true,"alarm_id":"A00456"}
+{"user_id":"U0171","time":"08:55","label":"Wake up","enabled":false,"alarm_id":"A00457"}
+{"user_id":"U0171","time":"12:22","label":"Commute","enabled":true,"alarm_id":"A00458"}
+{"user_id":"U0172","time":"08:00","label":"Call home","enabled":false,"alarm_id":"A00459"}
+{"user_id":"U0172","time":"08:24","label":"Call home","enabled":true,"alarm_id":"A00460"}
+{"user_id":"U0172","time":"08:51","label":"Call home","enabled":true,"alarm_id":"A00461"}
+{"user_id":"U0172","time":"14:48","label":"Tea","enabled":true,"alarm_id":"A00462"}
+{"user_id":"U0173","time":"10:30","label":"Study break","enabled":true,"alarm_id":"A00463"}
+{"user_id":"U0173","time":"12:52","label":"Gym","enabled":true,"alarm_id":"A00464"}
+{"user_id":"U0173","time":"15:38","label":"Gym","enabled":false,"alarm_id":"A00465"}
+{"user_id":"U0175","time":"03:07","label":"Call home","enabled":true,"alarm_id":"A00466"}
+{"user_id":"U0175","time":"12:23","label":"Wake up","enabled":true,"alarm_id":"A00467"}
+{"user_id":"U0178","time":"18:34","label":"Gym","enabled":false,"alarm_id":"A00468"}
+{"user_id":"U0178","time":"19:44","label":"Medication","enabled":true,"alarm_id":"A00469"}
+{"user_id":"U0179","time":"07:42","label":"Oven","enabled":true,"alarm_id":"A00470"}
+{"user_id":"U0179","time":"15:29","label":"Weekend lie-in","enabled":true,"alarm_id":"A00471"}
+{"user_id":"U0179","time":"15:34","label":"Tea","enabled":false,"alarm_id":"A00472"}
+{"user_id":"U0179","time":"23:55","label":"Medication","enabled":true,"alarm_id":"A00473"}
+{"user_id":"U0180","time":"04:56","label":"Tea","enabled":true,"alarm_id":"A00474"}
+{"user_id":"U0180","time":"10:30","label":"Oven","enabled":true,"alarm_id":"A00475"}
+{"user_id":"U0181","time":"21:32","label":"Bins out","enabled":true,"alarm_id":"A00476"}
+{"user_id":"U0182","time":"19:49","label":"Medication","enabled":false,"alarm_id":"A00477"}
+{"user_id":"U0183","time":"04:36","label":"Study break","enabled":true,"alarm_id":"A00478"}
+{"user_id":"U0183","time":"18:20","label":"Medication","enabled":false,"alarm_id":"A00479"}
+{"user_id":"U0183","time":"19:00","label":"Bins out","enabled":true,"alarm_id":"A00480"}
+{"user_id":"U0183","time":"23:10","label":"Commute","enabled":true,"alarm_id":"A00481"}
+{"user_id":"U0183","time":"23:53","label":"Commute","enabled":true,"alarm_id":"A00482"}
+{"user_id":"U0185","time":"05:06","label":"Study break","enabled":true,"alarm_id":"A00483"}
+{"user_id":"U0185","time":"11:22","label":"Oven","enabled":false,"alarm_id":"A00484"}
+{"user_id":"U0185","time":"19:30","label":"Medication","enabled":false,"alarm_id":"A00485"}
+{"user_id":"U0186","time":"21:14","label":"Study break","enabled":true,"alarm_id":"A00486"}
+{"user_id":"U0189","time":"06:00","label":"Gym","enabled":true,"alarm_id":"A00487"}
+{"user_id":"U0191","time":"04:04","label":"Weekend lie-in","enabled":false,"alarm_id":"A00488"}
+{"user_id":"U0191","time":"06:59","label":"Gym","enabled":true,"alarm_id":"A00489"}
+{"user_id":"U0191","time":"21:59","label":"Study break","enabled":false,"alarm_id":"A00490"}
+{"user_id":"U0192","time":"03:03","label":"Oven","enabled":true,"alarm_id":"A00491"}
+{"user_id":"U0192","time":"03:47","label":"Bins out","enabled":false,"alarm_id":"A00492"}
+{"user_id":"U0192","time":"06:28","label":"Gym","enabled":true,"alarm_id":"A00493"}
+{"user_id":"U0192","time":"12:54","label":"Tea","enabled":true,"alarm_id":"A00494"}
+{"user_id":"U0192","time":"16:19","label":"Tea","enabled":true,"alarm_id":"A00495"}
+{"user_id":"U0193","time":"08:00","label":"Study break","enabled":true,"alarm_id":"A00496"}
+{"user_id":"U0193","time":"13:11","label":"Medication","enabled":false,"alarm_id":"A00497"}
+{"user_id":"U0193","time":"22:52","label":"Oven","enabled":true,"alarm_id":"A00498"}
+{"user_id":"U0195","time":"14:19","label":"Study break","enabled":true,"alarm_id":"A00499"}
+{"user_id":"U0195","time":"16:29","label":"Call home","enabled":true,"alarm_id":"A00500"}
+{"user_id":"U0196","time":"06:22","label":"Weekend lie-in","enabled":true,"alarm_id":"A00501"}
+{"user_id":"U0196","time":"14:54","label":"Tea","enabled":false,"alarm_id":"A00502"}
+{"user_id":"U0196","time":"21:07","label":"Study break","enabled":false,"alarm_id":"A00503"}
+{"user_id":"U0197","time":"07:49","label":"Medication","enabled":true,"alarm_id":"A00504"}
+{"user_id":"U0197","time":"08:30","label":"Medication","enabled":false,"alarm_id":"A00505"}
+{"user_id":"U0197","time":"17:44","label":"Call home","enabled":false,"alarm_id":"A00506"}
+{"user_id":"U0197","time":"22:01","label":"Tea","enabled":false,"alarm_id":"A00507"}
+{"user_id":"U0198","time":"04:16","label":"Study break","enabled":false,"alarm_id":"A00508"}
+{"user_id":"U0199","time":"06:39","label":"Study break","enabled":true,"alarm_id":"A00509"}
+{"user_id":"U0199","time":"13:09","label":"Study break","enabled":true,"alarm_id":"A00510"}
+{"user_id":"U0199","time":"14:11","label":"Gym","enabled":true,"alarm_id":"A00511"}
+{"user_id":"U0199","time":"16:10","label":"Medication","enabled":true,"alarm_id":"A00512"}
+{"user_id":"U0200","time":"00:33","label":"Gym","enabled":false,"alarm_id":"A00513"}
+{"user_id":"U0200","time":"04:21","label":"Oven","enabled":true,"alarm_id":"A00514"}
+{"user_id":"U0200","time":"11:13","label":"Bins out","enabled":true,"alarm_id":"A00515"}
+{"user_id":"U0200","time":"14:48","label":"Medication","enabled":true,"alarm_id":"A00516"}
+{"user_id":"U0200","time":"18:33","label":"Bins out","enabled":true,"alarm_id":"A00517"}

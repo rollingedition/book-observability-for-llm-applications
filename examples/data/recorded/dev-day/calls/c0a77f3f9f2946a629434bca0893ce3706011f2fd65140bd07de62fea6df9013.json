@@ -1,0 +1,160 @@
+{
+ "chunk_ns": [
+  7710216189,
+  7710265741,
+  7865402352,
+  7988336139,
+  8115767699,
+  8240502344,
+  8366904534,
+  8491140068,
+  8628850805,
+  8785687603,
+  8926632533,
+  9055847265,
+  9182649928,
+  9306571459,
+  9433870391,
+  9628049068,
+  9755602215,
+  9888188855,
+  10046139766,
+  10197090965,
+  10340716856,
+  10489841419,
+  10620778585,
+  10749907928,
+  10886182057,
+  11043303095,
+  11228529403,
+  11381138267
+ ],
+ "completion_tokens": 26,
+ "finish_reason": "stop",
+ "gen_ns": 3650885000,
+ "kind": "model",
+ "message_id": "11159",
+ "offset_ns": 33197522952,
+ "prefill_ns": 7197789000,
+ "prompt_tokens": 725,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-07.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "remove yams",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List one of the user's lists: shopping, packing or to do. Up to ten items.",
+     "name": "list_items",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "list": {
+        "description": "The list to read.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list"
+      ],
+      "title": "ListItemsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an item to one of the user's lists: shopping, packing or to do.",
+     "name": "add_item",
+     "parameters": {
+      "additionalProperties": false,
+      "description": "The arguments of add_item and remove_item: a list and one item's text.",
+      "properties": {
+       "item": {
+        "description": "The item's text, up to 40 characters.",
+        "title": "Item",
+        "type": "string"
+       },
+       "list": {
+        "description": "The list to change.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list",
+       "item"
+      ],
+      "title": "ChangeItemArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove an item from one of the user's lists: shopping, packing or to do.",
+     "name": "remove_item",
+     "parameters": {
+      "additionalProperties": false,
+      "description": "The arguments of add_item and remove_item: a list and one item's text.",
+      "properties": {
+       "item": {
+        "description": "The item's text, up to 40 characters.",
+        "title": "Item",
+        "type": "string"
+       },
+       "list": {
+        "description": "The list to change.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list",
+       "item"
+      ],
+      "title": "ChangeItemArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 4,
+ "step": "answer",
+ "text": "<tool_call>\n{\"name\": \"remove_item\", \"arguments\": {\"list\": \"shopping\", \"item\": \"yams\"}}\n</tool_call>",
+ "tokens_evaluated": 480,
+ "tool_calls": [],
+ "total_ns": 11988857741,
+ "ttfc_ns": 7710216189
+}

@@ -1,0 +1,43 @@
+{
+ "chunk_ns": [
+  708909499,
+  708930551,
+  871740789,
+  1004800212,
+  1138341515,
+  1265588118,
+  1395036430,
+  1528140323
+ ],
+ "completion_tokens": 6,
+ "finish_reason": "stop",
+ "gen_ns": 814480000,
+ "kind": "model",
+ "message_id": "12951",
+ "offset_ns": 394128613902,
+ "prefill_ns": 369466000,
+ "prompt_tokens": 232,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.\n\nExamples:\n- \"Switch off my seven o'clock wake-up.\" -> alarms\n- \"What do I have on my schedule after lunch?\" -> calendar\n- \"Lower the brightness of the hallway lamp.\" -> devices\n- \"Add oat milk and bananas to my shopping list.\" -> lists\n- \"Resume the audiobook from the last chapter.\" -> media\n- \"Tell Gorrin I am running late.\" -> messages",
+    "role": "system"
+   },
+   {
+    "content": "what is the highest building in the world",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 73,
+ "step": "route",
+ "text": "{\"route\": \"fallback\"}",
+ "tokens_evaluated": 13,
+ "tool_calls": [],
+ "total_ns": 1721221958,
+ "ttfc_ns": 708909499
+}

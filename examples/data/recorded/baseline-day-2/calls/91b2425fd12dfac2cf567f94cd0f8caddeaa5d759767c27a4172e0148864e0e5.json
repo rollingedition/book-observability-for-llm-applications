@@ -1,0 +1,108 @@
+{
+ "chunk_ns": [
+  9391053502,
+  9391081204,
+  9530879453,
+  9689815809,
+  9842647565,
+  9983929361,
+  10112938527,
+  10255893445,
+  10392855577,
+  10527516347,
+  10653559279,
+  10779965473,
+  10904139455,
+  11026364729,
+  11152520915,
+  11283037767,
+  11415503881,
+  11542606550,
+  11671363655
+ ],
+ "completion_tokens": 17,
+ "finish_reason": "stop",
+ "gen_ns": 2266415000,
+ "kind": "model",
+ "message_id": "16907",
+ "offset_ns": 407069712295,
+ "prefill_ns": 8639099000,
+ "prompt_tokens": 754,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-10.\n\nKnowledge base articles:\n\n[help-media-07] Adjusting the volume\nVolume is a number from zero to one hundred. Ask for a level, or ask for the volume to go up or down by a step. Each step is about ten percent. The assistant reports the new level after each change. A volume limit set by the device stops the assistant from going higher, and it says so when it reaches the limit. Volume changes apply to the device you are using at the moment, unless you name another.\n\n[help-media-08] Finding music by genre\nName a genre, such as jazz, folk or classical, and the assistant plays music from that genre in your library. If your library has none of that genre, the assistant says so and offers to play a radio station instead. Genres come from the tags on each song, so a song with no tag is not found by genre. To make a playlist from a genre, name the genre and the number of songs you want, and the assistant lists the songs before saving.\n",
+    "role": "system"
+   },
+   {
+    "content": "jay's phone number",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "Find a contact by name. Up to three contacts, with their names and addresses.",
+     "name": "find_contact",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "description": "The contact's name, as the user says it.",
+        "title": "Name",
+        "type": "string"
+       }
+      },
+      "required": [
+       "name"
+      ],
+      "title": "FindContactArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Record a message to one of the user's contacts, named by the address find_contact gave. The message is recorded, not sent.",
+     "name": "send_message",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "contact_id": {
+        "description": "The contact's address, as find_contact gave it.",
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Contact Id",
+        "type": "string"
+       },
+       "text": {
+        "description": "The message, up to 500 characters.",
+        "title": "Text",
+        "type": "string"
+       }
+      },
+      "required": [
+       "contact_id",
+       "text"
+      ],
+      "title": "SendMessageArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 76,
+ "step": "answer",
+ "text": "I cannot find Jay's phone number as it is not available in the provided information.",
+ "tokens_evaluated": 559,
+ "tool_calls": [],
+ "total_ns": 12451213550,
+ "ttfc_ns": 9391053502
+}

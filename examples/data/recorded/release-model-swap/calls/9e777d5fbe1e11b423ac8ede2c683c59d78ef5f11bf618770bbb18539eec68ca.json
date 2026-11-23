@@ -1,0 +1,65 @@
+{
+ "chunk_ns": [
+  478008900,
+  478018073,
+  498486581,
+  519196755,
+  539368306,
+  559066112,
+  578673750,
+  598052507,
+  616762599,
+  636612210,
+  656509017,
+  676264397,
+  695003568,
+  715129242,
+  735318509,
+  764052028,
+  783350850,
+  802168712,
+  821245569,
+  840281761,
+  859108263,
+  877518281,
+  895913013,
+  914536360,
+  933446807,
+  952292533,
+  971681106,
+  990866047,
+  1012665343
+ ],
+ "completion_tokens": 27,
+ "finish_reason": "stop",
+ "gen_ns": 518641000,
+ "kind": "model",
+ "message_id": "11862",
+ "offset_ns": 75927194634,
+ "prefill_ns": 77811000,
+ "prompt_tokens": 215,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "recommend a movie for me",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 68,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\nI don't have access to a movie recommendation tool. Let me know if you'd like help with something else!",
+ "tokens_evaluated": 23,
+ "tool_calls": [],
+ "total_ns": 1114649922,
+ "ttfc_ns": 478008900
+}

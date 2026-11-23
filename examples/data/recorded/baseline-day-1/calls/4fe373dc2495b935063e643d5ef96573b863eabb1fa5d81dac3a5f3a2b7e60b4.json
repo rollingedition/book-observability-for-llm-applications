@@ -1,0 +1,190 @@
+{
+ "chunk_ns": [
+  2744418465,
+  2744428162,
+  2888149411,
+  3022394720,
+  3183552663,
+  3342732653,
+  3483373062,
+  3629335330,
+  3771586859,
+  3922059458,
+  4058614363,
+  4211229600,
+  4341372523,
+  4472185571,
+  4598316789,
+  4723482236,
+  4857339813,
+  4988083630,
+  5112340294,
+  5239418714,
+  5375692130,
+  5494155568,
+  5613800889,
+  5734881378,
+  5856828266,
+  5993466376,
+  6142493559,
+  6288600370,
+  6415017103,
+  6548173573,
+  6684379025,
+  6921992146,
+  7059302987,
+  7183160350,
+  7309189603,
+  7433442092,
+  7558416988,
+  7680885456,
+  7803829752,
+  7936881538,
+  8132045137,
+  8286233381,
+  8416736149,
+  8548523763,
+  8682812680,
+  8818271092,
+  8964319383,
+  9146078012,
+  9290843765,
+  9428057687,
+  9552410914,
+  9680910015,
+  9807894098,
+  9935816855,
+  10093579732,
+  10216207708,
+  10343280118,
+  10495809377,
+  10635223769,
+  10782194740,
+  10908557021,
+  11058474239,
+  11186880541,
+  11329411845
+ ],
+ "completion_tokens": 62,
+ "finish_reason": "stop",
+ "gen_ns": 8536263000,
+ "kind": "model",
+ "message_id": "8559",
+ "offset_ns": 194131955019,
+ "prefill_ns": 2740358000,
+ "prompt_tokens": 832,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "do i have anything scheduled for today",
+    "role": "user"
+   },
+   {
+    "content": "<tool_call>\n{\"name\": \"list_events\", \"arguments\": {\"date\": \"2026-12-08\"}}\n</tool_call>",
+    "role": "assistant"
+   },
+   {
+    "content": "[{\"event_id\": \"E01644\", \"time\": \"02:44\", \"title\": \"Coffee with a neighbour\"}, {\"event_id\": \"E01645\", \"time\": \"03:19\", \"title\": \"Music lesson\"}, {\"event_id\": \"E01646\", \"time\": \"20:49\", \"title\": \"Team check-in\"}, {\"event_id\": \"E01647\", \"time\": \"22:46\", \"title\": \"Planning session\"}]",
+    "name": "list_events",
+    "role": "tool"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List the user's events on one day (UTC). Up to five, by time.",
+     "name": "list_events",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date"
+      ],
+      "title": "ListEventsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an event to the user's calendar on one day (UTC).",
+     "name": "add_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       },
+       "time": {
+        "description": "The start time, HH:MM on a 24-hour clock.",
+        "title": "Time",
+        "type": "string"
+       },
+       "title": {
+        "description": "What the event is called, up to 60 characters.",
+        "title": "Title",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date",
+       "time",
+       "title"
+      ],
+      "title": "AddEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove one of the user's events, by its event_id.",
+     "name": "remove_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "event_id": {
+        "description": "The event_id that list_events gave.",
+        "maxLength": 20,
+        "minLength": 1,
+        "title": "Event Id",
+        "type": "string"
+       }
+      },
+      "required": [
+       "event_id"
+      ],
+      "title": "RemoveEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 37,
+ "step": "answer",
+ "text": "Yes, you have four events scheduled for today: a coffee with a neighbour at 02:44, a music lesson at 03:19, a team check-in at 20:49, and a planning session at 22:46. [list_events]",
+ "tokens_evaluated": 134,
+ "tool_calls": [],
+ "total_ns": 11807703400,
+ "ttfc_ns": 2744418465
+}

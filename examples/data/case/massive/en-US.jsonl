@@ -1,0 +1,357 @@
+{"id":"158","partition":"test","scenario":"iot","intent":"iot_hue_lightdim","utt":"lower the lights","annot_utt":"lower the lights"}
+{"id":"185","partition":"test","scenario":"play","intent":"play_music","utt":"turn on my playlist and play third song in the queue","annot_utt":"turn on my playlist and play third song in the queue"}
+{"id":"209","partition":"train","scenario":"iot","intent":"iot_hue_lightchange","utt":"please make the lights reading friendly","annot_utt":"please make the lights [color_type : reading friendly]"}
+{"id":"319","partition":"test","scenario":"weather","intent":"weather_query","utt":"tell me the weather in barcelona in two days from now","annot_utt":"tell me the weather in [place_name : barcelona] in [time : two days from now]"}
+{"id":"443","partition":"test","scenario":"audio","intent":"audio_volume_up","utt":"raise volume","annot_utt":"raise volume"}
+{"id":"473","partition":"test","scenario":"play","intent":"play_music","utt":"play the weekend","annot_utt":"play the [song_name : weekend]"}
+{"id":"512","partition":"test","scenario":"weather","intent":"weather_query","utt":"by get marks","annot_utt":"by get marks"}
+{"id":"588","partition":"test","scenario":"news","intent":"news_query","utt":"what is new news for today","annot_utt":"what is new news for [date : today]"}
+{"id":"635","partition":"test","scenario":"iot","intent":"iot_cleaning","utt":"please start vacuum cleaner","annot_utt":"please start [device_type : vacuum cleaner]"}
+{"id":"661","partition":"train","scenario":"datetime","intent":"datetime_convert","utt":"please can i know what time will it be at six p. m. here in australia","annot_utt":"please can i know what time will it be at [time : six p. m.] here in [place_name : australia]"}
+{"id":"730","partition":"test","scenario":"iot","intent":"iot_hue_lightoff","utt":"turn the lights off","annot_utt":"turn the lights off"}
+{"id":"738","partition":"test","scenario":"weather","intent":"weather_query","utt":"how cold is it outside today","annot_utt":"how [weather_descriptor : cold] is it outside [date : today]"}
+{"id":"809","partition":"train","scenario":"iot","intent":"iot_coffee","utt":"brew coffee at noon","annot_utt":"brew coffee at [timeofday : noon]"}
+{"id":"974","partition":"test","scenario":"datetime","intent":"datetime_query","utt":"what time is it in new york now","annot_utt":"what time is it in [place_name : new york] now"}
+{"id":"1063","partition":"test","scenario":"news","intent":"news_query","utt":"get hourly notification on sports news","annot_utt":"get [general_frequency : hourly] notification on [news_topic : sports] news"}
+{"id":"1352","partition":"test","scenario":"audio","intent":"audio_volume_down","utt":"please slow down volume of speaker","annot_utt":"please slow down volume of speaker"}
+{"id":"1511","partition":"test","scenario":"iot","intent":"iot_hue_lightchange","utt":"show me the available colors of lights","annot_utt":"show me the available colors of lights"}
+{"id":"1527","partition":"test","scenario":"music","intent":"music_likeness","utt":"remind me that i like that song","annot_utt":"remind me that i like that song"}
+{"id":"1547","partition":"test","scenario":"weather","intent":"weather_query","utt":"what's the weather for my location this week","annot_utt":"what's the weather for my location [date : this week]"}
+{"id":"1658","partition":"test","scenario":"alarm","intent":"alarm_query","utt":"i want to see all set alarms","annot_utt":"i want to see all set alarms"}
+{"id":"1675","partition":"test","scenario":"alarm","intent":"alarm_remove","utt":"remove tuesday alarm of nine am","annot_utt":"remove [date : tuesday] alarm of [time : nine am]"}
+{"id":"1684","partition":"test","scenario":"weather","intent":"weather_query","utt":"yes or no tomorrow's temperature is to be hot","annot_utt":"yes or no [date : tomorrow's] [weather_descriptor : temperature] is to be [weather_descriptor : hot]"}
+{"id":"1744","partition":"test","scenario":"music","intent":"music_likeness","utt":"what do you think","annot_utt":"what do you think"}
+{"id":"1774","partition":"test","scenario":"alarm","intent":"alarm_remove","utt":"turn off the alarm","annot_utt":"turn off the alarm"}
+{"id":"1784","partition":"test","scenario":"iot","intent":"iot_hue_lightoff","utt":"turn off the dining room","annot_utt":"turn off the [house_place : dining room]"}
+{"id":"1804","partition":"test","scenario":"iot","intent":"iot_hue_lightup","utt":"more lights please","annot_utt":"more lights please"}
+{"id":"1832","partition":"test","scenario":"play","intent":"play_music","utt":"play coldplay album","annot_utt":"play [playlist_name : coldplay] album"}
+{"id":"1870","partition":"test","scenario":"datetime","intent":"datetime_query","utt":"what month is today","annot_utt":"what month is [date : today]"}
+{"id":"1913","partition":"test","scenario":"alarm","intent":"alarm_set","utt":"wake me up at five am","annot_utt":"wake me up at [time : five am]"}
+{"id":"2146","partition":"test","scenario":"datetime","intent":"datetime_query","utt":"what's the date of the winter solstice two years from now","annot_utt":"what's the date of the [event_name : winter solstice] [time : two years] from now"}
+{"id":"2160","partition":"test","scenario":"iot","intent":"iot_hue_lightoff","utt":"i'm going to sleep now","annot_utt":"i'm going to sleep now"}
+{"id":"2206","partition":"test","scenario":"audio","intent":"audio_volume_mute","utt":"from now on mute","annot_utt":"from now on mute"}
+{"id":"2234","partition":"test","scenario":"iot","intent":"iot_hue_lightup","utt":"i can't see turn up the lights","annot_utt":"i can't see turn up the lights"}
+{"id":"2283","partition":"test","scenario":"iot","intent":"iot_hue_lightchange","utt":"i need to change my house lights color to blue","annot_utt":"i need to change my [house_place : house] lights color to [color_type : blue]"}
+{"id":"2320","partition":"test","scenario":"weather","intent":"weather_query","utt":"what is the weather this friday","annot_utt":"what is the weather this [date : friday]"}
+{"id":"2334","partition":"test","scenario":"alarm","intent":"alarm_set","utt":"add an alarm for tomorrow morning at six am","annot_utt":"add an alarm for [date : tomorrow] [timeofday : morning] at [time : six am]"}
+{"id":"2386","partition":"test","scenario":"news","intent":"news_query","utt":"give me the latest news","annot_utt":"give me the latest news"}
+{"id":"2472","partition":"test","scenario":"datetime","intent":"datetime_query","utt":"is the time currently correct for where i am located","annot_utt":"is the time currently correct for where i am located"}
+{"id":"2480","partition":"test","scenario":"takeaway","intent":"takeaway_order","utt":"call for take-out","annot_utt":"call for [order_type : take-out]"}
+{"id":"2560","partition":"test","scenario":"play","intent":"play_music","utt":"play random music","annot_utt":"play random music"}
+{"id":"2611","partition":"test","scenario":"weather","intent":"weather_query","utt":"current weather forecast","annot_utt":"current weather forecast"}
+{"id":"2690","partition":"test","scenario":"iot","intent":"iot_wemo_off","utt":"turn off the socket","annot_utt":"turn off the [device_type : socket]"}
+{"id":"2704","partition":"test","scenario":"play","intent":"play_music","utt":"let's hear some indie rock okay","annot_utt":"let's hear some [music_genre : indie rock] okay"}
+{"id":"2788","partition":"train","scenario":"play","intent":"play_music","utt":"play something by the used","annot_utt":"play something by [artist_name : the used]"}
+{"id":"2801","partition":"test","scenario":"datetime","intent":"datetime_query","utt":"what time is it in london","annot_utt":"what time is it in [place_name : london]"}
+{"id":"2811","partition":"train","scenario":"iot","intent":"iot_hue_lightup","utt":"make this room brighter","annot_utt":"make this [house_place : room] brighter"}
+{"id":"2983","partition":"test","scenario":"alarm","intent":"alarm_remove","utt":"remove set alarm","annot_utt":"remove set alarm"}
+{"id":"3080","partition":"test","scenario":"takeaway","intent":"takeaway_order","utt":"it's time for junk food","annot_utt":"it's time for [food_type : junk food]"}
+{"id":"3103","partition":"test","scenario":"music","intent":"music_dislikeness","utt":"don't play this song again","annot_utt":"don't play this song again"}
+{"id":"3107","partition":"train","scenario":"play","intent":"play_music","utt":"play some rock music","annot_utt":"play some [music_genre : rock] music"}
+{"id":"3146","partition":"test","scenario":"play","intent":"play_music","utt":"play track one from my david bowie playlist","annot_utt":"play track one from my [artist_name : david bowie] playlist"}
+{"id":"3178","partition":"test","scenario":"music","intent":"music_query","utt":"what year did this song come out","annot_utt":"what year did this song come out"}
+{"id":"3212","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"remind me to do something then","annot_utt":"remind me to do something then"}
+{"id":"3271","partition":"train","scenario":"alarm","intent":"alarm_remove","utt":"remove all alarms set today","annot_utt":"remove all alarms set [date : today]"}
+{"id":"3306","partition":"test","scenario":"weather","intent":"weather_query","utt":"what is the forecast for the week","annot_utt":"what is the forecast for the [date : week]"}
+{"id":"3338","partition":"test","scenario":"weather","intent":"weather_query","utt":"report weather for largo","annot_utt":"report weather for [place_name : largo]"}
+{"id":"3350","partition":"train","scenario":"audio","intent":"audio_volume_up","utt":"where is the fire","annot_utt":"where is the fire"}
+{"id":"3413","partition":"test","scenario":"takeaway","intent":"takeaway_query","utt":"do you know the eta of my order","annot_utt":"do you know the eta of my order"}
+{"id":"3418","partition":"test","scenario":"iot","intent":"iot_coffee","utt":"can you set my coffee machine to make me coffee at seven am","annot_utt":"can you set my [device_type : coffee machine] to make me coffee at [time : seven am]"}
+{"id":"3444","partition":"test","scenario":"datetime","intent":"datetime_query","utt":"is it ten","annot_utt":"is it [time : ten]"}
+{"id":"3603","partition":"test","scenario":"news","intent":"news_query","utt":"what's the latest news from xinhua","annot_utt":"what's the latest news from [media_type : xinhua]"}
+{"id":"3669","partition":"test","scenario":"datetime","intent":"datetime_convert","utt":"tell me the time in someplace","annot_utt":"tell me the time in someplace"}
+{"id":"3674","partition":"test","scenario":"iot","intent":"iot_hue_lightchange","utt":"i would like the like in the kitchen to be a different color","annot_utt":"i would like the like in the [house_place : kitchen] to be a different color"}
+{"id":"3727","partition":"test","scenario":"play","intent":"play_music","utt":"play best friends by yelawolf","annot_utt":"play [song_name : best friends] by [artist_name : yelawolf]"}
+{"id":"3762","partition":"test","scenario":"iot","intent":"iot_hue_lightup","utt":"raise the lights","annot_utt":"raise the lights"}
+{"id":"3785","partition":"test","scenario":"iot","intent":"iot_hue_lightoff","utt":"turn off the bathroom light please","annot_utt":"turn off the [house_place : bathroom] light please"}
+{"id":"3829","partition":"test","scenario":"alarm","intent":"alarm_remove","utt":"please remove the alarm that is set for weekdays at nine","annot_utt":"please remove the alarm that is set for [date : weekdays] at [time : nine]"}
+{"id":"3847","partition":"train","scenario":"music","intent":"music_query","utt":"what are my favorite types of music","annot_utt":"what are my favorite types of music"}
+{"id":"3870","partition":"test","scenario":"alarm","intent":"alarm_query","utt":"what is the wake up time for my alarm i have set for the flight this weekend","annot_utt":"what is the [alarm_type : wake up] time for my alarm i have set for the flight [date : this weekend]"}
+{"id":"3915","partition":"test","scenario":"music","intent":"music_likeness","utt":"this is a good tune please notate file accordingly","annot_utt":"this is a good tune please notate file accordingly"}
+{"id":"3993","partition":"test","scenario":"iot","intent":"iot_hue_lightoff","utt":"can you make the lights go out","annot_utt":"can you make the lights go out"}
+{"id":"4119","partition":"test","scenario":"news","intent":"news_query","utt":"i want to know everything that breaks about the dam breaking in california","annot_utt":"i want to know everything that breaks about the dam breaking in [place_name : california]"}
+{"id":"4125","partition":"test","scenario":"takeaway","intent":"takeaway_query","utt":"where can i get a shot of tequila and some to go mexican food","annot_utt":"where can i get a shot of [food_type : tequila] and some to go [food_type : mexican] food"}
+{"id":"4152","partition":"test","scenario":"play","intent":"play_music","utt":"please play the song every time i see you","annot_utt":"please play the song [song_name : every time i see you]"}
+{"id":"4249","partition":"test","scenario":"iot","intent":"iot_hue_lightchange","utt":"house can you make all the lights in the house blue","annot_utt":"house can you make all the lights in the [house_place : house] [color_type : blue]"}
+{"id":"4268","partition":"test","scenario":"music","intent":"music_settings","utt":"move to the next song in the list","annot_utt":"[player_setting : move] to the next song in the list"}
+{"id":"4273","partition":"test","scenario":"play","intent":"play_music","utt":"play song aces high","annot_utt":"play song [song_name : aces high]"}
+{"id":"4355","partition":"test","scenario":"weather","intent":"weather_query","utt":"how is the weather where i am","annot_utt":"how is the weather where i am"}
+{"id":"4376","partition":"test","scenario":"weather","intent":"weather_query","utt":"how is it outside today","annot_utt":"how is it outside [date : today]"}
+{"id":"4428","partition":"test","scenario":"music","intent":"music_query","utt":"identify song","annot_utt":"identify song"}
+{"id":"4452","partition":"test","scenario":"play","intent":"play_music","utt":"play songs","annot_utt":"play songs"}
+{"id":"4492","partition":"test","scenario":"news","intent":"news_query","utt":"what are the latest crime statistics for me area","annot_utt":"what are the latest [news_topic : crime statistics] for me area"}
+{"id":"4544","partition":"test","scenario":"takeaway","intent":"takeaway_order","utt":"order a twelve piece honey mustard wing combo with seasonimg altnon the fries and a sprite as the drink","annot_utt":"order a twelve piece [food_type : honey mustard wing combo] with seasonimg altnon the fries and a [drink_type : sprite] as the drink"}
+{"id":"4614","partition":"test","scenario":"weather","intent":"weather_query","utt":"will the temperature be higher than forty tomorrow","annot_utt":"will the [weather_descriptor : temperature] be [weather_descriptor : higher than forty] [date : tomorrow]"}
+{"id":"4710","partition":"test","scenario":"datetime","intent":"datetime_query","utt":"what day is halloween this year","annot_utt":"what day is [event_name : halloween] [date : this year]"}
+{"id":"4784","partition":"test","scenario":"weather","intent":"weather_query","utt":"do i need a jacket","annot_utt":"do i need a [weather_descriptor : jacket]"}
+{"id":"4831","partition":"test","scenario":"audio","intent":"audio_volume_up","utt":"speaker volume increase","annot_utt":"speaker volume increase"}
+{"id":"4890","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"set notifications on the current weather disasters in america","annot_utt":"set notifications on the current [event_name : weather disasters] in [place_name : america]"}
+{"id":"4933","partition":"test","scenario":"weather","intent":"weather_query","utt":"will it rain now","annot_utt":"will it [weather_descriptor : rain] now"}
+{"id":"4953","partition":"test","scenario":"news","intent":"news_query","utt":"news of the train wreck","annot_utt":"news of the [news_topic : train wreck]"}
+{"id":"4988","partition":"test","scenario":"iot","intent":"iot_coffee","utt":"prepare a cup of coffee for me","annot_utt":"prepare a cup of coffee for me"}
+{"id":"4994","partition":"test","scenario":"audio","intent":"audio_volume_mute","utt":"please mute my speaker","annot_utt":"please mute my speaker"}
+{"id":"5009","partition":"test","scenario":"weather","intent":"weather_query","utt":"will i need an umbrella this week","annot_utt":"will i need an [weather_descriptor : umbrella] [date : this week]"}
+{"id":"5156","partition":"test","scenario":"iot","intent":"iot_hue_lightoff","utt":"turn the light off in the living room","annot_utt":"turn the light off in the [house_place : living room]"}
+{"id":"5198","partition":"test","scenario":"music","intent":"music_likeness","utt":"tag this song with five stars","annot_utt":"tag this song with five stars"}
+{"id":"5219","partition":"test","scenario":"audio","intent":"audio_volume_down","utt":"please reduce the speaker volume","annot_utt":"please reduce the speaker volume"}
+{"id":"5488","partition":"test","scenario":"takeaway","intent":"takeaway_order","utt":"order pizza for delivery","annot_utt":"order [food_type : pizza] for [order_type : delivery]"}
+{"id":"5525","partition":"test","scenario":"audio","intent":"audio_volume_mute","utt":"mute for one hour","annot_utt":"mute for [time : one hour]"}
+{"id":"5529","partition":"test","scenario":"weather","intent":"weather_query","utt":"what time should i go for a hike","annot_utt":"what time should i go for a [event_name : hike]"}
+{"id":"5650","partition":"test","scenario":"weather","intent":"weather_query","utt":"ask for the weather today evening","annot_utt":"ask for the weather [date : today] [timeofday : evening]"}
+{"id":"5671","partition":"test","scenario":"datetime","intent":"datetime_query","utt":"what is the time in las vegas","annot_utt":"what is the time in [place_name : las vegas]"}
+{"id":"5722","partition":"test","scenario":"weather","intent":"weather_query","utt":"display the seven day forecast for this week","annot_utt":"display [weather_descriptor : the seven day forecast] for [date : this week]"}
+{"id":"5727","partition":"test","scenario":"iot","intent":"iot_hue_lightup","utt":"brighten the light of hall","annot_utt":"brighten the light of [house_place : hall]"}
+{"id":"5757","partition":"test","scenario":"datetime","intent":"datetime_query","utt":"a quarter to two","annot_utt":"[time : a quarter to two]"}
+{"id":"5985","partition":"test","scenario":"news","intent":"news_query","utt":"show me the latest news from the un","annot_utt":"show me the latest news from the [media_type : un]"}
+{"id":"5988","partition":"test","scenario":"iot","intent":"iot_hue_lightdim","utt":"adjust the lights to a lower setting please","annot_utt":"adjust the lights to a lower setting please"}
+{"id":"6024","partition":"test","scenario":"weather","intent":"weather_query","utt":"should i take a sweater or a coat to work today","annot_utt":"should i take a [weather_descriptor : sweater] or a [weather_descriptor : coat] to work [date : today]"}
+{"id":"6025","partition":"test","scenario":"weather","intent":"weather_query","utt":"will i need sunscreen this afternoon","annot_utt":"will i need [weather_descriptor : sunscreen] [timeofday : this afternoon]"}
+{"id":"6027","partition":"test","scenario":"play","intent":"play_music","utt":"turn on favorite songs","annot_utt":"turn on favorite songs"}
+{"id":"6061","partition":"test","scenario":"iot","intent":"iot_coffee","utt":"make the coffee","annot_utt":"make the coffee"}
+{"id":"6109","partition":"test","scenario":"music","intent":"music_likeness","utt":"store opinion on song","annot_utt":"store opinion on song"}
+{"id":"6288","partition":"test","scenario":"general","intent":"general_quirky","utt":"i had food as soon as i got up","annot_utt":"i had food as soon as i got up"}
+{"id":"6295","partition":"test","scenario":"general","intent":"general_quirky","utt":"i hate how long the traffic jams get","annot_utt":"i hate how [time : long] the traffic jams get"}
+{"id":"6352","partition":"test","scenario":"general","intent":"general_quirky","utt":"i went to the store","annot_utt":"i went to the store"}
+{"id":"6362","partition":"train","scenario":"recommendation","intent":"recommendation_movies","utt":"what film should i watch","annot_utt":"what film should i watch"}
+{"id":"6366","partition":"test","scenario":"recommendation","intent":"recommendation_locations","utt":"tell me some best tourist places to visit in america","annot_utt":"tell me some [place_name : best tourist places] to visit in [place_name : america]"}
+{"id":"6382","partition":"test","scenario":"general","intent":"general_quirky","utt":"hey what has been happening interesting in sports lately","annot_utt":"hey what has been happening interesting in sports lately"}
+{"id":"6405","partition":"test","scenario":"general","intent":"general_quirky","utt":"what sound does a dog make","annot_utt":"what sound does a dog make"}
+{"id":"6424","partition":"test","scenario":"general","intent":"general_quirky","utt":"hello how is your day","annot_utt":"hello how is your day"}
+{"id":"6468","partition":"train","scenario":"general","intent":"general_quirky","utt":"what's for dinner","annot_utt":"what's for [meal_type : dinner]"}
+{"id":"6473","partition":"test","scenario":"general","intent":"general_quirky","utt":"the weather was bad today","annot_utt":"the weather was bad [date : today]"}
+{"id":"6550","partition":"test","scenario":"general","intent":"general_quirky","utt":"i got promoted today it feels so good","annot_utt":"i got promoted [date : today] it feels so good"}
+{"id":"6572","partition":"test","scenario":"general","intent":"general_quirky","utt":"do you have a boyfriend","annot_utt":"do you have a boyfriend"}
+{"id":"6643","partition":"test","scenario":"general","intent":"general_quirky","utt":"best paid jobs in digital marketing in my area","annot_utt":"best paid jobs in digital marketing in my area"}
+{"id":"6683","partition":"test","scenario":"news","intent":"news_query","utt":"economic affairs","annot_utt":"economic affairs"}
+{"id":"6722","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"is there anything i should be reminded about","annot_utt":"is there anything i should be reminded about"}
+{"id":"6725","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"remind me about my schedule for the afternoon","annot_utt":"remind me about my schedule for the [timeofday : afternoon]"}
+{"id":"6755","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"please clean my calendar","annot_utt":"please clean my calendar"}
+{"id":"6892","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"can you give me the movie schedule","annot_utt":"can you give me the [event_name : movie] schedule"}
+{"id":"6923","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"set reminder to print the documents on tuesday morning","annot_utt":"set reminder to [event_name : print the documents] on [date : tuesday] [timeofday : morning]"}
+{"id":"6937","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"set reminder for noon to get lunch with boss","annot_utt":"set reminder for [timeofday : noon] to get [event_name : lunch with boss]"}
+{"id":"6962","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"can i know what i have to do the next saturday at six p. m.","annot_utt":"can i know what i have to do the next [date : saturday] at [time : six p. m.]"}
+{"id":"6974","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"i have a function at washington tomorrow remind it","annot_utt":"i have a [event_name : function] at [place_name : washington] [date : tomorrow] remind it"}
+{"id":"7046","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"add tal meeting on twenty first at seven","annot_utt":"add [event_name : tal meeting] on [date : twenty first] at [time : seven]"}
+{"id":"7055","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"schedule a meeting with matt at eleven am on thursday","annot_utt":"schedule a [event_name : meeting] with [person : matt] at [time : eleven am] on [date : thursday]"}
+{"id":"7061","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"give me a reminder twenty four hours before my friday meeting with edg","annot_utt":"give me a reminder [time : twenty four hours before] my [date : friday] [event_name : meeting] with [person : edg]"}
+{"id":"7120","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"what's my schedule like today","annot_utt":"what's my schedule like [date : today]"}
+{"id":"7140","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"set a reminder to notify me one hour before lunch meeting","annot_utt":"set a reminder to notify me one hour before [event_name : lunch meeting]"}
+{"id":"7257","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"please remind me to call mom in half an hour","annot_utt":"please remind me to [event_name : call] [relation : mom] [time : in half an hour]"}
+{"id":"7289","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"get rid of all events with jeff","annot_utt":"get rid of all events with [person : jeff]"}
+{"id":"7294","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"remove the appointment with george adams from my calendar","annot_utt":"remove the [event_name : appointment] with [person : george adams] from my calendar"}
+{"id":"7314","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"what's for today","annot_utt":"what's for [date : today]"}
+{"id":"7397","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"is there any events planned for the next three months","annot_utt":"is there any events planned for the [time : next three months]"}
+{"id":"7449","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"please schedule a meeting with this person","annot_utt":"please schedule a [event_name : meeting] with this person"}
+{"id":"7531","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"please add my pay days","annot_utt":"please add my [event_name : pay days]"}
+{"id":"7569","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"plan for tomorrow","annot_utt":"plan for [date : tomorrow]"}
+{"id":"7585","partition":"train","scenario":"calendar","intent":"calendar_set","utt":"please add event in calendar","annot_utt":"please add event in calendar"}
+{"id":"7596","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"please schedule a meeting with derrick in haysi at noon","annot_utt":"please schedule a [event_name : meeting] with [person : derrick] in [place_name : haysi] at [timeofday : noon]"}
+{"id":"7654","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"mark april twenty as my brother's birthday","annot_utt":"mark [date : april twenty] as my [relation : brother's] [event_name : birthday]"}
+{"id":"7666","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"will you mark that i have a meeting with tom at three tomorrow","annot_utt":"will you mark that i have a [event_name : meeting] with [person : tom] at [time : three] [date : tomorrow]"}
+{"id":"7730","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"i need you to mark next monday","annot_utt":"i need you to mark next [date : monday]"}
+{"id":"7741","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"clear my calendar for saturday","annot_utt":"clear my calendar for [date : saturday]"}
+{"id":"7870","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"delete event from calendar","annot_utt":"delete event from calendar"}
+{"id":"7890","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"clear haircut today","annot_utt":"clear [event_name : haircut] [date : today]"}
+{"id":"7981","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"send an alert before meeting","annot_utt":"send an alert before [event_name : meeting]"}
+{"id":"8013","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"show me my meeting for the next month","annot_utt":"show me my [event_name : meeting] for the [date : next month]"}
+{"id":"8037","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"remind me to something in sometime","annot_utt":"remind me to something in sometime"}
+{"id":"8055","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"erase my appointment for march seven","annot_utt":"erase my [event_name : appointment] for [date : march seven]"}
+{"id":"8110","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"please add supervision to my calendar","annot_utt":"please add [event_name : supervision] to my calendar"}
+{"id":"8125","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"create a meeting event in my calendar","annot_utt":"create a [event_name : meeting] event in my calendar"}
+{"id":"8231","partition":"train","scenario":"calendar","intent":"calendar_remove","utt":"delete appointment at time","annot_utt":"delete [event_name : appointment] at time"}
+{"id":"8322","partition":"test","scenario":"general","intent":"general_quirky","utt":"i want to know more about the fair this weekend","annot_utt":"i want to know more about the fair [date : this weekend]"}
+{"id":"8366","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"make march eighteen a repeating appointment for pearl's birthday","annot_utt":"make [date : march eighteen] a repeating [event_name : appointment for pearl's birthday]"}
+{"id":"8409","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"delete my dinner tomorrow","annot_utt":"delete my [meal_type : dinner] [date : tomorrow]"}
+{"id":"8410","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"remove my dinner event for monday","annot_utt":"remove my [meal_type : dinner] event for [date : monday]"}
+{"id":"8426","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"tell me current events between yesterday and this morning","annot_utt":"tell me current events between [date : yesterday] and this [timeofday : morning]"}
+{"id":"8453","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"please put event into my calendar and mark it as a repeating event","annot_utt":"please put event into my calendar and mark it as a repeating event"}
+{"id":"8474","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"add jane's birthday party for tomorrow two p. m. at one hundred and twenty three main on my calendar","annot_utt":"add [person : jane's] [event_name : birthday party] for [date : tomorrow] [time : two p. m.] at [place_name : one hundred and twenty three main] on my calendar"}
+{"id":"8525","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"meeting reminders from three to five","annot_utt":"[event_name : meeting] reminders from [time : three to five]"}
+{"id":"8527","partition":"train","scenario":"calendar","intent":"calendar_remove","utt":"cancel meeting at three","annot_utt":"cancel [event_name : meeting] at [time : three]"}
+{"id":"8539","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"remind me about","annot_utt":"remind me about"}
+{"id":"8559","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"do i have anything scheduled for today","annot_utt":"do i have anything scheduled for [date : today]"}
+{"id":"8666","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"erase all events from my calendar","annot_utt":"erase all events from my calendar"}
+{"id":"8672","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"where is the kiss concert","annot_utt":"where is the [event_name : kiss concert]"}
+{"id":"8774","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"is my schedule for july seventh completely open","annot_utt":"is my schedule for [date : july seventh] completely open"}
+{"id":"8791","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"more information on this event","annot_utt":"more information on this event"}
+{"id":"8822","partition":"test","scenario":"recommendation","intent":"recommendation_events","utt":"info of the upcoming events","annot_utt":"info of the upcoming events"}
+{"id":"8880","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"set a reminder about tomorrow's meeting at nine am","annot_utt":"set a reminder about [date : tomorrow's] [event_name : meeting] at [time : nine am]"}
+{"id":"8992","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"show meetings","annot_utt":"show [event_name : meetings]"}
+{"id":"9053","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"set a meeting event reminder with mona on tuesday","annot_utt":"set a [event_name : meeting] event reminder with [person : mona] on [date : tuesday]"}
+{"id":"9054","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"event reminder mona tuesday","annot_utt":"event reminder [event_name : mona] [date : tuesday]"}
+{"id":"9074","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"please remove that event","annot_utt":"please remove that event"}
+{"id":"9088","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"wipe everything on my calendar","annot_utt":"wipe everything on my calendar"}
+{"id":"9182","partition":"test","scenario":"calendar","intent":"calendar_remove","utt":"cancel my plans to pick up my parents from the airport","annot_utt":"cancel my plans to [event_name : pick up my parents] from the [place_name : airport]"}
+{"id":"9187","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"research the clients that will attend the meeting","annot_utt":"research the clients that will attend [event_name : the meeting]"}
+{"id":"9269","partition":"test","scenario":"play","intent":"play_radio","utt":"tune in to eight hundred and ninety seven f. m.","annot_utt":"tune in to [radio_name : eight hundred and ninety seven f. m.]"}
+{"id":"9402","partition":"test","scenario":"play","intent":"play_radio","utt":"play nine hundred and eighty nine the radio station","annot_utt":"play [radio_name : nine hundred and eighty nine] the radio station"}
+{"id":"9561","partition":"test","scenario":"play","intent":"play_radio","utt":"play station gx in the radio","annot_utt":"play [radio_name : station gx] in the radio"}
+{"id":"9680","partition":"test","scenario":"play","intent":"play_audiobook","utt":"resume harry potter from the place i have stopped listening to last time","annot_utt":"[player_setting : resume] [audiobook_name : harry potter] from the place i have stopped listening to last time"}
+{"id":"9700","partition":"test","scenario":"play","intent":"play_audiobook","utt":"play biography of jackie kennedy","annot_utt":"play [audiobook_name : biography of jackie kennedy]"}
+{"id":"9706","partition":"test","scenario":"play","intent":"play_music","utt":"play jingle bells","annot_utt":"play [song_name : jingle bells]"}
+{"id":"9732","partition":"test","scenario":"play","intent":"play_audiobook","utt":"open davinci code audiobook","annot_utt":"open [audiobook_name : davinci code] [media_type : audiobook]"}
+{"id":"9738","partition":"test","scenario":"play","intent":"play_music","utt":"could you please play the classical music for me","annot_utt":"could you please play the [music_genre : classical] music for me"}
+{"id":"9761","partition":"test","scenario":"play","intent":"play_audiobook","utt":"hold","annot_utt":"[player_setting : hold]"}
+{"id":"9902","partition":"test","scenario":"play","intent":"play_audiobook","utt":"play me a random audio book that has to do with love","annot_utt":"play me a random [media_type : audio book] that has to do with love"}
+{"id":"9923","partition":"test","scenario":"cooking","intent":"cooking_recipe","utt":"how long should i boil an egg","annot_utt":"how long should i [cooking_type : boil] an [food_type : egg]"}
+{"id":"9940","partition":"test","scenario":"cooking","intent":"cooking_recipe","utt":"find me a chocolate cake recipe","annot_utt":"find me a [food_type : chocolate cake] recipe"}
+{"id":"9980","partition":"test","scenario":"cooking","intent":"cooking_recipe","utt":"what is the menu today add some boiled vegetables also to it","annot_utt":"what is the menu [date : today] add some [food_type : boiled vegetables] also to it"}
+{"id":"10038","partition":"test","scenario":"cooking","intent":"cooking_recipe","utt":"i need good ideas for cooking","annot_utt":"i need good ideas for cooking"}
+{"id":"10045","partition":"test","scenario":"cooking","intent":"cooking_recipe","utt":"can you give me a recipe for homemade chicken noodle soup","annot_utt":"can you give me a recipe for homemade [food_type : chicken noodle soup]"}
+{"id":"10072","partition":"test","scenario":"cooking","intent":"cooking_recipe","utt":"baking times for chicken in the oven","annot_utt":"baking times for [food_type : chicken] in the [device_type : oven]"}
+{"id":"10119","partition":"test","scenario":"cooking","intent":"cooking_recipe","utt":"how long do you cook a fifteen pound turkey","annot_utt":"how long do you cook a fifteen pound [food_type : turkey]"}
+{"id":"10182","partition":"test","scenario":"cooking","intent":"cooking_recipe","utt":"how many eggs do i need for an omelet","annot_utt":"how many [food_type : eggs] do i need for an [food_type : omelet]"}
+{"id":"10220","partition":"test","scenario":"cooking","intent":"cooking_recipe","utt":"what ingredients do i need to bake a large cake","annot_utt":"what ingredients do i need to [cooking_type : bake] a large [food_type : cake]"}
+{"id":"10247","partition":"test","scenario":"play","intent":"play_game","utt":"play a game with me","annot_utt":"play a game with me"}
+{"id":"10263","partition":"test","scenario":"play","intent":"play_game","utt":"open chess app and begin game","annot_utt":"open [game_name : chess] app and begin game"}
+{"id":"10288","partition":"test","scenario":"play","intent":"play_game","utt":"play me a game of tic tac toe","annot_utt":"play me a game of [game_name : tic tac toe]"}
+{"id":"10323","partition":"test","scenario":"play","intent":"play_game","utt":"let's play","annot_utt":"let's play"}
+{"id":"10339","partition":"test","scenario":"play","intent":"play_game","utt":"please open chess game i would like to play with you","annot_utt":"please open [game_name : chess] game i would like to play with you"}
+{"id":"10347","partition":"train","scenario":"play","intent":"play_game","utt":"i want you to play this game for me","annot_utt":"i want you to play this game for me"}
+{"id":"10399","partition":"test","scenario":"play","intent":"play_game","utt":"please open and play chess with me","annot_utt":"please open and play [game_name : chess] with me"}
+{"id":"10427","partition":"test","scenario":"lists","intent":"lists_remove","utt":"please clean my shopping list","annot_utt":"please clean my [list_name : shopping] list"}
+{"id":"10442","partition":"test","scenario":"lists","intent":"lists_remove","utt":"remove events from my list","annot_utt":"remove events from my list"}
+{"id":"10471","partition":"test","scenario":"lists","intent":"lists_createoradd","utt":"i need to create a new to do list","annot_utt":"i need to create a new [list_name : to do] list"}
+{"id":"10512","partition":"test","scenario":"lists","intent":"lists_query","utt":"list everything left on my query","annot_utt":"list everything left on my query"}
+{"id":"10678","partition":"test","scenario":"lists","intent":"lists_createoradd","utt":"add spent five dollars in my expenses list","annot_utt":"add spent five dollars in my [list_name : expenses] list"}
+{"id":"10755","partition":"test","scenario":"lists","intent":"lists_remove","utt":"throw away my to do list please","annot_utt":"throw away my [list_name : to do] list please"}
+{"id":"10790","partition":"test","scenario":"lists","intent":"lists_remove","utt":"delete item from list","annot_utt":"delete item from list"}
+{"id":"10792","partition":"test","scenario":"lists","intent":"lists_createoradd","utt":"i need to make a list","annot_utt":"i need to make a list"}
+{"id":"10815","partition":"test","scenario":"lists","intent":"lists_createoradd","utt":"add toothpaste to my shopping list","annot_utt":"add toothpaste to my [list_name : shopping] list"}
+{"id":"10816","partition":"test","scenario":"lists","intent":"lists_createoradd","utt":"create a playlist","annot_utt":"create a playlist"}
+{"id":"10858","partition":"test","scenario":"lists","intent":"lists_createoradd","utt":"new list","annot_utt":"new list"}
+{"id":"10990","partition":"test","scenario":"lists","intent":"lists_remove","utt":"on my to dos remove mop kitchen","annot_utt":"on my [list_name : to dos] remove mop kitchen"}
+{"id":"11067","partition":"test","scenario":"lists","intent":"lists_createoradd","utt":"please add oranges to my grocery list","annot_utt":"please add oranges to my [list_name : grocery] list"}
+{"id":"11159","partition":"train","scenario":"lists","intent":"lists_remove","utt":"remove yams","annot_utt":"remove yams"}
+{"id":"11360","partition":"train","scenario":"play","intent":"play_podcasts","utt":"play rohan sharma podcast for me","annot_utt":"play [person : rohan sharma] podcast for me"}
+{"id":"11418","partition":"test","scenario":"play","intent":"play_podcasts","utt":"play duncan trussel's latest podcast","annot_utt":"play [person : duncan trussel's] latest podcast"}
+{"id":"11424","partition":"test","scenario":"play","intent":"play_podcasts","utt":"vitaly channel","annot_utt":"[radio_name : vitaly channel]"}
+{"id":"11438","partition":"test","scenario":"play","intent":"play_podcasts","utt":"please go to the next episode of the podcast","annot_utt":"please go to the [podcast_descriptor : next episode] of the podcast"}
+{"id":"11467","partition":"test","scenario":"play","intent":"play_podcasts","utt":"play the most recent podcast for this american life","annot_utt":"play the [podcast_descriptor : most recent podcast] for this [podcast_name : american life]"}
+{"id":"11515","partition":"test","scenario":"play","intent":"play_podcasts","utt":"lets hear the united states of anxiety podcast","annot_utt":"lets hear [podcast_name : the united states of anxiety] podcast"}
+{"id":"11546","partition":"test","scenario":"play","intent":"play_podcasts","utt":"play all order of the green hand from previous week","annot_utt":"play all [podcast_name : order of the green hand] from previous week"}
+{"id":"11570","partition":"test","scenario":"recommendation","intent":"recommendation_events","utt":"what's happening around my town","annot_utt":"what's happening around my [place_name : town]"}
+{"id":"11633","partition":"test","scenario":"recommendation","intent":"recommendation_movies","utt":"what movies are showing in cinema today","annot_utt":"what movies are showing in [business_type : cinema] [date : today]"}
+{"id":"11764","partition":"test","scenario":"recommendation","intent":"recommendation_movies","utt":"cisco system","annot_utt":"cisco system"}
+{"id":"11796","partition":"test","scenario":"recommendation","intent":"recommendation_locations","utt":"which bar has the most affordable drinks near sixth street","annot_utt":"which bar has the most affordable drinks near [place_name : sixth street]"}
+{"id":"11841","partition":"test","scenario":"recommendation","intent":"recommendation_events","utt":"are there any crafts fairs happening in this area","annot_utt":"are there any [event_name : crafts fairs] happening in this area"}
+{"id":"11860","partition":"test","scenario":"recommendation","intent":"recommendation_events","utt":"tell me the local events","annot_utt":"tell me the local events"}
+{"id":"11862","partition":"test","scenario":"recommendation","intent":"recommendation_movies","utt":"recommend a movie for me","annot_utt":"recommend a movie for me"}
+{"id":"11920","partition":"test","scenario":"recommendation","intent":"recommendation_movies","utt":"what movies are out this week","annot_utt":"what movies are out [date : this week]"}
+{"id":"11990","partition":"test","scenario":"recommendation","intent":"recommendation_movies","utt":"what's a movie in theaters that doesn't suck","annot_utt":"what's a movie in [place_name : theaters] that doesn't suck"}
+{"id":"12020","partition":"test","scenario":"recommendation","intent":"recommendation_locations","utt":"tell me what clothing stores are within five miles of me","annot_utt":"tell me what [business_type : clothing stores] are within five miles of me"}
+{"id":"12098","partition":"test","scenario":"recommendation","intent":"recommendation_events","utt":"show me nearby musical events","annot_utt":"show me nearby [event_name : musical events]"}
+{"id":"12213","partition":"test","scenario":"transport","intent":"transport_taxi","utt":"get city cab here to airport","annot_utt":"get city [transport_type : cab] here to [place_name : airport]"}
+{"id":"12244","partition":"test","scenario":"transport","intent":"transport_taxi","utt":"book a taxi to go to the movies at one","annot_utt":"book a [transport_type : taxi] to go to the [place_name : movies] at [time : one]"}
+{"id":"12261","partition":"test","scenario":"transport","intent":"transport_query","utt":"tell me my options for a train to los angles next wednesday or thursday","annot_utt":"tell me my options for a [transport_type : train] to [place_name : los angles] next [date : wednesday] or [date : thursday]"}
+{"id":"12264","partition":"test","scenario":"transport","intent":"transport_query","utt":"new york","annot_utt":"[place_name : new york]"}
+{"id":"12366","partition":"test","scenario":"transport","intent":"transport_query","utt":"is there a connecting train from london to paris and what time","annot_utt":"is there a connecting [transport_type : train] from [place_name : london] to [place_name : paris] and what time"}
+{"id":"12618","partition":"test","scenario":"transport","intent":"transport_query","utt":"how much is a round trip train ticket to go to new york","annot_utt":"how much is a round trip [transport_type : train] ticket to go to [place_name : new york]"}
+{"id":"12689","partition":"test","scenario":"transport","intent":"transport_ticket","utt":"book a train ticket from here to charleston west virginia at eight am today","annot_utt":"book a [transport_type : train] ticket from here to [place_name : charleston west virginia] at [time : eight am] [date : today]"}
+{"id":"12724","partition":"test","scenario":"transport","intent":"transport_ticket","utt":"find me a train ticket to boston","annot_utt":"find me a [transport_type : train] ticket to [place_name : boston]"}
+{"id":"12736","partition":"test","scenario":"transport","intent":"transport_traffic","utt":"road traffic","annot_utt":"road traffic"}
+{"id":"12800","partition":"test","scenario":"transport","intent":"transport_query","utt":"where is the public library","annot_utt":"where is the [business_type : public library]"}
+{"id":"12814","partition":"test","scenario":"transport","intent":"transport_ticket","utt":"please book a ticket form jaipur to mumbai on tuesday","annot_utt":"please book a ticket form [place_name : jaipur] to [place_name : mumbai] on [date : tuesday]"}
+{"id":"12856","partition":"test","scenario":"transport","intent":"transport_query","utt":"directions please","annot_utt":"directions please"}
+{"id":"12883","partition":"test","scenario":"transport","intent":"transport_ticket","utt":"book a train ticket weekend of the twenty sixth phoenix to los angeles","annot_utt":"book a [transport_type : train] ticket [date : weekend of the twenty sixth] [place_name : phoenix] to [place_name : los angeles]"}
+{"id":"12951","partition":"test","scenario":"qa","intent":"qa_factoid","utt":"what is the highest building in the world","annot_utt":"what is the highest building in the [place_name : world]"}
+{"id":"12996","partition":"train","scenario":"general","intent":"general_quirky","utt":"do i need my tire pressure checked","annot_utt":"do i need my tire pressure checked"}
+{"id":"13068","partition":"train","scenario":"qa","intent":"qa_definition","utt":"what's the word orange mean","annot_utt":"what's the word [definition_word : orange] mean"}
+{"id":"13122","partition":"test","scenario":"qa","intent":"qa_maths","utt":"what is the factorial of ten","annot_utt":"what is the factorial of ten"}
+{"id":"13177","partition":"test","scenario":"calendar","intent":"calendar_set","utt":"remind me to move so there is no weight gain","annot_utt":"remind me to move so there is no weight gain"}
+{"id":"13197","partition":"test","scenario":"general","intent":"general_quirky","utt":"i wish it could give me advice","annot_utt":"i wish it could give me advice"}
+{"id":"13242","partition":"test","scenario":"general","intent":"general_quirky","utt":"what is the best chocolate chip cookies recipe","annot_utt":"what is the best chocolate chip cookies recipe"}
+{"id":"13391","partition":"test","scenario":"qa","intent":"qa_maths","utt":"what's ten percent off forty dollars","annot_utt":"what's ten percent off forty dollars"}
+{"id":"13486","partition":"test","scenario":"general","intent":"general_quirky","utt":"can you show me a list of all my recent commands","annot_utt":"can you show me a list of all my recent commands"}
+{"id":"13524","partition":"test","scenario":"general","intent":"general_quirky","utt":"i would like it to help analyze ideas","annot_utt":"i would like it to help analyze ideas"}
+{"id":"13548","partition":"test","scenario":"iot","intent":"iot_wemo_on","utt":"i'd like you to turn turn on the t. v.","annot_utt":"i'd like you to turn turn on the t. v."}
+{"id":"13604","partition":"test","scenario":"qa","intent":"qa_factoid","utt":"tell me where steve jobs was born","annot_utt":"tell me where [person : steve jobs] was born"}
+{"id":"13625","partition":"test","scenario":"qa","intent":"qa_definition","utt":"what is the largest desk","annot_utt":"what is the [definition_word : largest desk]"}
+{"id":"13679","partition":"test","scenario":"qa","intent":"qa_factoid","utt":"can you tell me how many stomachs a cow has","annot_utt":"can you tell me how many stomachs a cow has"}
+{"id":"13717","partition":"test","scenario":"qa","intent":"qa_factoid","utt":"can you really see russia from alaska","annot_utt":"can you really see [place_name : russia] from [place_name : alaska]"}
+{"id":"13777","partition":"test","scenario":"qa","intent":"qa_definition","utt":"can you describe a credit card","annot_utt":"can you describe a [definition_word : credit card]"}
+{"id":"13819","partition":"test","scenario":"qa","intent":"qa_stock","utt":"what happened to the dow jones today","annot_utt":"what happened to the dow jones [date : today]"}
+{"id":"13853","partition":"test","scenario":"qa","intent":"qa_factoid","utt":"where on earth has the most volcanoes","annot_utt":"where on earth has the most volcanoes"}
+{"id":"13855","partition":"test","scenario":"music","intent":"music_query","utt":"what are lady gagas most popular songs","annot_utt":"what are [artist_name : lady gagas] most popular songs"}
+{"id":"13934","partition":"test","scenario":"qa","intent":"qa_stock","utt":"how is the stock going in general","annot_utt":"how is the stock going in general"}
+{"id":"14023","partition":"test","scenario":"qa","intent":"qa_definition","utt":"describe hell","annot_utt":"describe [definition_word : hell]"}
+{"id":"14053","partition":"test","scenario":"qa","intent":"qa_factoid","utt":"what year did george clooney start acting","annot_utt":"what year did [person : george clooney] start acting"}
+{"id":"14117","partition":"test","scenario":"qa","intent":"qa_factoid","utt":"where are pyramids located","annot_utt":"where are [place_name : pyramids] located"}
+{"id":"14229","partition":"test","scenario":"qa","intent":"qa_factoid","utt":"what movies has emma watson acted in","annot_utt":"what movies has [person : emma watson] acted in"}
+{"id":"14356","partition":"test","scenario":"general","intent":"general_quirky","utt":"i think i can travel the whole world in a day","annot_utt":"i think i can travel the whole world in a day"}
+{"id":"14367","partition":"test","scenario":"general","intent":"general_quirky","utt":"will there be a world war four","annot_utt":"will there be a world war four"}
+{"id":"14429","partition":"test","scenario":"qa","intent":"qa_definition","utt":"what is a caftan","annot_utt":"what is a [definition_word : caftan]"}
+{"id":"14440","partition":"test","scenario":"qa","intent":"qa_factoid","utt":"what is the capital of mexico","annot_utt":"what is the capital of [place_name : mexico]"}
+{"id":"14449","partition":"test","scenario":"qa","intent":"qa_factoid","utt":"does pink have a new baby","annot_utt":"does [person : pink] have a new baby"}
+{"id":"14498","partition":"test","scenario":"qa","intent":"qa_definition","utt":"give me the description about smartphone","annot_utt":"give me the description about [definition_word : smartphone]"}
+{"id":"14539","partition":"test","scenario":"qa","intent":"qa_factoid","utt":"find geographic details of this place","annot_utt":"find geographic details of this place"}
+{"id":"14585","partition":"test","scenario":"qa","intent":"qa_factoid","utt":"how long will it take to travel to japan from south korea","annot_utt":"how long will it take to travel to [place_name : japan] from [place_name : south korea]"}
+{"id":"14646","partition":"test","scenario":"transport","intent":"transport_ticket","utt":"tell me about the cheapest flight fares to nj today","annot_utt":"tell me about the cheapest flight fares to [place_name : nj] [date : today]"}
+{"id":"14658","partition":"test","scenario":"qa","intent":"qa_currency","utt":"what is the exchange rate of euro and dollar","annot_utt":"what is the exchange rate of [currency_name : euro] and [currency_name : dollar]"}
+{"id":"14792","partition":"test","scenario":"recommendation","intent":"recommendation_locations","utt":"where is a walking trail near me","annot_utt":"where is a walking trail near me"}
+{"id":"14857","partition":"test","scenario":"qa","intent":"qa_definition","utt":"could you explain the meaning of exorbitant for me please","annot_utt":"could you explain the meaning of [definition_word : exorbitant] for me please"}
+{"id":"14904","partition":"test","scenario":"qa","intent":"qa_stock","utt":"were the stocks rising or declining","annot_utt":"were the stocks rising or declining"}
+{"id":"14963","partition":"test","scenario":"general","intent":"general_quirky","utt":"internet please","annot_utt":"internet please"}
+{"id":"14967","partition":"test","scenario":"general","intent":"general_quirky","utt":"how do i figure women out","annot_utt":"how do i figure women out"}
+{"id":"15127","partition":"test","scenario":"qa","intent":"qa_definition","utt":"define speaker","annot_utt":"define [definition_word : speaker]"}
+{"id":"15186","partition":"test","scenario":"social","intent":"social_post","utt":"wedding wishes","annot_utt":"[event_name : wedding] wishes"}
+{"id":"15305","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"do i have any notifications from social media","annot_utt":"do i have any notifications from social media"}
+{"id":"15387","partition":"test","scenario":"social","intent":"social_post","utt":"tweet my current location","annot_utt":"[media_type : tweet] my current location"}
+{"id":"15402","partition":"test","scenario":"social","intent":"social_post","utt":"tweet that product sucks","annot_utt":"[media_type : tweet] that product sucks"}
+{"id":"15557","partition":"test","scenario":"social","intent":"social_post","utt":"i need you to tweet a complaint","annot_utt":"i need you to [media_type : tweet] a complaint"}
+{"id":"15706","partition":"test","scenario":"social","intent":"social_post","utt":"tweet at","annot_utt":"[media_type : tweet] at"}
+{"id":"15736","partition":"test","scenario":"social","intent":"social_post","utt":"submit a negative review about a company","annot_utt":"submit a negative review about a company"}
+{"id":"15792","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"who am i meeting today","annot_utt":"who am i [event_name : meeting] [date : today]"}
+{"id":"15802","partition":"test","scenario":"email","intent":"email_sendemail","utt":"reply an email to jason that i will not come tonight","annot_utt":"reply an email to [person : jason] that i will not come [timeofday : tonight]"}
+{"id":"15904","partition":"test","scenario":"email","intent":"email_query","utt":"check my new emails and tell me what are they about","annot_utt":"check my new emails and tell me what are they about"}
+{"id":"15906","partition":"test","scenario":"email","intent":"email_sendemail","utt":"reply thank you to john","annot_utt":"reply thank you to [person : john]"}
+{"id":"15911","partition":"test","scenario":"email","intent":"email_sendemail","utt":"prepare email for susan","annot_utt":"prepare email for [person : susan]"}
+{"id":"15950","partition":"test","scenario":"email","intent":"email_sendemail","utt":"respond to the email from john doe","annot_utt":"respond to the email from [person : john doe]"}
+{"id":"15965","partition":"train","scenario":"email","intent":"email_query","utt":"let me know if i get a new email today","annot_utt":"let me know if i get a new email [date : today]"}
+{"id":"15995","partition":"test","scenario":"email","intent":"email_sendemail","utt":"email karen about the budget meeting","annot_utt":"email [person : karen] about the [event_name : budget meeting]"}
+{"id":"16032","partition":"test","scenario":"email","intent":"email_sendemail","utt":"please send an email to sally regarding tomorrows meeting","annot_utt":"please send an email to [person : sally] regarding [date : tomorrows] [event_name : meeting]"}
+{"id":"16045","partition":"test","scenario":"email","intent":"email_sendemail","utt":"send mail to ismail for office opening time table","annot_utt":"send mail to [person : ismail] for office opening time table"}
+{"id":"16048","partition":"test","scenario":"email","intent":"email_query","utt":"show me recent emails","annot_utt":"show me recent emails"}
+{"id":"16120","partition":"test","scenario":"email","intent":"email_sendemail","utt":"help is to be sent only to jane","annot_utt":"help is to be sent only to [person : jane]"}
+{"id":"16148","partition":"test","scenario":"email","intent":"email_sendemail","utt":"quick reply to jack so please send a mail","annot_utt":"quick reply to [person : jack] so please send a mail"}
+{"id":"16166","partition":"test","scenario":"email","intent":"email_sendemail","utt":"can you reply to charlotte that i am going to be busy with the projects for next three weeks","annot_utt":"can you reply to [person : charlotte] that i am going to be busy with the projects for [time : next three weeks]"}
+{"id":"16201","partition":"test","scenario":"email","intent":"email_sendemail","utt":"please load new email for bruce and send message now","annot_utt":"please load new email for [person : bruce] and send message now"}
+{"id":"16275","partition":"test","scenario":"email","intent":"email_query","utt":"initiate polling for new email","annot_utt":"initiate polling for new email"}
+{"id":"16282","partition":"test","scenario":"email","intent":"email_sendemail","utt":"send an email to my assistant clara to cancel all appointments for tomorrow","annot_utt":"send an email to my [relation : assistant] [person : clara] to cancel all [event_name : appointments] for [date : tomorrow]"}
+{"id":"16296","partition":"test","scenario":"email","intent":"email_sendemail","utt":"send an email to mom to tell her wyatt's birthday party is on sunday","annot_utt":"send an email to [relation : mom] to tell her [person : wyatt's] [event_name : birthday party] is on [date : sunday]"}
+{"id":"16297","partition":"test","scenario":"email","intent":"email_sendemail","utt":"send an email to jake to tell him thank you","annot_utt":"send an email to [person : jake] to tell him thank you"}
+{"id":"16318","partition":"test","scenario":"email","intent":"email_sendemail","utt":"respond to email","annot_utt":"respond to email"}
+{"id":"16357","partition":"test","scenario":"email","intent":"email_query","utt":"has tom emailed me about ammunition","annot_utt":"has [person : tom] emailed me about ammunition"}
+{"id":"16384","partition":"test","scenario":"email","intent":"email_query","utt":"hey do i have any new emails","annot_utt":"hey do i have any new emails"}
+{"id":"16401","partition":"test","scenario":"email","intent":"email_sendemail","utt":"text an email to donna hey what are you doing today","annot_utt":"text an email to [person : donna] hey what are you doing [date : today]"}
+{"id":"16402","partition":"test","scenario":"email","intent":"email_sendemail","utt":"email donna plans for today","annot_utt":"email [person : donna] plans for [date : today]"}
+{"id":"16419","partition":"test","scenario":"email","intent":"email_sendemail","utt":"please send an email to uncle john with the following yes i can make it","annot_utt":"please send an email to [relation : uncle] [person : john] with the following yes i can make it"}
+{"id":"16471","partition":"test","scenario":"email","intent":"email_query","utt":"check emails from john","annot_utt":"check emails from [person : john]"}
+{"id":"16501","partition":"test","scenario":"email","intent":"email_sendemail","utt":"please send a mail to my friend divya how are you","annot_utt":"please send a mail to my [relation : friend] [person : divya] how are you"}
+{"id":"16518","partition":"test","scenario":"email","intent":"email_sendemail","utt":"add a new email for julie smith","annot_utt":"add a new email for [person : julie smith]"}
+{"id":"16535","partition":"test","scenario":"email","intent":"email_sendemail","utt":"can you write an email to chelsea","annot_utt":"can you write an email to [person : chelsea]"}
+{"id":"16559","partition":"test","scenario":"email","intent":"email_sendemail","utt":"send a reply to mike with the answer four hundred and thirty from his email he sent this morning","annot_utt":"send a reply to [person : mike] with the answer four hundred and thirty from his email he sent this [timeofday : morning]"}
+{"id":"16591","partition":"test","scenario":"email","intent":"email_sendemail","utt":"i just got an email from bill i need to answer it right now","annot_utt":"i just got an email from bill i need to answer it right now"}
+{"id":"16627","partition":"test","scenario":"email","intent":"email_query","utt":"check most current emails","annot_utt":"check most current emails"}
+{"id":"16666","partition":"test","scenario":"email","intent":"email_query","utt":"do i have any incoming emails","annot_utt":"do i have any incoming emails"}
+{"id":"16672","partition":"test","scenario":"email","intent":"email_query","utt":"has ben got in touch","annot_utt":"has [person : ben] got in touch"}
+{"id":"16701","partition":"test","scenario":"email","intent":"email_sendemail","utt":"i would like to reply to sarah's email","annot_utt":"i would like to reply to [person : sarah's] email"}
+{"id":"16717","partition":"test","scenario":"email","intent":"email_sendemail","utt":"could you please email john saying i'm on leave","annot_utt":"could you please email [person : john] saying i'm on leave"}
+{"id":"16729","partition":"test","scenario":"email","intent":"email_sendemail","utt":"respond to my email from bob letting them know i'll see them tomorrow","annot_utt":"respond to my email from [person : bob] letting them know i'll see them [date : tomorrow]"}
+{"id":"16730","partition":"test","scenario":"email","intent":"email_query","utt":"please check new email from andy","annot_utt":"please check new email from [person : andy]"}
+{"id":"16880","partition":"test","scenario":"email","intent":"email_sendemail","utt":"email jerry regarding the meeting","annot_utt":"email [person : jerry] regarding the [event_name : meeting]"}
+{"id":"16883","partition":"test","scenario":"email","intent":"email_sendemail","utt":"send an email to jerry ask what time will he be home tonight","annot_utt":"send an email to [person : jerry] ask what time will he be home [timeofday : tonight]"}
+{"id":"16886","partition":"test","scenario":"email","intent":"email_sendemail","utt":"reply this mail","annot_utt":"reply this mail"}
+{"id":"16892","partition":"test","scenario":"email","intent":"email_sendemail","utt":"start and email to john smith","annot_utt":"start and email to [person : john smith]"}
+{"id":"16907","partition":"test","scenario":"email","intent":"email_querycontact","utt":"jay's phone number","annot_utt":"[person : jay's] [personal_info : phone number]"}
+{"id":"16947","partition":"test","scenario":"email","intent":"email_sendemail","utt":"reply email","annot_utt":"reply email"}
+{"id":"16989","partition":"test","scenario":"email","intent":"email_sendemail","utt":"please say to the email that sent me george i need the money now it's urgent","annot_utt":"please say to the email that sent me [person : george] i need the money now it's urgent"}
+{"id":"17005","partition":"test","scenario":"email","intent":"email_query","utt":"please check for new email","annot_utt":"please check for new email"}
+{"id":"17019","partition":"test","scenario":"email","intent":"email_sendemail","utt":"compose a reply to last email","annot_utt":"compose a reply to last email"}
+{"id":"17052","partition":"test","scenario":"email","intent":"email_query","utt":"search nandy","annot_utt":"search nandy"}
+{"id":"17113","partition":"test","scenario":"email","intent":"email_sendemail","utt":"create email to yulia","annot_utt":"create email to [person : yulia]"}
+{"id":"17123","partition":"test","scenario":"email","intent":"email_sendemail","utt":"email form for regional v. p.","annot_utt":"email form for [relation : regional v. p.]"}
+{"id":"17135","partition":"test","scenario":"email","intent":"email_query","utt":"any lighting news emails","annot_utt":"any lighting news emails"}
+{"id":"17151","partition":"test","scenario":"email","intent":"email_sendemail","utt":"my friend john has sent me a invitation card to his newly bought home say thanks to him in his mail id","annot_utt":"my [relation : friend] [person : john] has sent me a invitation card to his newly bought home say thanks to him in his mail id"}
+{"id":"17157","partition":"test","scenario":"email","intent":"email_query","utt":"do i have any new email from joe","annot_utt":"do i have any new email from [person : joe]"}
+{"id":"17170","partition":"test","scenario":"email","intent":"email_query","utt":"notify me when joshua emails me","annot_utt":"notify me when [person : joshua] emails me"}

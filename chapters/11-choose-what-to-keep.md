@@ -1,0 +1,143 @@
+---
+chapter_id: choose-what-to-keep
+---
+
+# Choose which traces to keep
+
+By the end of this chapter you can choose which traces a backend keeps, say what each choice drops, and scale a total from the traces it kept, with an interval around the result. You'll write a rule that keeps the traces an engineer needs most, and check it against the incident day.
+
+Ambrewick keeps one trace for every message, and [chapter 1](#one-message-one-trace) kept every one. At the book's scale of {{out:head-sample-ratio:messages on baseline day 1, of all messages}} messages a day, that is simple to manage. A service that answers messages all day writes far more, and a backend that holds every trace for a year pays for each of them. A sampler keeps some traces and drops the rest, so the decision that matters is which ones. The incident day shows the problem. Its errors are rare, and the engineer who opens the traces after an alert needs those errors and the slow messages more than any typical message. A sampler that picks traces without reading them keeps the rare ones at the same share as everything else.
+
+This chapter builds the three kinds of decision that trace sampling makes, and the estimate a total needs when only some traces are kept. Here trace sampling means deciding which traces the backend keeps. It has nothing to do with token sampling, which chooses the next word a model writes. The examples run on two recorded days: baseline day 1, which has no injected faults, and the incident day from [chapter 9](#an-alert-that-stays-quiet). Both were recorded on the recording machine, a 4-vCPU Intel Xeon at 2.10 GHz, which ran Qwen3-4B-Instruct-2507, and both are replayed on the [virtual clock](#replay-and-the-virtual-clock).
+
+## Head sampling decides before the trace runs {#head-sampling}
+
+Head sampling decides whether to keep a trace when it starts, before any span has run. The kind this chapter uses keeps a fixed share by the trace ID, so it cannot know whether the message will fail and cannot aim at failures. The ratio is the share of traces kept, and the sample is keyed on the [trace ID](#one-message-one-trace).
+
+The SDK's ratio sampler compares the trace ID with the ratio. It reads the low 64 bits of the trace ID as a number, and it keeps the trace when that number falls below the ratio's share of the whole range ([the sampler in the Python SDK](https://raw.githubusercontent.com/open-telemetry/opentelemetry-python/v1.45.2/opentelemetry-sdk/src/opentelemetry/sdk/trace/sampling.py), pinned here at {{version:opentelemetry-sdk}}). The decision depends on the ID alone, so every span of a trace agrees with the others, and the same trace gets the same answer on every run. The book's trace IDs count up from 1, and small counts all fall under any ratio above zero, so the book hashes each count to 128 bits before the sampler reads it. The specification deprecates `TraceIdRatioBased` in favour of `ProbabilitySampler`, which decides from the 56 bits of randomness that W3C Trace Context Level 2 specifies ([the trace SDK specification at v1.50.0](https://raw.githubusercontent.com/open-telemetry/opentelemetry-specification/v1.50.0/specification/trace/sdk.md)). The pinned SDK has no `ProbabilitySampler`, so the book uses the ratio sampler at the root.
+
+The replay runs every message first and makes the head decision afterward. The decision is applied to the completed traces, and it is the same decision the assistant's own sampler would make at the source, because the trace ID alone settles it. The example's last lines check that claim: at each ratio it uses, a provider with the same sampler starts a root span for every trace ID of the day, and the example asserts that the two decisions agree.
+
+[Example: head-sample-ratio](../examples/head-sample-ratio.py)
+
+A larger ratio keeps every message that a smaller one kept, and the example checks that first. At 0.1 the backend keeps {{out:head-sample-ratio:messages kept at ratio 0.1, of 200}} of the day's {{out:head-sample-ratio:messages on baseline day 1, of all messages}} messages. The ratio describes the share over many traces, and a single day can land a little above or below it, so the count is the day's and not the ratio's.
+
+**Working rule:** Pick a head ratio only for traffic whose rare cases you can afford to lose. Run the ratio sampler at the root only, under `ParentBased`, and leave every other service on the default sampler or another parent-based one. The [trace SDK specification](https://raw.githubusercontent.com/open-telemetry/opentelemetry-specification/v1.50.0/specification/trace/sdk.md) recommends the ratio sampler "only for root spans", since different SDKs, and different versions of one SDK, can give inconsistent results for the same input. Print the kept share beside its count, as the example does, and never read the share as a count.
+
+## Children follow the root's decision {#parent-based-sampling}
+
+A trace crosses a process boundary, and the contacts server is the second process. [Chapter 4](#traceparent-in-meta) put the trace's identity into each request as `traceparent`, and one of that header's flags is the sampled flag (Trace Context Level 1, the version the book pins). Parent-based sampling makes each span follow its parent's decision. A root span asks the head sampler, and every span below it reads its parent's flag instead of running a ratio of its own. That matters across processes, because the server never sees the assistant's ratio, only the flag.
+
+The contacts server sets no sampler of its own. Its tracer provider takes the SDK's default, with `OTEL_TRACES_SAMPLER` unset, which follows a remote parent's sampled flag: when the flag is set the server samples the span, and when it is not set the server drops it. The probe below turns the assistant's sampler on at the source, at a ratio of 0.5, and counts what the server records under each root.
+
+[Example: parent-based-follows-root](../examples/parent-based-follows-root.py)
+
+The contacts server made no decision of its own, so a trace was recorded on both sides or on neither. Under the unsampled roots the server recorded {{out:parent-based-follows-root:contacts server spans under unsampled roots}} spans. Of the {{out:parent-based-follows-root:probes, one assistant root each}} probe roots, the assistant sampled {{out:parent-based-follows-root:roots sampled at ratio 0.5, of 40}}, and every one of those had server spans, which the example asserts.
+
+**Working rule:** Sample at the root only, and leave every other service on the default sampler or another parent-based one. Two halves of one trace survive apart when another service runs its own ratio, algorithm or SDK version, since two identical samplers at one ratio agree. We would not give a server its own ratio.
+
+## Tail sampling reads the whole trace {#tail-sampling}
+
+Head sampling decides before the message runs, and the failure happens while it runs. Tail sampling decides once the whole trace is in, by what it holds. The rule in this chapter keeps three kinds of trace, in this order. It keeps a trace whose message has an error, in the sense [chapter 8](#how-a-span-records-failure) defines. It keeps a trace whose message ran past the latency objective from [chapter 9](#service-level-objectives), which is {{out:tail-rule-keeps-errors:latency threshold, the 20 s objective}}. And it keeps a trace whose model calls cost more than the 99th percentile of baseline day 1, which is {{out:tail-rule-keeps-errors:cost threshold, baseline day 1's 99th percentile per message}} per message, the costly tail that [chapter 6](#the-expensive-tail) counts. Each kept trace is kept whole, with every span from both processes, and the rule stops once its span budget is spent.
+
+The rule is this book's own code, `TailRule` in `lib/sampling.py`, and it runs at the receiver once a trace's root has arrived. In every trace of the incident day the root is the last span to end, so a trace is whole when its root arrives. That is by end time. Spans can arrive over a network in another order, so a receiver should also wait.
+
+The rule reads each whole trace, so the errors it keeps are the ones it found, not the ones a ratio happened to pick. The timeout window is part of this count. [Chapter 9](#an-alert-that-stays-quiet) showed that a lookup timeout writes ERROR attempts while the user still gets a reply, so those messages have an error in chapter 8's sense. The engineer needs their cause even though no user complained, and the rule keeps them for that reason.
+
+Before the first run, make a prediction. The incident day has messages with an error, and a 10% head sample decides for each of them before anything runs. Predict how many of those messages the head sample keeps: all of them, about a tenth of them, or none. Write the number down, then run the example.
+
+[Example: tail-rule-keeps-errors](../examples/tail-rule-keeps-errors.py)
+
+The incident day has {{out:tail-rule-keeps-errors:messages on the incident day}} messages, and {{out:tail-rule-keeps-errors:messages with an error, of all messages}} of them have an error.
+
+The head sample loses most of those errors. It keeps {{out:tail-rule-keeps-errors:messages with an error kept by a 10% head sample, of 17}} of them, which is {{out:tail-rule-keeps-errors:share of messages with an error kept by a 10% head sample}}. The guess of about a tenth came close here, but the head sample had no way to aim at the errors, so its count was a matter of chance.
+
+The tail rule loses none. It keeps all {{out:tail-rule-keeps-errors:messages with an error kept by the tail rule, of 17}} of them.
+
+A rule that keeps every error can still cost too much, so the book's rule also takes a budget of spans for the day. Spans are what the backend stores, and a trace with many model calls holds many of them. Next, the rule is given a budget that the incident day cannot fit whole: {{out:tail-rule-span-budget:span budget}} spans against a day of {{out:tail-rule-span-budget:spans in the incident day's messages}}.
+
+[Example: tail-rule-span-budget](../examples/tail-rule-span-budget.py)
+
+The budget keeps {{out:tail-rule-span-budget:spans kept under the budget, of all spans}} spans, which is {{out:tail-rule-span-budget:share of spans kept under the budget}} of the day's. Those are the spans of the {{out:tail-rule-span-budget:messages kept for error, under the budget}} messages with an error, and the rule keeps no slow message and no costly one.
+
+Errors are ranked first, so they take their spans before anything else is considered, and the remainder of the budget is what is left for a slow message. The slow message without an error, which took {{out:tail-rule-span-budget:time of the slowest message dropped for the budget}}, holds more spans than that remainder, so the budget drops it. Two assertions in the code hold the rule to this: every error is kept, and the budget binds, since with no budget the rule keeps {{out:tail-rule-span-budget:spans the tail rule keeps with no budget, incident day}} spans, more than the budget allows.
+
+The budget of {{out:tail-rule-span-budget:span budget}} spans is the book's choice, not a rule of the method. It is above the spans that the errors take, so every error survives. The messages with an error hold {{out:tail-rule-span-budget:spans in messages with an error}} spans between them, so a budget below that would drop one of them, and the rule exists to keep them. A larger budget would also keep the slow message, at the cost of its spans.
+
+The expensive class keeps nothing extra on either day. The number of messages above the expensive threshold with neither an error nor a slow time is {{out:tail-rule-span-budget:messages over the expensive threshold with no error or slow time, incident day}} on the incident day and {{out:tail-rule-span-budget:messages over the expensive threshold with no error or slow time, baseline day 1}} on baseline day 1. Every costly message on both recorded days was also an error or a slow message, so the class does no work on them. We keep it in the rule because a costly message with neither mark is possible, and the rule should keep it when one comes. Neither recorded day shows one. The errors this rule keeps are also the traces that chapter 12 scans for personal data, so the rule also decides what that scan reads.
+
+**Working rule:** Keep errors first, and set the budget above the spans they take on a day you have measured, not from a guess. Count the messages that are costly but neither erroneous nor slow before you trust a cost class, and say what a smaller budget would drop.
+
+## Estimate the day's totals from a sample {#estimating-totals-from-a-sample}
+
+Sampling thins spans, so a total summed from the kept spans is smaller than the day, and sampling does not thin the counters. [Chapter 6](#totals-from-metrics-not-spans) showed that summing spans double counts, so the book reads totals from the counters, which the assistant's meter adds to as each model call ends. [Chapter 9](#metrics-the-assistant-exports) reads its alerts from the same meter, so sampling never thins a total or an alert. An estimate from a sample is for a split that the counters cannot make, and a split is only as good as each part's kept count.
+
+Scaling a head sample's total by the inverse of its ratio estimates the whole, because every trace has the same chance of being kept: the kept total, times the inverse of the ratio, estimates the day. The interval is the estimate plus or minus 1.96 standard errors, with the standard error taken from the sampled traces alone. A tail rule keeps some traces whatever the ratio, so its kept set is not a fixed share of the day. Once the head ratio and the tail rule run together ([the decisions below](#choose-what-to-keep-decisions)), the backend holds their union, which is not a head sample, so mark each trace with the reason it was kept and scale only the head sample's traces. This section scales head samples only.
+
+Scaling one 10% sample of baseline day 1 by ten gives an estimate that can be set against the day's full count and against the token counter.
+
+[Example: estimate-totals-error](../examples/estimate-totals-error.py)
+
+The estimate starts from the 10% head sample of baseline day 1, which keeps {{out:estimate-totals-error:messages kept at ratio 0.1, of 200}} of the day's messages, and scales their tokens by ten. The full count is {{out:estimate-totals-error:full count of tokens, all messages}} tokens, and the day's token counter, which [chapter 6](#totals-from-metrics-not-spans) reads for totals, adds up to the same figure: {{out:estimate-totals-error:token counter total for the day, input plus output}}.
+
+One sample gives one estimate, and the interval says where the day's full count could lie given how the sample was drawn. This interval is built from the sample's own standard error, and it is not [chapter 7's bootstrap interval](#tail-percentiles-with-intervals). The token estimate from that one sample is {{out:estimate-totals-error:estimated tokens, ratio 0.1}} tokens.
+
+The 95% interval runs from {{out:estimate-totals-error:interval as shares of the full count, tokens, low end}} to {{out:estimate-totals-error:interval as shares of the full count, tokens, high end}} of the full count, and it is too wide to act on: a sample of {{out:estimate-totals-error:messages kept at ratio 0.1, of 200}} messages leaves the total anywhere across that range.
+
+The interval is also short of its label. Of {{out:estimate-totals-error:samples of the same day, drawn independently}} samples of the same day, drawn independently, {{out:estimate-totals-error:intervals that hold the full count, of 2,000 samples at ratio 0.1, tokens}} have an interval that holds the full count, against the 95% the interval is built for.
+
+The cost estimate is a separate sum over the same sample. It is {{out:estimate-totals-error:estimated cost, ratio 0.1}}, against a full cost of {{out:estimate-totals-error:full cost of the day, Qwen3-4B-Instruct-2507 at the book's rates}} for the day, priced at the book's table `book-2026-11-02`.
+
+Its interval runs from {{out:estimate-totals-error:interval as shares of the full cost, low end}} to {{out:estimate-totals-error:interval as shares of the full cost, high end}} of the full cost, and {{out:estimate-totals-error:intervals that hold the full count, of 2,000 samples at ratio 0.1, cost}} of the same samples hold it.
+
+Varying the ratio shows how the error depends on how much is kept.
+
+[Example: figure-sampling-error-by-ratio](../examples/figure-sampling-error-by-ratio.py)
+
+{{fig:sampling-error-by-ratio}} draws the same estimate at eight ratios, and its band closes as the ratio reaches 1.0. At the left, {{out:figure-sampling-error-by-ratio:messages kept at ratio 0.01, of 200}} messages are kept, and the estimate is {{out:figure-sampling-error-by-ratio:estimate as a share of the full count, ratio 0.01}} of the full count. Its interval runs from {{out:figure-sampling-error-by-ratio:interval low end as a share of the full count, ratio 0.01}} to {{out:figure-sampling-error-by-ratio:interval high end as a share of the full count, ratio 0.01}}, so the low end falls below zero, where the normal approximation fails with so few kept traces.
+
+At 0.1, {{out:figure-sampling-error-by-ratio:messages kept at ratio 0.1, of 200}} messages are kept, the estimate is {{out:figure-sampling-error-by-ratio:estimate as a share of the full count, ratio 0.1}} of the full count, and the interval runs from {{out:figure-sampling-error-by-ratio:interval low end as a share of the full count, ratio 0.1}} to {{out:figure-sampling-error-by-ratio:interval high end as a share of the full count, ratio 0.1}}.
+
+Ratio 0.5 keeps {{out:figure-sampling-error-by-ratio:messages kept at ratio 0.5, of 200}} messages, and the estimate is {{out:figure-sampling-error-by-ratio:estimate as a share of the full count, ratio 0.5}} of the full count, with an interval from {{out:figure-sampling-error-by-ratio:interval low end as a share of the full count, ratio 0.5}} to {{out:figure-sampling-error-by-ratio:interval high end as a share of the full count, ratio 0.5}}. At ratio 1.0 every message is kept, so the estimate is exact and the interval has no width, which the example asserts.
+
+![A line of the estimated token total, as a share of the full count, against the sampling ratio on a log scale, with a shaded 95% interval; the band narrows overall as the ratio rises and closes at ratio 1.0](../examples/figures/sampling-error-by-ratio.svg "The token estimate from a head sample, as a share of the full count, at eight sampling ratios, with its 95% interval")
+
+The interval measures the sampling's chance on this one day. Whether another day would give the same total is a different question, and this interval does not answer it.
+
+**Working rule:** Scale only the traces the head ratio kept, by the inverse of its ratio, print the interval beside the estimate, and check the estimate against the counter total for the same day when one exists. Use a sampled estimate only for a split that the counters cannot make, and never for a total the counters already hold.
+
+## What a kept trace costs to hold {#retention}
+
+Retention is how long the backend keeps each kind of telemetry. [Data Governance as Code](https://rollingedition.com/concepts/data-governance/retention) states the same idea for a platform's data: how long each kind of data is kept. This chapter applies it to telemetry only, and it sets no period. The period depends on how far back an engineer must look after an incident and on what the storage costs, and both belong to the team that runs the backend.
+
+A period is paid for in bytes, so the [tail-rule example](#tail-sampling) that prints the kept share also measures what a message's trace takes. On baseline day 1 a message's span rows take {{out:tail-rule-span-budget:bytes per message without content, baseline day 1}} bytes in the JSON-lines export, with capture off, and the count holds span rows only. The kept traces of the incident day hold {{out:tail-rule-span-budget:bytes kept under the budget, of the incident day's bytes}} of that day's bytes, against {{out:tail-rule-span-budget:share of spans kept under the budget}} of its spans. Here the bytes follow the spans closely, so the kept share of spans is a fair guide to the kept share of bytes on this day.
+
+The count leaves content out. Capture is off until chapter 12, which turns it on for one named purpose and measures what prompts and replies add to this same export path. That byte count is therefore a lower bound for a message's trace. Sampling also decides only which spans reach the backend. It does not settle what the process does with the spans it drops, and chapter 12 shows what the upload hook does with content in those spans.
+
+**Working rule:** Measure bytes per message on your own export, without content and then with any content you plan to keep, before you set a period. Keep the period beside the bytes it multiplies, and name what the bytes leave out.
+
+## Where sampling goes wrong in production {#choose-what-to-keep-in-production}
+
+A head ratio does what its share says and nothing more. It keeps the same expected share on a quiet day and on a day with a new failure, because its decision never reads a message. The kept set of the [tail rule](#tail-sampling) moves with the failures, which is why this chapter uses both. A head sample still has a use. It keeps a sample of ordinary traces, so the typical message can be read, and its decision needs no look at the message.
+
+The two thresholds of the [tail rule](#tail-sampling) come from other parts of the book, and they move. The latency line is chapter 9's objective. The expensive line is the baseline day's 99th percentile of cost, which a release that changes cost moves with it. The expensive line is therefore read again after each release that changes what a message costs, and not kept from the first baseline.
+
+The rule needs whole traces, and it judges the trace it has. A [detached root](#lost-context) starts a trace of its own, and the rule judges that trace by what it holds. On the incident day the example counts {{out:tail-rule-keeps-errors:detached roots, traces of their own with no message, incident day}} such traces, each an MCP `notifications/cancelled` span sent after a timed-out lookup with no context current, and each judged alone. The rest of its message sits in another trace, which the rule may keep or drop on other grounds. The check covers the shape of the book's traces alone, and production may hold other shapes that it does not show.
+
+**Working rule:** Judge a rule by what it keeps on the days that went wrong, not on a quiet day, and read each threshold again after a release that changes what it measures.
+
+## The decisions this chapter made {#choose-what-to-keep-decisions}
+
+The decisions below follow from one fact the examples show: a sampler's share is set before the message is known, so keeping the messages an engineer needs takes a rule that reads each whole trace.
+
+- We keep the head ratio and the tail rule together. The head sample alone kept {{out:tail-rule-keeps-errors:messages with an error kept by a 10% head sample, of 17}} of the {{out:tail-rule-keeps-errors:messages with an error, of all messages}} messages with an error, and the tail rule keeps all of them.
+- The tail rule keeps errors first, then slow messages, then costly ones, under a budget of {{out:tail-rule-span-budget:span budget}} spans. The budget sits above the spans the errors take, and one below them would drop an error.
+- Every service samples with parent-based sampling, and only the root's service makes the decision. The contacts server follows the assistant's flag and runs no ratio of its own.
+- [Chapter 6's rule for totals](#tokens-and-cost-decisions) holds here. A sampled estimate, printed with its interval, is for a split the counters cannot make, and it is only as good as each part's kept count.
+- The retention period belongs to the team. We measure the bytes per message first, without content, and chapter 12 adds what content costs.
+
+Two of these are judgements that the examples cannot settle. The budget of {{out:tail-rule-span-budget:span budget}} spans is one, because it is the book's number and not a measured limit. Parent-based sampling is the other. The probe checks the SDK's default sampler on one server, and it says nothing about services that this book does not run. A reader who copies the rule should measure their own day first: the spans their errors take, the bytes per message, and the messages that are costly but neither erroneous nor slow. Only then should any number in this chapter become a setting.
+
+What the chapter learned is narrower than a rule about sampling. A head sampler's share is fixed by the trace ID before the message runs, so only a rule that reads each whole trace keeps the messages an engineer needs. A total from the kept traces is an estimate, and it carries its interval wherever it is printed.
+
+**Working rule:** Before you copy a sampling setting, run its example on a day you have recorded yourself, and keep each setting with the example that tests it.

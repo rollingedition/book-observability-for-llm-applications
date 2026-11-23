@@ -1,0 +1,60 @@
+{
+ "chunk_ns": [
+  6112783008,
+  6112829554,
+  6327633059,
+  6473800159,
+  6611722843,
+  6754859363,
+  6885710812,
+  7018095843,
+  7168709830,
+  7311319905,
+  7440128278,
+  7585537956,
+  7736517769,
+  7907186696,
+  8068536657,
+  8226397446,
+  8370018714,
+  8516684338,
+  8677532645,
+  8822516465,
+  8975778383,
+  9115056552,
+  9247957610,
+  9388176777
+ ],
+ "completion_tokens": 22,
+ "finish_reason": "stop",
+ "gen_ns": 3257606000,
+ "kind": "model",
+ "message_id": "9680",
+ "offset_ns": 522494036322,
+ "prefill_ns": 5630340000,
+ "prompt_tokens": 528,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-06] Resuming an audiobook\nAn audiobook remembers where you stopped. Ask the assistant to resume a book by its title, and it starts a few seconds before the last point, so you hear the end of the sentence. To start a book from the beginning, say so. The assistant reports the chapter and the time left in the book. Books you have finished are listed separately, and a finished book can be started again from the beginning. Bookmarks can be added at a point you name.\n\n[help-media-09] Pausing, skipping and going back\nPause stops the current song and keeps its place. Resume starts it again from the same point. Skip moves to the next song in the list, and going back moves to the previous one. Going back once more than a few seconds into a song starts that song again from the beginning. Skip does not work on a radio station, because a station is a live stream. The assistant reports what is playing after each of these commands.\n\n[help-media-05] Following a podcast\nFollow a podcast to be told when a new episode is released. Ask the assistant to follow a show by name. Episodes play in the order they were released, or the latest first, as you choose. The assistant can play the latest episode, or a named one. Episodes you have started are remembered, so you can resume them later. Unfollowing a show keeps its episodes you have already listened to, but removes it from future reports of new episodes.\n",
+    "role": "system"
+   },
+   {
+    "content": "resume harry potter from the place i have stopped listening to last time",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 101,
+ "step": "answer",
+ "text": "The assistant can resume the Harry Potter audiobook from where you left off. [help-media-06]",
+ "tokens_evaluated": 336,
+ "tool_calls": [],
+ "total_ns": 9850237578,
+ "ttfc_ns": 6112783008
+}

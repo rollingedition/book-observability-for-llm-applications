@@ -1,0 +1,42 @@
+# Chapter find-the-failure's narration (re-check narration): descriptions of its examples, blocks and tables, as
+# [examples.ID], [[blocks]] and [[tables]], and its own readings. Only this chapter's writer edits this file, so
+# writers working in parallel never append to one shared lexicon. A reading every chapter needs goes into
+# narration/lexicon.toml, which wins over a chapter's.
+
+[examples.error-status-by-step]
+say = "The code counts the spans that end with error status on two days. Baseline day 1 is replayed and has none, and the incident day runs live with its injected faults. The printed lines give the count on each day, then each kind of error span by its name and its error type, and each of the incident day's lines says it is injected."
+
+[examples.truncated-replies]
+say = "The code reads the finish reason the runtime recorded for each model request, on baseline day 1 and on the model-swap release. It prints how many replies stopped on their own and how many were cut at the token cap, by step, and then the cap itself and the number of tokens in the one cut reply."
+
+[examples.malformed-tool-calls]
+say = "The code parses every answer reply on baseline day 1 and on the model-swap release, and counts the replies that carry a tool call and the ones the parser rejects. The replay's own count should agree. At the end, two replies built for this chapter are passed straight to the parser, and the output says the parser rejects each one."
+
+[examples.retries-under-incident]
+say = "The code runs the incident day live and groups each contacts call by its injected window. For the timeout window it prints the window's start and end, the attempts that timed out, their error code, the read timeout, the retry wait, and the time from the first attempt to the retry. For the other windows it prints the error-result attempts and the refused model requests, and how many messages got a reply after a refusal."
+
+[examples.wrong-routes-by-label]
+say = "The code counts the messages whose routed route differs from the scenario table's route, on baseline day 1, with a 95% interval, and then route by route. It prints the same count for the model-swap release and for the dev day, and the fallback replies sent to scenarios that needed a tool or an article in each case."
+
+[examples.figure-failure-modes-by-route]
+say = "The code splits each route's messages on baseline day 1 into the ones routed right, the ones wrong to another tool route, and the ones wrong to the fallback reply. It prints every count the figure draws, then draws a bar for each route with the route's message count in its label."
+
+[examples.failure-modes-query]
+say = "The code writes the incident day and baseline day 1 into two receiver files, then runs one query for each failure mode against each file. The printed lines give each query's count, and the incident day's lines are labelled injected. The last query pairs each error-result attempt with the server's span in its trace, and prints the count of pairs."
+
+[terms]
+"ambrewick.attempt" = "am brew ick attempt"
+"ambrewick.mcp.error_code" = "am brew ick mcp error code"
+"ambrewick.attempt.number" = "am brew ick attempt number"
+"13:00" = "thirteen hundred hours"
+"13:12" = "thirteen twelve hours"
+"note 18" = "a note in the conventions"
+"_OTHER" = "other"
+"RateLimitError" = "rate limit error"
+"ModelUnavailable" = "model unavailable"
+"ValidationError" = "validation error"
+"<tool_call>" = "tool call tag"
+"find_contact" = "find contact"
+"tool_error" = "tool error"
+
+[words]

@@ -1,0 +1,43 @@
+{
+ "chunk_ns": [
+  542505425,
+  542513945,
+  667561002,
+  814920311,
+  942072721,
+  1092136981,
+  1239886789,
+  1364469496
+ ],
+ "completion_tokens": 6,
+ "finish_reason": "stop",
+ "gen_ns": 817824000,
+ "kind": "model",
+ "message_id": "9187",
+ "offset_ns": 1408918058466,
+ "prefill_ns": 288735000,
+ "prompt_tokens": 146,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.",
+    "role": "system"
+   },
+   {
+    "content": "research the clients that will attend the meeting",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 274,
+ "step": "route",
+ "text": "{\"route\": \"fallback\"}",
+ "tokens_evaluated": 13,
+ "tool_calls": [],
+ "total_ns": 1416067037,
+ "ttfc_ns": 542505425
+}

@@ -1,0 +1,52 @@
+{
+ "chunk_ns": [
+  6054843078,
+  6054852073,
+  6185399729,
+  6319870691,
+  6444981370,
+  6582699620,
+  6752032859,
+  6900677593,
+  7051000776,
+  7200601718,
+  7347738694,
+  7481930456,
+  7640392122,
+  7780730616,
+  7910723790,
+  8040228562
+ ],
+ "completion_tokens": 14,
+ "finish_reason": "stop",
+ "gen_ns": 1974652000,
+ "kind": "model",
+ "message_id": "14229",
+ "offset_ns": 1487785725764,
+ "prefill_ns": 5576216000,
+ "prompt_tokens": 542,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-messages-05] Replying to a message\nAsk the assistant to reply to the latest message from someone, or to a message you name by its subject. The reply is written in the same thread, so the person sees it with the earlier messages. Say what the reply should say, or ask the assistant to draft a short reply and read it to you first. A reply is sent only after you confirm it. If the thread has more than one earlier message from that person, the assistant asks which one you mean before it replies.\n\n[help-devices-07] Checking whether a device is online\nAsk whether a device is online and the assistant reports its status: online, offline, or updating. A device is offline when it has lost its connection to the home network. Check that the device has power, that it is in range of the network, and that the network is working for other devices. An updating device may be unavailable for several minutes. The assistant reports the last time the device was seen, so you can tell whether it has been offline for a while or only for a moment.\n\n[help-media-02] Playing a playlist\nA playlist is a list of songs you have saved. To play one, name it. The assistant starts the first song and continues through the list in order unless shuffle is on. Playlists can be created from the songs you name; the assistant lists the songs before it saves the playlist. A playlist cannot hold a song that is not in your library. Changing a playlist does not change what is already playing. To add a song to a playlist, name both.\n",
+    "role": "system"
+   },
+   {
+    "content": "what movies has emma watson acted in",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 294,
+ "step": "answer",
+ "text": "None of the provided articles mention Emma Watson's movies or acting career.",
+ "tokens_evaluated": 350,
+ "tool_calls": [],
+ "total_ns": 8777691562,
+ "ttfc_ns": 6054843078
+}

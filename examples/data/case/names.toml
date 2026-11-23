@@ -1,0 +1,70 @@
+# The names rule (plan section 2.2, PL-30) and the managing editor's additions.
+#
+# An utterance is removed from the case if any clause below matches. Matching is on whole words, case-insensitive,
+# after two normalisations: full stops and apostrophes are dropped ("n. p. r." becomes "n p r", "lowe's" becomes
+# "lowes") and runs of spaces are collapsed. The build prints the count each clause removes and writes
+# massive/removed.tsv: the removed ids and the clauses that matched them, never the text.
+#
+# Ambiguous common words are left out of the text list (for example "echo", "zoom", "subway", "united", "delta"),
+# so the rule does not remove every utterance that uses an ordinary word. Two exceptions are kept on purpose: the
+# editor's named terms ("target", "chase", "messenger"), and "apple", which names a company in most of its uses
+# (stock, store, complaints). About five utterances that mean the fruit are removed with it; that is the cost of
+# the rule's conservative reading.
+
+# (a) Any utterance with one of these slot types is removed, whatever the slot's value.
+name_slot_types = ["business_name", "app_name", "transport_agency"]
+
+# (c) Utterances whose device, radio, podcast or game slot names a product, station or title brand.
+#     Matched on the normalised slot value.
+brand_slot_types = ["device_type", "radio_name", "podcast_name", "game_name"]
+brand_slot_terms = [
+  "wemo", "roomba", "iroomba", "irobot", "sonos", "kindle", "radiolab", "xmtune", "soundcloud", "shoutcast",
+  "iheartradio", "i heart radio", "lastfm", "npr", "bbc", "cnn", "nyt", "sirius xm", "rooster teeth",
+  "happypeoplecom", "tomatojuicecom", "foodnetworkcom", "sportsnet", "ringcast", "tvf", "aib", "nfl", "mlb",
+  "wgrr", "kiss", "prambors", "mirchi", "mirch", "mango", "famosa", "radia",
+  "candy crush", "subway surfers", "subway surfer", "papa pear saga", "clash of clans", "temple run",
+  "temple runner", "angry bird", "angry birds", "bejeweled", "scrabble", "scabble", "monopoly", "battleship",
+  "blokus", "fifa seventeen", "league of legends", "super mario", "mario", "road rash", "street fighter",
+  "space invaders", "flappy bird", "san andreas", "gta", "gta vice city", "nfs", "coc", "contra", "minestart",
+  "trivial pursuit", "jeopardy", "naughty dog", "disney", "mindsweeper", "fmod", "minesweeper",
+]
+
+# (b) Companies, products, apps and assistants named in the text.
+text_terms = [
+  # assistants and devices
+  "alexa", "siri", "cortana", "bixby", "google", "homepod", "home pod", "wemo", "roomba", "irobot", "sonos",
+  "kindle", "fitbit", "garmin", "roku", "chromecast",
+  # technology companies and products
+  "amazon", "apple", "iphone", "ipad", "ipod", "android", "samsung", "microsoft", "facebook", "messenger",
+  "instagram", "twitter", "whatsapp", "youtube", "tiktok", "snapchat", "linkedin", "reddit", "tinder", "skype",
+  "dropbox", "wikipedia", "tumblr", "pinterest", "vimeo", "flickr", "yelp", "tripadvisor", "airbnb", "expedia",
+  "kayak", "waze", "ebay", "paypal", "venmo", "etsy", "zillow", "craigslist", "gmail", "hotmail", "outlook",
+  "yahoo", "bing", "hulu", "netflix", "spotify", "pandora", "deezer", "tidal", "shazam", "soundcloud",
+  "lastfm", "iheartradio", "sirius", "sirius xm", "gaana", "xbox", "playstation", "nintendo", "minecraft",
+  "fortnite", "lego", "tesla", "toyota", "honda", "bmw", "volkswagen", "nike", "adidas", "gucci", "sephora",
+  "ulta", "lyft", "uber", "doordash", "grubhub", "deliveroo", "instacart", "groupon", "bbc", "cnn", "espn",
+  "disney", "pixar", "ryanair", "easyjet", "british airways", "american airlines", "jetblue", "lufthansa",
+  "qantas", "amtrak", "irctc", "verizon", "tmobile", "usps", "fedex", "dhl",
+  # retailers, restaurants and banks
+  "walmart", "target", "costco", "ikea", "tesco", "kroger", "chase", "lowes", "home depot", "best buy",
+  "macys", "kohls", "safeway", "wells fargo", "bank of america", "starbucks", "mcdonalds", "mcdonald",
+  "mcd", "dominos", "domino", "pizza hut", "taco bell", "burger king", "wendys", "kfc", "chipotle",
+  "olive garden", "panera", "dunkin", "applebees", "papa johns",
+  # the editor's named assistant
+  "olly",
+  # an organisation named in the text (the editor's addition: a real church's abbreviation)
+  "rccg",
+]
+
+# (M-6) Utterances removed by the personal-data pattern scan, by id: a URL-like brand reference (probe M-6).
+url_ids = ["3366"]
+# (M-6) Utterances with a spelled-out domain ("... dot com"), which read as a web address or an email address.
+url_phrases = ["dot com"]
+
+# Terms found by the post-rule scan of the survivors (plan section 2.2). Each is a product, outlet or site name the
+# scan found in at least one surviving utterance; the scan read every token in three or more survivors. Persons,
+# places, creative works and sports teams are kept (PL-33), so they are not listed here. See notes/case-data.md.
+scan_text_terms = [
+  "itunes", "powerball", "nytimes", "bbcnews", "c n n", "b b c", "n p r", "m s n b c", "n b c", "a o l",
+  "washington post", "huffington post", "fox news", "sky news", "la times", "hot ninety seven", "b p oil", "uc web",
+]

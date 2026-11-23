@@ -1,0 +1,48 @@
+{
+ "chunk_ns": [
+  57851299,
+  57860215,
+  77303229,
+  96077756,
+  114456536,
+  132630934,
+  151574050,
+  170053160,
+  188967939,
+  207843624,
+  226386994,
+  245016254,
+  263096659
+ ],
+ "completion_tokens": 11,
+ "finish_reason": "stop",
+ "gen_ns": 199836000,
+ "kind": "model",
+ "message_id": "9053",
+ "offset_ns": 181671867656,
+ "prefill_ns": 56453000,
+ "prompt_tokens": 153,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.",
+    "role": "system"
+   },
+   {
+    "content": "set a meeting event reminder with mona on tuesday",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 172,
+ "step": "route",
+ "text": "<think>\n\n</think>\n\n{\"route\": \"alarms\"}",
+ "tokens_evaluated": 16,
+ "tool_calls": [],
+ "total_ns": 314626828,
+ "ttfc_ns": 57851299
+}

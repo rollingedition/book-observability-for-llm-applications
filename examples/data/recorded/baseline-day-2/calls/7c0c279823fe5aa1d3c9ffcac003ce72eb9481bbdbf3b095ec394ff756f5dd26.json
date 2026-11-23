@@ -1,0 +1,158 @@
+{
+ "chunk_ns": [
+  8269221836,
+  8269232042,
+  8438601604,
+  8583225220,
+  8742006037,
+  8880632827,
+  9035564331,
+  9195472243,
+  9333583225,
+  9468104574,
+  9629592043,
+  9775405374,
+  9919397040,
+  10073364232,
+  10230650225,
+  10382699024,
+  10533652857,
+  10688721640,
+  10829376799,
+  10957893862,
+  11085113124,
+  11212414071,
+  11337736577,
+  11475789970,
+  11604429192,
+  11743572693
+ ],
+ "completion_tokens": 24,
+ "finish_reason": "stop",
+ "gen_ns": 3453520000,
+ "kind": "model",
+ "message_id": "9980",
+ "offset_ns": 377143911395,
+ "prefill_ns": 7776512000,
+ "prompt_tokens": 734,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-10.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "what is the menu today add some boiled vegetables also to it",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List one of the user's lists: shopping, packing or to do. Up to ten items.",
+     "name": "list_items",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "list": {
+        "description": "The list to read.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list"
+      ],
+      "title": "ListItemsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an item to one of the user's lists: shopping, packing or to do.",
+     "name": "add_item",
+     "parameters": {
+      "additionalProperties": false,
+      "description": "The arguments of add_item and remove_item: a list and one item's text.",
+      "properties": {
+       "item": {
+        "description": "The item's text, up to 40 characters.",
+        "title": "Item",
+        "type": "string"
+       },
+       "list": {
+        "description": "The list to change.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list",
+       "item"
+      ],
+      "title": "ChangeItemArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove an item from one of the user's lists: shopping, packing or to do.",
+     "name": "remove_item",
+     "parameters": {
+      "additionalProperties": false,
+      "description": "The arguments of add_item and remove_item: a list and one item's text.",
+      "properties": {
+       "item": {
+        "description": "The item's text, up to 40 characters.",
+        "title": "Item",
+        "type": "string"
+       },
+       "list": {
+        "description": "The list to change.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list",
+       "item"
+      ],
+      "title": "ChangeItemArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 70,
+ "step": "answer",
+ "text": "I cannot provide today's menu or add items to a menu as no relevant information or tools are available for this request.",
+ "tokens_evaluated": 489,
+ "tool_calls": [],
+ "total_ns": 12659386635,
+ "ttfc_ns": 8269221836
+}

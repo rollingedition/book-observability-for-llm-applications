@@ -1,0 +1,47 @@
+# Chapter alerts-on-metrics's narration (re-check narration): descriptions of its examples, blocks and tables, as
+# [examples.ID], [[blocks]] and [[tables]], and its own readings. Only this chapter's writer edits this file, so
+# writers working in parallel never append to one shared lexicon. A reading every chapter needs goes into
+# narration/lexicon.toml, which wins over a chapter's.
+
+[examples.assistant-metrics-export]
+say = "The code replays baseline day 1 with the assistant's meter attached, then reads the meter's export back. It prints the number of series each metric holds, the counts of messages, model calls and tool attempts, and the input tokens from the counter and from the spans, and it asserts that the two agree."
+
+[examples.cardinality-of-attributes]
+say = "The code counts the message histogram's series three ways: with the registry's attributes, with the route added, and with the user ID added. It prints the distinct users and routes beside them, so the user count can be compared with the series count."
+
+[examples.slo-and-budget]
+say = "The code runs the assistant's two objectives over baseline day 1. It prints each objective and the budget it leaves, the messages with no reply, the messages over 20 seconds, the burn over the day, and the p95 of message times with its count. It asserts that the normal day meets both objectives."
+
+[examples.burn-rate-by-window]
+say = "The code runs the three injected windows on the incident day and prints, for each, the messages in the hour up to the first tick after it, how many got no reply, and the highest burns from the window to five minutes after it. It asserts that each hour's counts match the spans."
+
+[examples.tool-attempts-by-window]
+say = "The code reads the assistant's tool histogram after each message on the incident day. For each of the three windows it prints the tool attempts in the hour up to the first tick after it, and how many of those carry an error type, and it asserts that the day's attempts and errors match the spans."
+
+[examples.alert-on-incident-day]
+say = "The code runs the two-window alert at every five-minute tick of the incident day. It prints the first tick where the error page fires, the tick where it clears, and how many ticks each window's page fires on. It asserts that the page fires only inside the rate-limit window."
+
+[examples.alert-quiet-on-baseline-day-two]
+say = "The code runs the same alert over baseline day 2, a normal day. It prints the messages with no reply, the highest burns for each objective, and how many ticks hold the minimum of messages for the hour to count, out of all the ticks. It asserts that neither page fires at any tick."
+
+[examples.figure-burn-rate-incident-day]
+say = "The code draws the incident day's burns as a panel: the one-hour and five-minute error burns, the one-hour latency burn, and the page threshold. It prints the threshold and the number of ticks where the one-hour burn has a gap, and the five-minute burn where its window holds no message, and it sets the legend in the band above the data."
+
+[[tables]]
+section = "cardinality"
+starts = "| Attributes on the message histogram |"
+say = "The table has one row for each set of attributes on the message histogram, and the number of series that set gives on baseline day 1: the registry's attributes alone, then with the route, then with the user ID."
+
+[[tables]]
+section = "burn-rate"
+starts = "| Measure | Contacts timeout | Model rate limit"
+say = "The table sets the three incident windows side by side. For each it gives the window, the messages in the hour, how many got no reply, the tool attempts in that hour and how many carry an error type, the error burns over the hour and five minutes, the messages over 20 seconds, and the latency burn over the hour."
+
+[terms]
+"86,400 s" = "eighty-six thousand four hundred seconds"
+"86400 s" = "eighty-six thousand four hundred seconds"
+"60 s" = "sixty seconds"
+"p95" = "p ninety-five"
+"SLOs" = "S L Os"
+
+[words]

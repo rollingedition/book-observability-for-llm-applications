@@ -1,0 +1,666 @@
+# The terms this book defines, each quoted from its own sentence (writing standards W-77 to W-80). The context is the
+# skill this book teaches; a shared term keeps its meaning here, and the released books' near-matches are close-to.
+
+context = "llm-observability"
+
+[[concepts]]
+id = "trace"
+term = "trace"
+definition = "A trace is the record of one user message's work: every span made for it, sharing one trace ID. Their parent links join them into a tree, and a span whose parent is missing still belongs to the trace."
+section = "one-message-one-trace"
+applies_to = ["opentelemetry-sdk"]
+example = "print-trace-tree"
+
+[concepts.relations]
+close-to = ["ai-agents/trace"]
+
+[[concepts]]
+id = "utterance"
+term = "utterance"
+aliases = ["utterances"]
+definition = "A row of the dataset is an utterance"
+section = "one-message-one-trace"
+
+[[concepts]]
+id = "message"
+term = "message"
+aliases = ["messages"]
+definition = "once an utterance is in the traffic it is a message"
+section = "one-message-one-trace"
+
+[[concepts]]
+id = "span"
+term = "span"
+definition = "A span is a named, timed operation with attributes and a parent, except the root, which has none."
+section = "one-message-one-trace"
+applies_to = ["opentelemetry-sdk"]
+example = "build-one-trace"
+
+[concepts.relations]
+part-of = ["trace"]
+close-to = ["artificial-intelligence/span"]
+
+[[concepts]]
+id = "parent-span"
+term = "parent span"
+definition = "A span's parent is the span whose work it is part of"
+section = "spans-by-hand"
+example = "print-trace-tree"
+
+[[concepts]]
+id = "span-context"
+term = "span context"
+definition = "its span context, chiefly the trace ID, span ID and trace flags, is what lets other code and other processes name it"
+section = "spans-by-hand"
+
+[[concepts]]
+id = "trace-id"
+term = "trace ID"
+definition = "A trace ID is the number every span of one trace carries"
+section = "spans-by-hand"
+
+[concepts.relations]
+part-of = ["span-context"]
+
+[[concepts]]
+id = "span-id"
+term = "span ID"
+definition = "a span ID is the number of one span"
+section = "spans-by-hand"
+
+[concepts.relations]
+part-of = ["span-context"]
+
+[[concepts]]
+id = "attribute"
+term = "attribute"
+definition = "An attribute is a key and a value recorded on a span or a resource, such as `gen_ai.request.model`."
+section = "spans-by-hand"
+
+[[concepts]]
+id = "resource"
+term = "resource"
+definition = "The resource describes what made the telemetry and is the same on every span one tracer provider makes: `service.name`, `service.version`, `service.instance.id`."
+section = "spans-by-hand"
+applies_to = ["opentelemetry-sdk"]
+example = "resource-and-schema"
+
+[[concepts]]
+id = "span-processor"
+term = "span processor"
+definition = "A span processor is called when each span starts and when it ends, and on end it hands the span to an exporter"
+section = "spans-by-hand"
+applies_to = ["opentelemetry-sdk"]
+
+[concepts.relations]
+implemented-by = ["opentelemetry-sdk"]
+
+[[concepts]]
+id = "exporter"
+term = "exporter"
+definition = "A span processor is called when each span starts and when it ends, and on end it hands the span to an exporter, which sends it somewhere: to memory, a file or an OTLP endpoint."
+section = "spans-by-hand"
+applies_to = ["opentelemetry-sdk"]
+
+[[concepts]]
+id = "semantic-convention"
+term = "semantic convention"
+aliases = ["semantic conventions"]
+definition = "A semantic convention is a published name, type and meaning for a span, attribute or metric, so that any backend reads the same name the same way."
+section = "the-standard-at-v0-1-0"
+
+[[concepts]]
+id = "stability-status"
+term = "Development status"
+aliases = ["Development"]
+definition = "Every page of the GenAI conventions, version {{out:validate-the-spans:GenAI conventions version}}, is Development: its names may change in any release."
+section = "the-standard-at-v0-1-0"
+
+[[concepts]]
+id = "requirement-level"
+term = "requirement level"
+aliases = ["requirement levels"]
+definition = "A requirement level says when an attribute must appear: required, conditionally required, recommended or opt-in"
+section = "requirement-levels"
+example = "validate-the-renamed-spans"
+
+[[concepts]]
+id = "span-kind"
+term = "span kind"
+aliases = ["span kinds"]
+definition = "A span's kind says where its work ran: CLIENT for a call out of the process, SERVER for one received, INTERNAL for work inside"
+section = "span-kind-follows-the-process"
+example = "span-kinds-by-process"
+
+[[concepts]]
+id = "inference-span"
+term = "inference span"
+definition = "An inference span is the span of one client call to a generative model that answers the prompt or asks for a tool call."
+section = "span-types-for-each-step"
+example = "inference-span-names"
+
+[concepts.relations]
+broader = ["span"]
+
+[[concepts]]
+id = "retrieval-span"
+term = "retrieval span"
+definition = "A retrieval span is the span of one run of the application's retrieval step, which returns the documents relevant to a query."
+section = "span-types-for-each-step"
+
+[concepts.relations]
+broader = ["span"]
+
+[[concepts]]
+id = "tool-execution-span"
+term = "tool-execution span"
+aliases = ["tool-execution spans"]
+definition = "A tool-execution span is the span of one run of a tool, named for the tool."
+section = "span-types-for-each-step"
+
+[concepts.relations]
+broader = ["span"]
+
+[[concepts]]
+id = "agent-invocation-span"
+term = "agent-invocation span"
+definition = "An agent-invocation span is the span of one invocation of an agent."
+section = "span-types-for-each-step"
+
+[concepts.relations]
+broader = ["span"]
+
+[[concepts]]
+id = "instrumentation-scope"
+term = "instrumentation scope"
+definition = "The instrumentation scope names the unit of code that made a span, usually an instrumentation library, and here the assistant's own module."
+section = "who-made-the-span"
+
+[[concepts]]
+id = "schema-url"
+term = "schema URL"
+definition = "A schema URL names a published telemetry schema, a release of the semantic conventions, that the telemetry follows."
+section = "who-made-the-span"
+
+[[concepts]]
+id = "manual-instrumentation"
+term = "manual instrumentation"
+definition = "Manual instrumentation is spans your code makes"
+section = "a-call-through-the-client"
+example = "instrumented-chat-call"
+
+[concepts.relations]
+contrasts-with = ["automatic-instrumentation"]
+
+[[concepts]]
+id = "automatic-instrumentation"
+term = "automatic instrumentation"
+definition = "automatic instrumentation collects telemetry with no change to the application's source code"
+section = "a-call-through-the-client"
+
+[[concepts]]
+id = "instrumentation-library"
+term = "instrumentation library"
+definition = "An instrumentation library is a package that makes the telemetry for another library's calls"
+section = "a-call-through-the-client"
+example = "instrumented-chat-call"
+
+[[concepts]]
+id = "content-capture"
+term = "content capture"
+definition = "Content capture is the instrumentation's switch for recording prompts and replies themselves, and it is off, `NO_CONTENT`, unless set."
+section = "the-capture-switch"
+applies_to = ["opentelemetry-instrumentation-genai-openai"]
+example = "capture-switch-names"
+
+[[concepts]]
+id = "context-propagation"
+term = "context propagation"
+definition = "Context propagation carries the context, the span's identity and any baggage, to the next process"
+section = "traceparent-in-meta"
+
+[concepts.relations]
+prerequisite-of = ["baggage"]
+
+[[concepts]]
+id = "traceparent"
+term = "traceparent"
+definition = "`traceparent` is the W3C field for the span's part: the trace ID, the parent's span ID and the trace flags, of which the sampled flag is the only one defined."
+section = "traceparent-in-meta"
+example = "server-span-joins"
+
+[concepts.relations]
+part-of = ["context-propagation"]
+
+[[concepts]]
+id = "baggage"
+term = "baggage"
+definition = "Baggage is a set of key-value pairs that travels with the context into every later process when every process along the way propagates it."
+section = "what-goes-in-baggage"
+applies_to = ["opentelemetry-api"]
+example = "baggage-keys"
+
+[[concepts]]
+id = "orphan"
+term = "orphan"
+definition = "An orphan is a span whose parent ID names a span the store does not hold."
+section = "lost-context"
+example = "orphan-span-demo"
+
+[concepts.relations]
+contrasts-with = ["detached-root"]
+
+[[concepts]]
+id = "detached-root"
+term = "detached root"
+definition = "A span that starts a trace of its own this way is a detached root: a span whose context was lost, so it starts a new trace and sits outside the message's trace."
+section = "lost-context"
+example = "orphan-span-demo"
+
+[[concepts]]
+id = "token-count"
+term = "token count"
+aliases = ["token counts"]
+definition = "A token count is the number of tokens a model reads or writes for one call, in that model's own vocabulary."
+section = "three-token-counts"
+
+[[concepts]]
+id = "input-tokens"
+term = "input tokens"
+definition = "Input tokens are the whole prompt the model read, cached part included"
+section = "three-token-counts"
+
+[[concepts]]
+id = "cached-input-tokens"
+term = "cached input tokens"
+definition = "cached input tokens are the part its cache held"
+section = "three-token-counts"
+
+[[concepts]]
+id = "output-tokens"
+term = "output tokens"
+definition = "output tokens are what it wrote"
+section = "three-token-counts"
+
+[[concepts]]
+id = "cost"
+term = "cost"
+definition = "A call's cost is its tokens priced by a named, dated price table"
+section = "cost-per-route"
+
+[concepts.relations]
+contrasts-with = ["ai-agents/cost"]
+
+[[concepts]]
+id = "cost-attribution"
+term = "cost attribution"
+definition = "cost attribution assigns each call's cost to the step, route and user that caused it"
+section = "cost-per-route"
+
+[[concepts]]
+id = "price-table"
+term = "price table"
+definition = "The price table is a dated, versioned file of rates per million tokens, read at each call's virtual timestamp."
+section = "the-price-table"
+example = "price-one-request"
+
+[[concepts]]
+id = "metric"
+term = "metric"
+aliases = ["metrics"]
+definition = "A metric is a measurement the SDK aggregates over many operations and exports without each one's detail"
+section = "totals-from-metrics-not-spans"
+applies_to = ["opentelemetry-sdk"]
+
+[[concepts]]
+id = "counter"
+term = "counter"
+definition = "a counter only adds"
+section = "totals-from-metrics-not-spans"
+
+[concepts.relations]
+broader = ["metric"]
+
+[[concepts]]
+id = "histogram"
+term = "histogram"
+definition = "a histogram counts values into buckets with their sum and count"
+section = "totals-from-metrics-not-spans"
+
+[concepts.relations]
+broader = ["metric"]
+
+[[concepts]]
+id = "histogram-bucket"
+term = "histogram bucket"
+aliases = ["bucket"]
+definition = "A bucket counts the values between two edges, so a percentile read from buckets is known only to within its bucket."
+section = "histogram-buckets-and-what-they-hide"
+example = "bucket-edges-hide-tail"
+
+[concepts.relations]
+part-of = ["histogram"]
+
+[[concepts]]
+id = "critical-path"
+term = "critical path"
+definition = "The critical path is the chain of spans that sets a message's end time; shortening any other span doesn't end the message sooner."
+section = "the-critical-path"
+example = "critical-path-one-message"
+
+[concepts.relations]
+computed-from = ["span"]
+
+[[concepts]]
+id = "time-to-first-chunk"
+term = "time to first chunk"
+definition = "Time to first chunk is the time from sending a model call to receiving the first streamed piece of its reply."
+section = "time-to-first-chunk"
+example = "time-to-first-chunk-by-route"
+
+[concepts.relations]
+measured-from = ["inference-span"]
+
+[[concepts]]
+id = "prefill"
+term = "prefill"
+definition = "Prefill is the model reading the prompt"
+section = "prefill-against-generation"
+example = "prefill-generation-split"
+
+[concepts.relations]
+part-of = ["time-to-first-chunk"]
+
+[[concepts]]
+id = "generation"
+term = "generation"
+definition = "generation is it writing the reply, one token at a time"
+section = "prefill-against-generation"
+example = "prefill-generation-split"
+
+[concepts.relations]
+contrasts-with = ["prefill"]
+
+[[concepts]]
+id = "percentile"
+term = "percentile"
+aliases = ["p95", "p99"]
+definition = "The p-th percentile is the value at sorted position ceil(p/100 × n)"
+section = "tail-percentiles-with-intervals"
+example = "percentiles-by-route"
+
+[[concepts]]
+id = "tail-latency"
+term = "tail latency"
+aliases = ["the tail"]
+definition = "the tail is the slowest few percent of messages"
+section = "tail-percentiles-with-intervals"
+
+[[concepts]]
+id = "interval"
+term = "interval"
+aliases = ["intervals"]
+definition = "An interval says how far a number would move had the day brought other messages drawn the same way; here, the middle 95% of 2,000 bootstrap resamples of messages."
+section = "tail-percentiles-with-intervals"
+example = "percentiles-by-route"
+
+[concepts.relations]
+close-to = ["artificial-intelligence/interval"]
+
+[[concepts]]
+id = "span-status"
+term = "span status"
+definition = "A span's status is unset, ok or error."
+section = "how-a-span-records-failure"
+
+[[concepts]]
+id = "error-type"
+term = "error.type"
+aliases = ["error type"]
+definition = "`error.type` names the error: the class name the package writes, or a registry value where one exists, so failures can be counted by kind."
+section = "how-a-span-records-failure"
+example = "error-status-by-step"
+
+[[concepts]]
+id = "finish-reason"
+term = "finish reason"
+aliases = ["finish reasons"]
+definition = "The finish reason says why the model stopped: on its own (`stop`) or at the token cap (`length`)."
+section = "replies-cut-at-the-cap"
+example = "truncated-replies"
+
+[concepts.relations]
+measured-from = ["inference-span"]
+close-to = ["large-language-models/finish-reason"]
+
+[[concepts]]
+id = "retry"
+term = "retry"
+aliases = ["retries"]
+definition = "A retry is another attempt at a failed call, recorded as its own span."
+section = "retries-under-a-timeout"
+example = "retries-under-incident"
+
+[[concepts]]
+id = "error"
+term = "error"
+aliases = ["errors"]
+definition = "An error is a span whose status is ERROR."
+section = "how-a-span-records-failure"
+example = "error-status-by-step"
+
+[concepts.relations]
+computed-from = ["span-status"]
+
+[[concepts]]
+id = "failed-message"
+term = "failed message"
+definition = "A message fails, for the objective, when its user got no reply; a retry that recovered is not a failure."
+section = "service-level-objectives"
+example = "slo-and-budget"
+
+[concepts.relations]
+contrasts-with = ["error"]
+
+[[concepts]]
+id = "cardinality"
+term = "cardinality"
+definition = "A metric's cardinality is the number of distinct attribute combinations it is recorded with, each a series to store."
+section = "cardinality"
+example = "cardinality-of-attributes"
+
+[concepts.relations]
+measured-from = ["metric"]
+
+[[concepts]]
+id = "objective"
+term = "objective"
+aliases = ["service-level objective", "SLO"]
+definition = "An objective is the share of messages that must succeed, or finish within a time, over a period"
+section = "service-level-objectives"
+example = "slo-and-budget"
+
+[[concepts]]
+id = "error-budget"
+term = "error budget"
+definition = "the error budget is the share it lets fail"
+section = "service-level-objectives"
+
+[concepts.relations]
+computed-from = ["objective"]
+
+[[concepts]]
+id = "burn-rate"
+term = "burn rate"
+definition = "the burn rate is how fast failures spend it, where 1 spends it exactly by the period's end"
+section = "service-level-objectives"
+example = "burn-rate-by-window"
+
+[concepts.relations]
+computed-from = ["error-budget"]
+
+[[concepts]]
+id = "release-marker"
+term = "release marker"
+definition = "A release is marked by `service.version` on the resource and `gen_ai.prompt.version` on the inference span"
+section = "release-markers-in-the-spans"
+example = "release-markers-query"
+
+[[concepts]]
+id = "prompt-version"
+term = "prompt version"
+definition = "A release is marked by `service.version` on the resource and `gen_ai.prompt.version` on the inference span, so a query can split traces by release."
+section = "release-markers-in-the-spans"
+example = "release-markers-query"
+
+[concepts.relations]
+prerequisite-of = ["paired-comparison"]
+
+[[concepts]]
+id = "paired-comparison"
+term = "paired comparison"
+definition = "A paired comparison runs two releases on the same messages and summarises, for each message, the release's value minus the baseline's."
+section = "paired-comparison-on-messages"
+example = "paired-latency-and-tokens"
+
+[concepts.relations]
+close-to = ["artificial-intelligence/paired-comparison"]
+
+[[concepts]]
+id = "regression"
+term = "regression"
+definition = "A regression is a release's change that makes a trace-derived number worse than its limit allows, judged by the end of its interval nearest the limit."
+section = "the-ci-gate"
+example = "gate-on-prompt-release"
+
+[[concepts]]
+id = "regression-gate"
+term = "regression gate"
+definition = "A regression gate is a check in CI that stops a release from merging when a number read from its traces has moved past its threshold, judged against its paired interval."
+section = "the-ci-gate"
+example = "gate-on-prompt-release"
+
+[concepts.relations]
+close-to = ["llm-evaluation/gate"]
+
+[[concepts]]
+id = "head-sampling"
+term = "head sampling"
+definition = "Head sampling decides whether to keep a trace when it starts, before any span has run."
+section = "head-sampling"
+applies_to = ["opentelemetry-sdk"]
+example = "head-sample-ratio"
+
+[concepts.relations]
+contrasts-with = ["tail-sampling"]
+
+[[concepts]]
+id = "parent-based-sampling"
+term = "parent-based sampling"
+definition = "Parent-based sampling makes each span follow its parent's decision."
+section = "parent-based-sampling"
+applies_to = ["opentelemetry-sdk"]
+example = "parent-based-follows-root"
+
+[[concepts]]
+id = "tail-sampling"
+term = "tail sampling"
+definition = "Tail sampling decides once the whole trace is in, by what it holds."
+section = "tail-sampling"
+example = "tail-rule-keeps-errors"
+
+[[concepts]]
+id = "sampling-ratio"
+term = "sampling ratio"
+definition = "The ratio is the share of traces kept"
+section = "head-sampling"
+
+[concepts.relations]
+part-of = ["head-sampling"]
+
+[[concepts]]
+id = "estimate-from-a-sample"
+term = "estimate from a sample"
+definition = "Scaling a head sample's total by the inverse of its ratio estimates the whole, because every trace has the same chance of being kept: the kept total, times the inverse of the ratio, estimates the day."
+section = "estimating-totals-from-a-sample"
+example = "estimate-totals-error"
+
+[concepts.relations]
+computed-from = ["sampling-ratio"]
+
+[[concepts]]
+id = "retention"
+term = "retention"
+definition = "Retention is how long the backend keeps each kind of telemetry."
+section = "retention"
+
+[concepts.relations]
+close-to = ["data-governance/retention"]
+
+[[concepts]]
+id = "fallback-reply"
+term = "fallback reply"
+aliases = ["fallback replies"]
+definition = "A fallback reply is the fixed text Ambrewick sends when the router chooses `fallback`; no model writes it, and its span says so."
+section = "where-the-time-went-in-twenty-messages"
+
+[[concepts]]
+id = "personal-looking-value"
+term = "personal-looking value"
+aliases = ["personal-looking values"]
+definition = "A personal-looking value is a person, place or relation name in a request's text, written by the dataset's crowd workers and labelled by its slots; it looks like personal data in a span and is treated as such; it was written for the dataset and is not drawn from anyone's messages, though the dataset keeps some public names as written."
+section = "what-leaks-when-capture-is-on"
+example = "leak-with-capture-on"
+
+[concepts.relations]
+close-to = ["data-governance/personal-data"]
+
+[[concepts]]
+id = "redaction"
+term = "redaction"
+aliases = ["redact", "redacting"]
+definition = "Redaction replaces a personal value in a span's attributes or events with a placeholder before the span is stored: in the process that made it, or where every service's spans pass."
+section = "redaction-as-defence-in-depth"
+example = "redact-and-hash"
+
+[[concepts]]
+id = "keyed-pseudonym"
+term = "keyed pseudonym"
+aliases = ["keyed pseudonyms"]
+definition = "A keyed pseudonym replaces a user ID with an HMAC-SHA256 of it under a key, kept to twelve hexadecimal digits, the same for one user wherever it appears."
+section = "keyed-user-pseudonyms"
+example = "redact-and-hash"
+
+[concepts.relations]
+close-to = ["data-governance/keyed-pseudonym"]
+
+[[concepts]]
+id = "external-content-reference"
+term = "external content reference"
+aliases = ["content reference"]
+definition = "An external content reference puts a pointer in the span, a `*_ref` attribute, and the content itself in a store with its own access rules."
+section = "keep-content-by-reference"
+example = "content-by-reference"
+
+[[concepts]]
+id = "otlp"
+term = "OTLP"
+definition = "OTLP is OpenTelemetry's protocol for sending telemetry to a receiver."
+section = "otlp-over-http"
+example = "otlp-export-loopback"
+
+[[concepts]]
+id = "collector"
+term = "collector"
+aliases = ["OpenTelemetry Collector"]
+definition = "A collector is a separate process that receives, processes and exports telemetry"
+section = "otlp-over-http"
+
+[concepts.relations]
+contrasts-with = ["backend"]
+
+[[concepts]]
+id = "backend"
+term = "backend"
+definition = "A backend stores spans and answers queries over them."
+section = "otlp-over-http"

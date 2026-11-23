@@ -1,0 +1,62 @@
+{
+ "chunk_ns": [
+  1459904580,
+  1459913047,
+  1483429364,
+  1506202303,
+  1539481034,
+  1562399954,
+  1584968864,
+  1606999968,
+  1629698852,
+  1651773615,
+  1673668302,
+  1696185181,
+  1718269807,
+  1742944796,
+  1767350582,
+  1792213349,
+  1815716169,
+  1838693851,
+  1877569601,
+  1904731669,
+  1936642001,
+  1966892069,
+  1992157928,
+  2016324467,
+  2048471004,
+  2084994593
+ ],
+ "completion_tokens": 24,
+ "finish_reason": "stop",
+ "gen_ns": 610303000,
+ "kind": "model",
+ "message_id": "9902",
+ "offset_ns": 259879549368,
+ "prefill_ns": 1107170000,
+ "prompt_tokens": 537,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-03] Shuffle and repeat\nShuffle plays the songs of a playlist or an album in a random order. Turn it on or off by name. Repeat has three settings: off, repeat the current song, and repeat the whole list. The assistant reports the setting after each change. Shuffle does not change the list itself, and turning it off returns to the list's own order from the song now playing. A repeat setting stays until you change it, even when you start something new.\n\n[help-media-06] Resuming an audiobook\nAn audiobook remembers where you stopped. Ask the assistant to resume a book by its title, and it starts a few seconds before the last point, so you hear the end of the sentence. To start a book from the beginning, say so. The assistant reports the chapter and the time left in the book. Books you have finished are listed separately, and a finished book can be started again from the beginning. Bookmarks can be added at a point you name.\n\n[help-media-08] Finding music by genre\nName a genre, such as jazz, folk or classical, and the assistant plays music from that genre in your library. If your library has none of that genre, the assistant says so and offers to play a radio station instead. Genres come from the tags on each song, so a song with no tag is not found by genre. To make a playlist from a genre, name the genre and the number of songs you want, and the assistant lists the songs before saving.\n",
+    "role": "system"
+   },
+   {
+    "content": "play me a random audio book that has to do with love",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 249,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\nNone of the provided tools can play an audio book about love. [help-media-06]",
+ "tokens_evaluated": 345,
+ "tool_calls": [],
+ "total_ns": 2589600308,
+ "ttfc_ns": 1459904580
+}

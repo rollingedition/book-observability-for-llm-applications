@@ -1,0 +1,164 @@
+{
+ "chunk_ns": [
+  8563742827,
+  8563796078,
+  8733485641,
+  8961306973,
+  9111027446,
+  9279509309,
+  9430062142,
+  9602800592,
+  9754285739,
+  9944101966,
+  10234398151,
+  10392534343,
+  10523404751,
+  10656745426,
+  10797960385,
+  10931660109,
+  11077636308,
+  11201827070,
+  11365286399,
+  11494829759,
+  11635169877,
+  11771646369,
+  11909111879,
+  12040834726,
+  12191826460,
+  12334532050,
+  12456845144,
+  12579384856,
+  12705088194,
+  12842430941,
+  12984078424,
+  13111575699
+ ],
+ "completion_tokens": 30,
+ "finish_reason": "stop",
+ "gen_ns": 4524028000,
+ "kind": "model",
+ "message_id": "10182",
+ "offset_ns": 132142683620,
+ "prefill_ns": 8065392000,
+ "prompt_tokens": 733,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "how many eggs do i need for an omelet",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List one of the user's lists: shopping, packing or to do. Up to ten items.",
+     "name": "list_items",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "list": {
+        "description": "The list to read.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list"
+      ],
+      "title": "ListItemsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an item to one of the user's lists: shopping, packing or to do.",
+     "name": "add_item",
+     "parameters": {
+      "additionalProperties": false,
+      "description": "The arguments of add_item and remove_item: a list and one item's text.",
+      "properties": {
+       "item": {
+        "description": "The item's text, up to 40 characters.",
+        "title": "Item",
+        "type": "string"
+       },
+       "list": {
+        "description": "The list to change.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list",
+       "item"
+      ],
+      "title": "ChangeItemArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove an item from one of the user's lists: shopping, packing or to do.",
+     "name": "remove_item",
+     "parameters": {
+      "additionalProperties": false,
+      "description": "The arguments of add_item and remove_item: a list and one item's text.",
+      "properties": {
+       "item": {
+        "description": "The item's text, up to 40 characters.",
+        "title": "Item",
+        "type": "string"
+       },
+       "list": {
+        "description": "The list to change.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list",
+       "item"
+      ],
+      "title": "ChangeItemArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 25,
+ "step": "answer",
+ "text": "I cannot determine the number of eggs needed for an omelet based on the provided information. Please consult a recipe or cooking guide for specific instructions.",
+ "tokens_evaluated": 541,
+ "tool_calls": [],
+ "total_ns": 13665644003,
+ "ttfc_ns": 8563742827
+}

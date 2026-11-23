@@ -1,0 +1,43 @@
+{
+ "chunk_ns": [
+  1835996361,
+  1836006707,
+  1866227900,
+  1891364810,
+  1914041090,
+  1936804396,
+  1959527761
+ ],
+ "completion_tokens": 5,
+ "finish_reason": "stop",
+ "gen_ns": 120562000,
+ "kind": "model",
+ "message_id": "9561",
+ "offset_ns": 114830502697,
+ "prefill_ns": 1833035000,
+ "prompt_tokens": 531,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-04] Listening to a radio station\nA radio station plays a live stream, so it has no end and no skip. Name the station, or the kind of station you want, such as a news station or a station that plays jazz. The assistant reports the station's name when it starts. Stations are found by name or by frequency. If a station is not available in your area, the assistant says so and suggests a station that is. Stopping a station stops the stream; it does not record it.\n\n[help-media-08] Finding music by genre\nName a genre, such as jazz, folk or classical, and the assistant plays music from that genre in your library. If your library has none of that genre, the assistant says so and offers to play a radio station instead. Genres come from the tags on each song, so a song with no tag is not found by genre. To make a playlist from a genre, name the genre and the number of songs you want, and the assistant lists the songs before saving.\n\n[help-media-09] Pausing, skipping and going back\nPause stops the current song and keeps its place. Resume starts it again from the same point. Skip moves to the next song in the list, and going back moves to the previous one. Going back once more than a few seconds into a song starts that song again from the beginning. Skip does not work on a radio station, because a station is a live stream. The assistant reports what is playing after each of these commands.\n",
+    "role": "system"
+   },
+   {
+    "content": "play station gx in the radio",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 105,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\n[]",
+ "tokens_evaluated": 525,
+ "tool_calls": [],
+ "total_ns": 2658955182,
+ "ttfc_ns": 1835996361
+}

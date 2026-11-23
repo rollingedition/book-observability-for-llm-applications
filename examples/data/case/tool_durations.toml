@@ -1,0 +1,37 @@
+# Durations of the in-process tools, in nanoseconds, as modelled for the book (plan section 2.6). The contacts
+# tool's durations are recorded where it runs and are not listed here. The book labels these as modelled.
+#
+# Source of the values: the medians of the probe's stand-in tools (B-89), which time a list filter over data held in
+# memory. They are a floor for the case's own code, not a measurement of it. The three read tools have those medians.
+# The write tools were not timed: each takes the value of its route's read tool, and send_message takes the list
+# tool's value. Those rows are modelled from the read tools, not from a measurement.
+
+[list_events]
+duration_ns = 5200
+
+[add_event]
+duration_ns = 5200
+
+[remove_event]
+duration_ns = 5200
+
+[list_alarms]
+duration_ns = 1400
+
+[set_alarm]
+duration_ns = 1400
+
+[remove_alarm]
+duration_ns = 1400
+
+[list_items]
+duration_ns = 200
+
+[add_item]
+duration_ns = 200
+
+[remove_item]
+duration_ns = 200
+
+[send_message]
+duration_ns = 200

@@ -1,0 +1,43 @@
+{
+ "chunk_ns": [
+  1937637738,
+  1937685968,
+  1979943105,
+  2003537561,
+  2027690963,
+  2052965246,
+  2076967295
+ ],
+ "completion_tokens": 5,
+ "finish_reason": "stop",
+ "gen_ns": 135747000,
+ "kind": "model",
+ "message_id": "11515",
+ "offset_ns": 118467592812,
+ "prefill_ns": 1318272000,
+ "prompt_tokens": 547,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-05] Following a podcast\nFollow a podcast to be told when a new episode is released. Ask the assistant to follow a show by name. Episodes play in the order they were released, or the latest first, as you choose. The assistant can play the latest episode, or a named one. Episodes you have started are remembered, so you can resume them later. Unfollowing a show keeps its episodes you have already listened to, but removes it from future reports of new episodes.\n\n[help-media-06] Resuming an audiobook\nAn audiobook remembers where you stopped. Ask the assistant to resume a book by its title, and it starts a few seconds before the last point, so you hear the end of the sentence. To start a book from the beginning, say so. The assistant reports the chapter and the time left in the book. Books you have finished are listed separately, and a finished book can be started again from the beginning. Bookmarks can be added at a point you name.\n\n[help-messages-09] Scheduling a message for later\nGive a message a time to send. Times are read in your own time zone, and the assistant states the time it will send in full, with the date and the zone. A scheduled message can be changed or cancelled until the time it is due. Once it has been sent, it is recorded in the sent folder like any other. If the assistant cannot send at the time, because the service is unavailable, it tries again a few minutes later and tells you in its next reply. It does not send a scheduled message more than once.\n",
+    "role": "system"
+   },
+   {
+    "content": "lets hear the united states of anxiety podcast",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 108,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\n[]",
+ "tokens_evaluated": 349,
+ "tool_calls": [],
+ "total_ns": 3096618270,
+ "ttfc_ns": 1937637738
+}

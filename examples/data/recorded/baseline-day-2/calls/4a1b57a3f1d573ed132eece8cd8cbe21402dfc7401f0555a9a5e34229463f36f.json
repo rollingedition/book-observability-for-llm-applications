@@ -1,0 +1,71 @@
+{
+ "chunk_ns": [
+  5049913889,
+  5049924363,
+  5219952954,
+  5349954411,
+  5500566590,
+  5651512190,
+  5796953527,
+  5942483406,
+  6101380372,
+  6254780179,
+  6406958049,
+  6574280644,
+  6729424463,
+  6877084389,
+  7027932199,
+  7183918668,
+  7330802323,
+  7467718674,
+  7613366185,
+  7754744828,
+  7917646811,
+  8049216526,
+  8195589841,
+  8327337145,
+  8468129341,
+  8594669458,
+  8718911872,
+  8849666040,
+  8978560247,
+  9118278332,
+  9254228663,
+  9384851582,
+  9532974538,
+  9659325050,
+  9782851636
+ ],
+ "completion_tokens": 33,
+ "finish_reason": "stop",
+ "gen_ns": 4707057000,
+ "kind": "model",
+ "message_id": "3915",
+ "offset_ns": 263672647853,
+ "prefill_ns": 4623965000,
+ "prompt_tokens": 510,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-10.\n\nKnowledge base articles:\n\n[help-messages-02] Choosing the right address for a contact\nA contact can have more than one address on file. When a name returns two addresses, the assistant lists both and asks you which one to use. Pick the one you use most with that person. If neither is right, add the address you want as a new entry on the contact, then ask again. The assistant never combines two addresses into one, and it never shows an address in a reply after you have chosen it. You can ask for a contact's address to be checked, and the assistant reports whether the address is on file and when it was last updated. It cannot verify that the address still works.\n\n[help-messages-01] Finding a contact by name\nAsk for a contact by the name you know them by, such as a first name, a last name, or both. The assistant looks in your own contact book and returns up to three matches, each with its name and the address on file. If two people share a first name, give the last name as well so the match is clear. The search ignores capital letters and small differences in spelling, so \"Ilse\" and \"ilse\" find the same person. A contact you added yourself is found in the same way as one that came from an import. Nothing is sent when you search. The search only reads your contact book, and a match is never a suggestion to contact someone you did not name.\n",
+    "role": "system"
+   },
+   {
+    "content": "this is a good tune please notate file accordingly",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 47,
+ "step": "answer",
+ "text": "I don't understand the request about \"notating a file\" or \"a good tune.\" Please clarify or provide more context. [help-messages-01]",
+ "tokens_evaluated": 315,
+ "tool_calls": [],
+ "total_ns": 10567285258,
+ "ttfc_ns": 5049913889
+}

@@ -1,0 +1,52 @@
+{
+ "chunk_ns": [
+  8212442177,
+  8212450373,
+  8376084638,
+  8570067544,
+  8736395324,
+  8877848350,
+  9016597203,
+  9167239999,
+  9299135093,
+  9426475332,
+  9562671746,
+  9702969408,
+  9843697263,
+  9971937664,
+  10123274773,
+  10270499321
+ ],
+ "completion_tokens": 14,
+ "finish_reason": "stop",
+ "gen_ns": 2047222000,
+ "kind": "model",
+ "message_id": "11920",
+ "offset_ns": 350934705055,
+ "prefill_ns": 8208416000,
+ "prompt_tokens": 574,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-messages-03] Writing a short message\nSay who the message is for and what it should say. Keep it to a few sentences. The assistant reads the names back before it sends anything, so you can correct a name you did not mean. Subject lines are optional; if you leave one out, the assistant writes a short one from the first sentence. The message is sent only after you confirm it. Once it is sent, it cannot be recalled by the assistant, so check the wording first. Long messages are split into parts only in the rare case where the service limits their length, and the assistant tells you when that happens.\n\n[help-messages-04] Sending a message to a group\nTo send one message to several people, name each person or name a group you have already saved. The assistant lists everyone who will receive the message and waits for your confirmation. A person who is on the list twice receives the message once. If one name cannot be found, the assistant sends to the others and tells you which name was left out. Groups are saved in your contact book, and changing a group changes it for later messages only, never for a message already sent.\n\n[help-devices-06] Brewing with the coffee machine\nA connected coffee machine can start a brew at a time you choose. Make sure the water tank is full and a cup is in place, because the machine cannot detect either. Ask the assistant to start a brew now, or to start one at a time, and say the strength if the machine offers more than one. The assistant reports when the brew starts and when it finishes. A machine with an empty tank or an open lid reports a fault, and the assistant reads the fault out. It does not cancel a brew in progress unless you ask.\n",
+    "role": "system"
+   },
+   {
+    "content": "what movies are out this week",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 50,
+ "step": "answer",
+ "text": "I don't have information about movies released this week. [none]",
+ "tokens_evaluated": 574,
+ "tool_calls": [],
+ "total_ns": 10270517475,
+ "ttfc_ns": 8212442177
+}

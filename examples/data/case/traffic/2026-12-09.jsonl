@@ -1,0 +1,60 @@
+{"message_id":"10442","arrival":"2026-12-09T01:31:26.754563Z","user_id":"U0035","scenario":"lists","text":"remove events from my list"}
+{"message_id":"3080","arrival":"2026-12-09T06:05:07.638437Z","user_id":"U0111","scenario":"takeaway","text":"it's time for junk food"}
+{"message_id":"12261","arrival":"2026-12-09T07:41:31.854307Z","user_id":"U0163","scenario":"transport","text":"tell me my options for a train to los angles next wednesday or thursday"}
+{"message_id":"4119","arrival":"2026-12-09T08:05:01.274518Z","user_id":"U0122","scenario":"news","text":"i want to know everything that breaks about the dam breaking in california"}
+{"message_id":"12244","arrival":"2026-12-09T09:01:36.015789Z","user_id":"U0196","scenario":"transport","text":"book a taxi to go to the movies at one"}
+{"message_id":"10815","arrival":"2026-12-09T09:02:31.784565Z","user_id":"U0001","scenario":"lists","text":"add toothpaste to my shopping list"}
+{"message_id":"2386","arrival":"2026-12-09T09:43:33.869716Z","user_id":"U0153","scenario":"news","text":"give me the latest news"}
+{"message_id":"4125","arrival":"2026-12-09T10:07:55.699016Z","user_id":"U0045","scenario":"takeaway","text":"where can i get a shot of tequila and some to go mexican food"}
+{"message_id":"8774","arrival":"2026-12-09T11:54:13.707670Z","user_id":"U0155","scenario":"calendar","text":"is my schedule for july seventh completely open"}
+{"message_id":"10858","arrival":"2026-12-09T12:23:46.390203Z","user_id":"U0097","scenario":"lists","text":"new list"}
+{"message_id":"16297","arrival":"2026-12-09T13:01:28.878567Z","user_id":"U0161","scenario":"email","text":"send an email to jake to tell him thank you"}
+{"message_id":"16357","arrival":"2026-12-09T13:04:41.245650Z","user_id":"U0170","scenario":"email","text":"has tom emailed me about ammunition"}
+{"message_id":"16120","arrival":"2026-12-09T13:05:57.822729Z","user_id":"U0073","scenario":"email","text":"help is to be sent only to jane"}
+{"message_id":"16166","arrival":"2026-12-09T13:06:50.770916Z","user_id":"U0102","scenario":"email","text":"can you reply to charlotte that i am going to be busy with the projects for next three weeks"}
+{"message_id":"15950","arrival":"2026-12-09T13:09:15.494705Z","user_id":"U0083","scenario":"email","text":"respond to the email from john doe"}
+{"message_id":"15802","arrival":"2026-12-09T13:09:24.603477Z","user_id":"U0077","scenario":"email","text":"reply an email to jason that i will not come tonight"}
+{"message_id":"15906","arrival":"2026-12-09T13:09:46.195855Z","user_id":"U0047","scenario":"email","text":"reply thank you to john"}
+{"message_id":"16401","arrival":"2026-12-09T13:10:15.760622Z","user_id":"U0187","scenario":"email","text":"text an email to donna hey what are you doing today"}
+{"message_id":"16148","arrival":"2026-12-09T13:10:22.576076Z","user_id":"U0039","scenario":"email","text":"quick reply to jack so please send a mail"}
+{"message_id":"16296","arrival":"2026-12-09T13:10:44.748596Z","user_id":"U0109","scenario":"email","text":"send an email to mom to tell her wyatt's birthday party is on sunday"}
+{"message_id":"16282","arrival":"2026-12-09T13:11:44.335571Z","user_id":"U0160","scenario":"email","text":"send an email to my assistant clara to cancel all appointments for tomorrow"}
+{"message_id":"17052","arrival":"2026-12-09T13:11:49.243542Z","user_id":"U0165","scenario":"email","text":"search nandy"}
+{"message_id":"9402","arrival":"2026-12-09T13:31:31.031112Z","user_id":"U0056","scenario":"play","text":"play nine hundred and eighty nine the radio station"}
+{"message_id":"5757","arrival":"2026-12-09T14:33:19.628149Z","user_id":"U0084","scenario":"datetime","text":"a quarter to two"}
+{"message_id":"6892","arrival":"2026-12-09T14:38:55.552238Z","user_id":"U0185","scenario":"calendar","text":"can you give me the movie schedule"}
+{"message_id":"7140","arrival":"2026-12-09T14:51:35.719945Z","user_id":"U0111","scenario":"calendar","text":"set a reminder to notify me one hour before lunch meeting"}
+{"message_id":"16384","arrival":"2026-12-09T15:23:29.195403Z","user_id":"U0079","scenario":"email","text":"hey do i have any new emails"}
+{"message_id":"16318","arrival":"2026-12-09T15:30:01.210331Z","user_id":"U0189","scenario":"email","text":"respond to email"}
+{"message_id":"8666","arrival":"2026-12-09T15:30:13.002169Z","user_id":"U0110","scenario":"calendar","text":"erase all events from my calendar"}
+{"message_id":"1784","arrival":"2026-12-09T15:30:14.619111Z","user_id":"U0028","scenario":"iot","text":"turn off the dining room"}
+{"message_id":"10427","arrival":"2026-12-09T15:30:14.719777Z","user_id":"U0175","scenario":"lists","text":"please clean my shopping list"}
+{"message_id":"4249","arrival":"2026-12-09T15:30:21.318909Z","user_id":"U0062","scenario":"iot","text":"house can you make all the lights in the house blue"}
+{"message_id":"16883","arrival":"2026-12-09T15:30:35.947771Z","user_id":"U0156","scenario":"email","text":"send an email to jerry ask what time will he be home tonight"}
+{"message_id":"7046","arrival":"2026-12-09T15:30:39.271171Z","user_id":"U0176","scenario":"calendar","text":"add tal meeting on twenty first at seven"}
+{"message_id":"4890","arrival":"2026-12-09T15:30:48.790888Z","user_id":"U0144","scenario":"calendar","text":"set notifications on the current weather disasters in america"}
+{"message_id":"443","arrival":"2026-12-09T15:30:48.995880Z","user_id":"U0127","scenario":"audio","text":"raise volume"}
+{"message_id":"17113","arrival":"2026-12-09T15:31:01.365110Z","user_id":"U0087","scenario":"email","text":"create email to yulia"}
+{"message_id":"4152","arrival":"2026-12-09T15:31:06.316608Z","user_id":"U0003","scenario":"play","text":"please play the song every time i see you"}
+{"message_id":"7120","arrival":"2026-12-09T15:31:26.962048Z","user_id":"U0051","scenario":"calendar","text":"what's my schedule like today"}
+{"message_id":"2160","arrival":"2026-12-09T16:16:43.964744Z","user_id":"U0171","scenario":"iot","text":"i'm going to sleep now"}
+{"message_id":"16419","arrival":"2026-12-09T16:35:23.042486Z","user_id":"U0112","scenario":"email","text":"please send an email to uncle john with the following yes i can make it"}
+{"message_id":"2611","arrival":"2026-12-09T16:41:17.176131Z","user_id":"U0054","scenario":"weather","text":"current weather forecast"}
+{"message_id":"16989","arrival":"2026-12-09T17:00:18.794326Z","user_id":"U0086","scenario":"email","text":"please say to the email that sent me george i need the money now it's urgent"}
+{"message_id":"16402","arrival":"2026-12-09T17:01:16.194164Z","user_id":"U0161","scenario":"email","text":"email donna plans for today"}
+{"message_id":"16501","arrival":"2026-12-09T17:01:41.262937Z","user_id":"U0072","scenario":"email","text":"please send a mail to my friend divya how are you"}
+{"message_id":"17170","arrival":"2026-12-09T17:02:04.994647Z","user_id":"U0031","scenario":"email","text":"notify me when joshua emails me"}
+{"message_id":"16672","arrival":"2026-12-09T17:02:36.732321Z","user_id":"U0114","scenario":"email","text":"has ben got in touch"}
+{"message_id":"16535","arrival":"2026-12-09T17:02:39.785710Z","user_id":"U0020","scenario":"email","text":"can you write an email to chelsea"}
+{"message_id":"16559","arrival":"2026-12-09T17:02:45.259817Z","user_id":"U0141","scenario":"email","text":"send a reply to mike with the answer four hundred and thirty from his email he sent this morning"}
+{"message_id":"16717","arrival":"2026-12-09T17:02:55.062879Z","user_id":"U0038","scenario":"email","text":"could you please email john saying i'm on leave"}
+{"message_id":"16880","arrival":"2026-12-09T17:03:12.214802Z","user_id":"U0124","scenario":"email","text":"email jerry regarding the meeting"}
+{"message_id":"3674","arrival":"2026-12-09T17:03:23.404503Z","user_id":"U0085","scenario":"iot","text":"i would like the like in the kitchen to be a different color"}
+{"message_id":"7654","arrival":"2026-12-09T17:05:53.722756Z","user_id":"U0163","scenario":"calendar","text":"mark april twenty as my brother's birthday"}
+{"message_id":"16518","arrival":"2026-12-09T17:06:55.484658Z","user_id":"U0199","scenario":"email","text":"add a new email for julie smith"}
+{"message_id":"17151","arrival":"2026-12-09T17:08:14.622137Z","user_id":"U0132","scenario":"email","text":"my friend john has sent me a invitation card to his newly bought home say thanks to him in his mail id"}
+{"message_id":"16892","arrival":"2026-12-09T17:09:58.269933Z","user_id":"U0049","scenario":"email","text":"start and email to john smith"}
+{"message_id":"15557","arrival":"2026-12-09T17:44:09.596650Z","user_id":"U0086","scenario":"social","text":"i need you to tweet a complaint"}
+{"message_id":"13197","arrival":"2026-12-09T17:57:11.346779Z","user_id":"U0083","scenario":"general","text":"i wish it could give me advice"}
+{"message_id":"17135","arrival":"2026-12-09T19:06:21.653324Z","user_id":"U0056","scenario":"email","text":"any lighting news emails"}
+{"message_id":"11424","arrival":"2026-12-09T19:58:02.638379Z","user_id":"U0155","scenario":"play","text":"vitaly channel"}

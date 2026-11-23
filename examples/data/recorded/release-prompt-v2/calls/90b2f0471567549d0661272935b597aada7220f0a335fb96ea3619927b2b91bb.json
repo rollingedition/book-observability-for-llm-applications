@@ -1,0 +1,56 @@
+{
+ "chunk_ns": [
+  5985596439,
+  5985607938,
+  6145050486,
+  6277290584,
+  6400099263,
+  6527416953,
+  6652516666,
+  6773036270,
+  6911030935,
+  7064595333,
+  7198342189,
+  7322706814,
+  7447904022,
+  7585938816,
+  7714964728,
+  7835914043,
+  7960166479,
+  8087689810,
+  8227717828,
+  8365476648
+ ],
+ "completion_tokens": 18,
+ "finish_reason": "stop",
+ "gen_ns": 2365463000,
+ "kind": "model",
+ "message_id": "3785",
+ "offset_ns": 29616427443,
+ "prefill_ns": 5641435000,
+ "prompt_tokens": 559,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-devices-03] Turning lights on and off\nName the light, or the room, and say whether to turn it on or off. The assistant changes the light and confirms it. To turn off every light in a room at once, say \"all lights in the room\". Lights that are not reachable are reported as offline, and the assistant does not change them. Some bulbs take a few seconds to respond, so the assistant may report the change a moment after you ask. Lights can also be set to turn on or off at a time you choose; the assistant shows the schedule before it saves it.\n\n[help-devices-04] Dimming and brightening lights\nBrightness is a percentage from one, the dimmest, to one hundred, the brightest. Ask for a light to be set to a value, or ask for it to be made brighter or dimmer by a step. The assistant applies the change in steps so the light does not flicker. Lights that cannot dim report that they can only be on or off. Colour changes work the same way on lights that support colour; a light without colour support keeps its current colour and the assistant tells you so.\n\n[help-devices-09] Turning a speaker on and off\nSpeakers can be switched on and off by name. Turning a speaker off stops any sound it is making, and turning it on does not start anything by itself. To set the level, ask for a volume from zero to one hundred. Speakers in a group change together. A speaker that is offline cannot be switched, and the assistant says so. Speakers can also be set to turn on at a time you choose, with the volume they should start at.\n",
+    "role": "system"
+   },
+   {
+    "content": "turn off the bathroom light please",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 5,
+ "step": "answer",
+ "text": "I'll help you turn off the bathroom light. [help-devices-03]",
+ "tokens_evaluated": 367,
+ "tool_calls": [],
+ "total_ns": 8958604327,
+ "ttfc_ns": 5985596439
+}

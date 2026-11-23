@@ -1,0 +1,43 @@
+{
+ "chunk_ns": [
+  348294463,
+  348305233,
+  504028527,
+  664790467,
+  792405963,
+  927309805,
+  1092455658,
+  1237529871
+ ],
+ "completion_tokens": 6,
+ "finish_reason": "stop",
+ "gen_ns": 884481000,
+ "kind": "model",
+ "message_id": "14053",
+ "offset_ns": 441063744055,
+ "prefill_ns": 345909000,
+ "prompt_tokens": 147,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.",
+    "role": "system"
+   },
+   {
+    "content": "what year did george clooney start acting",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 81,
+ "step": "route",
+ "text": "{\"route\": \"fallback\"}",
+ "tokens_evaluated": 14,
+ "tool_calls": [],
+ "total_ns": 1486328675,
+ "ttfc_ns": 348294463
+}

@@ -1,0 +1,50 @@
+# Chapter name-spans's narration (re-check narration): descriptions of its examples, blocks and tables, as
+# [examples.ID], [[blocks]] and [[tables]], and its own readings. Only this chapter's writer edits this file, so
+# writers working in parallel never append to one shared lexicon. A reading every chapter needs goes into
+# narration/lexicon.toml, which wins over a chapter's.
+
+[examples.validate-the-spans]
+say = "The code takes message 809's four spans, named the way chapter 1 named them, and runs the validator over each. Every span gets one finding, that it has no known span type, and the count of findings is {{out:validate-the-spans:findings, all}}."
+
+[examples.inference-span-names]
+say = "The code runs two messages through the assistant and prints the name each step's span gets. It prints the inference span's prompt name and prompt version, then the operation names and the number of required attributes the registry gives each span type. Each name is checked against its registry pattern, so a name that drifts fails the run."
+
+[examples.span-kinds-by-process]
+say = "The code runs one devices message twice, once with the model behind an endpoint and once with the model in the same process, and prints the kind each model span gets. It then runs the validator on the in-process span, which passes, and on the endpoint's span marked as in process, which is flagged, because that span names a server."
+
+[examples.resource-and-schema]
+say = "The code prints the resource and the instrumentation scope of the renamed spans, beside chapter 1's resource, with the schema URL each one carries and the service attributes. The schema lines are the point: the renamed spans carry the core release the registry depends on, and the SDK's own constants stop at an older one."
+
+[examples.validate-the-renamed-spans]
+say = "The code runs the validator over all {{out:validate-the-renamed-spans:messages}} dev-day messages and counts the spans by operation. It prints the findings on spans the registry defines, which are {{out:validate-the-renamed-spans:findings on registry spans}}, and the findings on the book's own fallback spans, which match the fallback replies one for one."
+
+[[tables]]
+section = "span-types-for-each-step"
+starts = "| Span type |"
+say = "A table of the four span types. For each, it gives the name pattern the registry uses, the span kind, and the operation name the book's spans carry. The inference span's name is the operation and the model; the retrieval span's name is its operation alone; the tool and agent spans are named by their operation and what they run."
+
+[terms]
+"ambrewick.assistant" = "am brew ick assistant"
+"ambrewick.fallback" = "am brew ick fallback"
+"gen_ai.*" = "gen A I"
+"service.*" = "service"
+"ambrewick." = "am brew ick"
+"GenAI" = "gen A I"
+"qwen3-4b-instruct-2507" = "chwen three four B instruct twenty twenty five oh seven"
+"0.66b2" = "zero point six six b two"
+"UUIDv5" = "U U I D v five"
+"https://opentelemetry.io/schemas/1.44.0" = "the one point four four schema"
+"https://opentelemetry.io/schemas/1.45.0" = "the one point four five schema"
+
+[words]
+"YAML" = "yammel"
+"MAY" = "may"
+"SHOULD" = "should"
+"INTERNAL" = "internal"
+"CLIENT" = "client"
+"SERVER" = "server"
+"PRODUCER" = "producer"
+"CONSUMER" = "consumer"
+"RECOMMENDED" = "recommended"
+"p1" = "p one"
+"OpenAI" = "Open A I"

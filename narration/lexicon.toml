@@ -1,0 +1,25 @@
+# The book's shared readings (narration/lexicon.toml wins over the shared rules). A chapter's own readings go in its
+# narration/{chapter_id}.toml. JSON, CSV, LLM, SDK and the other shared terms are already read by the shared rules.
+
+[terms]
+"OTLP" = "O T L P"
+"OpenTelemetry" = "Open Telemetry"
+"gen_ai" = "gen A I"
+"llama.cpp" = "llama dot C P P"
+"Qwen" = "Chwen"
+"Qwen3" = "Chwen three"
+"qwen3-4b-instruct-2507" = "Chwen three, four billion, Instruct, twenty-five oh seven"
+"Qwen3-4B-Instruct-2507" = "Chwen three, four billion, Instruct, twenty-five oh seven"
+"ambrewick" = "am brew ick"
+"Qwen3-0.6B" = "Chwen three, zero point six billion"
+"Qwen3-4B" = "Chwen three, four billion"
+"MASSIVE" = "Massive"
+"Ambrewick" = "Am brew ick"
+"MCP" = "M C P"
+"SQLite" = "S Q lite"
+"DuckDB" = "Duck D B"
+"v1.52.0" = "one dot fifty-two dot zero"
+"-$" = "minus $"
+
+[words]
+"ms" = "milliseconds"

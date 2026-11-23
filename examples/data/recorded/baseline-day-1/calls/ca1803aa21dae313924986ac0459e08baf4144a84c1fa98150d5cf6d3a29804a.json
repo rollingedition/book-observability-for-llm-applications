@@ -1,0 +1,43 @@
+{
+ "chunk_ns": [
+  601138966,
+  601147266,
+  728604636,
+  877375801,
+  1020630447,
+  1161915317,
+  1310519275,
+  1464025207
+ ],
+ "completion_tokens": 6,
+ "finish_reason": "stop",
+ "gen_ns": 857267000,
+ "kind": "model",
+ "message_id": "10263",
+ "offset_ns": 1458182127971,
+ "prefill_ns": 279974000,
+ "prompt_tokens": 144,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.",
+    "role": "system"
+   },
+   {
+    "content": "open chess app and begin game",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 287,
+ "step": "route",
+ "text": "{\"route\": \"media\"}",
+ "tokens_evaluated": 11,
+ "tool_calls": [],
+ "total_ns": 1540259846,
+ "ttfc_ns": 601138966
+}

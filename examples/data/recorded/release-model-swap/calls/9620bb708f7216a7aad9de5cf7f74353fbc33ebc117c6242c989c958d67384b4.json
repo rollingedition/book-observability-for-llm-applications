@@ -1,0 +1,55 @@
+{
+ "chunk_ns": [
+  3051996829,
+  3052028667,
+  3084174133,
+  3129923135,
+  3173895248,
+  3215966040,
+  3239923391,
+  3267640912,
+  3292469360,
+  3326288898,
+  3349462877,
+  3372477832,
+  3396314852,
+  3419262509,
+  3442419022,
+  3465067790,
+  3489290205,
+  3513622348,
+  3536779677
+ ],
+ "completion_tokens": 17,
+ "finish_reason": "stop",
+ "gen_ns": 474363000,
+ "kind": "model",
+ "message_id": "4428",
+ "offset_ns": 220626981514,
+ "prefill_ns": 2255585000,
+ "prompt_tokens": 525,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-01] Playing a song from your library\nName the song and, if it helps, the artist. The assistant looks in your music library first and plays the first song that matches. If more than one song has the name, it lists the artists and asks which one you mean. A song that is not in your library cannot be played, and the assistant says so rather than choosing another. Songs play through the device you chose last, unless you name another. The assistant reports the title and the artist when a song starts.\n\n[help-media-09] Pausing, skipping and going back\nPause stops the current song and keeps its place. Resume starts it again from the same point. Skip moves to the next song in the list, and going back moves to the previous one. Going back once more than a few seconds into a song starts that song again from the beginning. Skip does not work on a radio station, because a station is a live stream. The assistant reports what is playing after each of these commands.\n\n[help-media-02] Playing a playlist\nA playlist is a list of songs you have saved. To play one, name it. The assistant starts the first song and continues through the list in order unless shuffle is on. Playlists can be created from the songs you name; the assistant lists the songs before it saves the playlist. A playlist cannot hold a song that is not in your library. Changing a playlist does not change what is already playing. To add a song to a playlist, name both.\n",
+    "role": "system"
+   },
+   {
+    "content": "identify song",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 210,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\nNone of the provided information can be used to identify a song.",
+ "tokens_evaluated": 333,
+ "tool_calls": [],
+ "total_ns": 4101730315,
+ "ttfc_ns": 3051996829
+}

@@ -1,0 +1,120 @@
+{
+ "chunk_ns": [
+  11203843626,
+  11203852004,
+  11357710336,
+  11514423028,
+  11639345681,
+  11781761460,
+  11928278387,
+  12063830186,
+  12195842708,
+  12332959577,
+  12474738414,
+  12602981806,
+  12734896731,
+  12867309915,
+  12995926134,
+  13142563859,
+  13286850862,
+  13417148194,
+  13549429455,
+  13672152637,
+  13795749651,
+  13923615804,
+  14048547739,
+  14174795184,
+  14310347778,
+  14438622085,
+  14563436610,
+  14687331869,
+  14813684421,
+  14942985497,
+  15094083031
+ ],
+ "completion_tokens": 29,
+ "finish_reason": "stop",
+ "gen_ns": 3868664000,
+ "kind": "model",
+ "message_id": "16591",
+ "offset_ns": 1230521615840,
+ "prefill_ns": 10627034000,
+ "prompt_tokens": 918,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-10] Choosing a game or a quiz\nThe assistant can start a game or a quiz from a short list it knows. Ask for a game by name, or ask for a quiz on a subject, such as geography or history. A quiz asks one question at a time and tells you whether the answer was right. Games that need two players wait for the second player to join before they start. To stop a game, say so, and the assistant reports the score. Some games need a device that supports them; the assistant says if the device cannot run the game.\n\n[help-messages-02] Choosing the right address for a contact\nA contact can have more than one address on file. When a name returns two addresses, the assistant lists both and asks you which one to use. Pick the one you use most with that person. If neither is right, add the address you want as a new entry on the contact, then ask again. The assistant never combines two addresses into one, and it never shows an address in a reply after you have chosen it. You can ask for a contact's address to be checked, and the assistant reports whether the address is on file and when it was last updated. It cannot verify that the address still works.\n\n[help-media-03] Shuffle and repeat\nShuffle plays the songs of a playlist or an album in a random order. Turn it on or off by name. Repeat has three settings: off, repeat the current song, and repeat the whole list. The assistant reports the setting after each change. Shuffle does not change the list itself, and turning it off returns to the list's own order from the song now playing. A repeat setting stays until you change it, even when you start something new.\n",
+    "role": "system"
+   },
+   {
+    "content": "i just got an email from bill i need to answer it right now",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "Find a contact by name. Up to three contacts, with their names and addresses.",
+     "name": "find_contact",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "description": "The contact's name, as the user says it.",
+        "title": "Name",
+        "type": "string"
+       }
+      },
+      "required": [
+       "name"
+      ],
+      "title": "FindContactArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Record a message to one of the user's contacts, named by the address find_contact gave. The message is recorded, not sent.",
+     "name": "send_message",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "contact_id": {
+        "description": "The contact's address, as find_contact gave it.",
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Contact Id",
+        "type": "string"
+       },
+       "text": {
+        "description": "The message, up to 500 characters.",
+        "title": "Text",
+        "type": "string"
+       }
+      },
+      "required": [
+       "contact_id",
+       "text"
+      ],
+      "title": "SendMessageArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 243,
+ "step": "answer",
+ "text": "I can help you draft a response to Bill. Could you please provide the content of the email or the main point you'd like to address?",
+ "tokens_evaluated": 721,
+ "tool_calls": [],
+ "total_ns": 16045054699,
+ "ttfc_ns": 11203843626
+}

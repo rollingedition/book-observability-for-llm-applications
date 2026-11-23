@@ -1,0 +1,70 @@
+{
+ "chunk_ns": [
+  5814414361,
+  5814421205,
+  5964768472,
+  6120611314,
+  6263382286,
+  6413928721,
+  6563353014,
+  6727781964,
+  6892048584,
+  7042006916,
+  7173889367,
+  7323220302,
+  7473601507,
+  7619976320,
+  7774562028,
+  7934525457,
+  8061695384,
+  8205647794,
+  8340608825,
+  8471934380,
+  8600233575,
+  8769677086,
+  8911089172,
+  9093625548,
+  9260510942,
+  9425970314,
+  9593192179,
+  9756729164,
+  9893175614,
+  10028584308,
+  10163904341,
+  10303345296,
+  10445042042,
+  10591301326
+ ],
+ "completion_tokens": 32,
+ "finish_reason": "stop",
+ "gen_ns": 4751134000,
+ "kind": "model",
+ "message_id": "209",
+ "offset_ns": 166376311234,
+ "prefill_ns": 5432798000,
+ "prompt_tokens": 560,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-07.\n\nKnowledge base articles:\n\n[help-devices-03] Turning lights on and off\nName the light, or the room, and say whether to turn it on or off. The assistant changes the light and confirms it. To turn off every light in a room at once, say \"all lights in the room\". Lights that are not reachable are reported as offline, and the assistant does not change them. Some bulbs take a few seconds to respond, so the assistant may report the change a moment after you ask. Lights can also be set to turn on or off at a time you choose; the assistant shows the schedule before it saves it.\n\n[help-devices-04] Dimming and brightening lights\nBrightness is a percentage from one, the dimmest, to one hundred, the brightest. Ask for a light to be set to a value, or ask for it to be made brighter or dimmer by a step. The assistant applies the change in steps so the light does not flicker. Lights that cannot dim report that they can only be on or off. Colour changes work the same way on lights that support colour; a light without colour support keeps its current colour and the assistant tells you so.\n\n[help-media-08] Finding music by genre\nName a genre, such as jazz, folk or classical, and the assistant plays music from that genre in your library. If your library has none of that genre, the assistant says so and offers to play a radio station instead. Genres come from the tags on each song, so a song with no tag is not found by genre. To make a playlist from a genre, name the genre and the number of songs you want, and the assistant lists the songs before saving.\n",
+    "role": "system"
+   },
+   {
+    "content": "please make the lights reading friendly",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 28,
+ "step": "answer",
+ "text": "I don't have information about making lights \"reading friendly.\" Please clarify or check the knowledge base articles for related topics. [help-devices-03]",
+ "tokens_evaluated": 365,
+ "tool_calls": [],
+ "total_ns": 10939037155,
+ "ttfc_ns": 5814414361
+}

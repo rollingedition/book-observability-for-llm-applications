@@ -1,0 +1,27 @@
+{
+ "chunk_ns": [
+  12974262
+ ],
+ "completion_tokens": 0,
+ "finish_reason": "",
+ "gen_ns": 0,
+ "kind": "mcp",
+ "message_id": "16297",
+ "offset_ns": 629360520445,
+ "prefill_ns": 0,
+ "prompt_tokens": 0,
+ "request": {
+  "arguments": {
+   "name": "jake",
+   "user_id": "U0161"
+  },
+  "kind": "mcp",
+  "tool": "find_contact"
+ },
+ "seq": 121,
+ "step": "tool",
+ "text": "{\"is_error\": false, \"output\": {\"contacts\": []}}",
+ "tokens_evaluated": 0,
+ "total_ns": 12974262,
+ "ttfc_ns": 12974262
+}

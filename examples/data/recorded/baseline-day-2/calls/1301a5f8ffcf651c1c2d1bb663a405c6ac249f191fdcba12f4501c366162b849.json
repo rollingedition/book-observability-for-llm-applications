@@ -1,0 +1,54 @@
+{
+ "chunk_ns": [
+  6027250510,
+  6027258432,
+  6189482891,
+  6313089120,
+  6438872494,
+  6565778386,
+  6693835804,
+  6828038923,
+  6963192165,
+  7095134917,
+  7243747066,
+  7374185848,
+  7500800699,
+  7635760062,
+  7778720926,
+  7926181267,
+  8056161137,
+  8192898824
+ ],
+ "completion_tokens": 16,
+ "finish_reason": "stop",
+ "gen_ns": 2152586000,
+ "kind": "model",
+ "message_id": "11990",
+ "offset_ns": 225683474123,
+ "prefill_ns": 5432831000,
+ "prompt_tokens": 529,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-10.\n\nKnowledge base articles:\n\n[help-media-02] Playing a playlist\nA playlist is a list of songs you have saved. To play one, name it. The assistant starts the first song and continues through the list in order unless shuffle is on. Playlists can be created from the songs you name; the assistant lists the songs before it saves the playlist. A playlist cannot hold a song that is not in your library. Changing a playlist does not change what is already playing. To add a song to a playlist, name both.\n\n[help-media-09] Pausing, skipping and going back\nPause stops the current song and keeps its place. Resume starts it again from the same point. Skip moves to the next song in the list, and going back moves to the previous one. Going back once more than a few seconds into a song starts that song again from the beginning. Skip does not work on a radio station, because a station is a live stream. The assistant reports what is playing after each of these commands.\n\n[help-messages-05] Replying to a message\nAsk the assistant to reply to the latest message from someone, or to a message you name by its subject. The reply is written in the same thread, so the person sees it with the earlier messages. Say what the reply should say, or ask the assistant to draft a short reply and read it to you first. A reply is sent only after you confirm it. If the thread has more than one earlier message from that person, the assistant asks which one you mean before it replies.\n",
+    "role": "system"
+   },
+   {
+    "content": "what's a movie in theaters that doesn't suck",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 40,
+ "step": "answer",
+ "text": "I cannot provide recommendations for movies in theaters based on the given knowledge base articles.",
+ "tokens_evaluated": 334,
+ "tool_calls": [],
+ "total_ns": 8953254119,
+ "ttfc_ns": 6027250510
+}

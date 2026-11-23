@@ -1,0 +1,59 @@
+{
+ "chunk_ns": [
+  1738077310,
+  1738088476,
+  1764358050,
+  1789205936,
+  1813276103,
+  1837222331,
+  1862393372,
+  1886461741,
+  1912065930,
+  1936566965,
+  1962873389,
+  1987966405,
+  2011410076,
+  2034470188,
+  2058563747,
+  2081819302,
+  2104705093,
+  2128578238,
+  2156178555,
+  2179853695,
+  2203660010,
+  2230341866,
+  2257233791
+ ],
+ "completion_tokens": 21,
+ "finish_reason": "stop",
+ "gen_ns": 506217000,
+ "kind": "model",
+ "message_id": "9738",
+ "offset_ns": 57210014060,
+ "prefill_ns": 1735014000,
+ "prompt_tokens": 537,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-08] Finding music by genre\nName a genre, such as jazz, folk or classical, and the assistant plays music from that genre in your library. If your library has none of that genre, the assistant says so and offers to play a radio station instead. Genres come from the tags on each song, so a song with no tag is not found by genre. To make a playlist from a genre, name the genre and the number of songs you want, and the assistant lists the songs before saving.\n\n[help-media-01] Playing a song from your library\nName the song and, if it helps, the artist. The assistant looks in your music library first and plays the first song that matches. If more than one song has the name, it lists the artists and asks which one you mean. A song that is not in your library cannot be played, and the assistant says so rather than choosing another. Songs play through the device you chose last, unless you name another. The assistant reports the title and the artist when a song starts.\n\n[help-media-05] Following a podcast\nFollow a podcast to be told when a new episode is released. Ask the assistant to follow a show by name. Episodes play in the order they were released, or the latest first, as you choose. The assistant can play the latest episode, or a named one. Episodes you have started are remembered, so you can resume them later. Unfollowing a show keeps its episodes you have already listened to, but removes it from future reports of new episodes.\n",
+    "role": "system"
+   },
+   {
+    "content": "could you please play the classical music for me",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 51,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\n[help-media-08] Could you please play the classical music for me?",
+ "tokens_evaluated": 531,
+ "tool_calls": [],
+ "total_ns": 2822794788,
+ "ttfc_ns": 1738077310
+}

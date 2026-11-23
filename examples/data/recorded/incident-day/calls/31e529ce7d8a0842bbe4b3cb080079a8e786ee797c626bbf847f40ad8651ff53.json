@@ -1,0 +1,43 @@
+{
+ "chunk_ns": [
+  547415197,
+  547422560,
+  666644302,
+  790127349,
+  928479949,
+  1051199061,
+  1169920619,
+  1284477694
+ ],
+ "completion_tokens": 6,
+ "finish_reason": "stop",
+ "gen_ns": 732769000,
+ "kind": "model",
+ "message_id": "2611",
+ "offset_ns": 549805359643,
+ "prefill_ns": 259469000,
+ "prompt_tokens": 141,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.",
+    "role": "system"
+   },
+   {
+    "content": "current weather forecast",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 81,
+ "step": "route",
+ "text": "{\"route\": \"fallback\"}",
+ "tokens_evaluated": 8,
+ "tool_calls": [],
+ "total_ns": 1351795293,
+ "ttfc_ns": 547415197
+}

@@ -1,0 +1,159 @@
+{
+ "chunk_ns": [
+  7835670051,
+  7835692271,
+  7974734057,
+  8107285691,
+  8229677140,
+  8345781549,
+  8478892809,
+  8596593829,
+  8716789209,
+  8866086290,
+  8991563541,
+  9113539947,
+  9231465156,
+  9346758038,
+  9463837369,
+  9580145937,
+  9700530738,
+  9823491876,
+  9945406987,
+  10065161393,
+  10188408371,
+  10317891325,
+  10446630203,
+  10573339331,
+  10706304700,
+  10833554151,
+  10982281331,
+  11112662326,
+  11238562802,
+  11361389244,
+  11482504400,
+  11600545555,
+  11735789993,
+  11863565089,
+  11999653954,
+  12134658826,
+  12263695789,
+  12415264530,
+  12540396423,
+  12664625498,
+  12800399530,
+  12941389831
+ ],
+ "completion_tokens": 40,
+ "finish_reason": "stop",
+ "gen_ns": 5074839000,
+ "kind": "model",
+ "message_id": "5757",
+ "offset_ns": 308738607640,
+ "prefill_ns": 6918222000,
+ "prompt_tokens": 667,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-09.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "a quarter to two",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List the user's events on one day (UTC). Up to five, by time.",
+     "name": "list_events",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date"
+      ],
+      "title": "ListEventsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an event to the user's calendar on one day (UTC).",
+     "name": "add_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       },
+       "time": {
+        "description": "The start time, HH:MM on a 24-hour clock.",
+        "title": "Time",
+        "type": "string"
+       },
+       "title": {
+        "description": "What the event is called, up to 60 characters.",
+        "title": "Title",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date",
+       "time",
+       "title"
+      ],
+      "title": "AddEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove one of the user's events, by its event_id.",
+     "name": "remove_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "event_id": {
+        "description": "The event_id that list_events gave.",
+        "maxLength": 20,
+        "minLength": 1,
+        "title": "Event Id",
+        "type": "string"
+       }
+      },
+      "required": [
+       "event_id"
+      ],
+      "title": "RemoveEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 46,
+ "step": "answer",
+ "text": "I can help you with that. Could you please clarify what you'd like to do? For example, would you like to add an event at a quarter to two (1:45 PM)?",
+ "tokens_evaluated": 475,
+ "tool_calls": [],
+ "total_ns": 13846214772,
+ "ttfc_ns": 7835670051
+}

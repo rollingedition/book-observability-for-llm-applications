@@ -1,0 +1,154 @@
+{
+ "chunk_ns": [
+  8288180223,
+  8288190155,
+  8436741477,
+  8593443941,
+  8785028949,
+  8942402202,
+  9097368613,
+  9251677264,
+  9407121302,
+  9562132948,
+  9712116934,
+  9851671569,
+  9997431600,
+  10133363628,
+  10266326481,
+  10408659920,
+  10589677652,
+  10737827559,
+  10895375346,
+  11028370747,
+  11159000515,
+  11310014603,
+  11443906810,
+  11570419034,
+  11702072360,
+  11838576502,
+  11976501176,
+  12115491194,
+  12256068955,
+  12402188821,
+  12540986094,
+  12678396097,
+  12808016561,
+  12938710000,
+  13066405455,
+  13193703347,
+  13330715023
+ ],
+ "completion_tokens": 35,
+ "finish_reason": "stop",
+ "gen_ns": 5014907000,
+ "kind": "model",
+ "message_id": "8453",
+ "offset_ns": 663113230905,
+ "prefill_ns": 7680251000,
+ "prompt_tokens": 676,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-10.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "please put event into my calendar and mark it as a repeating event",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List the user's events on one day (UTC). Up to five, by time.",
+     "name": "list_events",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date"
+      ],
+      "title": "ListEventsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an event to the user's calendar on one day (UTC).",
+     "name": "add_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       },
+       "time": {
+        "description": "The start time, HH:MM on a 24-hour clock.",
+        "title": "Time",
+        "type": "string"
+       },
+       "title": {
+        "description": "What the event is called, up to 60 characters.",
+        "title": "Title",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date",
+       "time",
+       "title"
+      ],
+      "title": "AddEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove one of the user's events, by its event_id.",
+     "name": "remove_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "event_id": {
+        "description": "The event_id that list_events gave.",
+        "maxLength": 20,
+        "minLength": 1,
+        "title": "Event Id",
+        "type": "string"
+       }
+      },
+      "required": [
+       "event_id"
+      ],
+      "title": "RemoveEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 126,
+ "step": "answer",
+ "text": "I cannot add repeating events to your calendar as the available tools do not support this functionality. Please let me know if you'd like me to add a one-time event instead.",
+ "tokens_evaluated": 484,
+ "tool_calls": [],
+ "total_ns": 14057236526,
+ "ttfc_ns": 8288180223
+}

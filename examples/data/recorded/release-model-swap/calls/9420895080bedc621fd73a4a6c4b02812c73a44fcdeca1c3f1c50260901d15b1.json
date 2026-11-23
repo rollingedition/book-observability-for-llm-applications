@@ -1,0 +1,62 @@
+{
+ "chunk_ns": [
+  2306924184,
+  2306932372,
+  2329715448,
+  2351763877,
+  2374355016,
+  2401848904,
+  2512680293,
+  2536248676,
+  2616080116,
+  2642034697,
+  2669256411,
+  2709031475,
+  2734791712,
+  2759482530,
+  2783043588,
+  2815087171,
+  2839955515,
+  2862381841,
+  2885165356,
+  2908911502,
+  2934592477,
+  2957760954,
+  2981641469,
+  3004304290,
+  3027000842,
+  3050077478
+ ],
+ "completion_tokens": 24,
+ "finish_reason": "stop",
+ "gen_ns": 728174000,
+ "kind": "model",
+ "message_id": "1832",
+ "offset_ns": 249714601368,
+ "prefill_ns": 2303310000,
+ "prompt_tokens": 520,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-03] Shuffle and repeat\nShuffle plays the songs of a playlist or an album in a random order. Turn it on or off by name. Repeat has three settings: off, repeat the current song, and repeat the whole list. The assistant reports the setting after each change. Shuffle does not change the list itself, and turning it off returns to the list's own order from the song now playing. A repeat setting stays until you change it, even when you start something new.\n\n[help-media-05] Following a podcast\nFollow a podcast to be told when a new episode is released. Ask the assistant to follow a show by name. Episodes play in the order they were released, or the latest first, as you choose. The assistant can play the latest episode, or a named one. Episodes you have started are remembered, so you can resume them later. Unfollowing a show keeps its episodes you have already listened to, but removes it from future reports of new episodes.\n\n[help-media-02] Playing a playlist\nA playlist is a list of songs you have saved. To play one, name it. The assistant starts the first song and continues through the list in order unless shuffle is on. Playlists can be created from the songs you name; the assistant lists the songs before it saves the playlist. A playlist cannot hold a song that is not in your library. Changing a playlist does not change what is already playing. To add a song to a playlist, name both.\n",
+    "role": "system"
+   },
+   {
+    "content": "play coldplay album",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 241,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\n[help-media-02] Playing a playlist. Please name the playlist you want to play.",
+ "tokens_evaluated": 514,
+ "tool_calls": [],
+ "total_ns": 3757368469,
+ "ttfc_ns": 2306924184
+}

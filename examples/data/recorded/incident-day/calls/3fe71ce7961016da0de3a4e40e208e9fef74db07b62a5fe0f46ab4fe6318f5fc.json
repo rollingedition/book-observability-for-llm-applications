@@ -1,0 +1,27 @@
+{
+ "chunk_ns": [
+  10242330
+ ],
+ "completion_tokens": 0,
+ "finish_reason": "",
+ "gen_ns": 0,
+ "kind": "mcp",
+ "message_id": "16559",
+ "offset_ns": 674035077161,
+ "prefill_ns": 0,
+ "prompt_tokens": 0,
+ "request": {
+  "arguments": {
+   "name": "mike",
+   "user_id": "U0141"
+  },
+  "kind": "mcp",
+  "tool": "find_contact"
+ },
+ "seq": 98,
+ "step": "tool",
+ "text": "{\"is_error\": true, \"output\": \"Error executing tool find_contact\"}",
+ "tokens_evaluated": 0,
+ "total_ns": 10242330,
+ "ttfc_ns": 10242330
+}

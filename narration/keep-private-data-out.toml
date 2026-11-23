@@ -1,0 +1,44 @@
+# Chapter keep-private-data-out's narration (re-check narration): descriptions of its examples, blocks and tables, as
+# [examples.ID], [[blocks]] and [[tables]], and its own readings. Only this chapter's writer edits this file, so
+# writers working in parallel never append to one shared lexicon. A reading every chapter needs goes into
+# narration/lexicon.toml, which wins over a chapter's.
+
+[terms]
+".example" = "dot example"
+"[name]" = "name placeholder"
+"[email]" = "email placeholder"
+"*_ref" = "star underscore ref"
+"file://" = "file colon slash slash"
+"HMAC-SHA256" = "H MAC S H A two fifty six"
+"HMAC" = "H MAC"
+"SHA-256" = "S H A two fifty six"
+"SHA" = "S H A"
+"PII" = "P I I"
+"fsspec" = "F S spec"
+"_logs" = "underscore logs"
+"LoggerProvider" = "Logger Provider"
+"InMemoryLogRecordExporter" = "In Memory Log Record Exporter"
+"OTEL_INSTRUMENTATION_GENAI_CONTENT_HOOK" = "O tel instrumentation gen A I content hook"
+"OTEL_INSTRUMENTATION_GENAI_COMPLETION_HOOK" = "O tel instrumentation gen A I completion hook"
+"OTEL_INSTRUMENTATION_GENAI_UPLOAD_BASE_PATH" = "O tel instrumentation gen A I upload base path"
+
+[examples.capture-modes]
+say = "The code makes one model call under each of the four capture modes, and counts the content on the call's span and the log records it writes. Under the mode that records nothing, neither appears. The other modes put the prompt and the reply on the span, on a log record, or on both. The example asserts the pair of counts for each mode."
+
+[examples.leak-with-capture-on]
+say = "The code runs baseline day one twice, once with capture off and once with it on, and counts the matches of each kind in the spans each run holds. It then reads the incident day's contacts server through the receiver, and counts the stack traces on its spans and on the assistant's, and the file paths they name. The lines it prints are those counts, and the example asserts that capture off holds no name and no message text."
+
+[examples.content-bytes-per-message]
+say = "The code measures the bytes of each message's spans on baseline day one, once with content left out and once with it included, and divides each total by the number of messages. It then cuts each content value at a fixed limit of characters, and checks whether the cut values still parse as JSON. The printed lines give the bytes per message in each case, the share that content takes, and how many values the limit cut."
+
+[examples.scan-after-redaction]
+say = "The code counts the items of each kind on baseline day one before and after the redaction processor runs, on the assistant's spans and on the package's. The synthetic kinds are asserted zero afterwards, and the personal-looking values are asserted unchanged, with their residue printed as a count. Then it counts the incident day's stack traces on each process's spans, before and after the receiver's redaction, and asserts that no absolute path survives that redaction."
+
+[examples.redact-and-hash]
+say = "The code runs the redaction processor over the day's spans and counts the synthetic items before and after. It then tries every candidate user ID in a list against one stored hash, first with a plain SHA-256, then with a keyed HMAC under a key the attacker does not hold, and then under the demonstration key written in the code. The printed lines give the matches for each attempt."
+
+[examples.content-by-reference]
+say = "The code sends the same calls through the upload hook in three configurations: with capture unset and the span sampled in, with capture on, and with the span sampled out. It prints the spans exported, the references and inline content on them, and the uploads, and it prints the form of one reference after the redactor has replaced its folder, with a placeholder for the random file name. The example asserts that a call whose span is sampled out still has its inputs uploaded, and that no absolute path is left in the redacted references."
+
+[examples.figure-personal-items-before-after]
+say = "The code counts the spans on baseline day one that hold each kind of personal item, before and after redaction, and draws the counts in two panels. The top panel holds the synthetic kinds and the bottom holds the personal-looking values, and in each pair the second bar is the count after redaction. The example asserts that the synthetic kinds are zero after redaction, and that the values' counts do not change."

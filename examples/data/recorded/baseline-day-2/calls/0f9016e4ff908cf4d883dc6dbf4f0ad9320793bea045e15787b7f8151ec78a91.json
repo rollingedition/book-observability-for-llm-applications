@@ -1,0 +1,68 @@
+{
+ "chunk_ns": [
+  4218601553,
+  4218610742,
+  4342219833,
+  4469169150,
+  4595660616,
+  4732386694,
+  4878999055,
+  5002887273,
+  5126857052,
+  5273271371,
+  5422032931,
+  5560699075,
+  5684269859,
+  5806290971,
+  5955434342,
+  6099842465,
+  6238177132,
+  6369910576,
+  6498962332,
+  6628743479,
+  6759450654,
+  6887261791,
+  7010475888,
+  7207683652,
+  7367377033,
+  7513882565,
+  7647945438,
+  7782845721,
+  7911535711,
+  8033299205,
+  8154492381,
+  8277045602
+ ],
+ "completion_tokens": 30,
+ "finish_reason": "stop",
+ "gen_ns": 4034219000,
+ "kind": "model",
+ "message_id": "6061",
+ "offset_ns": 100313281576,
+ "prefill_ns": 3435204000,
+ "prompt_tokens": 438,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-10.\n\nKnowledge base articles:\n\n[help-devices-06] Brewing with the coffee machine\nA connected coffee machine can start a brew at a time you choose. Make sure the water tank is full and a cup is in place, because the machine cannot detect either. Ask the assistant to start a brew now, or to start one at a time, and say the strength if the machine offers more than one. The assistant reports when the brew starts and when it finishes. A machine with an empty tank or an open lid reports a fault, and the assistant reads the fault out. It does not cancel a brew in progress unless you ask.\n\n[help-media-08] Finding music by genre\nName a genre, such as jazz, folk or classical, and the assistant plays music from that genre in your library. If your library has none of that genre, the assistant says so and offers to play a radio station instead. Genres come from the tags on each song, so a song with no tag is not found by genre. To make a playlist from a genre, name the genre and the number of songs you want, and the assistant lists the songs before saving.\n",
+    "role": "system"
+   },
+   {
+    "content": "make the coffee",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 20,
+ "step": "answer",
+ "text": "Ask the assistant to start a brew now. Make sure the water tank is full and a cup is in place [help-devices-06].",
+ "tokens_evaluated": 243,
+ "tool_calls": [],
+ "total_ns": 8917911174,
+ "ttfc_ns": 4218601553
+}

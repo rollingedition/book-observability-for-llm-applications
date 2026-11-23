@@ -1,0 +1,63 @@
+# Chapter send-to-a-backend's narration (re-check narration): descriptions of its examples, blocks and tables, as
+# [examples.ID], [[blocks]] and [[tables]], and its own readings. Only this chapter's writer edits this file, so
+# writers working in parallel never append to one shared lexicon. A reading every chapter needs goes into
+# narration/lexicon.toml, which wins over a chapter's.
+
+[examples.otlp-export-loopback]
+say = "The code sends one message's three spans through the real exporter to the book's receiver, which listens on loopback. It then sends one more span and checks that its request is in the receiver before the span's end call returns. The output counts the requests for the message's three spans, {{out:otlp-export-loopback:requests for the message's three spans}}, and gives the body type of those requests, {{out:otlp-export-loopback:content types of the requests}}. Its yes lines are checks the code makes before it prints them."
+
+[examples.two-processes-one-receiver]
+say = "The code replays the messages from baseline day 1 that route to the messages tools, with the contacts server running as its own process, and sends both processes' spans to one receiver. The output counts the messages, and the traces that hold spans from both processes, {{out:two-processes-one-receiver:traces with spans from both processes}}. It also counts the contacts server spans that sit under an assistant span, {{out:two-processes-one-receiver:contacts server spans under an assistant span}}. Its last yes line is checked before it prints."
+
+[examples.query-stored-spans]
+say = "The code runs the same replay, writes the stored rows to a file, and queries them with DuckDB. The output counts the spans each process stored, then the contacts server spans by name, then the joins across the process boundary by name. It ends with two counts of the stored rows: the traces that hold both processes' spans, and the orphans, which are spans whose parent is missing. The orphan count is {{out:query-stored-spans:orphans in the stored rows}}."
+
+[examples.mlflow-search-traces]
+say = "The code sends one message's three spans to MLflow, a server running on this machine with a SQLite database, and reads the trace back. The output counts the traces found and the spans in the trace, {{out:mlflow-search-traces:spans in the trace}}. It then names the MLflow type of the chat span, and the model MLflow recorded for it, {{out:mlflow-search-traces:chat span, model MLflow recorded}}. It gives the trace's token counts for input, output and cache reads. The total is checked against the input and output counts. The chat span and the trace are checked for a cost, and MLflow stored none, because it has no price for that model."
+
+[examples.same-spans-two-receivers]
+say = "The code sends one message's spans from one provider to two receivers, the book's receiver and MLflow. The output counts the spans each receiver got, {{out:same-spans-two-receivers:spans received by MLflow}} in MLflow, and then names the attributes MLflow adds to them, {{out:same-spans-two-receivers:attributes MLflow adds, by name}}. The book's receiver stores none of those attributes."
+
+[terms]
+"DEFAULT_TIMEOUT" = "the exporter's timeout setting"
+"mlflow.llm.cost" = "M L flow dot L L M dot cost"
+"mlflow.trace.cost" = "M L flow dot trace dot cost"
+"MLflow" = "M L flow"
+"OTLPSpanExporter" = "O T L P span exporter"
+"OTLP/HTTP" = "O T L P over H T T P"
+"4xx" = "four x x"
+"5xx" = "five x x"
+"application/x-protobuf" = "application slash x dash protobuf"
+"OTEL_EXPORTER_OTLP_TRACES_ENDPOINT" = "O tel exporter O T L P traces endpoint"
+"OTEL_EXPORTER_OTLP_ENDPOINT" = "O tel exporter O T L P endpoint"
+"gRPC" = "G R P C"
+"FutureWarning" = "future warning"
+"base64" = "base sixty four"
+"mlflow.spanType" = "M L flow span type"
+"CHAT_MODEL" = "chat model"
+"mlflow.chat.tokenUsage" = "M L flow chat token usage"
+"mlflow.traceRequestId" = "M L flow trace request I D"
+"MLFLOW_ENABLE_OTEL_GENAI_SEMCONV" = "M L flow enable O tel gen A I sem conv"
+"langfuse.*" = "lang fuse dot star"
+"telemetry.sdk.*" = "telemetry dot S D K star"
+"mlflow.trace.tokenUsage" = "M L flow trace token usage"
+"/v1/traces" = "slash v 1 slash traces"
+"POST" = "P O S T"
+"ELv2" = "E L v 2"
+"mlflow.llm.model" = "M L flow L L M model"
+"mlflow.llm.provider" = "M L flow L L M provider"
+"mlflow." = "M L flow dot"
+"x-mlflow-experiment-id" = "x dash M L flow dash experiment I D"
+"tr-" = "t r dash"
+"dd_llmobs_enabled=true" = "D D underscore L L M obs enabled equals true"
+"mlflow/server/otel_api.py" = "M L flow slash server slash otel underscore A P I dot p y"
+"opentelemetry-exporter-otlp-proto-http" = "open telemetry exporter O T L P proto H T T P"
+"search_traces(locations=...)" = "search traces, locations equals"
+"Langfuse" = "lang fuse"
+"ClickHouse" = "click house"
+"OpenSearch" = "open search"
+"DD-LLMObs-Enabled" = "D D L L M obs enabled"
+"MiB" = "mebibytes"
+"Phoenix" = "Phoenix"
+
+[words]

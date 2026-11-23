@@ -1,0 +1,66 @@
+{
+ "chunk_ns": [
+  6799587331,
+  6799599077,
+  6964800734,
+  7133950266,
+  7309175908,
+  7487376365,
+  7658065049,
+  7848312193,
+  7994724837,
+  8139521101,
+  8274910212,
+  8429006836,
+  8584116477,
+  8738785354,
+  8940950043,
+  9104141818,
+  9262608866,
+  9413295579,
+  9570788318,
+  9723456601,
+  9857760178,
+  9987202790,
+  10121734974,
+  10268139173,
+  10403329482,
+  10541047244,
+  10688842729,
+  10839826673,
+  10996177393,
+  11143609081
+ ],
+ "completion_tokens": 28,
+ "finish_reason": "stop",
+ "gen_ns": 4321559000,
+ "kind": "model",
+ "message_id": "3178",
+ "offset_ns": 276020204035,
+ "prefill_ns": 5880812000,
+ "prompt_tokens": 550,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-10.\n\nKnowledge base articles:\n\n[help-media-08] Finding music by genre\nName a genre, such as jazz, folk or classical, and the assistant plays music from that genre in your library. If your library has none of that genre, the assistant says so and offers to play a radio station instead. Genres come from the tags on each song, so a song with no tag is not found by genre. To make a playlist from a genre, name the genre and the number of songs you want, and the assistant lists the songs before saving.\n\n[help-messages-03] Writing a short message\nSay who the message is for and what it should say. Keep it to a few sentences. The assistant reads the names back before it sends anything, so you can correct a name you did not mean. Subject lines are optional; if you leave one out, the assistant writes a short one from the first sentence. The message is sent only after you confirm it. Once it is sent, it cannot be recalled by the assistant, so check the wording first. Long messages are split into parts only in the rare case where the service limits their length, and the assistant tells you when that happens.\n\n[help-media-09] Pausing, skipping and going back\nPause stops the current song and keeps its place. Resume starts it again from the same point. Skip moves to the next song in the list, and going back moves to the previous one. Going back once more than a few seconds into a song starts that song again from the beginning. Skip does not work on a radio station, because a station is a live stream. The assistant reports what is playing after each of these commands.\n",
+    "role": "system"
+   },
+   {
+    "content": "what year did this song come out",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 49,
+ "step": "answer",
+ "text": "I cannot determine the release year of a song based on the provided information. [help-media-08] does not include release dates.",
+ "tokens_evaluated": 352,
+ "tool_calls": [],
+ "total_ns": 12093746982,
+ "ttfc_ns": 6799587331
+}

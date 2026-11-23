@@ -1,0 +1,48 @@
+{
+ "chunk_ns": [
+  60466065,
+  60474525,
+  81210419,
+  101375476,
+  122192178,
+  144217272,
+  165378621,
+  186692026,
+  207466067,
+  228125167,
+  248335016,
+  268592062,
+  289424521
+ ],
+ "completion_tokens": 11,
+ "finish_reason": "stop",
+ "gen_ns": 222574000,
+ "kind": "model",
+ "message_id": "1675",
+ "offset_ns": 164050034805,
+ "prefill_ns": 58967000,
+ "prompt_tokens": 149,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.",
+    "role": "system"
+   },
+   {
+    "content": "remove tuesday alarm of nine am",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 153,
+ "step": "route",
+ "text": "<think>\n\n</think>\n\n{\"route\": \"alarms\"}",
+ "tokens_evaluated": 12,
+ "tool_calls": [],
+ "total_ns": 335856877,
+ "ttfc_ns": 60466065
+}

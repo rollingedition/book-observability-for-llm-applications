@@ -1,0 +1,136 @@
+{
+ "chunk_ns": [
+  5985589641,
+  5985598956,
+  6112609700,
+  6234974382,
+  6376424102,
+  6498717233,
+  6621205538,
+  6764683159,
+  6915886805,
+  7055857737,
+  7196404771,
+  7349979787,
+  7498842316,
+  7625033110,
+  7753523816,
+  7906074186,
+  8037018079,
+  8237604179,
+  8390223951,
+  8527697699,
+  8656712212,
+  8788898022,
+  8919712687,
+  9059517711,
+  9182746642,
+  9313655653,
+  9467549457,
+  9625211072,
+  9777011329,
+  9905387498,
+  10183304120,
+  10312338803,
+  10453204593
+ ],
+ "completion_tokens": 31,
+ "finish_reason": "stop",
+ "gen_ns": 4442983000,
+ "kind": "model",
+ "message_id": "7061",
+ "offset_ns": 1128069971180,
+ "prefill_ns": 5534923000,
+ "prompt_tokens": 608,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "give me a reminder twenty four hours before my friday meeting with edg",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List the user's alarms. Up to five, by time.",
+     "name": "list_alarms",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {},
+      "required": [],
+      "title": "ListAlarmsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Set a new alarm for the user.",
+     "name": "set_alarm",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "label": {
+        "description": "The alarm's label, up to 40 characters.",
+        "title": "Label",
+        "type": "string"
+       },
+       "time": {
+        "description": "The alarm time, HH:MM on a 24-hour clock.",
+        "title": "Time",
+        "type": "string"
+       }
+      },
+      "required": [
+       "time",
+       "label"
+      ],
+      "title": "SetAlarmArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove one of the user's alarms, by its alarm_id.",
+     "name": "remove_alarm",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "alarm_id": {
+        "description": "The alarm_id that list_alarms gave.",
+        "maxLength": 20,
+        "minLength": 1,
+        "title": "Alarm Id",
+        "type": "string"
+       }
+      },
+      "required": [
+       "alarm_id"
+      ],
+      "title": "RemoveAlarmArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 220,
+ "step": "answer",
+ "text": "I cannot set a reminder for you as no meeting details or date were provided. Please provide the exact date and time of your Friday meeting with Edg.",
+ "tokens_evaluated": 363,
+ "tool_calls": [],
+ "total_ns": 10923960223,
+ "ttfc_ns": 5985589641
+}

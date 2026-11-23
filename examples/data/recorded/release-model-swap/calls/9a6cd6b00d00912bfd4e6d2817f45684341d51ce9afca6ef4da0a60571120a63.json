@@ -1,0 +1,62 @@
+{
+ "chunk_ns": [
+  1309985087,
+  1309993827,
+  1336511668,
+  1359585332,
+  1382996171,
+  1406757243,
+  1429445819,
+  1453280486,
+  1478197605,
+  1503708753,
+  1529336102,
+  1566326729,
+  1589454674,
+  1612767719,
+  1636267847,
+  1660082910,
+  1682755338,
+  1706166447,
+  1729396542,
+  1753062380,
+  1777404884,
+  1800756179,
+  1823490412,
+  1846367692,
+  1869085857,
+  1893218311
+ ],
+ "completion_tokens": 24,
+ "finish_reason": "stop",
+ "gen_ns": 568859000,
+ "kind": "model",
+ "message_id": "9732",
+ "offset_ns": 204663954445,
+ "prefill_ns": 951223000,
+ "prompt_tokens": 584,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-06] Resuming an audiobook\nAn audiobook remembers where you stopped. Ask the assistant to resume a book by its title, and it starts a few seconds before the last point, so you hear the end of the sentence. To start a book from the beginning, say so. The assistant reports the chapter and the time left in the book. Books you have finished are listed separately, and a finished book can be started again from the beginning. Bookmarks can be added at a point you name.\n\n[help-devices-06] Brewing with the coffee machine\nA connected coffee machine can start a brew at a time you choose. Make sure the water tank is full and a cup is in place, because the machine cannot detect either. Ask the assistant to start a brew now, or to start one at a time, and say the strength if the machine offers more than one. The assistant reports when the brew starts and when it finishes. A machine with an empty tank or an open lid reports a fault, and the assistant reads the fault out. It does not cancel a brew in progress unless you ask.\n\n[help-devices-01] Adding a smart plug\nA smart plug switches the device plugged into it. To add one, put the plug in a socket near your router, then open the device list and choose to add a plug. The assistant asks for a name, such as \"desk lamp\" or \"kettle\", and for the room it is in. Keep the plug within range of your home network while it connects. When the plug shows as online, the assistant confirms it. A plug added this way can then be switched on and off by name. Plugs do not report how much power they use unless the plug supports it, and the assistant says so if you ask.\n",
+    "role": "system"
+   },
+   {
+    "content": "open davinci code audiobook",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 194,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\nNone of the provided information answers the request to open the \"Davinci Code\" audiobook.",
+ "tokens_evaluated": 282,
+ "tool_calls": [],
+ "total_ns": 2269143171,
+ "ttfc_ns": 1309985087
+}

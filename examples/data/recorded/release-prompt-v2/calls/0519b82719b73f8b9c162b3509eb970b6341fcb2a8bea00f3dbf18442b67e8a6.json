@@ -1,0 +1,180 @@
+{
+ "chunk_ns": [
+  8217785058,
+  8217805290,
+  8353544691,
+  8490595425,
+  8618752777,
+  8743198771,
+  8866963667,
+  8987908732,
+  9116590672,
+  9244316622,
+  9371446135,
+  9517851298,
+  9653635260,
+  9795496637,
+  9918589665,
+  10044568353,
+  10165337169,
+  10281348359,
+  10400523778,
+  10518345131,
+  10651044011,
+  10789059749,
+  10924037161,
+  11079662830,
+  11216073928,
+  11340386407,
+  11462335277,
+  11631315996,
+  11763402006,
+  11892365713,
+  12012061989,
+  12131089065,
+  12248540789,
+  12369798779,
+  12489347008,
+  12617919534,
+  12773482748,
+  12925326206,
+  13071419446,
+  13197888934,
+  13325776992,
+  13448365435,
+  13573028089,
+  13694012093,
+  13826305219,
+  13950810356,
+  14077667431,
+  14211585047
+ ],
+ "completion_tokens": 46,
+ "finish_reason": "stop",
+ "gen_ns": 5958283000,
+ "kind": "model",
+ "message_id": "10678",
+ "offset_ns": 40046015474,
+ "prefill_ns": 7951790000,
+ "prompt_tokens": 730,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "add spent five dollars in my expenses list",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List one of the user's lists: shopping, packing or to do. Up to ten items.",
+     "name": "list_items",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "list": {
+        "description": "The list to read.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list"
+      ],
+      "title": "ListItemsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an item to one of the user's lists: shopping, packing or to do.",
+     "name": "add_item",
+     "parameters": {
+      "additionalProperties": false,
+      "description": "The arguments of add_item and remove_item: a list and one item's text.",
+      "properties": {
+       "item": {
+        "description": "The item's text, up to 40 characters.",
+        "title": "Item",
+        "type": "string"
+       },
+       "list": {
+        "description": "The list to change.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list",
+       "item"
+      ],
+      "title": "ChangeItemArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove an item from one of the user's lists: shopping, packing or to do.",
+     "name": "remove_item",
+     "parameters": {
+      "additionalProperties": false,
+      "description": "The arguments of add_item and remove_item: a list and one item's text.",
+      "properties": {
+       "item": {
+        "description": "The item's text, up to 40 characters.",
+        "title": "Item",
+        "type": "string"
+       },
+       "list": {
+        "description": "The list to change.",
+        "enum": [
+         "shopping",
+         "packing",
+         "to do"
+        ],
+        "title": "List",
+        "type": "string"
+       }
+      },
+      "required": [
+       "list",
+       "item"
+      ],
+      "title": "ChangeItemArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 7,
+ "step": "answer",
+ "text": "I can help you add an item to your expenses list. Could you please confirm if you meant to add \"spent five dollars\" to your \"to do\" list or if there's a specific list you'd like to use?",
+ "tokens_evaluated": 535,
+ "tool_calls": [],
+ "total_ns": 15185507453,
+ "ttfc_ns": 8217785058
+}

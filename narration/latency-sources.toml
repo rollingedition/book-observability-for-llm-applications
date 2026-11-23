@@ -1,0 +1,46 @@
+# Chapter latency-sources's narration (re-check narration): descriptions of its examples, blocks and tables, as
+# [examples.ID], [[blocks]] and [[tables]], and its own readings. Only this chapter's writer edits this file, so
+# writers working in parallel never append to one shared lexicon. A reading every chapter needs goes into
+# narration/lexicon.toml, which wins over a chapter's.
+
+[examples.critical-path-one-message]
+say = "The code replays the slowest message of baseline day 1, which took {{out:critical-path-one-message:message time}}, with its spans kept. It then walks back from the message's end through the chain of spans that sets it. The printed lines give each span on the chain with its time, and the share of the message's time the chain covers, {{out:critical-path-one-message:share of the message time on the path}}. A small hand-built tree at the end shows the rule when two spans overlap, and the share of the root's time its chain covers, {{out:critical-path-one-message:constructed overlap, share of the root's time on the path}}."
+
+[examples.time-to-first-chunk-by-route]
+say = "The code takes each message's last answer call and compares the time to its first chunk with the call's total time, grouped by route. Each median comes with a 95% interval from resampling messages, printed on its own line. The output also gives the route calls' median first chunk, and counts the messages with no answer call, which took the fallback reply."
+
+[examples.prefill-generation-split]
+say = "The code adds up each step's model calls and splits their compute into prefill, which reads the prompt, and generation, which writes the reply. The output gives the prefill share of the first-chunk wait for route calls and for answer calls, and the rates in tokens a second, computed from the counts on the recording machine."
+
+[examples.context-against-prefill]
+say = "The code compares the same messages under the baseline and the top-8 release. It sums each release's answer calls for their prefill, prompt tokens, tokens evaluated and cached tokens, and the route calls' tokens evaluated. It counts the paired answer calls that gained prompt tokens and the route calls that re-read most of the instruction, and it asserts that the paired route prompts are identical. Two correlations over every baseline answer call then show that prefill follows the tokens evaluated and not the input."
+
+[examples.percentiles-by-route]
+say = "The code prints the nearest-rank position of the 99th percentile among 200 values, and the fewest messages before a 95th percentile is anything but the largest, {{out:percentiles-by-route:fewest values before the p95 is not the largest, nearest rank}}. For each route it prints the median, 95th and 99th percentile, with the count of messages behind each, and a 95% interval on each 95th percentile. Last, it names the routes with fewer than 20 messages, whose 95th percentile is their largest message."
+
+[examples.figure-latency-tail-by-route]
+say = "The code draws each route's median as a hollow circle and its 95th percentile as a filled diamond, with the interval on the 95th percentile as a bar. The top row is all routes together. It prints every value it draws first, with each route's message count."
+
+[examples.bucket-edges-hide-tail]
+say = "The code prints the GenAI conventions' version and the bucket boundaries they advise for the agent's duration histogram, then counts the day's messages into those buckets and prints each bucket's count. It estimates the 95th percentile from the bucket counts by spreading the bucket's messages evenly across it, and sets the estimate beside the nearest-rank value of the raw messages."
+
+[examples.figure-bucket-hides-tail]
+say = "The code draws the same messages twice on one millisecond scale: each message as a point in the upper panel, and each bucket's count as a span across the range the bucket covers in the lower panel, with the nearest-rank 95th percentile as a line. It prints the bucket counts and the percentile first."
+
+[examples.queue-on-service-times]
+say = "The code runs one server at three loads, with each message's service time drawn from the day's recorded message times. It prints the server's utilisation, the 95th percentile of the wait before service, and the number in system beside the arrival rate times the time in system, all computed, and it asserts that the two are equal. Last, it checks the same queue with exponential service times against the single-server formula."
+
+[words]
+"ceil" = "ceiling of"
+
+[terms]
+"1,950th" = "one thousand nine hundred and fiftieth"
+"seed 20261207" = "a fixed seed"
+"ceil(p/100 × n)" = "ceiling of p over one hundred times n"
+"ceil(0.95 × n)" = "ceiling of ninety-five hundredths times n"
+"OSDI" = "O S D I"
+"M/M/1" = "M M one"
+"M/G/1" = "M G one"
+"r0" = "r zero"
+"r3" = "r three"
+"GiB" = "gibibyte"

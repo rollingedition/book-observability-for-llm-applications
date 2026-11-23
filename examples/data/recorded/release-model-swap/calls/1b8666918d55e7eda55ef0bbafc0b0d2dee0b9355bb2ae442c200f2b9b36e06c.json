@@ -1,0 +1,124 @@
+{
+ "chunk_ns": [
+  1929969181,
+  1929977776,
+  1953508932,
+  1976338626,
+  1999936746,
+  2024378699,
+  2050763250,
+  2074108683,
+  2100297050,
+  2140157466,
+  2163967389,
+  2188448451,
+  2212641821,
+  2235330726,
+  2258498731,
+  2281052542,
+  2303316365,
+  2325663150,
+  2348360024,
+  2373343324,
+  2397624232
+ ],
+ "completion_tokens": 19,
+ "finish_reason": "stop",
+ "gen_ns": 454983000,
+ "kind": "model",
+ "message_id": "7981",
+ "offset_ns": 133639513367,
+ "prefill_ns": 1926981000,
+ "prompt_tokens": 604,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "send an alert before meeting",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List the user's alarms. Up to five, by time.",
+     "name": "list_alarms",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {},
+      "required": [],
+      "title": "ListAlarmsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Set a new alarm for the user.",
+     "name": "set_alarm",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "label": {
+        "description": "The alarm's label, up to 40 characters.",
+        "title": "Label",
+        "type": "string"
+       },
+       "time": {
+        "description": "The alarm time, HH:MM on a 24-hour clock.",
+        "title": "Time",
+        "type": "string"
+       }
+      },
+      "required": [
+       "time",
+       "label"
+      ],
+      "title": "SetAlarmArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove one of the user's alarms, by its alarm_id.",
+     "name": "remove_alarm",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "alarm_id": {
+        "description": "The alarm_id that list_alarms gave.",
+        "maxLength": 20,
+        "minLength": 1,
+        "title": "Alarm Id",
+        "type": "string"
+       }
+      },
+      "required": [
+       "alarm_id"
+      ],
+      "title": "RemoveAlarmArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 122,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\nNone of the provided tools can be used to send an alert before meeting.",
+ "tokens_evaluated": 598,
+ "tool_calls": [],
+ "total_ns": 3337733456,
+ "ttfc_ns": 1929969181
+}

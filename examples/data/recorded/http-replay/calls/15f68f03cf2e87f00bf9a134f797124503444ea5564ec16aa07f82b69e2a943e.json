@@ -1,0 +1,43 @@
+{
+ "elapsed_ns": 1357643819,
+ "message_id": "11159",
+ "request": {
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.",
+    "role": "system"
+   },
+   {
+    "content": "remove yams",
+    "role": "user"
+   }
+  ],
+  "model": "qwen3-4b-instruct-2507",
+  "seed": 0,
+  "temperature": 0
+ },
+ "response": {
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"route\": \"lists\"}",
+     "role": "assistant"
+    }
+   }
+  ],
+  "created": 1795399285,
+  "id": "chatcmpl-bbd108b5-fd04-485f-99a0-1bc0763b3e8e",
+  "model": "qwen3-4b-instruct-2507",
+  "object": "chat.completion",
+  "usage": {
+   "completion_tokens": 6,
+   "prompt_tokens": 141,
+   "total_tokens": 147
+  }
+ },
+ "status": 200
+}

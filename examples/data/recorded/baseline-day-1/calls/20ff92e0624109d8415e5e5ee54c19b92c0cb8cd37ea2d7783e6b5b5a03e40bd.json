@@ -1,0 +1,27 @@
+{
+ "chunk_ns": [
+  17702162
+ ],
+ "completion_tokens": 0,
+ "finish_reason": "",
+ "gen_ns": 0,
+ "kind": "mcp",
+ "message_id": "16401",
+ "offset_ns": 994036625358,
+ "prefill_ns": 0,
+ "prompt_tokens": 0,
+ "request": {
+  "arguments": {
+   "name": "donna",
+   "user_id": "U0187"
+  },
+  "kind": "mcp",
+  "tool": "find_contact"
+ },
+ "seq": 190,
+ "step": "tool",
+ "text": "{\"is_error\": false, \"output\": {\"contacts\": []}}",
+ "tokens_evaluated": 0,
+ "total_ns": 17702162,
+ "ttfc_ns": 17702162
+}

@@ -1,0 +1,32 @@
+# Chapter choose-what-to-keep's narration (re-check narration): descriptions of its examples, blocks and tables, as
+# [examples.ID], [[blocks]] and [[tables]], and its own readings. Only this chapter's writer edits this file, so
+# writers working in parallel never append to one shared lexicon. A reading every chapter needs goes into
+# narration/lexicon.toml, which wins over a chapter's.
+
+[terms]
+"TailRule" = "tail rule"
+"lib/sampling.py" = "lib sampling dot py"
+"TraceIdRatioBased" = "trace I D ratio based"
+"ProbabilitySampler" = "probability sampler"
+"ParentBased" = "parent based"
+"SDKs" = "S D Ks"
+"OTEL_TRACES_SAMPLER" = "O tel traces sampler"
+"20,000.0 ms" = "twenty seconds"
+
+[examples.head-sample-ratio]
+say = "The code takes baseline day 1's messages and keeps each one whose trace ID falls under four ratios: one in a hundred, one in ten, one in two, and every message. It prints how many messages each ratio keeps and the share of the day that is. It then starts a root span for each trace ID at the same ratio, inside a provider that samples at the source, and prints how many trace IDs the source decides differently from the replay. The example checks that a larger ratio keeps every message a smaller one kept, and that the two decisions agree."
+
+[examples.parent-based-follows-root]
+say = "The code starts forty probe traces on the assistant, each with a root span, at a ratio of one half. The contacts server runs in its own process and follows the flag each request carries. The printed lines count the roots that were sampled and the server's spans under sampled roots and under unsampled ones. The example checks that the server records nothing under an unsampled root."
+
+[examples.tail-rule-keeps-errors]
+say = "The code takes the incident day's messages and applies two rules to the same traces: a ten percent head sample, and the tail rule, which keeps every trace with an error. It prints the two thresholds, the messages on the day, how many have an error, and how many of those each rule keeps, and it counts the detached roots, which are traces of their own with no message. The example checks that the tail rule keeps every failed message, and that the head sample keeps fewer."
+
+[examples.tail-rule-span-budget]
+say = "The code applies the tail rule to the incident day under a budget of 120 spans. Errors are kept first, then slow messages, then costly ones, and a trace that would overrun the budget is skipped. The printed lines give the spans in the day, the spans in the messages with an error, the spans the rule would keep with no budget, the spans kept, how many messages each reason kept, and the one slow message the budget dropped. They also give the bytes per message on baseline day 1 without content, and the bytes the kept traces hold."
+
+[examples.estimate-totals-error]
+say = "The code keeps a ten percent head sample of baseline day 1 and scales the kept messages' tokens and cost up by ten. It sets each estimate against the full count, summed over every message, and against the token counter's total for the day. It prints the 95 percent interval around each estimate, as shares of the full count. Then it draws two thousand independent samples of the same day and counts how many of their intervals hold the full count, for tokens and for cost."
+
+[examples.figure-sampling-error-by-ratio]
+say = "The code draws the token estimate at eight sampling ratios, from one in a hundred to every message, as a share of the full count, with its interval shaded around it. The printed lines give the estimate and the interval at three of the ratios. The example checks that at ratio 1.0 the estimate is exact and its interval has no width, and the axis runs down to the lowest interval end, below zero where that end is."

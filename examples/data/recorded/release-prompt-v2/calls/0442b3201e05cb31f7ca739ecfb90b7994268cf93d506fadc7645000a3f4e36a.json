@@ -1,0 +1,43 @@
+{
+ "chunk_ns": [
+  607884688,
+  607894976,
+  772239959,
+  888035166,
+  1013745729,
+  1149845932,
+  1287230841,
+  1423930818
+ ],
+ "completion_tokens": 6,
+ "finish_reason": "stop",
+ "gen_ns": 811645000,
+ "kind": "model",
+ "message_id": "2206",
+ "offset_ns": 257312383773,
+ "prefill_ns": 605120000,
+ "prompt_tokens": 228,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.\n\nExamples:\n- \"Switch off my seven o'clock wake-up.\" -> alarms\n- \"What do I have on my schedule after lunch?\" -> calendar\n- \"Lower the brightness of the hallway lamp.\" -> devices\n- \"Add oat milk and bananas to my shopping list.\" -> lists\n- \"Resume the audiobook from the last chapter.\" -> media\n- \"Tell Gorrin I am running late.\" -> messages",
+    "role": "system"
+   },
+   {
+    "content": "from now on mute",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 47,
+ "step": "route",
+ "text": "{\"route\": \"fallback\"}",
+ "tokens_evaluated": 9,
+ "tool_calls": [],
+ "total_ns": 1563296196,
+ "ttfc_ns": 607884688
+}

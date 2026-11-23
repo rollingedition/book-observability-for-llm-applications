@@ -1,0 +1,112 @@
+{
+ "chunk_ns": [
+  11384007824,
+  11384016909,
+  11535517026,
+  11667207241,
+  11820776776,
+  11957183826,
+  12110828266,
+  12282675917,
+  12432160472,
+  12637910390,
+  12804767131,
+  12968182530,
+  13121415624,
+  13266918452,
+  13396393503,
+  13553945432,
+  13701052973,
+  13850621835,
+  13999758368,
+  14148598281,
+  14294479481,
+  14440054153,
+  14574532357
+ ],
+ "completion_tokens": 21,
+ "finish_reason": "stop",
+ "gen_ns": 3174106000,
+ "kind": "model",
+ "message_id": "15792",
+ "offset_ns": 189880365127,
+ "prefill_ns": 10641974000,
+ "prompt_tokens": 891,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-10.\n\nKnowledge base articles:\n\n[help-messages-04] Sending a message to a group\nTo send one message to several people, name each person or name a group you have already saved. The assistant lists everyone who will receive the message and waits for your confirmation. A person who is on the list twice receives the message once. If one name cannot be found, the assistant sends to the others and tells you which name was left out. Groups are saved in your contact book, and changing a group changes it for later messages only, never for a message already sent.\n\n[help-messages-06] Checking for unread messages\nAsk how many messages you have not read. The assistant counts the unread messages in your inbox and tells you how many came in today. It can list the senders and subjects of the most recent few, but it never reads out the full text of a message unless you ask for it. Messages marked as read are not counted. The count can lag by a few minutes after a message arrives, because the inbox is checked on a schedule. Unread counts are reported for the whole inbox; ask for a single folder to narrow the count.\n\n[help-messages-08] Direct messages and social posts\nA direct message goes to one person in a social service, and a post goes to everyone who follows you. Ask the assistant to send a direct message by naming the person as they appear on that service. To post, say what the post should say; the assistant shows you the text and the length before it posts. Posts longer than the service allows are shortened only if you agree. The assistant can read back the latest direct messages, but it cannot see messages sent in a private group you have left.\n",
+    "role": "system"
+   },
+   {
+    "content": "who am i meeting today",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "Find a contact by name. Up to three contacts, with their names and addresses.",
+     "name": "find_contact",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "description": "The contact's name, as the user says it.",
+        "title": "Name",
+        "type": "string"
+       }
+      },
+      "required": [
+       "name"
+      ],
+      "title": "FindContactArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Record a message to one of the user's contacts, named by the address find_contact gave. The message is recorded, not sent.",
+     "name": "send_message",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "contact_id": {
+        "description": "The contact's address, as find_contact gave it.",
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Contact Id",
+        "type": "string"
+       },
+       "text": {
+        "description": "The message, up to 500 characters.",
+        "title": "Text",
+        "type": "string"
+       }
+      },
+      "required": [
+       "contact_id",
+       "text"
+      ],
+      "title": "SendMessageArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 36,
+ "step": "answer",
+ "text": "I don't have information about your meeting schedule or contacts. Please provide more context or check your calendar.",
+ "tokens_evaluated": 696,
+ "tool_calls": [],
+ "total_ns": 15371198881,
+ "ttfc_ns": 11384007824
+}

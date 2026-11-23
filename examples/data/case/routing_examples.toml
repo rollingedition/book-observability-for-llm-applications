@@ -1,0 +1,27 @@
+# Routing examples for prompt p2 (plan section 2.7): one sentence for each of the six routes, written from the knowledge
+# base's headings and the tools' descriptions. None is taken from a graded utterance, and the build checks that.
+# They use no scenario label as a word (plan section 4.7). The route names themselves appear in the route prompt.
+
+[[example]]
+route = "calendar"
+text = "What do I have on my schedule after lunch?"
+
+[[example]]
+route = "alarms"
+text = "Switch off my seven o'clock wake-up."
+
+[[example]]
+route = "lists"
+text = "Add oat milk and bananas to my shopping list."
+
+[[example]]
+route = "messages"
+text = "Tell Gorrin I am running late."
+
+[[example]]
+route = "devices"
+text = "Lower the brightness of the hallway lamp."
+
+[[example]]
+route = "media"
+text = "Resume the audiobook from the last chapter."

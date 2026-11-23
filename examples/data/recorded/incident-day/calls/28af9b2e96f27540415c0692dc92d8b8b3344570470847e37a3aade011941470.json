@@ -1,0 +1,69 @@
+{
+ "chunk_ns": [
+  1372257361,
+  1372266450,
+  1489287528,
+  1603229165,
+  1732290081,
+  1848147523,
+  1960564028,
+  2093812535,
+  2257904552,
+  2379389575,
+  2492037802,
+  2617780859,
+  2769958502,
+  2908921762,
+  3025741927,
+  3147260760,
+  3267683855,
+  3408475047,
+  3531800104,
+  3643928800,
+  3762396773,
+  3896309696,
+  4036688936,
+  4146137657,
+  4257491231,
+  4369940344,
+  4495308629,
+  4625579640,
+  4738262586,
+  4875175391,
+  4989907109,
+  5098636920,
+  5209374591
+ ],
+ "completion_tokens": 31,
+ "finish_reason": "stop",
+ "gen_ns": 3813071000,
+ "kind": "model",
+ "message_id": "11424",
+ "offset_ns": 784717897589,
+ "prefill_ns": 359777000,
+ "prompt_tokens": 210,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-09.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "vitaly channel",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 119,
+ "step": "answer",
+ "text": "I don't have information about a \"Vitaly channel\" in the provided knowledge base or tool results. Please provide more context or clarify your question.",
+ "tokens_evaluated": 18,
+ "tool_calls": [],
+ "total_ns": 5464694998,
+ "ttfc_ns": 1372257361
+}

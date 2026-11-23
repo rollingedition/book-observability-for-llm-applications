@@ -1,0 +1,63 @@
+{
+ "chunk_ns": [
+  6386972230,
+  6386980859,
+  6514042753,
+  6652994724,
+  6773680372,
+  6909463675,
+  7026021519,
+  7140936800,
+  7252809966,
+  7364204066,
+  7483385095,
+  7625098335,
+  7754994840,
+  7877241916,
+  7998093222,
+  8119399062,
+  8238195261,
+  8361096227,
+  8507278083,
+  8649962737,
+  8793013812,
+  8926236243,
+  9067195446,
+  9198591985,
+  9314832733,
+  9438407935,
+  9568351869
+ ],
+ "completion_tokens": 25,
+ "finish_reason": "stop",
+ "gen_ns": 3162928000,
+ "kind": "model",
+ "message_id": "4890",
+ "offset_ns": 458000052427,
+ "prefill_ns": 5445048000,
+ "prompt_tokens": 539,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-09.\n\nKnowledge base articles:\n\n[help-devices-04] Dimming and brightening lights\nBrightness is a percentage from one, the dimmest, to one hundred, the brightest. Ask for a light to be set to a value, or ask for it to be made brighter or dimmer by a step. The assistant applies the change in steps so the light does not flicker. Lights that cannot dim report that they can only be on or off. Colour changes work the same way on lights that support colour; a light without colour support keeps its current colour and the assistant tells you so.\n\n[help-devices-09] Turning a speaker on and off\nSpeakers can be switched on and off by name. Turning a speaker off stops any sound it is making, and turning it on does not start anything by itself. To set the level, ask for a volume from zero to one hundred. Speakers in a group change together. A speaker that is offline cannot be switched, and the assistant says so. Speakers can also be set to turn on at a time you choose, with the volume they should start at.\n\n[help-media-03] Shuffle and repeat\nShuffle plays the songs of a playlist or an album in a random order. Turn it on or off by name. Repeat has three settings: off, repeat the current song, and repeat the whole list. The assistant reports the setting after each change. Shuffle does not change the list itself, and turning it off returns to the list's own order from the song now playing. A repeat setting stays until you change it, even when you start something new.\n",
+    "role": "system"
+   },
+   {
+    "content": "set notifications on the current weather disasters in america",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 68,
+ "step": "answer",
+ "text": "I cannot assist with setting notifications for weather disasters in America. This request is outside the scope of the provided knowledge base articles.",
+ "tokens_evaluated": 347,
+ "tool_calls": [],
+ "total_ns": 10413635604,
+ "ttfc_ns": 6386972230
+}

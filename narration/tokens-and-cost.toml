@@ -1,0 +1,74 @@
+# Chapter tokens-and-cost's narration (re-check narration): descriptions of its examples, blocks and tables, as
+# [examples.ID], [[blocks]] and [[tables]], and its own readings. Only this chapter's writer edits this file, so
+# writers working in parallel never append to one shared lexicon. A reading every chapter needs goes into
+# narration/lexicon.toml, which wins over a chapter's.
+
+[examples.token-counts-per-step]
+say = "The code sorts the day's model calls into input, cached input and output tokens, and into the route and answer steps. The printed lines give the day's totals and its cached share, {{out:token-counts-per-step:cached share of input tokens}} of the input, then the figures per request, per message and per resolved message, the most model calls one message made, and the figures for each route."
+
+[examples.totals-metric-against-spans]
+say = "The code adds the day's input tokens three ways: over the inference spans, over every span, and with the token counter that the assistant fills as each call ends. The sum over every span is the largest, because each message's agent span carries the same usage again. The counter and the per-operation histogram both match the inference spans. The printed lines give the three totals, the counts of spans and operations, and the output counter."
+
+[examples.cached-tokens-from-replay]
+say = "The code runs the same sixty messages twice, once with the cache as the baseline ran it, and once with the cache reset before every call. The input tokens are the same in both runs. The cached tokens move into the evaluated ones, and the last line gives the extra cost at the book's table."
+
+[examples.count-locales-with-the-tokenizer]
+say = "The code counts the tokens of the same two hundred utterances in six locales, with the tokenizer file, and prices the counts at the book's table. The printed lines give each locale's total and its tokens per utterance, then the Hindi multiple of the English count, and how many of the Hindi utterances are not in N F C form."
+
+[examples.price-one-request]
+say = "The code prices one answer request from the day twice at the book's table, once with its cached input and once without, and once at the genai-prices listing for the same model, with the provider named. The printed lines give the three prices, then the book's output rate and cached input rate, each as a multiple of its input rate. The three prices show what the cache does and how far the book's rates are from the listing."
+
+[examples.cost-by-route-and-user]
+say = "The code prices every call of the day at its own start, and adds each message's cost to its route, its steps and its user. The printed lines give the cost of the answer requests and of the route requests, each with its share, then each route's cost per thousand messages, the cost of a resolved message, the mean cost per user, and the share of the costliest user."
+
+[examples.expensive-tail-share]
+say = "The code ranks the day's messages by cost and takes the top one percent, which is two messages. The output gives the cost of those two, its share of the day's cost, and the route and cost of the most expensive one."
+
+[examples.figure-route-token-mix]
+say = "The code draws each route's input tokens per message as a bar, with the cached part hatched at its foot inside that bar, and its output tokens as a bar beside it. The printed lines give those three values for every route, and the text reads them for the messages, lists and fallback routes."
+
+[[tables]]
+section = "the-same-requests-in-other-languages"
+starts = "| Locale |"
+say = "A table of the six locales. For each one it gives the tokens per utterance and the input cost of a thousand utterances at the book's table. The English and Hindi rows are the ones to compare."
+
+[[tables]]
+section = "cost-per-route"
+starts = "| Route |"
+say = "A table of the seven routes. For each one it gives the messages on the route, the input and output tokens per message, and the cost per thousand messages at the book's table."
+
+[terms]
+"$0.000016" = "sixteen millionths of a dollar"
+"$0.000003" = "three millionths of a dollar"
+"$0.000063" = "sixty-three millionths of a dollar"
+"NFC" = "N F C"
+"GGUF" = "G G U F"
+"genai-prices" = "gen A I prices"
+"huggingface_nscale" = "hugging face en scale"
+"n_p_eval" = "n p eval"
+"n_reused" = "n reused"
+"LookupError" = "lookup error"
+"gen_ai.provider.name" = "gen A I provider name"
+"gen_ai.usage.input_tokens" = "gen A I usage input tokens"
+"gen_ai.token.modality" = "gen A I token modality"
+"gen_ai.token.type" = "gen A I token type"
+"gen_ai.usage.*" = "gen A I usage attributes"
+"gen_ai.client.inference.usage.input_tokens" = "gen A I client inference usage input tokens"
+"MLflow" = "M L flow"
+"book-2026-11-02" = "the second of November, twenty twenty-six"
+"tokenizers" = "tokenizers"
+"NeurIPS" = "Neural Information Processing Systems"
+"de-DE" = "de D E"
+"ja-JP" = "ja J P"
+"ar-SA" = "ar S A"
+"zh-CN" = "zh C N"
+"hi-IN" = "hi I N"
+"en-US" = "en U S"
+"gen_ai.client.inference.operation.input_tokens" = "gen A I client inference operation input tokens"
+"gen_ai.client.inference.operation.output_tokens" = "gen A I client inference operation output tokens"
+"PromptCache(LlamaRAMCache)" = "prompt cache, llama R A M cache"
+"RAM" = "R A M"
+"r0" = "r zero"
+"r4" = "r four"
+
+[words]

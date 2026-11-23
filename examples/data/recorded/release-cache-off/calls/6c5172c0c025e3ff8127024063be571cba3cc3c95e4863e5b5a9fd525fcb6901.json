@@ -1,0 +1,127 @@
+{
+ "chunk_ns": [
+  8375555263,
+  8375571804,
+  8497329106,
+  8621232478,
+  8741737992,
+  8864216054,
+  8984674291,
+  9106017404,
+  9224879820,
+  9346642245,
+  9512439825,
+  9651184349,
+  9781819919,
+  9925924179,
+  10053473332,
+  10191580428,
+  10338150765,
+  10463312742,
+  10595152123,
+  10720437546,
+  10851410224,
+  10975514670,
+  11099923170,
+  11254220356
+ ],
+ "completion_tokens": 22,
+ "finish_reason": "stop",
+ "gen_ns": 2862021000,
+ "kind": "model",
+ "message_id": "8539",
+ "offset_ns": 608907023257,
+ "prefill_ns": 8372267000,
+ "prompt_tokens": 598,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "remind me about",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List the user's alarms. Up to five, by time.",
+     "name": "list_alarms",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {},
+      "required": [],
+      "title": "ListAlarmsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Set a new alarm for the user.",
+     "name": "set_alarm",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "label": {
+        "description": "The alarm's label, up to 40 characters.",
+        "title": "Label",
+        "type": "string"
+       },
+       "time": {
+        "description": "The alarm time, HH:MM on a 24-hour clock.",
+        "title": "Time",
+        "type": "string"
+       }
+      },
+      "required": [
+       "time",
+       "label"
+      ],
+      "title": "SetAlarmArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove one of the user's alarms, by its alarm_id.",
+     "name": "remove_alarm",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "alarm_id": {
+        "description": "The alarm_id that list_alarms gave.",
+        "maxLength": 20,
+        "minLength": 1,
+        "title": "Alarm Id",
+        "type": "string"
+       }
+      },
+      "required": [
+       "alarm_id"
+      ],
+      "title": "RemoveAlarmArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 90,
+ "step": "answer",
+ "text": "I cannot remind you as there is no information provided about what to remind you about. Please specify the details.",
+ "tokens_evaluated": 598,
+ "tool_calls": [],
+ "total_ns": 11254239724,
+ "ttfc_ns": 8375555263
+}

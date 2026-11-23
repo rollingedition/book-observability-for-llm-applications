@@ -1,0 +1,43 @@
+{
+ "chunk_ns": [
+  2004872012,
+  2004917272,
+  2138968463,
+  2269843239,
+  2414835855,
+  2546384536,
+  2690279571,
+  2808457405
+ ],
+ "completion_tokens": 6,
+ "finish_reason": "stop",
+ "gen_ns": 798782000,
+ "kind": "model",
+ "message_id": "10512",
+ "offset_ns": 559220964730,
+ "prefill_ns": 2003027000,
+ "prompt_tokens": 144,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.",
+    "role": "system"
+   },
+   {
+    "content": "list everything left on my query",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 82,
+ "step": "route",
+ "text": "{\"route\": \"lists\"}",
+ "tokens_evaluated": 144,
+ "tool_calls": [],
+ "total_ns": 2808474436,
+ "ttfc_ns": 2004872012
+}

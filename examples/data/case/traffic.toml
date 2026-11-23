@@ -1,0 +1,18 @@
+# Traffic parameters, written for the book (plan section 2.8). Read by build_case.py.
+
+[arrivals]
+# Relative arrival weight for each hour of the UTC day, hour 0 first. Given a day's count, each message takes an hour
+# in proportion to its weight and a uniform offset within the hour (microseconds).
+hourly_weights = [1, 1, 1, 1, 1, 2, 4, 6, 8, 9, 9, 8, 8, 8, 8, 8, 9, 9, 8, 7, 6, 4, 3, 2]
+
+[estimates]
+# Seconds per message on the 4B model, from the recording probe's per-route estimates (plan section 4.5). They are
+# estimates, not measurements on the case, and carry plus or minus 25 percent (R-9). The build uses them only to
+# compute the hours in counts.toml.
+fallback_s = 2.3
+tool_routes_s = 21.0
+retrieving_routes_s = 51.0
+# Extra seconds per message for each release, averaged over the route mix (section 4.5).
+r1_extra_s = 2.0
+r3_extra_s = 22.0
+r4_extra_s = 14.0

@@ -1,0 +1,119 @@
+{
+ "chunk_ns": [
+  440481944,
+  440489029,
+  572134690,
+  728699228,
+  862012838,
+  994165691,
+  1132584125,
+  1276012633,
+  1406366232,
+  1528637569,
+  1665223835,
+  1786444058,
+  1906537285,
+  2036106647,
+  2199088610,
+  2324405770,
+  2447250696,
+  2577794319,
+  2710007377,
+  2835680249,
+  2977793157
+ ],
+ "completion_tokens": 19,
+ "finish_reason": "stop",
+ "gen_ns": 2522238000,
+ "kind": "model",
+ "message_id": "16501",
+ "offset_ns": 601211258751,
+ "prefill_ns": 434672000,
+ "prompt_tokens": 999,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-09.\n\nKnowledge base articles:\n\n[help-messages-06] Checking for unread messages\nAsk how many messages you have not read. The assistant counts the unread messages in your inbox and tells you how many came in today. It can list the senders and subjects of the most recent few, but it never reads out the full text of a message unless you ask for it. Messages marked as read are not counted. The count can lag by a few minutes after a message arrives, because the inbox is checked on a schedule. Unread counts are reported for the whole inbox; ask for a single folder to narrow the count.\n\n[help-messages-09] Scheduling a message for later\nGive a message a time to send. Times are read in your own time zone, and the assistant states the time it will send in full, with the date and the zone. A scheduled message can be changed or cancelled until the time it is due. Once it has been sent, it is recorded in the sent folder like any other. If the assistant cannot send at the time, because the service is unavailable, it tries again a few minutes later and tells you in its next reply. It does not send a scheduled message more than once.\n\n[help-devices-01] Adding a smart plug\nA smart plug switches the device plugged into it. To add one, put the plug in a socket near your router, then open the device list and choose to add a plug. The assistant asks for a name, such as \"desk lamp\" or \"kettle\", and for the room it is in. Keep the plug within range of your home network while it connects. When the plug shows as online, the assistant confirms it. A plug added this way can then be switched on and off by name. Plugs do not report how much power they use unless the plug supports it, and the assistant says so if you ask.\n",
+    "role": "system"
+   },
+   {
+    "content": "please send a mail to my friend divya how are you",
+    "role": "user"
+   },
+   {
+    "content": "I can help you send a message to your friend Divya. Let me find her contact information first.  \n<tool_call>\n{\"name\": \"find_contact\", \"arguments\": {\"name\": \"divya\"}}\n</tool_call>",
+    "role": "assistant"
+   },
+   {
+    "content": "\"Error executing tool find_contact\"",
+    "name": "find_contact",
+    "role": "tool"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "Find a contact by name. Up to three contacts, with their names and addresses.",
+     "name": "find_contact",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "description": "The contact's name, as the user says it.",
+        "title": "Name",
+        "type": "string"
+       }
+      },
+      "required": [
+       "name"
+      ],
+      "title": "FindContactArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Record a message to one of the user's contacts, named by the address find_contact gave. The message is recorded, not sent.",
+     "name": "send_message",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "contact_id": {
+        "description": "The contact's address, as find_contact gave it.",
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Contact Id",
+        "type": "string"
+       },
+       "text": {
+        "description": "The message, up to 500 characters.",
+        "title": "Text",
+        "type": "string"
+       }
+      },
+      "required": [
+       "contact_id",
+       "text"
+      ],
+      "title": "SendMessageArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 89,
+ "step": "answer",
+ "text": "I couldn't find Divya's contact information. Please check the name or provide more details.",
+ "tokens_evaluated": 20,
+ "tool_calls": [],
+ "total_ns": 3872902267,
+ "ttfc_ns": 440481944
+}

@@ -1,0 +1,10 @@
+slug = "observability-for-llm-applications"
+title = "Observability for LLM Applications"
+subtitle = "Trace an LLM application with OpenTelemetry's open conventions, and answer from its traces where the time and money went and which step failed: latency, tokens and cost, errors, regressions, sampling, and what to keep private."
+summary = "How to find where an LLM application's time, tokens and money went, and which step failed: GenAI conventions, traces across processes, a backend, cost, latency, failures, alerts, regressions, sampling and privacy, worked on a personal assistant's back end over MASSIVE's English utterances, with its own tools, retrieval and an MCP server."
+status = "live"
+level = "in-practice"
+reader = "For engineers who run an LLM feature in production and need to know why it was slow, expensive or wrong."
+skills = ["llm-observability", "model-monitoring", "large-language-models", "ai-agents"]
+line = "main"
+core_libraries = ["opentelemetry-sdk", "llama-cpp-python", "mcp", "mlflow"]

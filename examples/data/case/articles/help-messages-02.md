@@ -1,0 +1,3 @@
+# Choosing the right address for a contact
+
+A contact can have more than one address on file. When a name returns two addresses, the assistant lists both and asks you which one to use. Pick the one you use most with that person. If neither is right, add the address you want as a new entry on the contact, then ask again. The assistant never combines two addresses into one, and it never shows an address in a reply after you have chosen it. You can ask for a contact's address to be checked, and the assistant reports whether the address is on file and when it was last updated. It cannot verify that the address still works.

@@ -1,0 +1,600 @@
+{"user_id":"U0001","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0001","list":"shopping","items":["apples","bread","eggs","lemons","milk","tomatoes","yoghurt"]}
+{"user_id":"U0001","list":"to do","items":["book the dentist","call the bank","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0002","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0002","list":"shopping","items":["butter","yoghurt"]}
+{"user_id":"U0002","list":"to do","items":["call the bank"]}
+{"user_id":"U0003","list":"packing","items":["notebook","passport"]}
+{"user_id":"U0003","list":"shopping","items":["apples","bread","butter","coffee","eggs","lemons","milk","pasta","tomatoes"]}
+{"user_id":"U0003","list":"to do","items":["call the bank","check the tyre pressure","file the receipts","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0004","list":"packing","items":["charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","water bottle"]}
+{"user_id":"U0004","list":"shopping","items":[]}
+{"user_id":"U0004","list":"to do","items":["call the bank","check the tyre pressure"]}
+{"user_id":"U0005","list":"packing","items":["adapter","passport","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0005","list":"shopping","items":["tomatoes"]}
+{"user_id":"U0005","list":"to do","items":[]}
+{"user_id":"U0006","list":"packing","items":["charger","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0006","list":"shopping","items":["apples"]}
+{"user_id":"U0006","list":"to do","items":["call the bank","check the tyre pressure","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0007","list":"packing","items":["adapter","charger","notebook","passport","socks","toothbrush","water bottle"]}
+{"user_id":"U0007","list":"shopping","items":["apples","butter","coffee","eggs","milk","pasta","spinach","yoghurt"]}
+{"user_id":"U0007","list":"to do","items":["book the dentist","file the receipts","pay the parking fine","renew library books"]}
+{"user_id":"U0008","list":"packing","items":["passport"]}
+{"user_id":"U0008","list":"shopping","items":["bread","lemons","milk","rice","spinach"]}
+{"user_id":"U0008","list":"to do","items":["book the dentist","call the bank","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0009","list":"packing","items":["notebook"]}
+{"user_id":"U0009","list":"shopping","items":["butter","lemons","rice","tomatoes","yoghurt"]}
+{"user_id":"U0009","list":"to do","items":["check the tyre pressure","file the receipts","pay the parking fine"]}
+{"user_id":"U0010","list":"packing","items":["socks","sunscreen","umbrella","water bottle"]}
+{"user_id":"U0010","list":"shopping","items":["bread","coffee","eggs","lemons","milk","pasta","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0010","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0011","list":"packing","items":["passport"]}
+{"user_id":"U0011","list":"shopping","items":["apples","bread","butter","coffee","eggs","milk","pasta","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0011","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0012","list":"packing","items":["adapter","charger","raincoat","socks","sunscreen","water bottle"]}
+{"user_id":"U0012","list":"shopping","items":["coffee","eggs","yoghurt"]}
+{"user_id":"U0012","list":"to do","items":["book the dentist","check the tyre pressure","order printer ink"]}
+{"user_id":"U0013","list":"packing","items":["notebook","raincoat","socks","sunscreen","umbrella"]}
+{"user_id":"U0013","list":"shopping","items":["butter","milk","pasta"]}
+{"user_id":"U0013","list":"to do","items":["book the dentist","file the receipts","renew library books","water the plants"]}
+{"user_id":"U0014","list":"packing","items":["adapter","charger","notebook","passport","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0014","list":"shopping","items":["lemons"]}
+{"user_id":"U0014","list":"to do","items":["order printer ink"]}
+{"user_id":"U0015","list":"packing","items":["adapter","notebook","raincoat","socks","sunscreen","umbrella","water bottle"]}
+{"user_id":"U0015","list":"shopping","items":["coffee"]}
+{"user_id":"U0015","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","renew library books","water the plants"]}
+{"user_id":"U0016","list":"packing","items":["notebook","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0016","list":"shopping","items":["eggs","pasta","rice","tomatoes","yoghurt"]}
+{"user_id":"U0016","list":"to do","items":["book the dentist","file the receipts","renew library books","water the plants"]}
+{"user_id":"U0017","list":"packing","items":["adapter","charger","notebook","passport","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0017","list":"shopping","items":["apples","eggs","lemons","pasta","rice","spinach"]}
+{"user_id":"U0017","list":"to do","items":["call the bank","file the receipts","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0018","list":"packing","items":["adapter"]}
+{"user_id":"U0018","list":"shopping","items":["apples","eggs","lemons","pasta","tomatoes","yoghurt"]}
+{"user_id":"U0018","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0019","list":"packing","items":["socks","sunscreen","toothbrush","umbrella"]}
+{"user_id":"U0019","list":"shopping","items":["apples","bread","butter","coffee","eggs","lemons","milk","rice","tomatoes"]}
+{"user_id":"U0019","list":"to do","items":[]}
+{"user_id":"U0020","list":"packing","items":["adapter","notebook"]}
+{"user_id":"U0020","list":"shopping","items":["apples","bread","butter","coffee","lemons","milk","pasta","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0020","list":"to do","items":["book the dentist","order printer ink","pay the parking fine"]}
+{"user_id":"U0021","list":"packing","items":["charger","toothbrush"]}
+{"user_id":"U0021","list":"shopping","items":["lemons","spinach","yoghurt"]}
+{"user_id":"U0021","list":"to do","items":["call the bank","file the receipts","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0022","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0022","list":"shopping","items":["apples","bread","coffee","eggs","lemons","milk","rice","yoghurt"]}
+{"user_id":"U0022","list":"to do","items":["check the tyre pressure","file the receipts","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0023","list":"packing","items":["adapter","notebook","sunscreen","umbrella"]}
+{"user_id":"U0023","list":"shopping","items":["apples","bread","eggs","milk","pasta","spinach","tomatoes"]}
+{"user_id":"U0023","list":"to do","items":[]}
+{"user_id":"U0024","list":"packing","items":[]}
+{"user_id":"U0024","list":"shopping","items":["rice"]}
+{"user_id":"U0024","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","pay the parking fine","water the plants"]}
+{"user_id":"U0025","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","water bottle"]}
+{"user_id":"U0025","list":"shopping","items":["apples","butter","coffee","pasta","tomatoes","yoghurt"]}
+{"user_id":"U0025","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0026","list":"packing","items":["notebook","passport"]}
+{"user_id":"U0026","list":"shopping","items":["apples","butter","coffee","eggs","milk","pasta","rice","spinach"]}
+{"user_id":"U0026","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0027","list":"packing","items":["adapter","charger","notebook","raincoat","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0027","list":"shopping","items":["bread","pasta","spinach","yoghurt"]}
+{"user_id":"U0027","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0028","list":"packing","items":["adapter","charger","notebook","raincoat","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0028","list":"shopping","items":["coffee","eggs","spinach"]}
+{"user_id":"U0028","list":"to do","items":["book the dentist","file the receipts"]}
+{"user_id":"U0029","list":"packing","items":["adapter","charger","notebook","socks","sunscreen","umbrella"]}
+{"user_id":"U0029","list":"shopping","items":["lemons","spinach"]}
+{"user_id":"U0029","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books"]}
+{"user_id":"U0030","list":"packing","items":["charger","notebook","raincoat","water bottle"]}
+{"user_id":"U0030","list":"shopping","items":["apples","butter","milk","rice","spinach","tomatoes"]}
+{"user_id":"U0030","list":"to do","items":["call the bank"]}
+{"user_id":"U0031","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0031","list":"shopping","items":["butter","eggs","lemons","milk","pasta","rice","spinach","tomatoes"]}
+{"user_id":"U0031","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0032","list":"packing","items":[]}
+{"user_id":"U0032","list":"shopping","items":["spinach"]}
+{"user_id":"U0032","list":"to do","items":["book the dentist","check the tyre pressure"]}
+{"user_id":"U0033","list":"packing","items":["raincoat","socks"]}
+{"user_id":"U0033","list":"shopping","items":["apples","butter","coffee","eggs","lemons","milk","tomatoes","yoghurt"]}
+{"user_id":"U0033","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0034","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0034","list":"shopping","items":["lemons"]}
+{"user_id":"U0034","list":"to do","items":["book the dentist","file the receipts"]}
+{"user_id":"U0035","list":"packing","items":["adapter","umbrella"]}
+{"user_id":"U0035","list":"shopping","items":["apples","bread","butter","eggs","lemons","pasta","spinach","yoghurt"]}
+{"user_id":"U0035","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0036","list":"packing","items":[]}
+{"user_id":"U0036","list":"shopping","items":["apples","bread","coffee","pasta","rice"]}
+{"user_id":"U0036","list":"to do","items":["call the bank"]}
+{"user_id":"U0037","list":"packing","items":["adapter","charger","notebook","passport","raincoat","sunscreen","umbrella","water bottle"]}
+{"user_id":"U0037","list":"shopping","items":["apples","bread","coffee","eggs","lemons","milk","pasta","spinach","tomatoes"]}
+{"user_id":"U0037","list":"to do","items":["file the receipts","order printer ink","water the plants"]}
+{"user_id":"U0038","list":"packing","items":["toothbrush","water bottle"]}
+{"user_id":"U0038","list":"shopping","items":["apples","bread","butter","coffee","eggs","lemons","rice","tomatoes"]}
+{"user_id":"U0038","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0039","list":"packing","items":["adapter","charger","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0039","list":"shopping","items":["apples","butter","lemons","pasta","tomatoes"]}
+{"user_id":"U0039","list":"to do","items":["call the bank","check the tyre pressure","file the receipts","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0040","list":"packing","items":["charger","raincoat","sunscreen","toothbrush"]}
+{"user_id":"U0040","list":"shopping","items":[]}
+{"user_id":"U0040","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0041","list":"packing","items":["charger","notebook","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0041","list":"shopping","items":["milk","yoghurt"]}
+{"user_id":"U0041","list":"to do","items":["pay the parking fine"]}
+{"user_id":"U0042","list":"packing","items":["charger","socks"]}
+{"user_id":"U0042","list":"shopping","items":["eggs"]}
+{"user_id":"U0042","list":"to do","items":["file the receipts"]}
+{"user_id":"U0043","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0043","list":"shopping","items":["spinach"]}
+{"user_id":"U0043","list":"to do","items":["book the dentist","call the bank","file the receipts","order printer ink","renew library books","water the plants"]}
+{"user_id":"U0044","list":"packing","items":["charger","passport","toothbrush"]}
+{"user_id":"U0044","list":"shopping","items":["bread"]}
+{"user_id":"U0044","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0045","list":"packing","items":["adapter","charger","passport","umbrella","water bottle"]}
+{"user_id":"U0045","list":"shopping","items":[]}
+{"user_id":"U0045","list":"to do","items":["book the dentist","check the tyre pressure"]}
+{"user_id":"U0046","list":"packing","items":["charger","notebook","passport","sunscreen","umbrella","water bottle"]}
+{"user_id":"U0046","list":"shopping","items":["bread","butter","pasta","tomatoes","yoghurt"]}
+{"user_id":"U0046","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0047","list":"packing","items":["adapter","charger","notebook","raincoat","socks","water bottle"]}
+{"user_id":"U0047","list":"shopping","items":["bread","coffee","spinach"]}
+{"user_id":"U0047","list":"to do","items":[]}
+{"user_id":"U0048","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0048","list":"shopping","items":["apples","butter","eggs","rice","spinach","yoghurt"]}
+{"user_id":"U0048","list":"to do","items":["book the dentist","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0049","list":"packing","items":["toothbrush"]}
+{"user_id":"U0049","list":"shopping","items":[]}
+{"user_id":"U0049","list":"to do","items":["check the tyre pressure","order printer ink"]}
+{"user_id":"U0050","list":"packing","items":[]}
+{"user_id":"U0050","list":"shopping","items":["apples","bread","butter","lemons","pasta","rice","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0050","list":"to do","items":["call the bank","check the tyre pressure","file the receipts","pay the parking fine","renew library books"]}
+{"user_id":"U0051","list":"packing","items":["charger","notebook","toothbrush","water bottle"]}
+{"user_id":"U0051","list":"shopping","items":["bread","butter","coffee","eggs","lemons","rice","spinach","yoghurt"]}
+{"user_id":"U0051","list":"to do","items":["order printer ink","pay the parking fine"]}
+{"user_id":"U0052","list":"packing","items":["charger","notebook","passport","raincoat","umbrella"]}
+{"user_id":"U0052","list":"shopping","items":["butter","lemons","pasta","rice","spinach"]}
+{"user_id":"U0052","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0053","list":"packing","items":["adapter","charger","notebook","sunscreen","water bottle"]}
+{"user_id":"U0053","list":"shopping","items":["rice","tomatoes"]}
+{"user_id":"U0053","list":"to do","items":["call the bank","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0054","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0054","list":"shopping","items":["lemons","pasta","rice"]}
+{"user_id":"U0054","list":"to do","items":["check the tyre pressure","pay the parking fine"]}
+{"user_id":"U0055","list":"packing","items":["adapter","raincoat","socks","toothbrush","umbrella"]}
+{"user_id":"U0055","list":"shopping","items":["apples","butter","eggs","lemons","milk","spinach","tomatoes"]}
+{"user_id":"U0055","list":"to do","items":[]}
+{"user_id":"U0056","list":"packing","items":[]}
+{"user_id":"U0056","list":"shopping","items":["butter","coffee","lemons","pasta","yoghurt"]}
+{"user_id":"U0056","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0057","list":"packing","items":["charger","notebook","passport","raincoat","sunscreen","umbrella"]}
+{"user_id":"U0057","list":"shopping","items":[]}
+{"user_id":"U0057","list":"to do","items":["check the tyre pressure","file the receipts","order printer ink","pay the parking fine","water the plants"]}
+{"user_id":"U0058","list":"packing","items":["adapter","charger","notebook","raincoat","socks","umbrella"]}
+{"user_id":"U0058","list":"shopping","items":["butter","eggs","lemons","milk","pasta","rice","tomatoes"]}
+{"user_id":"U0058","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0059","list":"packing","items":["charger","notebook","passport","socks","umbrella"]}
+{"user_id":"U0059","list":"shopping","items":["apples","tomatoes","yoghurt"]}
+{"user_id":"U0059","list":"to do","items":["book the dentist","check the tyre pressure","file the receipts","order printer ink","pay the parking fine"]}
+{"user_id":"U0060","list":"packing","items":["adapter","sunscreen"]}
+{"user_id":"U0060","list":"shopping","items":["milk"]}
+{"user_id":"U0060","list":"to do","items":["book the dentist","call the bank","file the receipts","order printer ink","pay the parking fine","renew library books"]}
+{"user_id":"U0061","list":"packing","items":["notebook","passport","socks","sunscreen","umbrella"]}
+{"user_id":"U0061","list":"shopping","items":["apples","bread","butter","eggs","lemons","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0061","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0062","list":"packing","items":["adapter","charger","notebook","raincoat","socks","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0062","list":"shopping","items":["apples","bread","butter","coffee","eggs","lemons","pasta","rice","tomatoes","yoghurt"]}
+{"user_id":"U0062","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0063","list":"packing","items":[]}
+{"user_id":"U0063","list":"shopping","items":["coffee","lemons","pasta","tomatoes","yoghurt"]}
+{"user_id":"U0063","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","renew library books","water the plants"]}
+{"user_id":"U0064","list":"packing","items":["notebook","passport"]}
+{"user_id":"U0064","list":"shopping","items":[]}
+{"user_id":"U0064","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","order printer ink","pay the parking fine","water the plants"]}
+{"user_id":"U0065","list":"packing","items":["adapter","charger","notebook","raincoat","socks","water bottle"]}
+{"user_id":"U0065","list":"shopping","items":["apples","bread","butter","milk","pasta","rice","yoghurt"]}
+{"user_id":"U0065","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books"]}
+{"user_id":"U0066","list":"packing","items":["water bottle"]}
+{"user_id":"U0066","list":"shopping","items":["apples","bread","pasta"]}
+{"user_id":"U0066","list":"to do","items":["file the receipts","renew library books","water the plants"]}
+{"user_id":"U0067","list":"packing","items":["adapter","charger","notebook","raincoat","socks","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0067","list":"shopping","items":["bread","pasta","spinach","yoghurt"]}
+{"user_id":"U0067","list":"to do","items":["renew library books"]}
+{"user_id":"U0068","list":"packing","items":["water bottle"]}
+{"user_id":"U0068","list":"shopping","items":["butter","milk"]}
+{"user_id":"U0068","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0069","list":"packing","items":["raincoat","toothbrush","water bottle"]}
+{"user_id":"U0069","list":"shopping","items":["eggs","lemons","rice"]}
+{"user_id":"U0069","list":"to do","items":["check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books"]}
+{"user_id":"U0070","list":"packing","items":["adapter","notebook","passport","raincoat","socks","sunscreen","toothbrush"]}
+{"user_id":"U0070","list":"shopping","items":["apples","coffee","eggs","milk","yoghurt"]}
+{"user_id":"U0070","list":"to do","items":["pay the parking fine"]}
+{"user_id":"U0071","list":"packing","items":["umbrella","water bottle"]}
+{"user_id":"U0071","list":"shopping","items":["apples","eggs","spinach","yoghurt"]}
+{"user_id":"U0071","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","order printer ink","pay the parking fine"]}
+{"user_id":"U0072","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","umbrella","water bottle"]}
+{"user_id":"U0072","list":"shopping","items":["bread","coffee","lemons","milk","pasta","rice","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0072","list":"to do","items":["book the dentist","call the bank","file the receipts"]}
+{"user_id":"U0073","list":"packing","items":["charger","notebook","raincoat"]}
+{"user_id":"U0073","list":"shopping","items":["apples","bread","butter","coffee","tomatoes"]}
+{"user_id":"U0073","list":"to do","items":["book the dentist","file the receipts","order printer ink","renew library books","water the plants"]}
+{"user_id":"U0074","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0074","list":"shopping","items":["apples","bread","eggs","pasta","rice","tomatoes","yoghurt"]}
+{"user_id":"U0074","list":"to do","items":["call the bank","check the tyre pressure","order printer ink","renew library books","water the plants"]}
+{"user_id":"U0075","list":"packing","items":["adapter","notebook","socks","sunscreen","toothbrush","umbrella"]}
+{"user_id":"U0075","list":"shopping","items":[]}
+{"user_id":"U0075","list":"to do","items":["book the dentist","call the bank","renew library books","water the plants"]}
+{"user_id":"U0076","list":"packing","items":["charger","passport","raincoat","water bottle"]}
+{"user_id":"U0076","list":"shopping","items":["lemons"]}
+{"user_id":"U0076","list":"to do","items":["book the dentist","call the bank"]}
+{"user_id":"U0077","list":"packing","items":["adapter","raincoat","socks","umbrella"]}
+{"user_id":"U0077","list":"shopping","items":["apples","butter"]}
+{"user_id":"U0077","list":"to do","items":[]}
+{"user_id":"U0078","list":"packing","items":["umbrella","water bottle"]}
+{"user_id":"U0078","list":"shopping","items":["bread","butter","milk","rice","spinach"]}
+{"user_id":"U0078","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0079","list":"packing","items":["toothbrush"]}
+{"user_id":"U0079","list":"shopping","items":[]}
+{"user_id":"U0079","list":"to do","items":[]}
+{"user_id":"U0080","list":"packing","items":[]}
+{"user_id":"U0080","list":"shopping","items":["bread","coffee","lemons","milk","pasta","spinach"]}
+{"user_id":"U0080","list":"to do","items":["book the dentist","check the tyre pressure","order printer ink","renew library books"]}
+{"user_id":"U0081","list":"packing","items":["passport","socks","sunscreen"]}
+{"user_id":"U0081","list":"shopping","items":[]}
+{"user_id":"U0081","list":"to do","items":[]}
+{"user_id":"U0082","list":"packing","items":[]}
+{"user_id":"U0082","list":"shopping","items":["milk","rice"]}
+{"user_id":"U0082","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0083","list":"packing","items":["charger","passport","socks","sunscreen","umbrella"]}
+{"user_id":"U0083","list":"shopping","items":["bread","butter","coffee","eggs","lemons","milk","pasta","spinach","yoghurt"]}
+{"user_id":"U0083","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books"]}
+{"user_id":"U0084","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0084","list":"shopping","items":["apples","eggs","pasta"]}
+{"user_id":"U0084","list":"to do","items":["file the receipts","water the plants"]}
+{"user_id":"U0085","list":"packing","items":["notebook","passport","raincoat","socks","umbrella"]}
+{"user_id":"U0085","list":"shopping","items":["bread","coffee","eggs","lemons","milk","pasta","rice","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0085","list":"to do","items":["book the dentist","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books"]}
+{"user_id":"U0086","list":"packing","items":[]}
+{"user_id":"U0086","list":"shopping","items":["apples","butter","lemons","milk","rice","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0086","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0087","list":"packing","items":["adapter","charger","raincoat","toothbrush"]}
+{"user_id":"U0087","list":"shopping","items":["bread","eggs","pasta","rice","spinach","tomatoes"]}
+{"user_id":"U0087","list":"to do","items":["check the tyre pressure","order printer ink"]}
+{"user_id":"U0088","list":"packing","items":["charger","notebook","passport","socks","toothbrush","umbrella"]}
+{"user_id":"U0088","list":"shopping","items":["apples","bread","butter","coffee","eggs","lemons","milk","pasta","spinach","tomatoes"]}
+{"user_id":"U0088","list":"to do","items":["book the dentist","check the tyre pressure"]}
+{"user_id":"U0089","list":"packing","items":["charger","socks","umbrella"]}
+{"user_id":"U0089","list":"shopping","items":["coffee"]}
+{"user_id":"U0089","list":"to do","items":["call the bank","check the tyre pressure","file the receipts","order printer ink","renew library books","water the plants"]}
+{"user_id":"U0090","list":"packing","items":["notebook","raincoat","sunscreen","toothbrush"]}
+{"user_id":"U0090","list":"shopping","items":["apples","bread","butter","coffee","lemons","milk","tomatoes","yoghurt"]}
+{"user_id":"U0090","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0091","list":"packing","items":["socks"]}
+{"user_id":"U0091","list":"shopping","items":["bread","coffee","eggs","lemons","milk","pasta","rice","spinach","yoghurt"]}
+{"user_id":"U0091","list":"to do","items":["book the dentist","call the bank","file the receipts","order printer ink","pay the parking fine","water the plants"]}
+{"user_id":"U0092","list":"packing","items":["adapter","passport","sunscreen","umbrella"]}
+{"user_id":"U0092","list":"shopping","items":["bread","lemons","milk","pasta","rice"]}
+{"user_id":"U0092","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0093","list":"packing","items":["raincoat","water bottle"]}
+{"user_id":"U0093","list":"shopping","items":["bread","butter","coffee","eggs","lemons","pasta","rice"]}
+{"user_id":"U0093","list":"to do","items":[]}
+{"user_id":"U0094","list":"packing","items":[]}
+{"user_id":"U0094","list":"shopping","items":["coffee","spinach","tomatoes"]}
+{"user_id":"U0094","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0095","list":"packing","items":["adapter","sunscreen","umbrella"]}
+{"user_id":"U0095","list":"shopping","items":["eggs","tomatoes"]}
+{"user_id":"U0095","list":"to do","items":["check the tyre pressure"]}
+{"user_id":"U0096","list":"packing","items":[]}
+{"user_id":"U0096","list":"shopping","items":["apples","butter","eggs","lemons","milk","pasta","rice","spinach","tomatoes"]}
+{"user_id":"U0096","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0097","list":"packing","items":["notebook"]}
+{"user_id":"U0097","list":"shopping","items":["bread","butter","eggs","milk"]}
+{"user_id":"U0097","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0098","list":"packing","items":[]}
+{"user_id":"U0098","list":"shopping","items":["butter","eggs","lemons"]}
+{"user_id":"U0098","list":"to do","items":[]}
+{"user_id":"U0099","list":"packing","items":["notebook","passport","raincoat"]}
+{"user_id":"U0099","list":"shopping","items":["eggs","tomatoes"]}
+{"user_id":"U0099","list":"to do","items":["call the bank","check the tyre pressure","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0100","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0100","list":"shopping","items":["apples","butter","coffee","eggs","lemons","pasta","rice","spinach","tomatoes"]}
+{"user_id":"U0100","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink"]}
+{"user_id":"U0101","list":"packing","items":["charger","passport","raincoat","socks","toothbrush","umbrella"]}
+{"user_id":"U0101","list":"shopping","items":["apples","bread","butter","coffee","eggs","milk","pasta","rice","spinach","yoghurt"]}
+{"user_id":"U0101","list":"to do","items":["file the receipts","order printer ink","pay the parking fine","renew library books"]}
+{"user_id":"U0102","list":"packing","items":["charger","notebook","passport","sunscreen"]}
+{"user_id":"U0102","list":"shopping","items":["apples","bread","milk","spinach","yoghurt"]}
+{"user_id":"U0102","list":"to do","items":["call the bank","check the tyre pressure","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0103","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0103","list":"shopping","items":["bread","butter","eggs","lemons","pasta","rice","yoghurt"]}
+{"user_id":"U0103","list":"to do","items":["check the tyre pressure","file the receipts","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0104","list":"packing","items":["adapter","notebook","passport","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0104","list":"shopping","items":["apples","butter","coffee","milk","pasta","rice","yoghurt"]}
+{"user_id":"U0104","list":"to do","items":["check the tyre pressure","file the receipts","water the plants"]}
+{"user_id":"U0105","list":"packing","items":["notebook","socks"]}
+{"user_id":"U0105","list":"shopping","items":["butter","coffee","milk","pasta","rice","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0105","list":"to do","items":[]}
+{"user_id":"U0106","list":"packing","items":["raincoat"]}
+{"user_id":"U0106","list":"shopping","items":["bread","butter","coffee","eggs","lemons","milk","pasta","rice","tomatoes"]}
+{"user_id":"U0106","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0107","list":"packing","items":["charger","passport","raincoat","sunscreen","umbrella","water bottle"]}
+{"user_id":"U0107","list":"shopping","items":["milk"]}
+{"user_id":"U0107","list":"to do","items":["call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","water the plants"]}
+{"user_id":"U0108","list":"packing","items":["socks","toothbrush","water bottle"]}
+{"user_id":"U0108","list":"shopping","items":["milk","pasta","tomatoes","yoghurt"]}
+{"user_id":"U0108","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0109","list":"packing","items":["passport"]}
+{"user_id":"U0109","list":"shopping","items":["apples","rice","tomatoes"]}
+{"user_id":"U0109","list":"to do","items":["book the dentist","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0110","list":"packing","items":[]}
+{"user_id":"U0110","list":"shopping","items":["apples","bread","butter","coffee","milk","spinach"]}
+{"user_id":"U0110","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0111","list":"packing","items":["charger","passport","raincoat","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0111","list":"shopping","items":["apples","bread","coffee","eggs","lemons","milk","pasta","rice","tomatoes","yoghurt"]}
+{"user_id":"U0111","list":"to do","items":["book the dentist","check the tyre pressure","file the receipts","order printer ink","renew library books"]}
+{"user_id":"U0112","list":"packing","items":["adapter","charger","notebook","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0112","list":"shopping","items":["apples","butter","coffee","eggs","lemons","milk","pasta","rice","spinach","yoghurt"]}
+{"user_id":"U0112","list":"to do","items":["order printer ink","pay the parking fine"]}
+{"user_id":"U0113","list":"packing","items":["adapter","notebook","passport","raincoat","socks","umbrella","water bottle"]}
+{"user_id":"U0113","list":"shopping","items":["lemons","pasta","yoghurt"]}
+{"user_id":"U0113","list":"to do","items":[]}
+{"user_id":"U0114","list":"packing","items":["raincoat","toothbrush","water bottle"]}
+{"user_id":"U0114","list":"shopping","items":[]}
+{"user_id":"U0114","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","renew library books","water the plants"]}
+{"user_id":"U0115","list":"packing","items":["adapter","passport","toothbrush","water bottle"]}
+{"user_id":"U0115","list":"shopping","items":["butter","lemons","rice","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0115","list":"to do","items":["call the bank","order printer ink","pay the parking fine","water the plants"]}
+{"user_id":"U0116","list":"packing","items":["adapter","charger","passport","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0116","list":"shopping","items":["bread","eggs","milk","pasta","rice","spinach","yoghurt"]}
+{"user_id":"U0116","list":"to do","items":[]}
+{"user_id":"U0117","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella"]}
+{"user_id":"U0117","list":"shopping","items":["coffee","lemons","spinach"]}
+{"user_id":"U0117","list":"to do","items":["book the dentist","check the tyre pressure","file the receipts"]}
+{"user_id":"U0118","list":"packing","items":["notebook","passport","sunscreen"]}
+{"user_id":"U0118","list":"shopping","items":["apples","lemons","milk","pasta","rice","yoghurt"]}
+{"user_id":"U0118","list":"to do","items":["call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0119","list":"packing","items":["adapter","charger","notebook","raincoat","socks","toothbrush","umbrella"]}
+{"user_id":"U0119","list":"shopping","items":["bread","coffee","eggs","lemons","pasta","rice","spinach","yoghurt"]}
+{"user_id":"U0119","list":"to do","items":["call the bank"]}
+{"user_id":"U0120","list":"packing","items":[]}
+{"user_id":"U0120","list":"shopping","items":["butter","coffee","eggs","lemons","pasta","rice","yoghurt"]}
+{"user_id":"U0120","list":"to do","items":[]}
+{"user_id":"U0121","list":"packing","items":["adapter","notebook","sunscreen"]}
+{"user_id":"U0121","list":"shopping","items":["bread","butter","coffee","eggs","lemons","milk","pasta","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0121","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0122","list":"packing","items":["adapter","charger","raincoat","umbrella"]}
+{"user_id":"U0122","list":"shopping","items":["apples","bread","milk","pasta","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0122","list":"to do","items":["book the dentist","order printer ink","renew library books","water the plants"]}
+{"user_id":"U0123","list":"packing","items":["charger","passport","socks","umbrella"]}
+{"user_id":"U0123","list":"shopping","items":[]}
+{"user_id":"U0123","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0124","list":"packing","items":["charger"]}
+{"user_id":"U0124","list":"shopping","items":["eggs","milk"]}
+{"user_id":"U0124","list":"to do","items":["order printer ink","renew library books","water the plants"]}
+{"user_id":"U0125","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0125","list":"shopping","items":["apples","bread","butter","coffee","lemons","rice","spinach","yoghurt"]}
+{"user_id":"U0125","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","pay the parking fine","renew library books"]}
+{"user_id":"U0126","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0126","list":"shopping","items":[]}
+{"user_id":"U0126","list":"to do","items":["call the bank","order printer ink","renew library books","water the plants"]}
+{"user_id":"U0127","list":"packing","items":["adapter","charger","raincoat","socks","sunscreen","toothbrush","water bottle"]}
+{"user_id":"U0127","list":"shopping","items":["apples","butter","lemons","milk","rice","tomatoes","yoghurt"]}
+{"user_id":"U0127","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0128","list":"packing","items":["adapter","charger","notebook","socks","sunscreen","umbrella"]}
+{"user_id":"U0128","list":"shopping","items":["apples","coffee","milk","pasta","rice","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0128","list":"to do","items":[]}
+{"user_id":"U0129","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","umbrella","water bottle"]}
+{"user_id":"U0129","list":"shopping","items":["bread","milk","pasta","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0129","list":"to do","items":[]}
+{"user_id":"U0130","list":"packing","items":["passport","socks","water bottle"]}
+{"user_id":"U0130","list":"shopping","items":["butter","coffee","rice"]}
+{"user_id":"U0130","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0131","list":"packing","items":["raincoat","socks","sunscreen","water bottle"]}
+{"user_id":"U0131","list":"shopping","items":["butter","coffee","eggs","lemons","pasta","rice","spinach","tomatoes"]}
+{"user_id":"U0131","list":"to do","items":[]}
+{"user_id":"U0132","list":"packing","items":["passport","toothbrush"]}
+{"user_id":"U0132","list":"shopping","items":["apples","butter","lemons","milk","rice","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0132","list":"to do","items":["water the plants"]}
+{"user_id":"U0133","list":"packing","items":["notebook","umbrella","water bottle"]}
+{"user_id":"U0133","list":"shopping","items":["bread","butter","eggs","lemons","milk","pasta","rice","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0133","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0134","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","toothbrush","umbrella"]}
+{"user_id":"U0134","list":"shopping","items":["coffee","yoghurt"]}
+{"user_id":"U0134","list":"to do","items":[]}
+{"user_id":"U0135","list":"packing","items":["charger","umbrella"]}
+{"user_id":"U0135","list":"shopping","items":["apples","lemons","pasta","tomatoes","yoghurt"]}
+{"user_id":"U0135","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0136","list":"packing","items":["adapter","charger","notebook","passport","toothbrush","umbrella"]}
+{"user_id":"U0136","list":"shopping","items":["coffee","yoghurt"]}
+{"user_id":"U0136","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0137","list":"packing","items":["adapter","charger","notebook","passport","sunscreen","toothbrush","umbrella"]}
+{"user_id":"U0137","list":"shopping","items":[]}
+{"user_id":"U0137","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0138","list":"packing","items":["charger","notebook","passport","raincoat","socks","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0138","list":"shopping","items":["apples","bread","eggs","lemons","milk"]}
+{"user_id":"U0138","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0139","list":"packing","items":["adapter","passport","raincoat","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0139","list":"shopping","items":["apples"]}
+{"user_id":"U0139","list":"to do","items":["call the bank","file the receipts","renew library books"]}
+{"user_id":"U0140","list":"packing","items":["notebook"]}
+{"user_id":"U0140","list":"shopping","items":["bread","rice"]}
+{"user_id":"U0140","list":"to do","items":["book the dentist","call the bank","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0141","list":"packing","items":["notebook","sunscreen"]}
+{"user_id":"U0141","list":"shopping","items":["apples","coffee","eggs"]}
+{"user_id":"U0141","list":"to do","items":["book the dentist","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0142","list":"packing","items":["charger","passport","socks"]}
+{"user_id":"U0142","list":"shopping","items":["apples","bread","coffee","lemons","pasta","spinach","yoghurt"]}
+{"user_id":"U0142","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0143","list":"packing","items":[]}
+{"user_id":"U0143","list":"shopping","items":["apples","bread","butter","coffee","lemons","milk","pasta","tomatoes"]}
+{"user_id":"U0143","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0144","list":"packing","items":[]}
+{"user_id":"U0144","list":"shopping","items":[]}
+{"user_id":"U0144","list":"to do","items":["file the receipts","renew library books"]}
+{"user_id":"U0145","list":"packing","items":["adapter","passport","socks","umbrella","water bottle"]}
+{"user_id":"U0145","list":"shopping","items":["apples","bread","butter","eggs","lemons","pasta","rice","spinach","tomatoes"]}
+{"user_id":"U0145","list":"to do","items":["call the bank","check the tyre pressure","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0146","list":"packing","items":["adapter","charger","passport","socks","sunscreen","toothbrush","umbrella"]}
+{"user_id":"U0146","list":"shopping","items":["pasta","yoghurt"]}
+{"user_id":"U0146","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0147","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","umbrella","water bottle"]}
+{"user_id":"U0147","list":"shopping","items":["coffee","milk","tomatoes","yoghurt"]}
+{"user_id":"U0147","list":"to do","items":["check the tyre pressure"]}
+{"user_id":"U0148","list":"packing","items":["charger","notebook","passport","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0148","list":"shopping","items":["bread","rice","spinach"]}
+{"user_id":"U0148","list":"to do","items":["book the dentist","check the tyre pressure","file the receipts"]}
+{"user_id":"U0149","list":"packing","items":["adapter","charger","passport","raincoat","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0149","list":"shopping","items":["pasta"]}
+{"user_id":"U0149","list":"to do","items":["book the dentist","check the tyre pressure","file the receipts","order printer ink","pay the parking fine"]}
+{"user_id":"U0150","list":"packing","items":["adapter","notebook","passport","raincoat","socks","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0150","list":"shopping","items":["bread","butter","coffee","eggs","lemons","pasta","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0150","list":"to do","items":["call the bank","order printer ink","pay the parking fine"]}
+{"user_id":"U0151","list":"packing","items":["sunscreen","toothbrush"]}
+{"user_id":"U0151","list":"shopping","items":["apples","bread","lemons","rice"]}
+{"user_id":"U0151","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0152","list":"packing","items":["adapter","socks","sunscreen","water bottle"]}
+{"user_id":"U0152","list":"shopping","items":["bread","eggs","lemons","pasta","spinach"]}
+{"user_id":"U0152","list":"to do","items":["check the tyre pressure","file the receipts","pay the parking fine"]}
+{"user_id":"U0153","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0153","list":"shopping","items":["eggs","lemons","spinach"]}
+{"user_id":"U0153","list":"to do","items":["book the dentist","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0154","list":"packing","items":["adapter","notebook","passport","raincoat","socks","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0154","list":"shopping","items":["apples","butter","coffee","eggs","milk","spinach","yoghurt"]}
+{"user_id":"U0154","list":"to do","items":["book the dentist","call the bank","file the receipts"]}
+{"user_id":"U0155","list":"packing","items":["charger","umbrella"]}
+{"user_id":"U0155","list":"shopping","items":["bread","tomatoes","yoghurt"]}
+{"user_id":"U0155","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0156","list":"packing","items":["charger","notebook","passport","raincoat","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0156","list":"shopping","items":["apples","coffee","eggs","lemons","milk","yoghurt"]}
+{"user_id":"U0156","list":"to do","items":["check the tyre pressure","pay the parking fine"]}
+{"user_id":"U0157","list":"packing","items":["raincoat"]}
+{"user_id":"U0157","list":"shopping","items":["bread"]}
+{"user_id":"U0157","list":"to do","items":["order printer ink","water the plants"]}
+{"user_id":"U0158","list":"packing","items":["passport"]}
+{"user_id":"U0158","list":"shopping","items":[]}
+{"user_id":"U0158","list":"to do","items":["book the dentist","call the bank","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0159","list":"packing","items":["notebook","passport","raincoat","sunscreen","toothbrush","umbrella"]}
+{"user_id":"U0159","list":"shopping","items":["eggs","lemons","milk"]}
+{"user_id":"U0159","list":"to do","items":["book the dentist","check the tyre pressure","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0160","list":"packing","items":["charger","notebook","raincoat","toothbrush","water bottle"]}
+{"user_id":"U0160","list":"shopping","items":["bread","butter","eggs","milk","pasta","rice","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0160","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books"]}
+{"user_id":"U0161","list":"packing","items":["passport","socks"]}
+{"user_id":"U0161","list":"shopping","items":[]}
+{"user_id":"U0161","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0162","list":"packing","items":["charger","passport","socks","umbrella"]}
+{"user_id":"U0162","list":"shopping","items":[]}
+{"user_id":"U0162","list":"to do","items":[]}
+{"user_id":"U0163","list":"packing","items":[]}
+{"user_id":"U0163","list":"shopping","items":["apples","eggs","lemons","milk","rice","tomatoes"]}
+{"user_id":"U0163","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0164","list":"packing","items":["socks","sunscreen","umbrella"]}
+{"user_id":"U0164","list":"shopping","items":["apples"]}
+{"user_id":"U0164","list":"to do","items":["renew library books"]}
+{"user_id":"U0165","list":"packing","items":["charger","toothbrush","umbrella"]}
+{"user_id":"U0165","list":"shopping","items":["apples","bread","butter","coffee","eggs","lemons","milk","rice","spinach","tomatoes"]}
+{"user_id":"U0165","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","order printer ink","renew library books"]}
+{"user_id":"U0166","list":"packing","items":["adapter","raincoat","socks","sunscreen","toothbrush"]}
+{"user_id":"U0166","list":"shopping","items":["bread","butter","coffee","eggs","milk","pasta","tomatoes","yoghurt"]}
+{"user_id":"U0166","list":"to do","items":["call the bank"]}
+{"user_id":"U0167","list":"packing","items":["raincoat","sunscreen","water bottle"]}
+{"user_id":"U0167","list":"shopping","items":["eggs","pasta"]}
+{"user_id":"U0167","list":"to do","items":[]}
+{"user_id":"U0168","list":"packing","items":["adapter","charger","passport","raincoat","socks","sunscreen","toothbrush","umbrella"]}
+{"user_id":"U0168","list":"shopping","items":["coffee","eggs","milk","rice"]}
+{"user_id":"U0168","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","order printer ink","renew library books","water the plants"]}
+{"user_id":"U0169","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0169","list":"shopping","items":["coffee","eggs","milk","spinach"]}
+{"user_id":"U0169","list":"to do","items":["pay the parking fine"]}
+{"user_id":"U0170","list":"packing","items":["adapter","notebook","raincoat","umbrella","water bottle"]}
+{"user_id":"U0170","list":"shopping","items":["bread","butter","coffee","eggs","lemons","milk","pasta","tomatoes","yoghurt"]}
+{"user_id":"U0170","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","water the plants"]}
+{"user_id":"U0171","list":"packing","items":["charger","socks","sunscreen","umbrella"]}
+{"user_id":"U0171","list":"shopping","items":["apples","bread","butter","coffee","eggs","lemons","pasta","rice","spinach","tomatoes"]}
+{"user_id":"U0171","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0172","list":"packing","items":["adapter","passport","raincoat","water bottle"]}
+{"user_id":"U0172","list":"shopping","items":[]}
+{"user_id":"U0172","list":"to do","items":["book the dentist","call the bank","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0173","list":"packing","items":["sunscreen"]}
+{"user_id":"U0173","list":"shopping","items":["apples","butter","coffee","eggs","lemons","milk","pasta","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0173","list":"to do","items":[]}
+{"user_id":"U0174","list":"packing","items":["adapter","passport","socks","toothbrush","umbrella"]}
+{"user_id":"U0174","list":"shopping","items":["bread","yoghurt"]}
+{"user_id":"U0174","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0175","list":"packing","items":[]}
+{"user_id":"U0175","list":"shopping","items":["coffee"]}
+{"user_id":"U0175","list":"to do","items":["call the bank","water the plants"]}
+{"user_id":"U0176","list":"packing","items":["charger","umbrella","water bottle"]}
+{"user_id":"U0176","list":"shopping","items":["butter","coffee","eggs","rice"]}
+{"user_id":"U0176","list":"to do","items":["call the bank","file the receipts","order printer ink","pay the parking fine","renew library books"]}
+{"user_id":"U0177","list":"packing","items":[]}
+{"user_id":"U0177","list":"shopping","items":["apples","butter","lemons"]}
+{"user_id":"U0177","list":"to do","items":["check the tyre pressure","order printer ink","water the plants"]}
+{"user_id":"U0178","list":"packing","items":["adapter","charger"]}
+{"user_id":"U0178","list":"shopping","items":["apples","bread","butter","eggs","lemons","milk","pasta","rice","spinach","yoghurt"]}
+{"user_id":"U0178","list":"to do","items":["book the dentist","check the tyre pressure","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0179","list":"packing","items":["socks","umbrella","water bottle"]}
+{"user_id":"U0179","list":"shopping","items":["butter","coffee","pasta","rice","spinach"]}
+{"user_id":"U0179","list":"to do","items":[]}
+{"user_id":"U0180","list":"packing","items":["adapter","notebook","passport","raincoat","socks"]}
+{"user_id":"U0180","list":"shopping","items":[]}
+{"user_id":"U0180","list":"to do","items":["file the receipts","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0181","list":"packing","items":["charger","passport","toothbrush","water bottle"]}
+{"user_id":"U0181","list":"shopping","items":[]}
+{"user_id":"U0181","list":"to do","items":["call the bank","renew library books"]}
+{"user_id":"U0182","list":"packing","items":["adapter","charger","notebook","passport","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0182","list":"shopping","items":[]}
+{"user_id":"U0182","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0183","list":"packing","items":["notebook","toothbrush"]}
+{"user_id":"U0183","list":"shopping","items":["apples","coffee","eggs","lemons","pasta"]}
+{"user_id":"U0183","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","water the plants"]}
+{"user_id":"U0184","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks"]}
+{"user_id":"U0184","list":"shopping","items":["apples","coffee","eggs","pasta"]}
+{"user_id":"U0184","list":"to do","items":["book the dentist","call the bank","order printer ink","pay the parking fine","water the plants"]}
+{"user_id":"U0185","list":"packing","items":["adapter"]}
+{"user_id":"U0185","list":"shopping","items":["bread","coffee","eggs","rice","spinach","tomatoes"]}
+{"user_id":"U0185","list":"to do","items":["call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0186","list":"packing","items":["adapter","charger","passport","raincoat","socks","sunscreen","toothbrush","water bottle"]}
+{"user_id":"U0186","list":"shopping","items":["apples","bread","butter","coffee","lemons","milk","pasta","rice","spinach","tomatoes"]}
+{"user_id":"U0186","list":"to do","items":["call the bank","file the receipts","water the plants"]}
+{"user_id":"U0187","list":"packing","items":["adapter","notebook","passport","raincoat","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0187","list":"shopping","items":["coffee","rice","spinach","tomatoes"]}
+{"user_id":"U0187","list":"to do","items":[]}
+{"user_id":"U0188","list":"packing","items":["passport","raincoat","sunscreen","umbrella"]}
+{"user_id":"U0188","list":"shopping","items":["pasta","tomatoes"]}
+{"user_id":"U0188","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","renew library books","water the plants"]}
+{"user_id":"U0189","list":"packing","items":["adapter","charger","notebook","passport","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0189","list":"shopping","items":["apples","bread","yoghurt"]}
+{"user_id":"U0189","list":"to do","items":["call the bank","file the receipts","pay the parking fine"]}
+{"user_id":"U0190","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","water bottle"]}
+{"user_id":"U0190","list":"shopping","items":["coffee","milk","rice"]}
+{"user_id":"U0190","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0191","list":"packing","items":["charger","passport","socks","toothbrush","umbrella"]}
+{"user_id":"U0191","list":"shopping","items":["apples","coffee","eggs","lemons","rice","spinach"]}
+{"user_id":"U0191","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0192","list":"packing","items":["adapter","charger","notebook","passport","raincoat","sunscreen","toothbrush","water bottle"]}
+{"user_id":"U0192","list":"shopping","items":[]}
+{"user_id":"U0192","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0193","list":"packing","items":[]}
+{"user_id":"U0193","list":"shopping","items":["apples","lemons","spinach","yoghurt"]}
+{"user_id":"U0193","list":"to do","items":["file the receipts","order printer ink"]}
+{"user_id":"U0194","list":"packing","items":["adapter","charger","notebook","passport","raincoat","socks","sunscreen","toothbrush","umbrella","water bottle"]}
+{"user_id":"U0194","list":"shopping","items":["apples","bread","butter","coffee","lemons","milk","pasta","tomatoes","yoghurt"]}
+{"user_id":"U0194","list":"to do","items":["check the tyre pressure","order printer ink","pay the parking fine"]}
+{"user_id":"U0195","list":"packing","items":["adapter","passport"]}
+{"user_id":"U0195","list":"shopping","items":["coffee","eggs","tomatoes"]}
+{"user_id":"U0195","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0196","list":"packing","items":["adapter","socks","sunscreen","umbrella","water bottle"]}
+{"user_id":"U0196","list":"shopping","items":["apples","bread","butter","coffee","lemons","milk","rice","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0196","list":"to do","items":["file the receipts","pay the parking fine","water the plants"]}
+{"user_id":"U0197","list":"packing","items":["adapter","socks","toothbrush"]}
+{"user_id":"U0197","list":"shopping","items":["spinach","yoghurt"]}
+{"user_id":"U0197","list":"to do","items":[]}
+{"user_id":"U0198","list":"packing","items":["adapter","charger","notebook","passport","socks","sunscreen","toothbrush","water bottle"]}
+{"user_id":"U0198","list":"shopping","items":["rice"]}
+{"user_id":"U0198","list":"to do","items":["book the dentist","check the tyre pressure","file the receipts","order printer ink","pay the parking fine"]}
+{"user_id":"U0199","list":"packing","items":["adapter","passport","raincoat","socks","sunscreen","toothbrush","umbrella"]}
+{"user_id":"U0199","list":"shopping","items":["apples","milk","spinach","tomatoes","yoghurt"]}
+{"user_id":"U0199","list":"to do","items":["book the dentist","call the bank","check the tyre pressure","file the receipts","order printer ink","pay the parking fine","renew library books","water the plants"]}
+{"user_id":"U0200","list":"packing","items":["charger","socks","umbrella","water bottle"]}
+{"user_id":"U0200","list":"shopping","items":["apples","coffee","milk","pasta"]}
+{"user_id":"U0200","list":"to do","items":["file the receipts","order printer ink","pay the parking fine","water the plants"]}

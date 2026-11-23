@@ -1,0 +1,72 @@
+{
+ "chunk_ns": [
+  15955721646,
+  15955732336,
+  16108671914,
+  16243076632,
+  16386378752,
+  16533404915,
+  16667435122,
+  16814359182,
+  16958096664,
+  17121978375,
+  17271852413,
+  17422620446,
+  17565420961,
+  17708465366,
+  17842897481,
+  17980372098,
+  18114120894,
+  18254908998,
+  18398583467,
+  18539886542,
+  18670169009,
+  18809237883,
+  18940865808,
+  19088742497,
+  19241178016,
+  19379773864,
+  19527221746,
+  19684838056,
+  19841753559,
+  19977728060,
+  20112404831,
+  20248222729,
+  20381442898,
+  20510246600,
+  20642452250,
+  20775108328
+ ],
+ "completion_tokens": 34,
+ "finish_reason": "stop",
+ "gen_ns": 4787343000,
+ "kind": "model",
+ "message_id": "3993",
+ "offset_ns": 437017610131,
+ "prefill_ns": 15584893000,
+ "prompt_tokens": 1146,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-devices-03] Turning lights on and off\nName the light, or the room, and say whether to turn it on or off. The assistant changes the light and confirms it. To turn off every light in a room at once, say \"all lights in the room\". Lights that are not reachable are reported as offline, and the assistant does not change them. Some bulbs take a few seconds to respond, so the assistant may report the change a moment after you ask. Lights can also be set to turn on or off at a time you choose; the assistant shows the schedule before it saves it.\n\n[help-devices-06] Brewing with the coffee machine\nA connected coffee machine can start a brew at a time you choose. Make sure the water tank is full and a cup is in place, because the machine cannot detect either. Ask the assistant to start a brew now, or to start one at a time, and say the strength if the machine offers more than one. The assistant reports when the brew starts and when it finishes. A machine with an empty tank or an open lid reports a fault, and the assistant reads the fault out. It does not cancel a brew in progress unless you ask.\n\n[help-devices-04] Dimming and brightening lights\nBrightness is a percentage from one, the dimmest, to one hundred, the brightest. Ask for a light to be set to a value, or ask for it to be made brighter or dimmer by a step. The assistant applies the change in steps so the light does not flicker. Lights that cannot dim report that they can only be on or off. Colour changes work the same way on lights that support colour; a light without colour support keeps its current colour and the assistant tells you so.\n\n[help-media-07] Adjusting the volume\nVolume is a number from zero to one hundred. Ask for a level, or ask for the volume to go up or down by a step. Each step is about ten percent. The assistant reports the new level after each change. A volume limit set by the device stops the assistant from going higher, and it says so when it reaches the limit. Volume changes apply to the device you are using at the moment, unless you name another.\n\n[help-media-08] Finding music by genre\nName a genre, such as jazz, folk or classical, and the assistant plays music from that genre in your library. If your library has none of that genre, the assistant says so and offers to play a radio station instead. Genres come from the tags on each song, so a song with no tag is not found by genre. To make a playlist from a genre, name the genre and the number of songs you want, and the assistant lists the songs before saving.\n\n[help-messages-06] Checking for unread messages\nAsk how many messages you have not read. The assistant counts the unread messages in your inbox and tells you how many came in today. It can list the senders and subjects of the most recent few, but it never reads out the full text of a message unless you ask for it. Messages marked as read are not counted. The count can lag by a few minutes after a message arrives, because the inbox is checked on a schedule. Unread counts are reported for the whole inbox; ask for a single folder to narrow the count.\n\n[help-messages-03] Writing a short message\nSay who the message is for and what it should say. Keep it to a few sentences. The assistant reads the names back before it sends anything, so you can correct a name you did not mean. Subject lines are optional; if you leave one out, the assistant writes a short one from the first sentence. The message is sent only after you confirm it. Once it is sent, it cannot be recalled by the assistant, so check the wording first. Long messages are split into parts only in the rare case where the service limits their length, and the assistant tells you when that happens.\n\n[help-messages-04] Sending a message to a group\nTo send one message to several people, name each person or name a group you have already saved. The assistant lists everyone who will receive the message and waits for your confirmation. A person who is on the list twice receives the message once. If one name cannot be found, the assistant sends to the others and tells you which name was left out. Groups are saved in your contact book, and changing a group changes it for later messages only, never for a message already sent.\n",
+    "role": "system"
+   },
+   {
+    "content": "can you make the lights go out",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 75,
+ "step": "answer",
+ "text": "Sure! Say \"turn off the lights\" or \"turn off all lights in the room\" to make the lights go out. [help-devices-03]",
+ "tokens_evaluated": 954,
+ "tool_calls": [],
+ "total_ns": 22079232044,
+ "ttfc_ns": 15955721646
+}

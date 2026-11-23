@@ -1,0 +1,46 @@
+# Chapter catch-a-regression's narration (re-check narration): descriptions of its examples, blocks and tables, as
+# [examples.ID], [[blocks]] and [[tables]], and its own readings. Only this chapter's writer edits this file, so
+# writers working in parallel never append to one shared lexicon. A reading every chapter needs goes into
+# narration/lexicon.toml, which wins over a chapter's.
+
+[examples.release-markers-query]
+say = "The code replays the same 60 messages under the baseline and each of the four changes, and writes every span of the five replays into one file. It then queries the inference spans by their two release markers, the service version and the prompt version, and counts the answer calls and route calls for each pair, and the traces each release made. The printed lines give one count per release, and the example checks that the five pairs are the ones the release table gives."
+
+[examples.paired-latency-and-tokens]
+say = "The code compares each of the four changes with the baseline on the messages that change recorded. For each one it prints the paired mean difference in message time, the difference of the two 95th percentiles with the messages resampled together, the mean difference in input tokens with its paired and unpaired interval widths, and the cost, error rate and route accuracy differences, each with its interval. The model swap is the smaller model on all 200 messages, and its prompt carries a suffix, which the chapter's text explains."
+
+[examples.gate-on-baseline-day-two]
+say = "The code gates baseline day 2 against baseline day 1, using the same rules and limits as the prompt change's gate. The two days share no message, so each interval resamples each day on its own. The printed lines give each rule's difference, its limit and its interval, whether it is flagged, and the verdict, which must be a pass."
+
+[examples.gate-on-prompt-release]
+say = "The code gates the prompt change against the baseline on the 60 paired messages, printing each rule's line and its verdict. Then it judges the same 60 messages as two unrelated samples. The paired verdict fails on input tokens alone, and the unpaired verdict passes. The lines say which rule flagged, from the end of each interval nearest its limit. It also splits the token rise: each route call gains the same tokens, only the two messages whose route changed gain an answer call, and the lines print the low end of the token interval beside its limit."
+
+[examples.gate-on-model-swap]
+say = "The code gates the model swap against the baseline on all 200 messages, with the same rules. Its message time, input tokens and cost fall, and the rules for those amounts do not flag a fall. Its route accuracy falls, and the route rule flags it. The release's verdict is a fail, and the example asserts that route accuracy is the only rule it flags. The printed lines split the falls: the messages the baseline answered and the swap did not, the suffix's few tokens on each route call, and the answer calls' share of the tokens, the time and the cost. The last lines count the model replies and how many open with an empty think block."
+
+[examples.gate-on-retrieval-and-cache]
+say = "The code gates the top-8 release and the cache-off release against the baseline on the same 60 paired messages, with the same rules. Both verdicts fail. The top-8 release is flagged on message time, input tokens and cost. The cache-off release is flagged on message time and cost, and its input tokens do not move, so its token rule passes. The printed lines give each release's message count, each rule's difference, limit and interval, and the verdict."
+
+[examples.figure-paired-differences]
+say = "The code draws each release's paired difference from the baseline in two panels. The left panel is the difference in the 95th percentile of message time, and the right panel is the mean difference in input tokens per message. Each row is one release, named for its change and labelled with its message count, with its interval, and a line marks zero. The printed lines give each release's difference and interval in both measures."
+
+[[tables]]
+section = "release-markers-in-the-spans"
+starts = "| Release | Prompt version | Answer calls |"
+say = "The table has one row for each of the five releases: the baseline, the prompt change, the model swap, the top-8 release and the cache-off release. For each it gives the prompt version and the answer calls the query counted on the 60 messages. The model swap's answer count is the one the text explains."
+
+[[tables]]
+section = "gating-the-other-changes"
+starts = "| Comparison | Messages | Verdict | Rule flagged |"
+say = "The table has one row for each of the six gate runs: the baseline day 2 against day 1 unpaired, the prompt change paired and unpaired, the model swap paired, and the top-8 release and the cache-off release paired. For each it gives the number of messages, the verdict, and the rules that flagged: none, input tokens, route accuracy, message time, input tokens and cost, or message time and cost."
+
+[terms]
+"ambrewick.answer" = "am brew ick answer"
+"p95s" = "p ninety-five s"
+"p95" = "p ninety-five"
+"p1" = "p one"
+"p2" = "p two"
+"<think>" = "think tag"
+"<think>...</think>" = "think block, from its open tag to its close tag"
+
+[words]

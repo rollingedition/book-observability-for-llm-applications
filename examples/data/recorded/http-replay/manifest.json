@@ -1,0 +1,36 @@
+{
+ "script": "recordings/record_http.py",
+ "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+ "model_version": "a06e946bb6b655725eafa393f4a9745d460374c9",
+ "prompt_sha256": "a575ef9b0ebb9615dacf9643a0847aebe90731f1fa68bcfc645027dbb9a3450c",
+ "day": "2026-12-07",
+ "release": "r0",
+ "messages": 5,
+ "server": "llama-cpp-python server extra",
+ "model_file": {
+  "name": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "size": 2497281120,
+  "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597"
+ },
+ "runtime": "llama-cpp-python server extra",
+ "cached_input_tokens_derived": false,
+ "machine": {
+  "cpu_model": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "vcpus": 4,
+  "threads": 4
+ },
+ "sampling": {
+  "temperature": 0,
+  "seed": 0,
+  "threads": 4,
+  "stream": false
+ },
+ "created": "2026-11-23",
+ "outputs": [
+  "calls/15f68f03cf2e87f00bf9a134f797124503444ea5564ec16aa07f82b69e2a943e.json",
+  "calls/31f0da6e1a5d20a0f9ed103c99a49892a0ec18c1c7d205b2243caf759a3060de.json",
+  "calls/92250fa5cd4ebfcc17f10af560188b422583e1c9b475466738863ed33378d7af.json",
+  "calls/b891e8960a61a60dd2edca4849aa6f502ccb1d0f44f712a6357816b0ac330058.json",
+  "calls/f17d681e607f348e8ce1c3141b01bc114c670fe5f4f992cc16cb31b533604c1d.json"
+ ]
+}

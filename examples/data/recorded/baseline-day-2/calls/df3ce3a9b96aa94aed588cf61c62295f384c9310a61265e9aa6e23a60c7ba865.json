@@ -1,0 +1,135 @@
+{
+ "chunk_ns": [
+  9497791922,
+  9497800809,
+  9637174113,
+  9772991625,
+  9933025600,
+  10061765579,
+  10192360246,
+  10333192117,
+  10473625738,
+  10608931947,
+  10783280807,
+  10941225936,
+  11103219014,
+  11264224018,
+  11427398376,
+  11599598911,
+  11754141078,
+  11922174419,
+  12085622752,
+  12240145147,
+  12394024441,
+  12527253152,
+  12669149358,
+  12814288240,
+  12952070824,
+  13114112082,
+  13272408292,
+  13428343080,
+  13588981615,
+  13747846094,
+  13915733771,
+  14066717549
+ ],
+ "completion_tokens": 30,
+ "finish_reason": "stop",
+ "gen_ns": 4543109000,
+ "kind": "model",
+ "message_id": "1913",
+ "offset_ns": 558956489515,
+ "prefill_ns": 9493905000,
+ "prompt_tokens": 600,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-10.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "wake me up at five am",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List the user's alarms. Up to five, by time.",
+     "name": "list_alarms",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {},
+      "required": [],
+      "title": "ListAlarmsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Set a new alarm for the user.",
+     "name": "set_alarm",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "label": {
+        "description": "The alarm's label, up to 40 characters.",
+        "title": "Label",
+        "type": "string"
+       },
+       "time": {
+        "description": "The alarm time, HH:MM on a 24-hour clock.",
+        "title": "Time",
+        "type": "string"
+       }
+      },
+      "required": [
+       "time",
+       "label"
+      ],
+      "title": "SetAlarmArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove one of the user's alarms, by its alarm_id.",
+     "name": "remove_alarm",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "alarm_id": {
+        "description": "The alarm_id that list_alarms gave.",
+        "maxLength": 20,
+        "minLength": 1,
+        "title": "Alarm Id",
+        "type": "string"
+       }
+      },
+      "required": [
+       "alarm_id"
+      ],
+      "title": "RemoveAlarmArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 107,
+ "step": "answer",
+ "text": "<tool_call>\n{\"name\": \"set_alarm\", \"arguments\": {\"time\": \"05:00\", \"label\": \"Wake up\"}}\n</tool_call>",
+ "tokens_evaluated": 594,
+ "tool_calls": [],
+ "total_ns": 14890051687,
+ "ttfc_ns": 9497791922
+}

@@ -1,0 +1,47 @@
+{
+ "chunk_ns": [
+  48109144,
+  48118393,
+  68606062,
+  87671390,
+  106902982,
+  125832899,
+  145855073,
+  165617013,
+  185916909,
+  206235889,
+  234794396,
+  254491621
+ ],
+ "completion_tokens": 10,
+ "finish_reason": "stop",
+ "gen_ns": 200743000,
+ "kind": "model",
+ "message_id": "16666",
+ "offset_ns": 70541248761,
+ "prefill_ns": 46571000,
+ "prompt_tokens": 148,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.",
+    "role": "system"
+   },
+   {
+    "content": "do i have any incoming emails",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 65,
+ "step": "route",
+ "text": "<think>\n\n</think>\n\n{\"route\": \"messages\"}",
+ "tokens_evaluated": 11,
+ "tool_calls": [],
+ "total_ns": 296709478,
+ "ttfc_ns": 48109144
+}

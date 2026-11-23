@@ -1,0 +1,43 @@
+{
+ "chunk_ns": [
+  298560747,
+  298569574,
+  431166717,
+  556864666,
+  686446903,
+  810523413,
+  949789055,
+  1116390133
+ ],
+ "completion_tokens": 6,
+ "finish_reason": "stop",
+ "gen_ns": 812775000,
+ "kind": "model",
+ "message_id": "10119",
+ "offset_ns": 959571708959,
+ "prefill_ns": 296351000,
+ "prompt_tokens": 147,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.",
+    "role": "system"
+   },
+   {
+    "content": "how long do you cook a fifteen pound turkey",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 183,
+ "step": "route",
+ "text": "{\"route\": \"fallback\"}",
+ "tokens_evaluated": 14,
+ "tool_calls": [],
+ "total_ns": 1193625481,
+ "ttfc_ns": 298560747
+}

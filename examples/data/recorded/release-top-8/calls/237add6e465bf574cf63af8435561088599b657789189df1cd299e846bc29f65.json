@@ -1,0 +1,62 @@
+{
+ "chunk_ns": [
+  16698309561,
+  16698329325,
+  16862250864,
+  17011999763,
+  17190821948,
+  17379524397,
+  17567925553,
+  17769297060,
+  17961930250,
+  18111924383,
+  18264351319,
+  18434493550,
+  18598503998,
+  18754265003,
+  18906287120,
+  19050152100,
+  19221959720,
+  19386823111,
+  19540940019,
+  19679919508,
+  19808116915,
+  19945787217,
+  20072339544,
+  20210194068,
+  20348975384,
+  20488952986
+ ],
+ "completion_tokens": 24,
+ "finish_reason": "stop",
+ "gen_ns": 3771707000,
+ "kind": "model",
+ "message_id": "13855",
+ "offset_ns": 532147433837,
+ "prefill_ns": 15838687000,
+ "prompt_tokens": 1108,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-02] Playing a playlist\nA playlist is a list of songs you have saved. To play one, name it. The assistant starts the first song and continues through the list in order unless shuffle is on. Playlists can be created from the songs you name; the assistant lists the songs before it saves the playlist. A playlist cannot hold a song that is not in your library. Changing a playlist does not change what is already playing. To add a song to a playlist, name both.\n\n[help-media-08] Finding music by genre\nName a genre, such as jazz, folk or classical, and the assistant plays music from that genre in your library. If your library has none of that genre, the assistant says so and offers to play a radio station instead. Genres come from the tags on each song, so a song with no tag is not found by genre. To make a playlist from a genre, name the genre and the number of songs you want, and the assistant lists the songs before saving.\n\n[help-messages-06] Checking for unread messages\nAsk how many messages you have not read. The assistant counts the unread messages in your inbox and tells you how many came in today. It can list the senders and subjects of the most recent few, but it never reads out the full text of a message unless you ask for it. Messages marked as read are not counted. The count can lag by a few minutes after a message arrives, because the inbox is checked on a schedule. Unread counts are reported for the whole inbox; ask for a single folder to narrow the count.\n\n[help-messages-02] Choosing the right address for a contact\nA contact can have more than one address on file. When a name returns two addresses, the assistant lists both and asks you which one to use. Pick the one you use most with that person. If neither is right, add the address you want as a new entry on the contact, then ask again. The assistant never combines two addresses into one, and it never shows an address in a reply after you have chosen it. You can ask for a contact's address to be checked, and the assistant reports whether the address is on file and when it was last updated. It cannot verify that the address still works.\n\n[help-media-03] Shuffle and repeat\nShuffle plays the songs of a playlist or an album in a random order. Turn it on or off by name. Repeat has three settings: off, repeat the current song, and repeat the whole list. The assistant reports the setting after each change. Shuffle does not change the list itself, and turning it off returns to the list's own order from the song now playing. A repeat setting stays until you change it, even when you start something new.\n\n[help-media-01] Playing a song from your library\nName the song and, if it helps, the artist. The assistant looks in your music library first and plays the first song that matches. If more than one song has the name, it lists the artists and asks which one you mean. A song that is not in your library cannot be played, and the assistant says so rather than choosing another. Songs play through the device you chose last, unless you name another. The assistant reports the title and the artist when a song starts.\n\n[help-media-09] Pausing, skipping and going back\nPause stops the current song and keeps its place. Resume starts it again from the same point. Skip moves to the next song in the list, and going back moves to the previous one. Going back once more than a few seconds into a song starts that song again from the beginning. Skip does not work on a radio station, because a station is a live stream. The assistant reports what is playing after each of these commands.\n\n[help-messages-05] Replying to a message\nAsk the assistant to reply to the latest message from someone, or to a message you name by its subject. The reply is written in the same thread, so the person sees it with the earlier messages. Say what the reply should say, or ask the assistant to draft a short reply and read it to you first. A reply is sent only after you confirm it. If the thread has more than one earlier message from that person, the assistant asks which one you mean before it replies.\n",
+    "role": "system"
+   },
+   {
+    "content": "what are lady gagas most popular songs",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 88,
+ "step": "answer",
+ "text": "I cannot provide information about Lady Gaga's most popular songs as it is outside the scope of the knowledge base articles provided.",
+ "tokens_evaluated": 916,
+ "tool_calls": [],
+ "total_ns": 21631746582,
+ "ttfc_ns": 16698309561
+}

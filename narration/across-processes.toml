@@ -1,0 +1,60 @@
+# Chapter across-processes's narration (re-check narration): descriptions of its examples, blocks and tables, as
+# [examples.ID], [[blocks]] and [[tables]], and its own readings. Only this chapter's writer edits this file, so
+# writers working in parallel never append to one shared lexicon. A reading every chapter needs goes into
+# narration/lexicon.toml, which wins over a chapter's.
+
+[examples.server-span-joins]
+say = "The code replays one message from baseline day 1 with the contacts server running as its own process. It then checks that the server's span sits under the SDK's client span, in the same trace as the assistant's tool span. The printed lines give the route the message took, then how many spans the trace holds on each side, {{out:server-span-joins:spans in the message's trace, assistant}} in the assistant and {{out:server-span-joins:spans in the message's trace, contacts server}} on the server."
+
+[examples.propagate-into-the-tool]
+say = "The code writes a trace header of its own into one request to the contacts server, then asks for a tool that does not exist. The output shows that the server's span still joins the assistant's trace, so the header the code wrote was replaced, and that the unknown tool comes back as an error result, as the SDK's server returns it."
+
+[examples.orphan-span-demo]
+say = "The code makes one span on each of four workers, all started inside one tool span: a plain thread, the same kind of thread with the context carried across, an asyncio task, and the loop's executor. The output says which spans joined the tool span, and counts the detached roots with and without the helper, {{out:orphan-span-demo:detached roots without the helper}} and {{out:orphan-span-demo:detached roots with the helper}}. A detached root is a span that starts a trace of its own."
+
+[examples.baggage-keys]
+say = "The code puts the release and the prompt version into baggage and writes it the way a request does. The output lists the keys the book allows, the keys that were carried, and the baggage entry that would go to the server. The last two lines say that a user identifier is refused, under a key the book does not allow and under one it does, because each attempt raises an error."
+
+[examples.server-span-without-context]
+say = "The code reads the contacts server's recorded spans from baseline day 1, which were written without any context from the client. It counts the lookups the server recorded and how many of them have a parent, which is none, and then checks that the lookup's own span sits under its call. The point is that a server span with no parent starts a trace of its own."
+
+[examples.figure-cross-process-tree]
+say = "The code draws the trace of one message as a tree, with the assistant's spans as dots and the contacts server's spans as squares, and a dashed line wherever a parent link crosses from one process to the other. The output counts the spans on each side, and the parent links that cross, {{out:figure-cross-process-tree:parent links across the boundary}}, and names the two spans at each crossing."
+
+[examples.contacts-timeout-live]
+say = "The code replays one incident-day message with the contacts server inside an injected timeout window. The output names the injected incident, then the two attempts at the lookup: the first times out with the SDK's code for a timeout, the second starts {{out:contacts-timeout-live:attempt 2 starts after attempt 1}} after the first, and the tool step gives up at the end. Each attempt is one span, and its status and error type are printed on their own lines."
+
+[terms]
+"ambrewick.mcp.error_code" = "am brew ick mcp error code"
+"ambrewick.prompt.version" = "am brew ick prompt version"
+"ambrewick.release" = "am brew ick release"
+"2.0 s" = "two seconds"
+"2.5 s" = "two point five seconds"
+"4.5 s" = "four point five seconds"
+"propagate-into-the-tool" = "propagate into the tool"
+"server-span-joins" = "server span joins"
+"server-span-without-context" = "server span without context"
+"orphan-span-demo" = "orphan span demo"
+"baggage-keys" = "baggage keys"
+"contacts-timeout-live" = "contacts timeout live"
+"inc-contacts-timeout" = "the contacts timeout incident"
+"BatchSpanProcessor" = "batch span processor"
+"isError" = "is error"
+"LiveContacts" = "live contacts"
+"ThreadPoolExecutor" = "thread pool executor"
+"MAJOR.MINOR.PATCH" = "major, minor, patch"
+"RPC" = "R P C"
+"tracestate" = "trace state"
+"stdio" = "S T D I O"
+"_meta" = "meta"
+"traceparent" = "trace parent"
+"W3C" = "W three C"
+"MUST" = "must"
+"SEP-414" = "S E P 414"
+"ContextVar" = "context var"
+"MCPError" = "M C P error"
+"TimeoutError" = "timeout error"
+"{mcp.method.name} {target}" = "method name, then target"
+
+[words]
+"ERROR" = "error"

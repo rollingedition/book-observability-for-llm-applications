@@ -1,0 +1,73 @@
+{
+ "chunk_ns": [
+  1095078157,
+  1095088155,
+  1263109493,
+  1412272496,
+  1573259150,
+  1699712128,
+  1826992535,
+  1983021686,
+  2125305829,
+  2273338578,
+  2406723499,
+  2558811086,
+  2718874542,
+  2856187139,
+  2988041920,
+  3130412929,
+  3271034879,
+  3410285773,
+  3548444276,
+  3678513447,
+  3817261962,
+  3965071717,
+  4117249399,
+  4272114324,
+  4411413927,
+  4558360162,
+  4694246230,
+  4848069991,
+  5004560365,
+  5146802200,
+  5286666492,
+  5412995497,
+  5547214576,
+  5676680998,
+  5801505659,
+  5923937276,
+  6080180977
+ ],
+ "completion_tokens": 35,
+ "finish_reason": "stop",
+ "gen_ns": 4957417000,
+ "kind": "model",
+ "message_id": "5219",
+ "offset_ns": 355748525621,
+ "prefill_ns": 362279000,
+ "prompt_tokens": 415,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-10.\n\nKnowledge base articles:\n\n[help-devices-09] Turning a speaker on and off\nSpeakers can be switched on and off by name. Turning a speaker off stops any sound it is making, and turning it on does not start anything by itself. To set the level, ask for a volume from zero to one hundred. Speakers in a group change together. A speaker that is offline cannot be switched, and the assistant says so. Speakers can also be set to turn on at a time you choose, with the volume they should start at.\n\n[help-media-07] Adjusting the volume\nVolume is a number from zero to one hundred. Ask for a level, or ask for the volume to go up or down by a step. Each step is about ten percent. The assistant reports the new level after each change. A volume limit set by the device stops the assistant from going higher, and it says so when it reaches the limit. Volume changes apply to the device you are using at the moment, unless you name another.\n",
+    "role": "system"
+   },
+   {
+    "content": "please reduce the speaker volume",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 65,
+ "step": "answer",
+ "text": "To reduce the speaker volume, ask for the volume to go down by a step. The assistant will report the new volume level after the change [help-media-07].",
+ "tokens_evaluated": 9,
+ "tool_calls": [],
+ "total_ns": 6527422889,
+ "ttfc_ns": 1095078157
+}

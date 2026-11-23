@@ -1,0 +1,44 @@
+# The book's own price table (plan PL-3, PL-20, section 1.1). Version book-2026-11-02.
+#
+# These rates were written for the book. They are not a quote from any provider. Each row says what a hosted endpoint
+# would charge for the model at these rates, so that the book can attach a money figure to a token count. A
+# self-hosted model is billed by its machine, not by its tokens; chapter 6 says so.
+#
+# The real listing beside them: genai-prices 0.2.5 has a row for Qwen3-4B-Instruct-2507 under the provider
+# huggingface_nscale at $0.01 input and $0.03 output per million tokens, with no cache price (K-6), so cached input
+# is billed at the input rate there. Chapter 6 prints that row beside these numbers. genai-prices has no text-model
+# row for Qwen3-0.6B, so the 0.6B row below has no source.
+#
+# Why these numbers: at six decimal places a 1,000-token request prints as $0.000100 (cached) or $0.000148
+# (uncached), three significant figures. Each output token costs four times an input token, and a cached token a fifth
+# of one, as is common (PL-20).
+#
+# Fields: model, provider, input_per_mtok, cache_read_per_mtok (or cache_rate_source = "input rate"),
+# output_per_mtok, valid_from (UTC). All rates are USD per million tokens. valid_from precedes every traffic day
+# (2026-12-07 to 2026-12-10), so each virtual timestamp falls inside a row.
+#
+# A model may have more than one row, each from its own valid_from. A call is priced at the row in force at its
+# virtual time: the latest row that starts at or before it (PriceTable.row). The table has one row per model, from
+# 2026-11-02, so every price is the same as before dated rows.
+
+version = "book-2026-11-02"
+currency = "USD"
+unit = "per million tokens"
+written_for = "the book; not a quote"
+
+[[model]]
+model = "Qwen3-4B-Instruct-2507"
+provider = "illustrative hosted endpoint"
+input_per_mtok = "0.10"
+cache_read_per_mtok = "0.02"
+output_per_mtok = "0.40"
+valid_from = "2026-11-02T00:00:00Z"
+
+[[model]]
+model = "Qwen3-0.6B"
+provider = "illustrative hosted endpoint"
+input_per_mtok = "0.02"
+cache_read_per_mtok = "0.004"
+output_per_mtok = "0.08"
+valid_from = "2026-11-02T00:00:00Z"
+source = "none; no genai-prices row exists for this model (K-6)"

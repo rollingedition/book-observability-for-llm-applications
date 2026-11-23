@@ -1,0 +1,107 @@
+{
+ "chunk_ns": [
+  11484816558,
+  11484825787,
+  11639758952,
+  11801126016,
+  11940044011,
+  12077375929,
+  12225384904,
+  12374719018,
+  12524783445,
+  12668279474,
+  12809687221,
+  12951915577,
+  13098621989,
+  13230394175,
+  13367240715,
+  13499429490,
+  13633563912,
+  13772143400
+ ],
+ "completion_tokens": 16,
+ "finish_reason": "stop",
+ "gen_ns": 2274873000,
+ "kind": "model",
+ "message_id": "17157",
+ "offset_ns": 289576133362,
+ "prefill_ns": 11048033000,
+ "prompt_tokens": 879,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-10.\n\nKnowledge base articles:\n\n[help-media-05] Following a podcast\nFollow a podcast to be told when a new episode is released. Ask the assistant to follow a show by name. Episodes play in the order they were released, or the latest first, as you choose. The assistant can play the latest episode, or a named one. Episodes you have started are remembered, so you can resume them later. Unfollowing a show keeps its episodes you have already listened to, but removes it from future reports of new episodes.\n\n[help-devices-09] Turning a speaker on and off\nSpeakers can be switched on and off by name. Turning a speaker off stops any sound it is making, and turning it on does not start anything by itself. To set the level, ask for a volume from zero to one hundred. Speakers in a group change together. A speaker that is offline cannot be switched, and the assistant says so. Speakers can also be set to turn on at a time you choose, with the volume they should start at.\n\n[help-devices-02] Naming a device\nEach device has a name and a room. Names should be short and unique within the room, such as \"left lamp\" or \"bedroom fan\". To rename a device, say the old name and the new one. The assistant checks that no other device in the same room has the new name. Renaming a device does not change its settings, its schedules or its history. If two devices have the same name in different rooms, say the room as well when you give a command, so the assistant knows which one you mean.\n",
+    "role": "system"
+   },
+   {
+    "content": "do i have any new email from joe",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "Find a contact by name. Up to three contacts, with their names and addresses.",
+     "name": "find_contact",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "description": "The contact's name, as the user says it.",
+        "title": "Name",
+        "type": "string"
+       }
+      },
+      "required": [
+       "name"
+      ],
+      "title": "FindContactArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Record a message to one of the user's contacts, named by the address find_contact gave. The message is recorded, not sent.",
+     "name": "send_message",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "contact_id": {
+        "description": "The contact's address, as find_contact gave it.",
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Contact Id",
+        "type": "string"
+       },
+       "text": {
+        "description": "The message, up to 500 characters.",
+        "title": "Text",
+        "type": "string"
+       }
+      },
+      "required": [
+       "contact_id",
+       "text"
+      ],
+      "title": "SendMessageArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 51,
+ "step": "answer",
+ "text": "I cannot check for new emails from Joe. Please consult your email service directly.",
+ "tokens_evaluated": 681,
+ "tool_calls": [],
+ "total_ns": 14524400666,
+ "ttfc_ns": 11484816558
+}

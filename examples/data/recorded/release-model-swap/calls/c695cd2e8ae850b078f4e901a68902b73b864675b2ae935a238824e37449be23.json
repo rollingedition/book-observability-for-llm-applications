@@ -1,0 +1,62 @@
+{
+ "chunk_ns": [
+  1484174123,
+  1484255873,
+  1520410870,
+  1542948371,
+  1565434032,
+  1587055411,
+  1608309609,
+  1630055763,
+  1653063300,
+  1676783720,
+  1700609788,
+  1723277976,
+  1746727897,
+  1770422405,
+  1794202921,
+  1826103317,
+  1850674985,
+  1875538958,
+  1900977908,
+  1924801638,
+  1948663960,
+  1973662371,
+  2001908294,
+  2024771869,
+  2047734693,
+  2072090745
+ ],
+ "completion_tokens": 24,
+ "finish_reason": "stop",
+ "gen_ns": 574358000,
+ "kind": "model",
+ "message_id": "3727",
+ "offset_ns": 95351535852,
+ "prefill_ns": 1139509000,
+ "prompt_tokens": 529,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-05] Following a podcast\nFollow a podcast to be told when a new episode is released. Ask the assistant to follow a show by name. Episodes play in the order they were released, or the latest first, as you choose. The assistant can play the latest episode, or a named one. Episodes you have started are remembered, so you can resume them later. Unfollowing a show keeps its episodes you have already listened to, but removes it from future reports of new episodes.\n\n[help-media-02] Playing a playlist\nA playlist is a list of songs you have saved. To play one, name it. The assistant starts the first song and continues through the list in order unless shuffle is on. Playlists can be created from the songs you name; the assistant lists the songs before it saves the playlist. A playlist cannot hold a song that is not in your library. Changing a playlist does not change what is already playing. To add a song to a playlist, name both.\n\n[help-media-08] Finding music by genre\nName a genre, such as jazz, folk or classical, and the assistant plays music from that genre in your library. If your library has none of that genre, the assistant says so and offers to play a radio station instead. Genres come from the tags on each song, so a song with no tag is not found by genre. To make a playlist from a genre, name the genre and the number of songs you want, and the assistant lists the songs before saving.\n",
+    "role": "system"
+   },
+   {
+    "content": "play best friends by yelawolf",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 80,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\nNone of the provided tools can answer the request to play \"best friends by yelawolf\".",
+ "tokens_evaluated": 337,
+ "tool_calls": [],
+ "total_ns": 2385063102,
+ "ttfc_ns": 1484174123
+}

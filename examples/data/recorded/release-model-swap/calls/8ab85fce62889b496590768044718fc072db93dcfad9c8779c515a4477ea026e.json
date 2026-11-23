@@ -1,0 +1,60 @@
+{
+ "chunk_ns": [
+  1841544830,
+  1841554375,
+  1866498880,
+  1891090850,
+  1916210733,
+  1940714301,
+  1967226702,
+  1991601580,
+  2014076830,
+  2036475400,
+  2059688967,
+  2082648596,
+  2105785494,
+  2128354379,
+  2151320761,
+  2174094457,
+  2198122227,
+  2222683758,
+  2247223986,
+  2271771296,
+  2299644148,
+  2327075226,
+  2351604604,
+  2383194873
+ ],
+ "completion_tokens": 22,
+ "finish_reason": "stop",
+ "gen_ns": 528077000,
+ "kind": "model",
+ "message_id": "11418",
+ "offset_ns": 159873030892,
+ "prefill_ns": 1838635000,
+ "prompt_tokens": 543,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles:\n\n[help-media-05] Following a podcast\nFollow a podcast to be told when a new episode is released. Ask the assistant to follow a show by name. Episodes play in the order they were released, or the latest first, as you choose. The assistant can play the latest episode, or a named one. Episodes you have started are remembered, so you can resume them later. Unfollowing a show keeps its episodes you have already listened to, but removes it from future reports of new episodes.\n\n[help-messages-05] Replying to a message\nAsk the assistant to reply to the latest message from someone, or to a message you name by its subject. The reply is written in the same thread, so the person sees it with the earlier messages. Say what the reply should say, or ask the assistant to draft a short reply and read it to you first. A reply is sent only after you confirm it. If the thread has more than one earlier message from that person, the assistant asks which one you mean before it replies.\n\n[help-messages-08] Direct messages and social posts\nA direct message goes to one person in a social service, and a post goes to everyone who follows you. Ask the assistant to send a direct message by naming the person as they appear on that service. To post, say what the post should say; the assistant shows you the text and the length before it posts. Posts longer than the service allows are shortened only if you agree. The assistant can read back the latest direct messages, but it cannot see messages sent in a private group you have left.\n",
+    "role": "system"
+   },
+   {
+    "content": "play duncan trussel's latest podcast",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 150,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\nNone of the provided information answers the request to play Duncan Trussel's latest podcast.",
+ "tokens_evaluated": 537,
+ "tool_calls": [],
+ "total_ns": 3325318759,
+ "ttfc_ns": 1841544830
+}

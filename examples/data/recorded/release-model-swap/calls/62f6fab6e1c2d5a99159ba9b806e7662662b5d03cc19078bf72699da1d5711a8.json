@@ -1,0 +1,171 @@
+{
+ "chunk_ns": [
+  1766325127,
+  1766335032,
+  1790558052,
+  1814678510,
+  1838080503,
+  1861157264,
+  1884831637,
+  1908373503,
+  1932673668,
+  1956473818,
+  1979402788,
+  2002491090,
+  2026115304,
+  2048812955,
+  2071785065,
+  2094857803,
+  2119030896,
+  2142581268,
+  2167386520,
+  2190371336,
+  2213820001,
+  2237601182,
+  2260954689,
+  2284342382,
+  2307160463,
+  2337623991,
+  2360996492,
+  2384291016,
+  2407202491,
+  2430904425,
+  2454531051,
+  2477343256,
+  2501435367,
+  2524446288,
+  2547331470,
+  2570261778,
+  2593671077,
+  2617583945,
+  2640994656,
+  2665155189,
+  2690523248,
+  2715249049,
+  2738939380,
+  2761919644,
+  2785413802,
+  2809173722,
+  2832480210,
+  2856167683,
+  2879506491,
+  2903191986,
+  2926484559,
+  2950539924,
+  2974624185,
+  3006537755
+ ],
+ "completion_tokens": 51,
+ "finish_reason": "stop",
+ "gen_ns": 1207097000,
+ "kind": "model",
+ "message_id": "8474",
+ "offset_ns": 84992056324,
+ "prefill_ns": 1546791000,
+ "prompt_tokens": 690,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "add jane's birthday party for tomorrow two p. m. at one hundred and twenty three main on my calendar",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List the user's events on one day (UTC). Up to five, by time.",
+     "name": "list_events",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date"
+      ],
+      "title": "ListEventsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an event to the user's calendar on one day (UTC).",
+     "name": "add_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       },
+       "time": {
+        "description": "The start time, HH:MM on a 24-hour clock.",
+        "title": "Time",
+        "type": "string"
+       },
+       "title": {
+        "description": "What the event is called, up to 60 characters.",
+        "title": "Title",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date",
+       "time",
+       "title"
+      ],
+      "title": "AddEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove one of the user's events, by its event_id.",
+     "name": "remove_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "event_id": {
+        "description": "The event_id that list_events gave.",
+        "maxLength": 20,
+        "minLength": 1,
+        "title": "Event Id",
+        "type": "string"
+       }
+      },
+      "required": [
+       "event_id"
+      ],
+      "title": "RemoveEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 75,
+ "step": "answer",
+ "text": "<think>\n\n</think>\n\n<tool_call>\n{\"name\": \"add_event\", \"arguments\": {\"date\": \"2026-12-08\", \"time\": \"12:15\", \"title\": \"Jane's Birthday Party\"}}\n</tool_call>",
+ "tokens_evaluated": 490,
+ "tool_calls": [],
+ "total_ns": 3757731371,
+ "ttfc_ns": 1766325127
+}

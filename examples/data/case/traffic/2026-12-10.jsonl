@@ -1,0 +1,80 @@
+{"message_id":"14440","arrival":"2026-12-10T00:12:19.283263Z","user_id":"U0073","scenario":"qa","text":"what is the capital of mexico"}
+{"message_id":"10072","arrival":"2026-12-10T05:53:18.962210Z","user_id":"U0149","scenario":"cooking","text":"baking times for chicken in the oven"}
+{"message_id":"2560","arrival":"2026-12-10T06:26:50.084777Z","user_id":"U0151","scenario":"play","text":"play random music"}
+{"message_id":"9088","arrival":"2026-12-10T06:31:38.225793Z","user_id":"U0031","scenario":"calendar","text":"wipe everything on my calendar"}
+{"message_id":"8410","arrival":"2026-12-10T07:16:15.101992Z","user_id":"U0064","scenario":"calendar","text":"remove my dinner event for monday"}
+{"message_id":"5985","arrival":"2026-12-10T07:51:11.434390Z","user_id":"U0191","scenario":"news","text":"show me the latest news from the un"}
+{"message_id":"10288","arrival":"2026-12-10T08:05:52.419158Z","user_id":"U0104","scenario":"play","text":"play me a game of tic tac toe"}
+{"message_id":"14792","arrival":"2026-12-10T08:51:15.159658Z","user_id":"U0007","scenario":"recommendation","text":"where is a walking trail near me"}
+{"message_id":"730","arrival":"2026-12-10T08:58:22.877014Z","user_id":"U0132","scenario":"iot","text":"turn the lights off"}
+{"message_id":"14367","arrival":"2026-12-10T08:59:49.407466Z","user_id":"U0187","scenario":"general","text":"will there be a world war four"}
+{"message_id":"17019","arrival":"2026-12-10T09:03:37.231807Z","user_id":"U0146","scenario":"email","text":"compose a reply to last email"}
+{"message_id":"10323","arrival":"2026-12-10T09:21:48.945025Z","user_id":"U0140","scenario":"play","text":"let's play"}
+{"message_id":"6061","arrival":"2026-12-10T09:25:27.990607Z","user_id":"U0163","scenario":"iot","text":"make the coffee"}
+{"message_id":"1511","arrival":"2026-12-10T09:45:52.618235Z","user_id":"U0072","scenario":"iot","text":"show me the available colors of lights"}
+{"message_id":"15186","arrival":"2026-12-10T09:46:27.839029Z","user_id":"U0093","scenario":"social","text":"wedding wishes"}
+{"message_id":"12724","arrival":"2026-12-10T09:47:17.631901Z","user_id":"U0192","scenario":"transport","text":"find me a train ticket to boston"}
+{"message_id":"7730","arrival":"2026-12-10T09:49:45.804199Z","user_id":"U0094","scenario":"calendar","text":"i need you to mark next monday"}
+{"message_id":"13853","arrival":"2026-12-10T09:53:29.372049Z","user_id":"U0001","scenario":"qa","text":"where on earth has the most volcanoes"}
+{"message_id":"10816","arrival":"2026-12-10T09:57:56.339724Z","user_id":"U0156","scenario":"lists","text":"create a playlist"}
+{"message_id":"5488","arrival":"2026-12-10T10:16:37.562521Z","user_id":"U0029","scenario":"takeaway","text":"order pizza for delivery"}
+{"message_id":"2472","arrival":"2026-12-10T10:25:08.349649Z","user_id":"U0020","scenario":"datetime","text":"is the time currently correct for where i am located"}
+{"message_id":"13486","arrival":"2026-12-10T10:39:51.040527Z","user_id":"U0067","scenario":"general","text":"can you show me a list of all my recent commands"}
+{"message_id":"15792","arrival":"2026-12-10T10:52:04.945520Z","user_id":"U0112","scenario":"calendar","text":"who am i meeting today"}
+{"message_id":"16045","arrival":"2026-12-10T10:53:11.340360Z","user_id":"U0014","scenario":"email","text":"send mail to ismail for office opening time table"}
+{"message_id":"11990","arrival":"2026-12-10T10:54:07.264001Z","user_id":"U0134","scenario":"recommendation","text":"what's a movie in theaters that doesn't suck"}
+{"message_id":"6352","arrival":"2026-12-10T11:05:40.280084Z","user_id":"U0103","scenario":"general","text":"i went to the store"}
+{"message_id":"6027","arrival":"2026-12-10T11:19:01.619369Z","user_id":"U0013","scenario":"play","text":"turn on favorite songs"}
+{"message_id":"6683","arrival":"2026-12-10T11:21:48.231640Z","user_id":"U0117","scenario":"news","text":"economic affairs"}
+{"message_id":"3915","arrival":"2026-12-10T11:38:43.317652Z","user_id":"U0013","scenario":"music","text":"this is a good tune please notate file accordingly"}
+{"message_id":"3178","arrival":"2026-12-10T12:10:40.151401Z","user_id":"U0049","scenario":"music","text":"what year did this song come out"}
+{"message_id":"17157","arrival":"2026-12-10T12:12:32.341315Z","user_id":"U0086","scenario":"email","text":"do i have any new email from joe"}
+{"message_id":"2234","arrival":"2026-12-10T12:20:07.841416Z","user_id":"U0121","scenario":"iot","text":"i can't see turn up the lights"}
+{"message_id":"6109","arrival":"2026-12-10T12:23:16.719239Z","user_id":"U0027","scenario":"music","text":"store opinion on song"}
+{"message_id":"6295","arrival":"2026-12-10T12:28:02.991509Z","user_id":"U0038","scenario":"general","text":"i hate how long the traffic jams get"}
+{"message_id":"15706","arrival":"2026-12-10T12:35:20.728344Z","user_id":"U0035","scenario":"social","text":"tweet at"}
+{"message_id":"17005","arrival":"2026-12-10T12:41:26.843223Z","user_id":"U0112","scenario":"email","text":"please check for new email"}
+{"message_id":"8322","arrival":"2026-12-10T12:42:27.602018Z","user_id":"U0187","scenario":"general","text":"i want to know more about the fair this weekend"}
+{"message_id":"1352","arrival":"2026-12-10T12:47:45.474269Z","user_id":"U0199","scenario":"audio","text":"please slow down volume of speaker"}
+{"message_id":"1870","arrival":"2026-12-10T12:48:22.803987Z","user_id":"U0146","scenario":"datetime","text":"what month is today"}
+{"message_id":"11796","arrival":"2026-12-10T13:08:20.215410Z","user_id":"U0192","scenario":"recommendation","text":"which bar has the most affordable drinks near sixth street"}
+{"message_id":"5219","arrival":"2026-12-10T13:10:34.397214Z","user_id":"U0157","scenario":"audio","text":"please reduce the speaker volume"}
+{"message_id":"6923","arrival":"2026-12-10T13:51:55.015630Z","user_id":"U0196","scenario":"calendar","text":"set reminder to print the documents on tuesday morning"}
+{"message_id":"14963","arrival":"2026-12-10T14:02:10.859622Z","user_id":"U0190","scenario":"general","text":"internet please"}
+{"message_id":"9980","arrival":"2026-12-10T14:37:39.500810Z","user_id":"U0038","scenario":"cooking","text":"what is the menu today add some boiled vegetables also to it"}
+{"message_id":"12264","arrival":"2026-12-10T14:48:20.166917Z","user_id":"U0138","scenario":"transport","text":"new york"}
+{"message_id":"1744","arrival":"2026-12-10T15:10:13.346399Z","user_id":"U0081","scenario":"music","text":"what do you think"}
+{"message_id":"9269","arrival":"2026-12-10T15:31:48.414858Z","user_id":"U0121","scenario":"play","text":"tune in to eight hundred and ninety seven f. m."}
+{"message_id":"16907","arrival":"2026-12-10T15:48:16.825852Z","user_id":"U0057","scenario":"email","text":"jay's phone number"}
+{"message_id":"10990","arrival":"2026-12-10T15:48:35.584048Z","user_id":"U0085","scenario":"lists","text":"on my to dos remove mop kitchen"}
+{"message_id":"14023","arrival":"2026-12-10T15:49:03.050457Z","user_id":"U0093","scenario":"qa","text":"describe hell"}
+{"message_id":"14053","arrival":"2026-12-10T15:56:05.416780Z","user_id":"U0005","scenario":"qa","text":"what year did george clooney start acting"}
+{"message_id":"5198","arrival":"2026-12-10T15:58:26.471451Z","user_id":"U0046","scenario":"music","text":"tag this song with five stars"}
+{"message_id":"12800","arrival":"2026-12-10T16:06:25.945313Z","user_id":"U0082","scenario":"transport","text":"where is the public library"}
+{"message_id":"15402","arrival":"2026-12-10T16:15:55.412416Z","user_id":"U0119","scenario":"social","text":"tweet that product sucks"}
+{"message_id":"10339","arrival":"2026-12-10T16:16:13.899267Z","user_id":"U0165","scenario":"play","text":"please open chess game i would like to play with you"}
+{"message_id":"15911","arrival":"2026-12-10T16:17:42.631943Z","user_id":"U0033","scenario":"email","text":"prepare email for susan"}
+{"message_id":"14539","arrival":"2026-12-10T16:18:12.721975Z","user_id":"U0156","scenario":"qa","text":"find geographic details of this place"}
+{"message_id":"16729","arrival":"2026-12-10T16:28:04.119098Z","user_id":"U0002","scenario":"email","text":"respond to my email from bob letting them know i'll see them tomorrow"}
+{"message_id":"2801","arrival":"2026-12-10T16:39:22.826096Z","user_id":"U0106","scenario":"datetime","text":"what time is it in london"}
+{"message_id":"15904","arrival":"2026-12-10T16:40:08.115148Z","user_id":"U0104","scenario":"email","text":"check my new emails and tell me what are they about"}
+{"message_id":"5529","arrival":"2026-12-10T16:46:57.530471Z","user_id":"U0191","scenario":"weather","text":"what time should i go for a hike"}
+{"message_id":"2334","arrival":"2026-12-10T16:52:50.590113Z","user_id":"U0156","scenario":"alarm","text":"add an alarm for tomorrow morning at six am"}
+{"message_id":"12020","arrival":"2026-12-10T16:54:19.705445Z","user_id":"U0010","scenario":"recommendation","text":"tell me what clothing stores are within five miles of me"}
+{"message_id":"6550","arrival":"2026-12-10T17:37:09.236934Z","user_id":"U0168","scenario":"general","text":"i got promoted today it feels so good"}
+{"message_id":"13122","arrival":"2026-12-10T17:43:18.904999Z","user_id":"U0068","scenario":"qa","text":"what is the factorial of ten"}
+{"message_id":"3338","arrival":"2026-12-10T17:53:45.477772Z","user_id":"U0109","scenario":"weather","text":"report weather for largo"}
+{"message_id":"12856","arrival":"2026-12-10T18:11:58.817067Z","user_id":"U0159","scenario":"transport","text":"directions please"}
+{"message_id":"15387","arrival":"2026-12-10T18:22:20.946455Z","user_id":"U0171","scenario":"social","text":"tweet my current location"}
+{"message_id":"1913","arrival":"2026-12-10T18:38:28.067929Z","user_id":"U0183","scenario":"alarm","text":"wake me up at five am"}
+{"message_id":"2480","arrival":"2026-12-10T19:09:31.158187Z","user_id":"U0200","scenario":"takeaway","text":"call for take-out"}
+{"message_id":"9054","arrival":"2026-12-10T19:20:47.440142Z","user_id":"U0183","scenario":"calendar","text":"event reminder mona tuesday"}
+{"message_id":"2146","arrival":"2026-12-10T19:35:40.914334Z","user_id":"U0011","scenario":"datetime","text":"what's the date of the winter solstice two years from now"}
+{"message_id":"7741","arrival":"2026-12-10T19:48:14.874416Z","user_id":"U0142","scenario":"calendar","text":"clear my calendar for saturday"}
+{"message_id":"4355","arrival":"2026-12-10T19:55:58.870647Z","user_id":"U0067","scenario":"weather","text":"how is the weather where i am"}
+{"message_id":"16048","arrival":"2026-12-10T20:12:27.903545Z","user_id":"U0065","scenario":"email","text":"show me recent emails"}
+{"message_id":"7531","arrival":"2026-12-10T21:15:21.797828Z","user_id":"U0162","scenario":"calendar","text":"please add my pay days"}
+{"message_id":"6722","arrival":"2026-12-10T21:15:56.235937Z","user_id":"U0063","scenario":"calendar","text":"is there anything i should be reminded about"}
+{"message_id":"5156","arrival":"2026-12-10T21:28:30.027169Z","user_id":"U0038","scenario":"iot","text":"turn the light off in the living room"}
+{"message_id":"12098","arrival":"2026-12-10T21:53:46.578101Z","user_id":"U0070","scenario":"recommendation","text":"show me nearby musical events"}
+{"message_id":"8453","arrival":"2026-12-10T21:53:53.284986Z","user_id":"U0067","scenario":"calendar","text":"please put event into my calendar and mark it as a repeating event"}

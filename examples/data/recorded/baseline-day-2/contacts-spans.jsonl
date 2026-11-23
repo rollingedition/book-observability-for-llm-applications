@@ -1,0 +1,1 @@
+{"attributes": {"jsonrpc.request.id": "1", "mcp.method.name": "server/discover", "mcp.protocol.version": "2026-07-28"}, "end_ns": 1795395575101368499, "kind": "SERVER", "name": "server/discover", "parent_span_id": null, "span_id": "4982df7dc81882fc", "start_ns": 1795395575101052818, "status": "UNSET", "trace_id": "7e13e6bfbd04e394d02034da42d1810d"}

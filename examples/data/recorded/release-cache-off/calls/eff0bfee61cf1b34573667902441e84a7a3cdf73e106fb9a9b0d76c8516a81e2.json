@@ -1,0 +1,159 @@
+{
+ "chunk_ns": [
+  9376564601,
+  9376572451,
+  9501052141,
+  9623951454,
+  9770757746,
+  9929505590,
+  10062895924,
+  10186555627,
+  10311613617,
+  10454438851,
+  10575317230,
+  10701779211,
+  10829690166,
+  10964459400,
+  11086547729,
+  11208631967,
+  11328443303,
+  11451340796,
+  11571802449,
+  11690145541,
+  11840639227,
+  11981942766,
+  12115548167,
+  12239480298,
+  12366060090,
+  12497666327,
+  12626091308,
+  12747286057,
+  12864865718,
+  12982900217,
+  13100409734,
+  13220547358,
+  13340113728,
+  13493368075,
+  13638075735,
+  13758070053,
+  13876806286,
+  13996081472,
+  14115501233,
+  14237867246,
+  14358381414,
+  14479331361
+ ],
+ "completion_tokens": 40,
+ "finish_reason": "stop",
+ "gen_ns": 5072605000,
+ "kind": "model",
+ "message_id": "7289",
+ "offset_ns": 488861853388,
+ "prefill_ns": 9372632000,
+ "prompt_tokens": 671,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-08.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "get rid of all events with jeff",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List the user's events on one day (UTC). Up to five, by time.",
+     "name": "list_events",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date"
+      ],
+      "title": "ListEventsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an event to the user's calendar on one day (UTC).",
+     "name": "add_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       },
+       "time": {
+        "description": "The start time, HH:MM on a 24-hour clock.",
+        "title": "Time",
+        "type": "string"
+       },
+       "title": {
+        "description": "What the event is called, up to 60 characters.",
+        "title": "Title",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date",
+       "time",
+       "title"
+      ],
+      "title": "AddEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove one of the user's events, by its event_id.",
+     "name": "remove_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "event_id": {
+        "description": "The event_id that list_events gave.",
+        "maxLength": 20,
+        "minLength": 1,
+        "title": "Event Id",
+        "type": "string"
+       }
+      },
+      "required": [
+       "event_id"
+      ],
+      "title": "RemoveEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 72,
+ "step": "answer",
+ "text": "I cannot remove events with \"jeff\" as no events are listed or identified in the provided information. Please provide more details or confirm if you'd like me to check a specific date or event.",
+ "tokens_evaluated": 671,
+ "tool_calls": [],
+ "total_ns": 14479353709,
+ "ttfc_ns": 9376564601
+}

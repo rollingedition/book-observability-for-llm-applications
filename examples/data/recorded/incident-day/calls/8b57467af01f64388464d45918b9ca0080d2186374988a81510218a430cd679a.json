@@ -1,0 +1,27 @@
+{
+ "chunk_ns": [
+  15862257
+ ],
+ "completion_tokens": 0,
+ "finish_reason": "",
+ "gen_ns": 0,
+ "kind": "mcp",
+ "message_id": "16501",
+ "offset_ns": 601189969461,
+ "prefill_ns": 0,
+ "prompt_tokens": 0,
+ "request": {
+  "arguments": {
+   "name": "divya",
+   "user_id": "U0072"
+  },
+  "kind": "mcp",
+  "tool": "find_contact"
+ },
+ "seq": 88,
+ "step": "tool",
+ "text": "{\"is_error\": true, \"output\": \"Error executing tool find_contact\"}",
+ "tokens_evaluated": 0,
+ "total_ns": 15862257,
+ "ttfc_ns": 15862257
+}

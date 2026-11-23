@@ -1,0 +1,47 @@
+{
+ "chunk_ns": [
+  58680305,
+  58689302,
+  80351657,
+  100850513,
+  121150148,
+  144419432,
+  163747290,
+  185575994,
+  206904275,
+  230111386,
+  250378652,
+  270382264
+ ],
+ "completion_tokens": 10,
+ "finish_reason": "stop",
+ "gen_ns": 204157000,
+ "kind": "model",
+ "message_id": "11418",
+ "offset_ns": 159292548881,
+ "prefill_ns": 56494000,
+ "prompt_tokens": 151,
+ "request": {
+  "kind": "model",
+  "max_tokens": 32,
+  "messages": [
+   {
+    "content": "You are the router of a personal assistant. Read the user's message and choose the one route that can answer it.\nReply with JSON only, in this form: {\"route\": \"<route>\"}\n\nRoutes:\n- calendar: the user's events on a day.\n- alarms: the user's alarms.\n- lists: the user's shopping, packing and to do lists.\n- messages: finding a contact the user wants to message.\n- devices: the user's smart devices and speakers.\n- media: songs, films, podcasts and radio.\n- fallback: anything else, including questions that need information from outside the app.",
+    "role": "system"
+   },
+   {
+    "content": "play duncan trussel's latest podcast",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0
+ },
+ "seq": 149,
+ "step": "route",
+ "text": "<think>\n\n</think>\n\n{\"route\": \"media\"}",
+ "tokens_evaluated": 14,
+ "tool_calls": [],
+ "total_ns": 576407953,
+ "ttfc_ns": 58680305
+}

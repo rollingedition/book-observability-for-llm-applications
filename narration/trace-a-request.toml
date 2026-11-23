@@ -1,0 +1,65 @@
+# Chapter trace-a-request's narration (re-check narration): descriptions of its examples, blocks and tables, as
+# [examples.ID], [[blocks]] and [[tables]], and its own readings. Only this chapter's writer edits this file, so
+# writers working in parallel never append to one shared lexicon. A reading every chapter needs goes into
+# narration/lexicon.toml, which wins over a chapter's.
+
+[examples.replay-one-message]
+say = "The code replays message 809 through the assistant. Each model call gets the reply the recording holds, and a virtual clock moves by that call's recorded time. The output gives the time and the token counts of the route call and of the answer call, then the total time the message spent in model calls: {{out:replay-one-message:message, time in model calls}}."
+
+[[blocks]]
+section = "replay-and-the-virtual-clock"
+starts = "route call, time: 3,336.3 ms"
+say = "The printed lines give the route call's time, then its input, cached input and output tokens. The answer call's lines follow the same order, and the last line is the total time in model calls."
+
+[examples.build-one-trace]
+say = "The code makes the four spans of message 809 by hand, each with the start and end the replay recorded, and checks that every child names the root as its parent. It prints how many spans the trace has, {{out:build-one-trace:spans in the trace}}, and how many of them sit under the root, {{out:build-one-trace:spans under the root}}."
+
+[[blocks]]
+section = "spans-by-hand"
+starts = "recorded = tracer.start_span(name,"
+say = "The first line of this block starts the span with its start time. The second line ends it with its end time, which is a separate call because the SDK's start call takes no end time."
+
+[[blocks]]
+section = "spans-by-hand"
+starts = "span(tracer, name, step.start_ns,"
+say = "This line makes one child span for a step. It takes the step's name, its start and end, its parent, which is the root, and its attributes."
+
+[examples.print-trace-tree]
+say = "The code prints message 809's spans as a tree, each span indented under the span it is a child of, and then checks how their times add up. The message's time and the steps' time are the same number, {{out:print-trace-tree:message span, time}}, and no two steps overlap in time."
+
+[[blocks]]
+section = "the-tree-of-one-trace"
+starts = "message  step: (root)"
+say = "The tree starts with the root, message, and three steps beneath it in order: route, retrieve and answer. Its last four lines say whether the times add up, which they do in this replay."
+
+[examples.figure-dev-day-waterfall]
+say = "The code draws message 809's spans as bars on a timeline, in seconds after the message arrives. The route bar lasts {{out:figure-dev-day-waterfall:route span, time}}, the retrieve step is a tick because the replay gives it no time, and the answer bar starts when the route bar ends and lasts {{out:figure-dev-day-waterfall:answer span, time}}."
+
+[examples.sum-dev-day-steps]
+say = "The code replays all twenty messages and adds up each model step over the day: its calls, its recorded time, its tokens and its shares of the day's model time and tokens. The route step takes {{out:sum-dev-day-steps:route, share of model time}} of the model time and the answer step takes {{out:sum-dev-day-steps:answer, share of model time}}."
+
+[examples.figure-dev-day-step-shares]
+say = "The code draws two bars for each model call, one for its share of the day's model time and one for its share of the day's tokens. The answer call's time bar is the longest bar in the figure, and the route call's token bar is longer than its time bar."
+
+[terms]
+"ambrewick.reply.source" = "am brew ick reply source"
+"ambrewick.route" = "am brew ick route"
+"ambrewick.step" = "am brew ick step"
+"ambrewick.tokens.cached" = "am brew ick tokens cached"
+"ambrewick.tokens.input" = "am brew ick tokens input"
+"ambrewick.tokens.output" = "am brew ick tokens output"
+"MASSIVE" = "massive"
+"CC" = "Creative Commons"
+"BY" = "Attribution"
+"FitzGerald" = "Fitz Gerald"
+"SLURP" = "slurp"
+"vCPU" = "V C P U"
+"Qwen3" = "Qwen three"
+"GHz" = "gigahertz"
+"ACL" = "A C L"
+"Q4_K_M" = "Q four K M"
+"GGUF" = "G G U F"
+"SimpleSpanProcessor" = "Simple Span Processor"
+"SpanContext" = "Span Context"
+
+[words]

@@ -1,0 +1,55 @@
+{
+ "chunk_ns": [
+  5998437222,
+  5998445608,
+  6152871782,
+  6295864468,
+  6435804066,
+  6568604468,
+  6704288024,
+  6828736854,
+  6952132394,
+  7076451188,
+  7229646724,
+  7420969723,
+  7542011737,
+  7665839711,
+  7789805680,
+  7935444711,
+  8059815490,
+  8182597002,
+  8316710396
+ ],
+ "completion_tokens": 17,
+ "finish_reason": "stop",
+ "gen_ns": 2305306000,
+ "kind": "model",
+ "message_id": "6362",
+ "offset_ns": 156248453602,
+ "prefill_ns": 5597917000,
+ "prompt_tokens": 564,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-07.\n\nKnowledge base articles:\n\n[help-messages-05] Replying to a message\nAsk the assistant to reply to the latest message from someone, or to a message you name by its subject. The reply is written in the same thread, so the person sees it with the earlier messages. Say what the reply should say, or ask the assistant to draft a short reply and read it to you first. A reply is sent only after you confirm it. If the thread has more than one earlier message from that person, the assistant asks which one you mean before it replies.\n\n[help-messages-08] Direct messages and social posts\nA direct message goes to one person in a social service, and a post goes to everyone who follows you. Ask the assistant to send a direct message by naming the person as they appear on that service. To post, say what the post should say; the assistant shows you the text and the length before it posts. Posts longer than the service allows are shortened only if you agree. The assistant can read back the latest direct messages, but it cannot see messages sent in a private group you have left.\n\n[help-messages-03] Writing a short message\nSay who the message is for and what it should say. Keep it to a few sentences. The assistant reads the names back before it sends anything, so you can correct a name you did not mean. Subject lines are optional; if you leave one out, the assistant writes a short one from the first sentence. The message is sent only after you confirm it. Once it is sent, it cannot be recalled by the assistant, so check the wording first. Long messages are split into parts only in the rare case where the service limits their length, and the assistant tells you when that happens.\n",
+    "role": "system"
+   },
+   {
+    "content": "what film should i watch",
+    "role": "user"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": []
+ },
+ "seq": 26,
+ "step": "answer",
+ "text": "I can't recommend films based on the provided information. Please ask about something else.",
+ "tokens_evaluated": 369,
+ "tool_calls": [],
+ "total_ns": 8746021930,
+ "ttfc_ns": 5998437222
+}

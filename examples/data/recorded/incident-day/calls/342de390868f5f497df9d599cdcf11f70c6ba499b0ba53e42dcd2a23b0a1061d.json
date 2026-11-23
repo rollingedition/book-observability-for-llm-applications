@@ -1,0 +1,155 @@
+{
+ "chunk_ns": [
+  1066823334,
+  1066830653,
+  1184769233,
+  1305648264,
+  1444636958,
+  1592342994,
+  1719598607,
+  1843647952,
+  1964150625,
+  2088068086,
+  2219269641,
+  2365850111,
+  2495056140,
+  2637290714,
+  2763195461,
+  2892567245,
+  3026993722,
+  3155006326,
+  3278490645,
+  3409576941,
+  3539400361,
+  3677993943,
+  3808384681,
+  3934819345,
+  4055443663,
+  4182292747,
+  4301816769,
+  4434214637,
+  4589159873
+ ],
+ "completion_tokens": 27,
+ "finish_reason": "stop",
+ "gen_ns": 3501454000,
+ "kind": "model",
+ "message_id": "7046",
+ "offset_ns": 449645681949,
+ "prefill_ns": 1062955000,
+ "prompt_tokens": 781,
+ "request": {
+  "kind": "model",
+  "max_tokens": 160,
+  "messages": [
+   {
+    "content": "You are the assistant of a personal assistant app. Answer the user's message in English, in plain words.\n- Answer only from the knowledge base articles and from the results of the tools in this conversation.\n- Cite the article IDs you used in square brackets, for example [help-media-02]. Cite none if you used none.\n- Never repeat a contact's address in a reply, even one a tool returned.\n- Make a change only by calling a tool, and never say a change was made unless a tool result says so.\n- Keep a reply to three sentences or fewer.\n- If the articles and the tool results do not answer the question, say so in one sentence and stop.\n\nIf a tool can answer the message, call it before you answer. Do not refuse a request a tool can serve.\n\nToday's date (UTC) is 2026-12-09.\n\nKnowledge base articles: none apply.\n",
+    "role": "system"
+   },
+   {
+    "content": "add tal meeting on twenty first at seven",
+    "role": "user"
+   },
+   {
+    "content": "<tool_call>\n{\"name\": \"add_event\", \"arguments\": {\"date\": \"2026-12-21\", \"time\": \"07:00\", \"title\": \"Tal Meeting\"}}\n</tool_call>",
+    "role": "assistant"
+   },
+   {
+    "content": "{\"event\": {\"date\": \"2026-12-21\", \"event_id\": \"new-1\", \"time\": \"07:00\", \"title\": \"Tal Meeting\"}, \"status\": \"added\"}",
+    "name": "add_event",
+    "role": "tool"
+   }
+  ],
+  "seed": 0,
+  "temperature": 0,
+  "tools": [
+   {
+    "function": {
+     "description": "List the user's events on one day (UTC). Up to five, by time.",
+     "name": "list_events",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date"
+      ],
+      "title": "ListEventsArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Add an event to the user's calendar on one day (UTC).",
+     "name": "add_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "date": {
+        "description": "The day in UTC, as YYYY-MM-DD.",
+        "title": "Date",
+        "type": "string"
+       },
+       "time": {
+        "description": "The start time, HH:MM on a 24-hour clock.",
+        "title": "Time",
+        "type": "string"
+       },
+       "title": {
+        "description": "What the event is called, up to 60 characters.",
+        "title": "Title",
+        "type": "string"
+       }
+      },
+      "required": [
+       "date",
+       "time",
+       "title"
+      ],
+      "title": "AddEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   },
+   {
+    "function": {
+     "description": "Remove one of the user's events, by its event_id.",
+     "name": "remove_event",
+     "parameters": {
+      "additionalProperties": false,
+      "properties": {
+       "event_id": {
+        "description": "The event_id that list_events gave.",
+        "maxLength": 20,
+        "minLength": 1,
+        "title": "Event Id",
+        "type": "string"
+       }
+      },
+      "required": [
+       "event_id"
+      ],
+      "title": "RemoveEventArgs",
+      "type": "object"
+     }
+    },
+    "type": "function"
+   }
+  ]
+ },
+ "seq": 66,
+ "step": "answer",
+ "text": "The Tal Meeting has been successfully added to your calendar for December 21 at 7:00 AM. [add_event]",
+ "tokens_evaluated": 64,
+ "tool_calls": [],
+ "total_ns": 5389215948,
+ "ttfc_ns": 1066823334
+}
