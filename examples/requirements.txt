@@ -163,7 +163,7 @@ graphql-relay==3.2.0
     # via
     #   -r requirements.in
     #   graphene
-gunicorn==26.2.0
+gunicorn==27.0.1
     # via
     #   -r requirements.in
     #   mlflow
