@@ -299,7 +299,7 @@ numpy==2.5.5
     #   skops
 openai==3.57.0
     # via -r requirements.in
-openinference-semantic-conventions==0.1.46
+openinference-semantic-conventions==0.1.47
     # via -r requirements.in
 opentelemetry-api==1.45.2
     # via
