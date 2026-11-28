@@ -47,7 +47,7 @@ blinker==1.9.0
     #   flask
 bm25s==0.3.16
     # via -r requirements.in
-cachetools==7.3.3
+cachetools==8.0.2
     # via
     #   -r requirements.in
     #   mlflow-skinny
